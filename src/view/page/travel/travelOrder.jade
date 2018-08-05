@@ -1,0 +1,218 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append head
+    title 跟团游订单详情
+
+block append style
+    link(rel='stylesheet', href='../../static/css/orderDetails.css')
+    link(rel='stylesheet', href='../../static/css/template/calendar.css')
+    link(rel='stylesheet', href='../../static/css/travel/travelOrder.css')
+
+block header
+    include ../../component/common/header_order
+
+block content
+    include ../../../model/travel/travelOrderData
+    .order-page
+        .order-main
+            .order-left-cont
+                .order-top-cont
+                    h2 澳洲（悉尼 布里斯本 黄金海岸墨尔本）7天 欢乐名城 广州或香港往返 歌剧院入内悉尼港渡轮 奇趣捉蟹 野生动物园
+                    p 出发日期：2017-08-18
+                    .order-top-stepper-item
+                        span.order-top-stepper
+                            label 成人
+                        span.order-top-stepper
+                            label 儿童
+                        br
+                        span.order-top-stepper(style='margin-left:0;margin-top:10px')
+                            label 婴儿
+                ul.order-info-list
+                    li
+                        include ../../component/orderDetails/contactInfo
+                    li
+                        +order-dt-tit('旅客信息','请您正确填写游客信息')
+                        .order-info-item
+                            .supplement-btn 游客资料后补<i class='red-tick-icon'></i>
+                            .tourist-info
+                                - for (var i=0;i<touristItem.length;i++)
+                                    .tourist-info-item
+                                        .tourist-info-tit <i class='#{touristItem[i].icon}'></i>#{touristItem[i].text}
+                                        .tourist-con
+                                            .err-tip 中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确
+                                            ul.form-group.clearfix
+                                                - for (var j=0;j<touristInfo.length;j++)
+                                                    li
+                                                        label
+                                                            if touristInfo[j].isrequired == true
+                                                                <b class='main-red'>*</b>#{touristInfo[j].text}
+                                                        div.form-group-con
+                                                            input(placeholder='#{touristInfo[j].placeholder}')
+                                                li
+                                                    label 证件类型
+                                                    div.form-group-con
+                                                        +select-group(['身份证','居住证','其他'])
+                                                li
+                                                    label 证件号码
+                                                    div.form-group-con
+                                                        input(placeholder='请输⼊证件号码')
+                                            .tourist-add-item.insurance-item
+                                                .add-item-tit 已选保险(<em>0</em>)
+                                                    a.insurance-sel 选择保险
+                                                .add-item-con
+                                                    ul.insurance-con
+                                                    .add-item-list
+                                                        ul
+                                                            - for (var j=0;j<3;j++)
+                                                                li.insurance-sel-list(data-insurance='#{j}')
+                                                                    a.add-item-info 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                    span.add-item-prc ¥<em>8000</em>
+                                                                    span.add-item-stepper
+                                            .tourist-add-item.service-item
+                                                .add-item-tit 可选服务(<em>0</em>)
+                                                .add-item-con
+                                                    ul.service-item-list
+                                                        - for (var j=0;j<3;j++)
+                                                            li
+                                                                div
+                                                                    span.add-item-info.option-service 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                    span.add-item-prc ¥ 8000
+                                                                    span.add-item-stepper
+                                                                .service-popover  132132132132131343213213
+                                                        li
+                                                            div
+                                                                span.add-item-info.no-popver 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                span.add-item-prc ¥ 8000
+                                                                span.add-item-stepper
+                    li
+                        +order-dt-tit('附加项目','请您选择附加项目')
+                        .order-info-item.external-item-list
+                            ul.external-items
+                                li.external-item
+                                    div.selection-top
+                                        label.external-item-name.hasNote
+                                            span 长者上海迪士尼乐园2次入园长者上海迪士尼乐园2次入园长者上海迪士尼乐园2次入园长者上海迪士尼乐园2次入园
+                                        span.num &nbsp;&nbsp;&nbsp;&nbsp;
+                                        span.money-red ￥ 1000
+                                        span.add-item-stepper
+                                    .external-popover  132132132132131343213213
+                                li.external-item
+                                    div.selection-top
+                                        label.external-item-name 全家上海迪士尼乐园2次入园长者上海迪士尼乐园2次入园长者上海迪士尼乐园2次入园长者上海迪士尼乐园2次入园
+                                        span.num &nbsp;&nbsp;&nbsp;&nbsp;
+                                        span.money-red ￥ 100
+                                        span.add-item-stepper
+                                li.external-item.zero-color
+                                    div.external-tit.selection-top
+                                        label.external-item-name ClubMed青少年价格减项
+                                        span.num &nbsp;&nbsp;&nbsp;&nbsp;
+                                        span.money-red ￥ 100
+                                        span.external-icon-wrp
+                                            i.icon.add-icon
+                                        //span(style="width: 85px;display: inline-block;")
+                                    div.tourist-list-wrp
+                                        .tip 请在下方选择游客
+                                        div.tourist-info
+                                            //- div.order-info-usual-tourist
+                                            +checkbox-btns-con([{
+                                                name: '罗大佑',
+                                                value: '4029819e5fc44a09015fd72092d57e95'
+                                            }, {name: '罗小军', value: '5029819e5fc44a09015fd72092d57e95'}, {
+                                                name: '周孝正',
+                                                value: '6029819e5fc44a09015fd72092d57e95'
+                                            }, {name: '周杰伦', value: '7029819e5fc44a09015fd72092d57e95'}, {
+                                                name: '张三丰',
+                                                value: '8029819e5fc44a09015fd72092d57e95'
+                                            }, {name: '童一心', value: '9029819e5fc44a09015fd72092d57e95'}, {
+                                                name: '周小川',
+                                                value: '9129819e5fc44a09015fd72092d57e95'
+                                            }], 5)(class='usual-tourist-con member-check')
+                                li.external-item
+                                    div.selection-top
+                                        label.external-item-name ClubMed青少年价格减项组
+                                        span.external-icon-wrp
+                                            i.icon.add-icon
+                                    div.tourist-list-wrp
+                                        .tip 请为每个游客选择一种服务
+                                        ul.tourist-external-form
+                                            li.tourist-external-form-item
+                                                label 邵敏婷
+                                                select
+                                                    option 请选择服务
+                                                    option 上海团队L签送关
+                                                    option 日本自备签证
+                                                span.money-red ￥ 100
+                                            li.tourist-external-form-item
+                                                label 邵婷
+                                                select
+                                                    option 请选择服务
+                                                    option 上海团队L签送关
+                                                    option 日本自备签证
+                                                span.money-red ￥ 100
+                                            li.tourist-external-form-item
+                                                label 龙淑华
+                                                select
+                                                    option 请选择服务
+                                                    option 上海团队L签送关
+                                                    option 日本自备签证
+                                                span.money-red ￥ 100
+                                            li.tourist-external-form-item
+                                                label 陈伟明
+                                                select
+                                                    option 请选择服务
+                                                    option 上海团队L签送关
+                                                    option 日本自备签证
+                                                span.money-red ￥ 100
+
+                        +order-dt-tit('备注信息')
+                        .order-info-item
+                            textarea.c-textarea(placeholder='请填写备注信息')
+                    li
+                        +order-dt-tit('商家订单号')
+                        .order-info-item
+                            input.c-input(placeholder='请填写商家订单号')
+
+
+            .order-right-cont
+                .order-right-content
+                    ul.order-right-item
+                        li
+                            label 成人×2
+                            span ¥ 386
+                        li
+                            label 儿童×1
+                            span ¥ 386
+                        li
+                            label 婴儿×1
+                            span ¥ 386
+                    ul.order-right-item
+                        li
+                            label 保险费
+                            span ¥ 386
+                        li
+                            label 单房差
+                            span ¥ 386
+                    ul.order-right-item
+                        li
+                            label 优惠券
+                            span －¥ 100
+                        li
+                            label 积分
+                            span －¥ 100
+                        li
+                            label ⾃自游通卡
+                            span －¥ 100
+                    ul.order-right-item.order-total
+                        li
+                            label 销售总额
+                            span ¥ 2000086
+                        li
+                            label 结算总额
+                            span ¥ 2000086
+        include ../../component/orderDetails/orderFooter
+block footer
+block append script
+    include ../../../model/common/orderData
+    include ../template/userInfo
+    script(src='../../static/js/travel/travelOrder.js')

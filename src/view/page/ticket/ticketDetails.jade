@@ -1,0 +1,120 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append head
+    title 门票详情
+
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/prodDetails.css')
+    link(rel='stylesheet', href='../../static/css/ticket/ticketDetails.css')
+
+
+block content
+    include ../../../model/ticket/ticketDetailsData
+    +bread(bread)
+    .ticket-details
+        .prod-dt-main
+            h2.prod-dt-tit 罗托鲁瓦智选假日酒店
+                span Holiday Inn Rotorua
+                - for (var i=0;i<5;i++)
+                    i.a-icon
+            .prod-dt-info.clearfix
+                .img-box
+                    img(src='../../static/images/details/logo.png')
+                    .contact-info.popover 联系方式
+                        .popover-down
+                            h2 广之旅
+                            p 11321321adsfasd
+                            p 11321321adsfasd
+                ul
+                    -for (var i=0;i<prodInfo.length;i++)
+                        li
+                            label #{prodInfo[i].text}
+                            p #{prodInfo[i].con}
+                .prod-dt-prc ￥<span>23380</span>起
+
+        .ticket-bk-dt
+            .ticket-screen
+                label 参观日期
+                span.ticket-screen-date
+                    input(value="2017/11/27" id="screen-date")
+                    i.date-icon
+            .details-bk
+                ul.ticket-bk-info
+                    li.tk-blank &nbsp;
+                    li.tk-name 名称
+                    li.tk-type 类型
+                    li.tk-period 使用期限
+                    li.tk-prc 销售价
+                    //- li.tk-prc.show-peer-price 同行价<i class="eye-icon"></i>
+                    //- li.tk-prc 利润
+                -for (var i=0;i<4;i++)
+                    .ticket-bk-item
+                        if i == 0
+                            .ticket-species 成人/儿童/婴儿
+                        if i == 1
+                            .ticket-species 成人票
+                        if i == 2
+                            .ticket-species 儿童票
+                        if i == 3
+                            .ticket-species 婴儿票
+                        ul.ticket-bk-list
+                            - for(var j=0;j<3;j++)
+                                li
+                                    div.ticket-info
+                                        span.ticket-prod
+                                            span 香港迪士尼2日特惠门票<i class='o-down-icon'></i>
+                                            //-p.presell-tip
+                                                span
+                                                    i.icon-clock
+                                                    | 开售时间：2017-08-01
+                                        span.ticket-type
+                                            em.popover 电子票
+                                                .popover-up  1321321321
+                                        span.ticket-period 自主选择出游日期，当天有效
+                                        span.ticket-prc ￥385000
+                                        //- span.ticket-prc ￥385000
+                                        //-     .ticket-bk-prc-hide --
+                                        //- span.ticket-prc.profit ￥385000
+                                        if j !== 2
+                                            a.btn.btn-sm(href="ticketOrder.html") 预订
+                                        else
+                                            a.btn.btn-sm.presell.m-popover 即将开始
+                                                .m-popover-con.s-up <i class="icon-clock"></i>开售时间：2017-08-01
+                                    .ticket-info-dt
+                                        h2  香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵
+                                        ul
+                                            li
+                                                label 预订时间：
+                                                div 提前一天23:00点前
+                                            li
+                                                label 使⽤期限：
+                                                div 2017-04-01 至 2017-12-31
+                                            li
+                                                label 兑换方式：
+                                                div 凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票
+                                            li
+                                                label 产品介绍：
+                                                div
+                                                    p 1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。
+                                                    p 2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。
+                                                    p 3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。
+                                                    pre Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.
+                                            li
+                                                label 预定说明：
+                                                div
+                                                    p 1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。
+                                                    p 2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。
+                                                    p 3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。
+                                                    p 4、12岁或以下的⼉童⼊场需要成⼈陪同。
+                                                    p 5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30
+                                            li
+                                                label 退改规则：
+                                                div  该产品⼀经预订成功，不⽀持退改，敬请谅解。
+
+        include ../../component/prodDetails/prodDetailsCon
+block append script
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/ticket/ticketDetails.js')

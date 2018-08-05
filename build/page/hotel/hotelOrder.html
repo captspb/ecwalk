@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/orderDetails.css">
+    <link rel="stylesheet" href="../../static/css/hotel/hotelOrder.css">
+  </head>
+  <title>酒店订单详情</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx b2b-order-header">
+        <div class="b2c-header-logo"><img src="../../static/images/index/LogoTitle.png"></div>
+        <div class="com-step-wrp">
+          <ul>
+            <li>
+              <div step-index="1" class="step step-icon">1</div>
+              <div class="step-text">选择产品</div>
+            </li>
+            <li class="line">
+              <div class="line-ctx"></div>
+            </li>
+            <li>
+              <div step-index="2" class="step step-icon">2</div>
+              <div class="step-text">填写订单</div>
+            </li>
+            <li class="line">
+              <div class="line-ctx"></div>
+            </li>
+            <li>
+              <div step-index="3" class="step step-icon">3</div>
+              <div class="step-text">合同确认</div>
+            </li>
+            <li class="line">
+              <div class="line-ctx"></div>
+            </li>
+            <li>
+              <div step-index="4" class="step step-icon">4</div>
+              <div class="step-text">在线支付</div>
+            </li>
+            <li class="line">
+              <div class="line-ctx"></div>
+            </li>
+            <li>
+              <div step-index="5" class="step step-icon">5</div>
+              <div class="step-text">预订成功</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="order-page hotel-order">
+      <div class="order-main">
+        <div class="order-left-cont">
+          <div class="order-top-cont">
+            <div class="order-top-cont-tit">罗托鲁瓦智选假日酒店罗托鲁瓦智选假日酒店罗托鲁瓦智选假日酒店罗鲁瓦智选假日 酒店(Holiday Inn Rotorua)</div>
+            <ul class="order-top-cont-list clearfix">
+              <li class="w100">
+                <label>房间名称：</label><span title="高级豪华总统套房高高级豪华总统套房高级豪华总统套房高级豪华总统套房高级豪华总统套房高级豪华高级豪...">高级豪华总统套房高高级豪华总统套房高级豪华总统套房高级豪华总统套房高级豪华总统套房高级豪华高级豪...</span>
+              </li>
+              <li>
+                <label>入离日期：</label><span>2018-07-08<em>至</em>2019-07-09</span>
+              </li>
+              <li>
+                <label>每间人数：</label><span>16 成人；  1 儿童</span>
+              </li>
+              <li>
+                <label>房间数量：</label><span>18</span>
+              </li>
+              <li>
+                <label>早餐：</label><span>不含早</span>
+              </li>
+            </ul>
+            <div class="order-detail-list">
+              <div class="order-detail-tab">
+                <table>
+                  <tr>
+                    <th class="order-detail-date">日期</th>
+                    <th class="order-detail-prc">单价</th>
+                    <th class="order-detail-change">退改条款</th>
+                  </tr>
+                  <tr>
+                    <td class="order-detail-date">2017-11-29</td>
+                    <td class="order-detail-prc main-red">￥385000</td>
+                    <td class="order-detail-change">退改条款退改条款退改条款退改条款退改条款退改退 款退改条款</td>
+                  </tr>
+                  <tr>
+                    <td class="order-detail-date">2017-11-29</td>
+                    <td class="order-detail-prc main-red">￥385000</td>
+                    <td class="order-detail-change">退改条款退改条款退改条款退改条款退改条款退改退 款退改条款</td>
+                  </tr>
+                  <tr>
+                    <td class="order-detail-date">2017-11-29</td>
+                    <td class="order-detail-prc main-red">￥385000</td>
+                    <td class="order-detail-change">退改条款退改条款退改条款退改条款退改条款退改退 款退改条款</td>
+                  </tr>
+                  <tr>
+                    <td class="order-detail-date">2017-11-29</td>
+                    <td class="order-detail-prc main-red">￥385000</td>
+                    <td class="order-detail-change">退改条款退改条款退改条款退改条款退改条款退改退 款退改条款</td>
+                  </tr>
+                  <tr>
+                    <td class="order-detail-date">2017-11-29</td>
+                    <td class="order-detail-prc main-red">￥385000</td>
+                    <td class="order-detail-change">退改条款退改条款退改条款退改条款退改条款退改退 款退改条款</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="show-more"><span>展开<i class="icon-expand"></i></span></div>
+            </div>
+          </div>
+          <ul class="order-info-list">
+            <li>
+              <li>
+                <div class="order-dt-tit">
+                  <label>住客信息</label><span>为方便广之旅及时与您联系，请准确填写联系人信息（手机号码，Email）</span>
+                </div>
+                <div class="order-info-item contact-info">
+                  <div class="err-tip">中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确</div>
+                  <ul class="form-group clearfix">
+                    <li>
+                      <label><b class='main-red'>*</b>联系人姓名
+                      </label>
+                      <div class="form-group-con">
+                        <input placeholder="请输⼊游客姓名">
+                      </div>
+                    </li>
+                    <li>
+                      <label>联系人电话
+                      </label>
+                      <div class="form-group-con">
+                        <input placeholder="请输⼊固定电话">
+                      </div>
+                    </li>
+                    <li>
+                      <label><b class='main-red'>*</b>联系人手机
+                      </label>
+                      <div class="form-group-con">
+                        <input placeholder="请输⼊游客手机号码">
+                      </div>
+                    </li>
+                    <li>
+                      <label>联系人邮箱
+                      </label>
+                      <div class="form-group-con">
+                        <input placeholder="请输⼊证件号码">
+                      </div>
+                    </li>
+                    <li>
+                      <label>证件类型</label>
+                      <div class="form-group-con">
+                        <div class="select-group">
+                          <div class="select"><span class="select-val">身份证</span><i class="g-arrow-down-icon"></i></div>
+                          <ul class="select-dropdown">
+                            <li class="active">身份证</li>
+                            <li>居住证</li>
+                            <li>其他</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <label>证件号码</label>
+                      <div class="form-group-con">
+                        <input placeholder="请输⼊证件号码">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </li>
+            <li>
+              <div class="order-dt-tit">
+                <label>房间类型</label><span></span>
+              </div>
+              <div class="order-info-item room-type-item">
+                <div class="hotel-description">
+                  <ul>
+                    <li>预订国内酒店，请填写入住人有效身份证上的名字信息，可使用身份证、护照；</li>
+                    <li>请核对姓名与身份证、护照上的是否一致，若不一致，则可能无法登记入住。</li>
+                    <li>预订港澳酒店，请使用通行证或护照上的英文名字；</li>
+                    <li>请核对英文姓名、通行证、护照上的是否一致，若不一致，则可能无法登记入住。</li>
+                  </ul>
+                </div>
+                <div class="tourist-info">
+                  <div class="tourist-info-item">
+                    <div class="tourist-info-tit">房间1</div>
+                    <div class="tourist-con">
+                      <div class="tourist-con-item">
+                        <div class="err-tip">中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确</div>
+                        <ul class="form-group clearfix room-info">
+                          <li>
+                            <label>游客信息</label>
+                            <div class="form-group-con flex-input">
+                              <div class="flex-input-left">
+                                <input type="text" placeholder="姓(拼音/如zhang)">
+                              </div>
+                              <div class="flex-input-right">
+                                <input type="text" placeholder="名(拼音/如xiaoming)">
+                              </div>
+                            </div><span class="delthis disable"><i class="icon-close1"></i></span>
+                            <!--   .errot-tip-->
+                            <!--     p 请正确填写游客信息-->
+                          </li>
+                          <li>
+                            <label>证件类型</label>
+                            <div class="form-group-con flex-input">
+                              <div class="flex-input-left">
+                                <div class="select-group">
+                                  <div class="select"><span class="select-val">身份证</span><i class="g-arrow-down-icon"></i></div>
+                                  <ul class="select-dropdown">
+                                    <li class="active">身份证</li>
+                                    <li>居住证</li>
+                                    <li>其他</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="flex-input-right">
+                                <input type="text" placeholder="请输⼊证件号码">
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="other-tourists"><a class="other-tourists-info">继续添加其他游客信息<i class='icon-zengjia'></i>   </a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tourist-info-item">
+                    <div class="tourist-info-tit">房间2</div>
+                    <div class="tourist-con">
+                      <div class="tourist-con-item">
+                        <div class="err-tip">中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确</div>
+                        <ul class="form-group clearfix room-info">
+                          <li>
+                            <label>游客信息</label>
+                            <div class="form-group-con flex-input error">
+                              <div class="flex-input-left">
+                                <input type="text" placeholder="姓(中文/如张)">
+                              </div>
+                              <div class="flex-input-right">
+                                <input type="text" placeholder="名(中文/如小明)">
+                              </div>
+                            </div><span class="red-tips">请正确填写游客信息</span><span class="delthis disable"><i class="icon-close1"></i></span>
+                          </li>
+                          <li>
+                            <label>证件类型</label>
+                            <div class="form-group-con flex-input">
+                              <div class="flex-input-left">
+                                <div class="select-group">
+                                  <div class="select"><span class="select-val">身份证</span><i class="g-arrow-down-icon"></i></div>
+                                  <ul class="select-dropdown">
+                                    <li class="active">身份证</li>
+                                    <li>居住证</li>
+                                    <li>其他</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="flex-input-right">
+                                <input type="text" placeholder="请输⼊证件号码">
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="other-tourists"><a class="other-tourists-info">继续添加其他游客信息<i class='icon-zengjia'></i>   </a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--li-->
+            <!--    +order-dt-tit('可选服务')-->
+            <!--    .order-info-item-->
+            <!--        ul.option-service-list-->
+            <!--            li-->
+            <!--                span.option-service-item-->
+            <!--                    em.popuper.popover 增订早餐-->
+            <!--                        .popover-up 151451465143123123-->
+            <!--                span.option-service-prc ¥ 8000-->
+            <!--                span.option-service-stepper-->
+            <!--            li-->
+            <!--                span.option-service-item <em class='popuper'>加床</em>-->
+            <!--                span.option-service-prc ¥ 8000-->
+            <!--                span.option-service-stepper-->
+            <li>
+              <div class="order-dt-tit">
+                <label>附加项目</label><span></span>
+              </div>
+              <div class="order-info-item external-item-list">
+                <ul class="external-items">
+                  <li class="external-item mustSel">
+                    <div class="selection-top">
+                      <label class="external-item-name">附加服务（必选）</label><span class="num">已选：×1</span><span class="money-red"> <span class="desc">总价：</span><span class="money">￥1000</span></span><span class="external-icon-wrp"><i class="icon icon-reclaim-up"></i></span>
+                    </div>
+                    <div class="tourist-list-wrp">
+                      <ul class="addition-list">
+                        <li class="addition-list-item active">
+                          <div class="addition-list-item-wrap">
+                            <p>这里是可选服务选项的项目标题这这里是可选服务选项的项目标里是可选服务选项的项目标...</p>
+                            <div class="item-operation"><span class="price">¥617</span><span class="addition-add-item-stepper"></span></div>
+                          </div><i class="icon icon-select-t"></i>
+                        </li>
+                        <li class="addition-list-item">
+                          <div class="addition-list-item-wrap">
+                            <p>这a里是可选服务选项的项目标题这里是可选服务选项的项目标目标题这里是可选服务选项的项目标...</p>
+                            <div class="item-operation"><span class="price">¥617</span><span class="addition-add-item-stepper"></span></div>
+                          </div><i class="icon icon-select-t"></i>
+                        </li>
+                        <li class="addition-list-item">
+                          <div class="addition-list-item-wrap">
+                            <p>这里是可选服务选项的项目标题这里是可选服务选项的项目标...</p>
+                            <div class="item-operation"><span class="price">¥617</span><span class="addition-add-item-stepper"></span></div>
+                          </div><i class="icon icon-select-t"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="external-item mustSel">
+                    <div class="selection-top">
+                      <label class="external-item-name">ClubMed青少年价格减项组（必选）</label><span class="num">已选：×4</span><span class="money-red"> <span class="desc">总价：</span><span class="money">￥1000</span></span><span class="external-icon-wrp"><i class="icon icon-reclaim-up"></i></span>
+                    </div>
+                    <div class="tourist-list-wrp">
+                      <div class="tip">请为每个游客选择一种服务</div>
+                      <ul class="tourist-external-form">
+                        <li class="tourist-external-form-item">
+                          <label>邵敏婷</label>
+                          <div class="select-group">
+                            <div class="select"><span class="select-val">默认服务</span><i class="g-arrow-down-icon"></i></div>
+                            <ul class="select-dropdown">
+                              <li class="active">默认服务</li>
+                              <li>上海团队L签上海团队L签送关送关</li>
+                              <li>日本自备签证</li>
+                            </ul>
+                          </div><span class="money-red"><span class="money">￥1000</span></span>
+                        </li>
+                        <li class="tourist-external-form-item">
+                          <label>邵婷</label>
+                          <div class="select-group">
+                            <div class="select"><span class="select-val">默认服务</span><i class="g-arrow-down-icon"></i></div>
+                            <ul class="select-dropdown">
+                              <li class="active">默认服务</li>
+                              <li>上海团队L签上海团队L签送关送关</li>
+                              <li>日本自备签证</li>
+                            </ul>
+                          </div><span class="money-red"><span class="money">￥1000</span></span>
+                        </li>
+                        <li class="tourist-external-form-item">
+                          <label>龙淑华</label>
+                          <div class="select-group">
+                            <div class="select"><span class="select-val">默认服务</span><i class="g-arrow-down-icon"></i></div>
+                            <ul class="select-dropdown">
+                              <li class="active">默认服务</li>
+                              <li>上海团队L签上海团队L签送关送关</li>
+                              <li>日本自备签证</li>
+                            </ul>
+                          </div><span class="money-red"><span class="money">￥1000</span></span>
+                        </li>
+                        <li class="tourist-external-form-item">
+                          <label>陈伟明</label>
+                          <div class="select-group">
+                            <div class="select"><span class="select-val">默认服务</span><i class="g-arrow-down-icon"></i></div>
+                            <ul class="select-dropdown">
+                              <li class="active">默认服务</li>
+                              <li>上海团队L签送关</li>
+                              <li>日本自备签证</li>
+                            </ul>
+                          </div><span class="money-red"><span class="money">￥1000</span></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="external-item mustSel">
+                    <div class="selection-top">
+                      <label class="external-item-name">ClubMed青少年价格减项组（多选）</label><span class="num">已选：×4</span><span class="money-red"> <span class="desc">总价：</span><span class="money">￥1000</span></span><span class="external-icon-wrp"><i class="icon icon-reclaim-up"></i></span>
+                    </div>
+                    <div class="tourist-list-wrp">
+                      <div class="tip">请为每个游客选择一种服务</div>
+                      <ul class="tourist-external-form">
+                        <li class="tourist-external-form-item">
+                          <label>邵敏婷</label>
+                          <div data-max="2" class="sg-multi-choice">
+                            <div class="choice"><span class="choice-val">默认服务</span><i class="g-arrow-down-icon"></i></div>
+                            <div class="choice-dropdown">
+                              <p>请选择一项</p>
+                              <ul>
+                                <li><i class="icon-check"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">默认服务</div>
+                                    <div class="choice-desc"></div>
+                                  </div>
+                                  <div class="choice-price">￥<em>12</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">上海团队L签上海团队L签送上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关关送关</div>
+                                    <div class="choice-desc">上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关</div>
+                                  </div>
+                                  <div class="choice-price">￥<em>999</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">日本自备签证</div>
+                                    <div class="choice-desc"></div>
+                                  </div>
+                                  <div class="choice-price">￥<em>43</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">日本自备签证</div>
+                                    <div class="choice-desc">日本自备签证日本自备签证日本自备</div>
+                                  </div>
+                                  <div class="choice-price">￥<em>1321</em></div>
+                                </li>
+                              </ul>
+                              <div class="choice-btn-warp"><span class="sure">确认</span><span class="cancel">取消</span></div>
+                            </div>
+                          </div><span class="money-red"><span class="money">￥1000</span></span>
+                        </li>
+                        <li class="tourist-external-form-item">
+                          <label>邵婷</label>
+                          <div data-max="2" class="sg-multi-choice">
+                            <div class="choice"><span class="choice-val">默认服务</span><i class="g-arrow-down-icon"></i></div>
+                            <div class="choice-dropdown">
+                              <p>请选择一项</p>
+                              <ul>
+                                <li><i class="icon-check"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">默认服务</div>
+                                    <div class="choice-desc"></div>
+                                  </div>
+                                  <div class="choice-price">￥<em>12</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">上海团队L签上海团队L签送上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关关送关</div>
+                                    <div class="choice-desc">上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关</div>
+                                  </div>
+                                  <div class="choice-price">￥<em>999</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">日本自备签证</div>
+                                    <div class="choice-desc"></div>
+                                  </div>
+                                  <div class="choice-price">￥<em>43</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">日本自备签证</div>
+                                    <div class="choice-desc">日本自备签证日本自备签证日本自备</div>
+                                  </div>
+                                  <div class="choice-price">￥<em>1321</em></div>
+                                </li>
+                              </ul>
+                              <div class="choice-btn-warp"><span class="sure">确认</span><span class="cancel">取消</span></div>
+                            </div>
+                          </div><span class="money-red"><span class="money">￥1000</span></span>
+                        </li>
+                        <li class="tourist-external-form-item">
+                          <label>龙淑华</label>
+                          <div data-max="2" class="sg-multi-choice">
+                            <div class="choice"><span class="choice-val">默认服务</span><i class="g-arrow-down-icon"></i></div>
+                            <div class="choice-dropdown">
+                              <p>请选择一项</p>
+                              <ul>
+                                <li><i class="icon-check"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">默认服务</div>
+                                    <div class="choice-desc"></div>
+                                  </div>
+                                  <div class="choice-price">￥<em>12</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">上海团队L签上海团队L签送上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关关送关</div>
+                                    <div class="choice-desc">上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关</div>
+                                  </div>
+                                  <div class="choice-price">￥<em>999</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">日本自备签证</div>
+                                    <div class="choice-desc"></div>
+                                  </div>
+                                  <div class="choice-price">￥<em>43</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">日本自备签证</div>
+                                    <div class="choice-desc">日本自备签证日本自备签证日本自备</div>
+                                  </div>
+                                  <div class="choice-price">￥<em>1321</em></div>
+                                </li>
+                              </ul>
+                              <div class="choice-btn-warp"><span class="sure">确认</span><span class="cancel">取消</span></div>
+                            </div>
+                          </div><span class="money-red"><span class="money">￥1000</span></span>
+                        </li>
+                        <li class="tourist-external-form-item">
+                          <label>陈伟明</label>
+                          <div data-max="2" class="sg-multi-choice">
+                            <div class="choice"><span class="choice-val">默认服务</span><i class="g-arrow-down-icon"></i></div>
+                            <div class="choice-dropdown">
+                              <p>请选择一项</p>
+                              <ul>
+                                <li><i class="icon-check"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">默认服务</div>
+                                    <div class="choice-desc"></div>
+                                  </div>
+                                  <div class="choice-price">￥<em>12</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">上海团队L签上海团队L签送上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关关送关</div>
+                                    <div class="choice-desc">上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签团队L签送关送关上海团队L签上海团队L签送关送关上海团队L签上海团队L签送关送关</div>
+                                  </div>
+                                  <div class="choice-price">￥<em>999</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">日本自备签证</div>
+                                    <div class="choice-desc"></div>
+                                  </div>
+                                  <div class="choice-price">￥<em>43</em></div>
+                                </li>
+                                <li><i class="icon-uncheck"></i>
+                                  <div class="choice-wrap">
+                                    <div class="choice-tit">日本自备签证</div>
+                                    <div class="choice-desc">日本自备签证日本自备签证日本自备</div>
+                                  </div>
+                                  <div class="choice-price">￥<em>1321</em></div>
+                                </li>
+                              </ul>
+                              <div class="choice-btn-warp"><span class="sure">确认</span><span class="cancel">取消</span></div>
+                            </div>
+                          </div><span class="money-red"><span class="money">￥1000</span></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="external-item">
+                    <div class="selection-top"><i class="icon icon-doubt"></i>
+                      <label class="external-item-name hasNote">+1元加购悦榕庄晚餐&nbsp;&nbsp;</label><span class="num">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="money-red"> <span class="desc">总价：</span><span class="money">￥1000</span></span><span class="add-item-stepper"></span>
+                    </div>
+                    <div class="external-popover"> 132132132132131343213213</div>
+                  </li>
+                  <li class="external-item">
+                    <div class="selection-top">
+                      <label class="external-item-name">其他服务</label><span class="num">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="money-red"> <span class="desc">总价：</span><span class="money">￥1000</span></span><span class="external-icon-wrp"><i class="icon icon-drop-down"></i></span>
+                    </div>
+                    <div class="tourist-list-wrp">
+                      <ul class="addition-list">
+                        <li class="addition-list-item">
+                          <div class="addition-list-item-wrap">
+                            <p>这里是可选服务选项的项目标题这这里是可选服务选项的项目标里是可选服务选项的项目标...</p>
+                            <div class="item-operation"><span class="price">¥6171</span></div>
+                          </div><i class="icon icon-select-t"></i>
+                        </li>
+                        <li class="addition-list-item">
+                          <div class="addition-list-item-wrap">
+                            <p>这里是可选服务选项的项目标题这里是可选服务选项的项目标目标题这里是可选服务选项的项目标...</p>
+                            <div class="item-operation"><span class="price">¥617</span></div>
+                          </div><i class="icon icon-select-t"></i>
+                        </li>
+                        <li class="addition-list-item">
+                          <div class="addition-list-item-wrap">
+                            <p>这里是可选服务选项的项目标题这里是可选服务选项的项目标...</p>
+                            <div class="item-operation"><span class="price">¥617</span></div>
+                          </div><i class="icon icon-select-t"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="external-item">
+                    <div class="selection-top">
+                      <label class="external-item-name hasNote">长者上海迪士尼乐园2次入园长者上海迪士尼乐园2次入园长者上海迪士尼乐园2次入园长者上海迪士尼乐园2次入园</label><span class="num">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="money-red"> <span class="desc">总价：</span><span class="money">￥1000</span></span><span class="add-item-stepper"></span>
+                    </div>
+                  </li>
+                  <li class="external-item zero-color">
+                    <div class="external-tit selection-top">
+                      <label class="external-item-name">ClubMed青少年价格减项</label><span class="num">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="money-red"> <span class="desc">总价：</span><span class="money">￥1000</span></span><span class="external-icon-wrp"><i class="icon icon-drop-down"></i></span>
+                      <!--span(style="width: 85px;display: inline-block;")-->
+                    </div>
+                    <div class="tourist-list-wrp">
+                      <div class="tip">请在下方选择游客</div>
+                      <div class="tourist-info">
+                        <div class="checkbox-btns-con usual-tourist-con member-check">
+                          <div class="scrollbar checkbox-btns-row-wrp"><ul class='checkbox-btns-row'>
+                            <li data-value="4029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">罗大佑</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="5029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">罗小军</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="6029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">周孝正</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="7029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">周杰伦</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="8029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">张三丰</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="9029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">童一心</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="9129819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">周小川</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="7029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">周杰伦</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="8029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">张三丰</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="9029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">童一心</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="9129819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">周小川</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="7029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">周杰伦</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="8029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">张三丰</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="9029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">童一心</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="9129819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">周小川</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="7029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">周杰伦</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="8029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">张三丰</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="9029819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">童一心</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li>
+                            <li data-value="9129819e5fc44a09015fd72092d57e95" class="checkbox-btn-item">
+                              <sapn class="tick-text">周小川</sapn><span class="tick-logo"><i class="icon icon-select-t"></i></span>
+                            </li></ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="external-item zero-color section-count-form">
+                    <div class="external-tit selection-top">
+                      <label class="external-item-name">ClubMed青少年价格减项组</label><span class="num">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="money-red"> <span class="desc">总价：</span><span class="money">￥1000</span></span><span class="external-icon-wrp"><i class="icon icon-drop-down"></i></span>
+                    </div>
+                    <div class="tourist-list-wrp form-selection">
+                      <div class="tourist-item-wrp">
+                        <div class="check-label-wrp">
+                          <div class="label-wrp">
+                            <label>快捷选择</label>
+                            <div class="tip">每房每天份数</div>
+                          </div>
+                        </div>
+                        <div class="add-item-stepper"></div>
+                      </div>
+                      <div class="tourist-item-wrp">
+                        <div class="check-label-wrp">
+                          <div class="label-wrp">
+                            <label>自定义</label>
+                            <div class="tip">自定房间份数</div>
+                          </div>
+                        </div>
+                        <div class="add-item-table">
+                          <table>
+                            <tr>
+                              <th>日期</th>
+                              <th>价格</th>
+                              <th>房间1</th>
+                              <th>房间2</th>
+                              <th>房间3</th>
+                              <th>房间4</th>
+                              <th>房间5</th>
+                            </tr>
+                            <tr>
+                              <td class="date">2018-10-01</td>
+                              <td class="price">¥47,188</td>
+                              <td><span class="add-item-stepper"></span></td>
+                              <td><span class="add-item-stepper"></span></td>
+                              <td><span class="add-item-stepper"></span></td>
+                              <td><span class="add-item-stepper"></span></td>
+                              <td><span class="add-item-stepper"></span></td>
+                            </tr>
+                            <tr>
+                              <td class="date">2018-10-01</td>
+                              <td class="price">¥47,198</td>
+                              <td><span class="add-item-stepper"></span></td>
+                              <td><span class="add-item-stepper"></span></td>
+                              <td><span class="add-item-stepper"></span></td>
+                              <td><span class="add-item-stepper"></span></td>
+                              <td><span class="add-item-stepper"></span></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="order-dt-tit">
+                <label>备注信息</label><span></span>
+              </div>
+              <div class="order-info-item">
+                <textarea placeholder="请填写备注信息" class="c-textarea"></textarea>
+              </div>
+            </li>
+            <li>
+              <div class="order-dt-tit">
+                <label>备注信息</label><span></span>
+              </div>
+              <div class="order-info-item">
+                <textarea placeholder="请填写备注信息" class="c-textarea"></textarea>
+              </div>
+            </li>
+            <li>
+              <div class="order-dt-tit">
+                <label>商家订单号</label><span></span>
+              </div>
+              <div class="order-info-item">
+                <input placeholder="请填写商家订单号" class="c-input">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="order-right-cont">
+          <div class="order-right-content">
+            <ul class="order-right-item">
+              <li>
+                <label>房费（20晚）</label><span>¥ 386000</span>
+              </li>
+            </ul>
+            <ul class="order-right-item">
+              <li>
+                <label>加床</label><span>¥ 100</span>
+              </li>
+              <li>
+                <label>增订早餐</label><span>¥ 100</span>
+              </li>
+            </ul>
+            <ul class="order-right-item order-total">
+              <li>
+                <label>总额</label><span>¥ 2000086</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="order-footer">
+        <div class="order-footer-con">
+          <!--span 行程信息、条款及说明-->
+          <div class="footer-agree-item">
+            <div class="footer-agree-con"><i class="checkbox-item icon-uncheck">
+                <div class="m-popover-con s-up popover-red">请勾选此项</div></i>
+              <p>“行走网”作为第三方交易平台，并非此订单产品的实际服务提供商。为了保障您的权益，敬请在下单前仔细了解产品详情。一旦下单成功，已表明您认可并同意本次交易。</p>
+            </div>
+          </div><a class="back-btn"><em class="icon-back-arrow"></em>返回上一步</a><a class="submit-btn">提交订单</a>
+        </div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/hotel/hotelOrder.js"></script>
+  </body>
+</html>

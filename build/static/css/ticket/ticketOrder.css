@@ -1,0 +1,16 @@
+.order-left-cont .order-top-cont h2{font-size:32px}
+.order-left-cont .order-top-cont p{margin-bottom:5px}
+.order-left-cont .order-top-cont .bk-notice{display:inline-block;cursor:pointer;color:#4779D4;margin:0 0 0 20px}
+.order-left-cont .order-top-cont .bk-notice i{margin-left:10px;-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}
+.order-left-cont .order-top-cont .bk-notice i.arrow-right{background-image:url(../../images/sprite-img/right-arrow.png);background-position:0;vertical-align:middle}
+.order-left-cont .form-group label{width:82px}
+.order-left-cont .ticket-info-dt{display:none;position:relative;padding:10px 20px;background-color:#f7f7f7;border-top:1px solid #eee}
+.order-left-cont .ticket-info-dt h2{font-size:18px;color:#4779D4;padding:10px 0;font-weight:400}
+.order-left-cont .ticket-info-dt li{border-top:none;padding-bottom:12px;min-height:22px;font-size:14px}
+.order-left-cont .ticket-info-dt li label{float:left;color:#333;font-weight:700}
+.order-left-cont .ticket-info-dt li div{overflow:hidden;color:#666}
+.ticket-screen{overflow:hidden;line-height:28px;padding:23px 0}
+.ticket-screen label{display:inline-block;vertical-align:top;margin-right:20px}
+.ticket-screen .ticket-screen-date{position:relative;display:inline-block;vertical-align:top;width:140px;padding:0 30px 0 10px;cursor:pointer;background-color:#f7f7f7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.ticket-screen .ticket-screen-date input{border:none;font-size:16px;width:100%;background-color:transparent;padding:3px 0}
+.ticket-screen .ticket-screen-date .date-icon{position:absolute;right:10px;top:0;bottom:0;margin:auto}

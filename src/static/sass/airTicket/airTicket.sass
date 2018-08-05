@@ -1,0 +1,692 @@
+@charset "UTF-8"
+@import "../common/params"
+// 机票
+body
+  background-color: $clr-bg
+.airTicket-top
+  margin: 0 0 14px
+  background-color: #fff
+  .airTicket-top-con
+    padding: 0 0 20px
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.02), inset 0 -1px 0 0 #EBEBEB
+    &.fixed
+      top: 0
+      width: 100%
+      background-color: #fff
+      z-index: 9
+
+.airTicket-search
+  position: relative
+  width: 1186px
+  margin: 0 auto
+  padding: 20px 110px 0
+  min-height: 34px
+  .airTicket-trip
+    position: absolute
+    width: 100px
+    top: 20px
+    left: 0
+    .select-group
+      width: 100%
+      .select
+        padding: 6px 20px 6px 10px
+        border-radius: 4px
+  .airTicket-search-item
+    margin-top: -10px
+    >li
+      float: left
+      width: 50%
+      padding: 0 10px
+      margin: 10px 0 0
+    .airTicket-place,
+    .airTicket-date,
+    .airTicket-num,
+    .airTicket-type
+      width: 100%
+      height: 34px
+      line-height: 33px
+      border: 1px solid $clr-border
+      border-radius: 4px
+    .airTicket-place
+      position: relative
+      .airTicket-origin,.airTicket-dest
+        position: relative
+        float: left
+        padding: 0 10px
+        cursor: pointer
+        input
+          position: relative
+          border: none
+          width: 100%
+          background: transparent
+          z-index: 1
+      .airTicket-origin
+        width: 214px
+      .airTicket-dest
+        width: 213px
+      .airTicket-place-tip
+        position: absolute
+        right: 10px
+        color: $color-gc
+      .airTicket-place-switch
+        float: left
+        width: 34px
+        line-height: 32px
+        text-align: center
+        background-color: #F4F4F6
+        border-left: 1px solid $clr-border
+        border-right: 1px solid $clr-border
+        cursor: pointer
+        i
+          vertical-align: middle
+
+    .airTicket-date
+      .airTicket-date-start,.airTicket-date-end
+        position: relative
+        float: left
+        width: 50%
+        padding: 0 10px
+        &.disabled
+          input,
+          .end-date-week
+            color: $color-gc
+        input
+          position: relative
+          display: inline-block
+          border: none
+          width: 100%
+          background: transparent
+          z-index: 1
+        .start-date-week,.end-date-week
+          position: absolute
+          top: 0
+          left: 104px
+        em
+          position: absolute
+          top: 0
+          right: 10px
+          color: $color-gc
+      .airTicket-date-start
+        border-right: 1px solid $clr-border
+    .airTicket-num
+      .airTicket-num-item
+        float: left
+        width: 33.33%
+        border-left: 1px solid $clr-border
+        &:first-child
+          border-left: none
+        .select-group
+          width: 100%
+          .select
+            padding: 6px 20px 6px 10px
+            border: none
+    .airTicket-type
+      width: 232px
+      .select-group
+        width: 100%
+        .select
+          padding: 6px 20px 6px 10px
+          border: none
+  .ariTicket-search-btn
+    position: absolute
+    top: 20px
+    right: 0
+    width: 100px
+    height: 34px
+    line-height: 34px
+    font-size: $font-14
+.ariTicket-go
+  position: relative
+  width: 1190px
+  height: 34px
+  line-height: 34px
+  margin: 10px auto 0
+  border: 1px solid $main-red
+  border-radius: 4px
+  .ariTicket-go-tip
+    float: left
+    width: 100px
+    line-height: 33px
+    color: #fff
+    background-color: $main-red
+    text-align: center
+  .ariTicket-go-info
+    overflow: hidden
+    >span
+      position: relative
+      float: left
+      padding: 0 33px
+      &:after
+        content: '/'
+        position: absolute
+        left: 0
+        top: 0
+        color: #D0D2D8
+        line-height: 32px
+      &:first-child
+        margin-left: -3px
+      em
+        margin-left: 30px
+        &:first-child
+          margin: 0
+  .ariTicket-reset
+    position: absolute
+    top: 0
+    right: 20px
+    color: $more-btn
+    cursor: pointer
+.airTicket-main
+  width: 1186px
+  margin: 0 auto
+.airTicket-con
+  float: left
+  width: 886px
+  .airTicket-sort
+    position: relative
+    height: 50px
+    line-height: 50px
+    margin-bottom: 14px
+    background-color: #fff
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.02)
+    border-radius: 4px
+    .airTicket-sort-item
+      li
+        float: left
+        padding: 0 20px
+        cursor: pointer
+        &:hover,&.cur
+          color: $main-red
+    .whether-tax
+      position: absolute
+      padding: 0 20px
+      top: 0
+      right: 0
+      cursor: pointer
+      i
+        vertical-align: -3px
+        margin-right: 6px
+        cursor: pointer
+  .airTicket-tit
+    position: relative
+    width: 100%
+    height: 150px
+    background-color: #fff
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.02)
+    border-radius: 4px
+    .plane-b-icon
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+    .airTicket-choose
+      position: absolute
+      top: 15px
+      left: 15px
+      width: 144px
+      height: 22px
+      line-height: 22px
+      border-radius: 22px
+      border: 1px solid $main-red
+      z-index: 1
+      span
+        float: left
+        width: 50%
+        line-height: 21px
+        color: $main-red
+        font-size: $font-12
+        text-align: center
+        cursor: pointer
+        border-radius: 0 22px 22px 0
+        &:first-child
+          border-radius: 22px 0 0 22px
+        &.active
+          color: #fff
+          background-color: $main-red
+      .m-popover-con
+        width: 228px
+        left: -25px
+        &:after
+          left: 43px
+          right: inherit
+    .airTicket-search-tip
+      position: absolute
+      top: 20px
+      right: 20px
+      color: $clr-tip
+      font-size: $font-12
+      em
+        margin: 0 10px
+    .airTicket-start-info,
+    .airTicket-end-info
+      max-width: 98%
+      display: inline-block
+      vertical-align: middle
+      line-height: 1
+      .info-tit
+        font-size: $font-24
+        font-weight: bold
+        margin: 0 0 10px
+      .info-date
+        color: $clr-tip
+  .airTicket-info
+    height: 100%
+    li
+      position: relative
+      float: left
+      width: 50%
+      height: 100%
+      padding: 0 0 0 56px
+      &:first-child
+        text-align: right
+        padding: 0 56px 0 0
+      &:after
+        content: ''
+        width: 0
+        height: 100%
+        display: inline-block
+        vertical-align: middle
+  .airTicket-list-group
+    background-color: #fff
+    border-radius: 4px
+    margin: 14px 0
+    .airTicket-list-item
+      position: relative
+      height: 82px
+      border-top: 1px solid $clr-bg
+      border-bottom: 1px solid $clr-bg
+      margin-top: -1px
+      &:hover
+        border-top: 1px solid $clr-border-hover
+        border-bottom: 1px solid $clr-border-hover
+        background-color: $clr-bg-hover
+        z-index: 1
+    .airTicket-duration
+      font-family: DINCond-Medium
+      position: absolute
+      width: 92px
+      top: 25px
+      left: 0
+      right: 0
+      margin: auto
+      color: $clr-tip
+      text-align: center
+      line-height: 1
+      .m-popover-con
+        width: 218px
+        left: 50%
+        margin-left: -109px
+      .plane-icon,
+      .transit-icon
+        display: block
+        margin: 0 auto
+    .airTicket-phase
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 8px
+      height: 26px
+      &:before
+        content: ''
+        position: absolute
+        top: 10px
+        left: 0
+        right: 0
+        margin: auto
+        width: 2px
+        height: 6px
+        border-radius: 2px
+        background: #C7D6F2
+      .circle
+        display: block
+        width: 8px
+        height: 8px
+        border-radius: 8px
+        background-color: #EAF3FC
+        border: 2px solid #4779D4
+        margin-top: 10px
+        &:first-child
+          margin-top: 0
+    .airTicket-airlines
+      position: absolute
+      display: inline-block
+      vertical-align: middle
+      height: 32px
+      top: 0
+      bottom: 0
+      left: 20px
+      margin: auto
+      .airlines-avatar
+        display: inline-block
+        vertical-align: middle
+        width: 32px
+        height: 32px
+        border-radius: 50%
+        overflow: hidden
+        margin: 0 10px 0 0
+      .airlines-con
+        display: inline-block
+        vertical-align: middle
+        color: $tag-cl
+        max-width: 160px
+        div,p
+          line-height: 1
+        p
+          font-size: $font-12
+          margin: 4px 0 0
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+        .m-popover-con
+          left: 50%
+          width: 138px
+          margin-left: -69px
+    .airTicket-origin-info,
+    .airTicket-dest-info
+      display: inline-block
+      vertical-align: middle
+      line-height: 1
+      .airTicket-time
+        font-family: DINCond-Medium
+        font-weight: bold
+        font-size: $font-24
+        margin: 0 0 6px
+        span
+          display: inline-block
+          vertical-align: top
+          font-size: $font-14
+          line-height: 24px
+          margin-left: 10px
+      .airTicket-airport
+        font-size: $font-12
+        color: $tag-cl
+        max-width: 150px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+      p
+        max-width: 150px
+        margin: 6px 0 0
+        font-size: $font-12
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        &:first-child
+          margin: 0
+    .airTicket-line
+      position: absolute
+      top: 0
+      left: 672px
+      height: 100%
+      .airTicket-line-con
+        position: relative
+        height: 100%
+        &:after
+          content: ''
+          width: 0
+          height: 100%
+          display: inline-block
+          vertical-align: middle
+        ul
+          display: inline-block
+          vertical-align: middle
+          max-width: 98%
+        li
+          line-height: 18px
+          color: $tag-cl
+          font-size: $font-12
+          margin: 0 0 4px
+        .airTicket-line-tip
+          display: inline-block
+          vertical-align: top
+          width: 34px
+          height: 18px
+          line-height: 16px
+          text-align: center
+          border: 1px solid #D0D2D8
+          margin-right: 10px
+        .ellipsis
+          display: inline-block
+          vertical-align: top
+          max-width: 76px
+        .m-popover-con
+          left: 50%
+          width: 118px
+          margin-left: -59px
+    .whether-lock
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 32px
+      margin: auto
+      height: 32px
+      cursor: pointer
+      border-radius: 32px
+      background-color: $clr-bg
+  .airTicket-detail
+    display: none
+    padding: 0 10px 10px
+    .airTicket-detail-item
+      position: relative
+      margin: 10px 0 0
+      background-color: #EAF3FC
+      border: 1px solid #D9E7F4
+      border-radius: 4px
+      .airTicket-list-tip
+        position: absolute
+        top: 0
+        left: 20px
+        width: 34px
+        height: 18px
+        line-height: 18px
+        text-align: center
+        font-size: $font-12
+        color: #fff
+        background-color: $more-btn
+        border-radius: 0 0 2px 2px
+        z-index: 2
+      .airTicket-transit-tip
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        width: 115px
+        height: 22px
+        line-height: 20px
+        text-align: center
+        background: #EAF3FC
+        border: 1px solid #D9E7F4
+        border-radius: 22px
+        color: $tag-cl
+        font-size: $font-12
+        z-index: 2
+      .airTicket-list-item
+        height: 92px
+        margin: 0
+        border-top: none
+        border-bottom: 1px solid #D9E7F4
+        &:last-child
+          border-bottom: none
+        &:hover
+          background-color: inherit
+        .airTicket-info
+          li
+            padding: 0 0 0 24px
+            &:first-child
+              padding: 0 24px 0 0
+        .airlines-con
+          div
+            color: $clr-text
+      .airTicket-line
+        left: 662px
+  .show-airTicket-detail
+    text-align: center
+    font-size: $font-12
+    height: 30px
+    line-height: 30px
+    color: $more-btn
+    i
+      vertical-align: top
+      margin: 7px 0 0
+  .airTicket-booking
+    .airTicket-booking-item
+      position: relative
+      height: 70px
+      border-top: 1px solid $clr-bg
+      .airTicket-tag
+        display: inline-block
+        line-height: 70px
+        padding: 0 17px 0 20px
+      .airTicket-other
+        display: inline-block
+        line-height: 70px
+        color: $tag-cl
+        font-size: $font-12
+        span
+          padding: 0 23px
+          position: relative
+          &:after
+            content: '/'
+            position: absolute
+            left: 0
+            top: 0
+            line-height: 1
+            color: #D0D2D8
+          &:first-child:after
+            display: none
+          em
+            margin: 0 3px
+        .cabin-type,
+        .endorse-type
+          .m-popover-con
+            width: 202px
+            left: 50%
+            margin-left: -101px
+        .trip-type
+          .m-popover-con
+            width: 104px
+            left: 50%
+            margin-left: -52px
+        .m-popover-con
+          p
+            em
+              display: inline-block
+              &:first-child
+                width: 62%
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+
+      .airTicket-prc
+        position: absolute
+        top: 0
+        right: 120px
+        height: 100%
+        .airTicket-prc-info
+          position: relative
+          height: 100%
+          &:after
+            content: ''
+            width: 0
+            height: 100%
+            display: inline-block
+            vertical-align: middle
+          .m-popover-con
+            left: 50%
+            width: 276px
+            margin-left: -138px
+            text-align: left
+            .airTicket-prc-list
+              position: relative
+              .airTicket-prc-num
+                position: absolute
+                left: 146px
+              .airTicket-people-num
+                position: absolute
+                right: 0
+          ul
+            display: inline-block
+            vertical-align: middle
+            text-align: right
+            .total-prc
+              font-family: DINCond-Bold
+              font-size: $font-16
+              color: $main-red
+              span
+                font-size: $font-24
+                line-height: 1
+            .tax-prc
+              color: $tag-cl
+              font-size: $font-12
+              line-height: 1
+      .airTicket-booking
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        width: 100px
+        height: 30px
+        line-height: 30px
+        border-radius: 30px 0 0 30px
+        background-color: $main-red
+        color: #fff
+        padding: 0 20px 0 24px
+.airTicket-sidebar
+  float: right
+  width: 286px
+  margin: 0 0 14px
+  border-radius: 4px
+  background-color: #fff
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.02)
+  .airTicket-filtrate
+    height: 450px
+    overflow: hidden
+    &.hAuto
+      height: auto
+  .airTicket-filtrate-item
+    padding: 20px 16px
+    border-bottom: 1px solid $clr-bg
+    dt
+      position: relative
+      line-height: 1
+      padding: 0 4px
+      margin-bottom: 10px
+      .empty-filtrate
+        position: absolute
+        right: 4px
+        font-size: $font-12
+        color: $more-btn
+        cursor: pointer
+    dd
+      position: relative
+      padding: 4px
+      line-height: 16px
+      font-size: $font-12
+      border-radius: 4px
+      border: 1px solid transparent
+      &:hover
+        background: $clr-bg-hover
+        border: 1px solid $clr-border-hover
+      span
+        position: absolute
+        padding: 4px
+        top: 0
+        right: 0
+        color: $tag-cl
+      i
+        vertical-align: top
+        margin-right: 6px
+        cursor: pointer
+  .more-filtrate
+    height: 40px
+    line-height: 40px
+    text-align: center
+    color: $more-btn
+    cursor: pointer

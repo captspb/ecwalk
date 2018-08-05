@@ -1,0 +1,268 @@
+extends ../../component/common/layout
+include ../../../model/common/headerData
+include ../../component/common/mixin
+block append head
+    title 国际机票
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/airTicket/airTicket.css')
+block content
+    include ../../../model/airTicket/airTicketData
+    .airTicket-page
+        .airTicket-top
+            .airTicket-top-con
+                .airTicket-search
+                    .airTicket-trip
+                        +select-group(['单程','往返'])
+                    ul.airTicket-search-item.clearfix
+                        li
+                            .airTicket-place.clearfix
+                                .airTicket-origin
+                                    input(type='text' value='上海(SHA)' data-place='国内热门')
+                                    em.airTicket-place-tip 出发
+                                .airTicket-place-switch
+                                    i.switch-icon
+                                .airTicket-dest
+                                    input(value='巴黎(PAR)' data-place='欧洲')
+                                    em.airTicket-place-tip 到达
+                                //.airTicket-place-popup
+                                //    ul.airTicket-place-tab.clearfix
+                                //        - for(var i=0;i<placeTab.length;i++)
+                                //            li(class=i==0?'active':'',data-place='#{placeTab[i].tab}') #{placeTab[i].tab}
+                                //    - for(var i=0;i<placeTab.length;i++)
+                                //        ul.airTicket-place-city.clearfix
+                                //            - for (var j=0;j<placeTab[i].city.length;j++)
+                                //                li(data-city='#{placeTab[i].city[j].name}') #{placeTab[i].city[j].nameStr}
+                        li
+                            .airTicket-date.clearfix
+                                .airTicket-date-start
+                                    input(id='start-date')
+                                    .start-date-week 周二
+                                    em 出发日期
+                                .airTicket-date-end.disabled
+                                    input(id='end-date')
+                                    .end-date-week 周二
+                                    em 返回日期
+                        li
+                            .airTicket-num.clearfix
+                                .airTicket-num-item.adult
+                                    +select-group(['成人0','成人1'])
+                                .airTicket-num-item.child
+                                    +select-group(['儿童0','儿童1'])
+                                .airTicket-num-item.baby
+                                    +select-group(['婴儿0','婴儿1'])
+                        li
+                            .airTicket-type
+                                +select-group(['经济/超级经济舱','商务/超级商务舱'])
+                    .ariTicket-search-btn.btn 搜索
+                .ariTicket-go.clearfix
+                    .ariTicket-go-tip   去程
+                    .ariTicket-go-info
+                        span 香港国际机场T1  →  盖亚维克机场N
+                        span
+                            em 出发：2018/6/4  18:35
+                            em 到达：2018/6/4  18:36
+                        span 一程中转
+                    .ariTicket-reset 重新选择
+
+        .airTicket-main.clearfix
+            .airTicket-con
+                .airTicket-sort
+                    ul.airTicket-sort-item.clearfix
+                        - for (var i=0;i<sortList.length;i++)
+                            li(class=i==0?'cur':'') #{sortList[i].name}
+                                if sortList[i].icon
+                                    i(class='#{sortList[i].icon}')
+                    .whether-tax
+                        i.checkbox-icon
+                        | 含税价
+                .airTicket-tit
+                    .plane-b-icon
+                    .airTicket-choose
+                        span.active
+                            em.underline.m-popover 自由搭配
+                                .m-popover-con.s-up ① 选择去程 → ② 选择返程（预订）
+                        span
+                            em 往返组合
+                    .airTicket-search-tip 共搜索到49个航班信息<em>/</em>1个直飞
+                    ul.airTicket-info.clearfix
+                        li
+                            .airTicket-start-info
+                                .info-tit(title="香港(HKG)", class="ellipsis") 香港(HKG)
+                                .info-date 2018/05/24  周一
+                        li
+                            .airTicket-end-info
+                                .info-tit(title="伦敦(LON)", class="ellipsis") 伦敦(LON)
+                                .info-date 2018/05/24 周五
+                -for(var i=0;i<3;i++)
+                    .airTicket-list-group
+                        ul.airTicket-list
+                            - for (var j=0;j<2;j++)
+                                li.airTicket-list-item
+                                    ul.airTicket-info.clearfix
+                                        li
+                                            .airTicket-origin-info
+                                                .airTicket-time 07:50
+                                                .airTicket-airport 香港国际机场T1
+                                        li
+                                            .airTicket-dest-info
+                                                .airTicket-time 19:45
+                                                    span(class="main-red") +1
+                                                .airTicket-airport 盖亚维克机场N
+                                    .airTicket-duration
+                                        span.underline.m-popover 15H20M
+                                            .m-popover-con.s-up 直飞 - 飞行总时长为15小时20分钟
+                                        if j==0
+                                            span.transit-icon
+                                        else
+                                            span.plane-icon
+                                    .airTicket-airlines
+                                        img.airlines-avatar(src='http://www.gzl.com.cn/staticpc/images/comment/summer_default.png')
+                                        span.airlines-con
+                                            .m-popover.underline 阿联酋航空
+                                                .m-popover-con.s-up CZ3000 / CZ3509
+                                    .airTicket-line
+                                        .airTicket-line-con
+                                            ul
+                                                li
+                                                    span.airTicket-line-tip 中转
+                                                    span.ellipsis 迪拜
+                                                li
+                                                    span.airTicket-line-tip 经停
+                                                    span.ellipsis 曼谷
+                                    .whether-lock.lock-o-icon
+                        .airTicket-detail
+                            ul.airTicket-detail-item
+                                .airTicket-list-tip 去程
+                                .airTicket-transit-tip 中转停留8H20M
+                                - for (var j=0;j<2;j++)
+                                    li.airTicket-list-item
+                                        .airTicket-phase
+                                            .circle
+                                            .circle
+                                        ul.airTicket-info.clearfix
+                                            li
+                                                .airTicket-origin-info
+                                                    p 2018.06.01  19:10
+                                                    p 2018.06.01  19:10
+                                            li
+                                                .airTicket-dest-info
+                                                    p HKG 赤腊角机场T1
+                                                    p DOH 多哈机场
+                                        .airTicket-airlines
+                                            img.airlines-avatar(src='http://www.gzl.com.cn/staticpc/images/comment/summer_default.png')
+                                            span.airlines-con
+                                                div 阿联酋航空
+                                                p QR817/波音747(大)/飞行8H20M
+                                        .airTicket-line
+                                            .airTicket-line-con
+                                                ul
+                                                    li
+                                                        span.airTicket-line-tip 中转
+                                                        span.underline.m-popover
+                                                            span.ellipsis 迪拜
+                                                            .m-popover-con.s-up 曼谷国际机场T1
+                                                    li
+                                                        span.airTicket-line-tip 经停
+                                                        span.underline.m-popover
+                                                            span.ellipsis 曼谷
+                                                            .m-popover-con.s-up 曼谷国际机场T1
+                            ul.airTicket-detail-item
+                                .airTicket-list-tip 返程
+                                li.airTicket-list-item
+                                    .airTicket-phase
+                                        .circle
+                                        .circle
+                                    ul.airTicket-info.clearfix
+                                        li
+                                            .airTicket-origin-info
+                                                p 2018.06.01  19:10
+                                                p 2018.06.01  19:10
+                                        li
+                                            .airTicket-dest-info
+                                                p HKG 赤腊角机场T1
+                                                p DOH 多哈机场
+                                    .airTicket-airlines
+                                        img.airlines-avatar(src='http://www.gzl.com.cn/staticpc/images/comment/summer_default.png')
+                                        span.airlines-con
+                                            div 阿联酋航空
+                                            p QR817/波音747(大)/飞行8H20M
+                                    .airTicket-line
+                                        .airTicket-line-con
+                                            ul
+                                                li
+                                                    span.airTicket-line-tip 中转
+                                                    span.underline.m-popover
+                                                        span.ellipsis 迪拜
+                                                        .m-popover-con.s-up 曼谷国际机场T1
+                                                li
+                                                    span.airTicket-line-tip 经停
+                                                    span.underline.m-popover
+                                                        span.ellipsis 曼谷
+                                                        .m-popover-con.s-up 曼谷国际机场T1
+                        .show-airTicket-detail
+                            span.pointer
+                                em 展开详情
+                                i.more-2-icon
+                        ul.airTicket-booking
+                            li.airTicket-booking-item
+                                .airTicket-tag
+                                    i.slyx-icon
+                                .airTicket-other
+                                    span.cabin-type
+                                        em.underline.m-popover 经济舱
+                                            .m-popover-con.s-up
+                                                p
+                                                    em 香港 - 阿布扎比
+                                                    em 经济舱(V)
+                                                p
+                                                    em 阿布扎比 - 香港
+                                                    em 经济舱(V)
+                                                p
+                                                    em 伦敦 - 阿布扎比
+                                                    em 经济舱(V)
+                                                p
+                                                    em 阿布扎比 - 伦敦
+                                                    em 经济舱(V)
+                                    span.trip-type
+                                        em.underline.m-popover 行程单
+                                            .m-popover-con.s-up 只提供行程单
+                                    span.endorse-type
+                                        em.underline.m-popover 退改签
+                                            .m-popover-con.s-up Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at magni rerum voluptatibus! Consectetur, facere id impedit ipsum maiores minima nisi non quas suscipit totam. Cumque distinctio doloribus excepturi optio?
+                                    span 剩余<em class='main-red'>4</em>张
+                                .airTicket-prc
+                                    .airTicket-prc-info
+                                        ul.m-popover
+                                            .m-popover-con.s-up
+                                                p.airTicket-prc-list
+                                                    span.airTicket-prc-name 成人
+                                                    span.airTicket-prc-num ￥4,560
+                                                    span.airTicket-people-num x1人
+                                                p.airTicket-prc-list
+                                                    span.airTicket-prc-item 往返人均票价(含税费)
+                                                    span.airTicket-prc-num ￥4,560
+                                                    span.airTicket-people-num x1人
+                                            li.total-prc ￥
+                                                    span 5,000
+                                            li.tax-prc 税费￥2,000
+                                .airTicket-booking
+                                    a 立即预定
+
+            .airTicket-sidebar
+                .airTicket-filtrate
+                    - for (var i=0;i<filtrateList.length;i++)
+                        dl.airTicket-filtrate-item
+                            dt
+                                strong #{filtrateList[i].title}
+                                span.empty-filtrate 清空
+                            - for (var j=0;j<filtrateList[i].list.length;j++)
+                                dd
+                                    i.checkbox-icon
+                                    | #{filtrateList[i].list[j].name}
+                                    span #{filtrateList[i].list[j].prc}
+                .more-filtrate 更多筛选条件
+block append script
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/airTicket/airTicket.js')

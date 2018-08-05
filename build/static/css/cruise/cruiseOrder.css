@@ -1,0 +1,6 @@
+.cruise-order-date{margin-left:40px}
+.cruise-order-date em{margin-left:20px}
+.cruise-order-date em:first-child{margin:0}
+.tourist-info .tourist-info-item .tourist-con{padding-top:0}
+.tourist-con-item{position:relative;padding:30px 0 15px;border-bottom:1px solid #f0f0f0}
+.tourist-con-item .tourist-con-num{position:absolute;top:39px;left:-16px;width:16px;height:16px;line-height:14px;-webkit-border-radius:16px;-moz-border-radius:16px;border-radius:16px;background-color:#F30A37;color:#fff;text-align:center;font-size:12px}

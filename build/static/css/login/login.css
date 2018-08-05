@@ -1,0 +1,80 @@
+::-webkit-input-placeholder{color:#B3B3B3}
+::-moz-placeholder{color:#B3B3B3}
+::-moz-placeholder{color:#B3B3B3}
+::-ms-input-placeholder{color:#B3B3B3}
+.header-cont{width:100%;margin:0 auto;padding:30px 0}
+.header-inner{width:1200px;margin:0 auto}
+.login-cont{background-color:#f14e59;width:100%;background-image:url(../../images/login/bg_login.png)}
+.login-bg{width:1200px;height:500px;margin:0 auto;position:relative}
+@media (max-width:1200px){.login-bg{background-image:url(../../images/login/bg_login.png);width:100%}
+}
+.login-form{position:absolute;right:60px;top:20px;width:346px;height:460px;background-color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.login-form .tab-content{height:375px;position:relative}
+.login-form .form-tit{color:#333;text-align:center;font-family:webfontbold;font-weight:700;font-style:normal;font-size:16px;margin-top:40px;margin-bottom:20px}
+.login-form .tab-content .input-item{position:relative;margin-bottom:20px}
+.login-form .tab-content .inputs{margin:0 40px}
+.login-form .tab-content input{-webkit-background-size:40px 40px;-moz-background-size:40px;-o-background-size:40px;background-size:40px;padding-left:10px;height:44px;vertical-align:top;border:none;outline:0;width:100%;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;border:1px solid #ddd}
+.login-form .tab-content input.valid{width:150px;margin-right:10px}
+.login-form .tab-content input.tel-valid{width:200px}
+.login-form .tab-content .valid-img{vertical-align:top;display:inline-block;height:37px;width:106px;background-image:url(../../images/login/code.png);cursor:pointer}
+.login-form .tab-content .err-tip{background:#FFEBEB;border:1px solid #FF9595;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:none;line-height:22px;padding:10px 12px;background-color:#ffe5e7;margin:0 40px 20px 40px;position:relative}
+.login-form .tab-content .err-tip .minus_btn{display:inline-block;width:12px;height:12px;background-image:url(../../images/login/minus_icon.png);background-repeat:no-repeat;cursor:pointer;vertical-align:middle;margin-right:6px}
+.login-form .tab-content .err-tip font{line-height:20px;vertical-align:middle;color:#333}
+.login-form .tab-content .left{float:left;cursor:pointer;vertical-align:top;display:inline-block;font-size:0}
+.login-form .tab-content .left .check_icon{display:inline-block;width:12px;height:12px;vertical-align:top;margin-right:6px;background-image:url(../../images/login/icons/check_icon.png)}
+.login-form .tab-content .left .check_icon.active{background-image:url(../../images/login/icons/checked_icon.png)}
+.login-form .tab-content .left font{line-height:1;vertical-align:top}
+.login-form .tab-content .right{float:right;vertical-align:top;display:inline-block}
+.login-form .tab-content .right a{text-decoration:none;display:inline-block;cursor:pointer;vertical-align:top;line-height:1}
+.login-btn{margin:0 auto;display:block;width:266px;height:40px;line-height:40px;background:#D82628;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;border:none;color:#fff;font-family:webfontregular;font-size:16px;letter-spacing:2px;line-height:22px;cursor:pointer}
+.sign-up-btn{width:100%;padding:0 40px;display:block;text-align:center;color:#4779D4;overflow:hidden;line-height:1;position:absolute;bottom:40px}
+.sign-up-btn a{display:inline-block}
+.sign-up-btn .sign-up-l{float:left}
+.sign-up-btn .sign-up-r{float:right;color:#181C28}
+.sign-up-btn .sign-up-r a{padding:0 0 0 14px;margin:0 0 0 14px;border-left:1px solid #E3E3E7;color:#181C28}
+.sign-up-btn .sign-up-r a:first-child{border:none}
+.cont{background-color:#F7F7F7}
+.inner-cont{width:1186px;margin:0 auto;padding-top:50px;padding-bottom:1px}
+.features{background-color:#fff;padding:30px;line-height:0;font-size:0;margin-bottom:50px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.features li{line-height:0;display:inline-block;margin-right:41px}
+.features li img{vertical-align:middle;width:54px;height:54px;display:inline-block;margin-right:14px}
+.features li .right{vertical-align:middle;width:280px;display:inline-block}
+.features li h4{font-family:webfontregular;font-size:18px;color:#333;letter-spacing:0;line-height:25px;margin-bottom:8px}
+.features li p{width:100%;line-height:20px;font-family:webfontlight;font-size:14px;color:#B3B3B3;letter-spacing:0}
+.platform{margin-bottom:40px}
+.platform .tit{margin-bottom:20px}
+.platform .tit h5{font-family:webfontregular;font-weight:400;font-size:24px;color:#64CB6C;letter-spacing:0;display:inline-block}
+.platform .tit font{margin-left:10px;font-family:webfontregular;font-size:10px;color:#B3B3B3;letter-spacing:0}
+.platform .pics{height:466px;font-size:0}
+.platform .left{display:inline-block;vertical-align:top;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.platform .left img{width:466px}
+.platform .mid{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;margin:0 14px;vertical-align:top}
+.platform .right{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;vertical-align:top}
+.platform .top{font-size:0;margin-bottom:14px}
+.platform .top-left{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;margin-right:14px}
+.platform .top-right{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block}
+.platform .bottom{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.platformSuper{margin-bottom:50px}
+.platformSuper .tit{margin-bottom:20px}
+.platformSuper .tit h5{font-family:webfontregular;font-weight:400;font-size:24px;color:#F3625A;letter-spacing:0;display:inline-block}
+.platformSuper .tit font{margin-left:10px;font-family:webfontregular;font-size:10px;color:#B3B3B3;letter-spacing:0}
+.platformSuper .supers{font-size:0}
+.platformSuper .super{display:inline-block;margin-right:14px;height:286px;width:286px;text-align:center;background-color:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.platformSuper .super img{display:block;margin:40px auto 30px auto}
+.platformSuper .super h5{font-family:webfontregular;font-size:18px;color:#333;letter-spacing:0;margin-bottom:10px}
+.platformSuper .super p{font-family:PingFangSC-Regular;font-size:14px;color:#B3B3B3;letter-spacing:0;margin:0 38px}
+.settledPlatform{margin-bottom:50px}
+.settledPlatform .tit{margin-bottom:20px}
+.settledPlatform .tit h5{font-family:webfontregular;font-weight:400;font-size:24px;color:#5196FD;letter-spacing:0;display:inline-block}
+.settledPlatform .tit font{margin-left:10px;font-family:webfontregular;font-size:10px;color:#B3B3B3;letter-spacing:0}
+.settledPlatform .settles{background-color:#fff;padding:20px 20px 0 40px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.settledPlatform .settles li.settle{list-style:disc outside none}
+.settledPlatform .settles li.settle h5{font-family:webfontregular;font-size:16px;color:#333;letter-spacing:0;line-height:22px}
+.settledPlatform .settles li.settle div{margin-top:10px;padding-bottom:20px;font-family:webfontregular;font-size:14px;color:#666;letter-spacing:0}
+.settledPlatform .settles .labels{margin-top:10px;margin-bottom:20px}
+.settledPlatform .settles .label{display:inline-block;vertical-align:top;font-family:webfontregular;color:#666;letter-spacing:0;height:40px;font-size:0}
+.settledPlatform .settles .label label{font-size:14px;line-height:44px;padding:0 14px;background-color:#F7F7F7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;vertical-align:middle}
+.settledPlatform .settles .label .next_step{background-image:url(../../images/index/right_arrow.png);display:inline-block;vertical-align:middle;width:30px;height:30px;margin:0 7px}
+.settledPlatform .infos{margin-top:10px;margin-bottom:20px;font-family:webfontregular;font-size:14px;color:#666;letter-spacing:0}
+.settledPlatform .infos li{margin-bottom:5px;width:703px;line-height:30px}
+.website-back p{text-align:center;margin-top:15px;margin-bottom:15px;line-height:1;letter-spacing:.5px}

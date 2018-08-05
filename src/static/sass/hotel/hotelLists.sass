@@ -1,0 +1,771 @@
+@import "../component/listpannel"
+@import "../component/listctl"
+.short-search-part
+  width: 294px !important
+
+li.toggle-price
+  display: none
+
+.search-list-result
+  width: 1190px
+  margin: 0 auto
+
+.search-tip
+  padding: 13px 20px
+  background-color: #FFFBF2
+  border: 1px solid #EFE4CA
+  border-radius: 4px
+  font-family: webfontregular
+  font-size: 14px
+  color: #FF6A00
+  line-height: 14px
+  margin: 14px 0
+
+ul.search-result-left
+  background-color: #fff
+  border-radius: 4px
+  display: inline-block
+  width: 826px
+  vertical-align: top
+  margin-right: 12px
+
+li.search-result-item
+  padding: 30px 30px 0 30px
+  display: inline-block
+  width: 826px
+
+.search-item-cont
+  border-bottom: 1px solid #F0F0F0
+
+.result-head
+  .logo
+    display: inline-block
+    width: 56px
+    height: 56px
+    margin-right: 10px
+    img
+      display: inline-block
+      width: 56px
+      height: 56px
+  .font
+    display: inline-block
+    vertical-align: top
+    max-width: 695px
+    .top
+      margin-bottom: 8px
+      font.hotel-name
+        margin-right: 10px
+        font-family: webfontregular
+        font-size: 18px
+        color: #333333
+        letter-spacing: 0
+        line-height: 24px
+        font-weight: bold
+      a:hover
+        font
+          color: #466094
+    .bottom
+      display: inline-block
+      margin-right: 30px
+      font-family: webfontregular
+      font-size: 14px
+      letter-spacing: 0
+      line-height: 14px
+      span
+        float: left
+      .left
+        margin-right: 30px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        max-width: 695px
+      label
+        color: #B3B3B3
+      font
+        color: #151515
+
+.stars
+  display: inline-block
+  .star
+    display: inline-block
+
+// table
+.table_cont
+  margin: 20px auto
+  width: 766px
+
+.productList
+  th
+    font-family: webfontregular
+    font-size: 14px
+    color: #B3B3B3
+    // line-height: 14px
+    text-align: center
+    line-height: 26px
+    font-weight: normal
+    padding-bottom: 10px
+    &.price-sale
+      color: $main-red
+  tr
+    margin-bottom: 10px
+    &.con-bg
+      .room a
+        margin-left: 8px
+
+  td
+    height: 26px
+    text-align: center
+    padding-bottom: 10px
+    span
+      text-overflow: ellipsis
+      // overflow: hidden
+      white-space: nowrap
+      display: inline-block
+      vertical-align: middle
+      font-family: webfontregular
+      font-size: 14px
+      color: #333333
+      line-height: 14px
+      &.font-blue
+        color: $font-blue
+    a
+      font-family: webfontregular
+      font-size: 14px
+      color: #466094
+      line-height: 15px
+      border-bottom: 1px dashed #466094
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+      display: inline-block
+      vertical-align: middle
+
+    &.price-sale span, &.price span
+      color: #D82628
+    .popover
+      color: $main-red
+      .popover-up
+        width: 680px
+        padding: 10px
+        left: -110px
+        &:before, &:after
+          right: inherit
+          left: 140px
+        ul
+          overflow: hidden
+          li
+            float: left
+            width: 14.28%
+            text-align: center
+            padding: 0 0 10px
+            div
+              color: $color-g3
+              font-size: $font-12
+              line-height: 30px
+              background-color: #f9f5c5
+              margin-bottom: 10px
+            span
+              display: block
+              font-size: 14px
+              line-height: 1
+            p
+              color: $color-g6
+              font-size: $font-12
+              margin-top: 8px
+    &.profit span
+      color: #1CAB22
+    .font-blue
+      color: $font-blue
+
+  .room
+    text-align: left
+    width: 500px
+    .show-prod-dt
+      margin-left: 24px
+      color: $font-blue
+      width: auto
+      .popover-right
+        width: 350px
+        white-space: normal
+        color: $color-g3
+    .other-item
+      //width: auto
+      margin-left: 35px
+      width: 60px
+    p
+      margin-top: 5px
+      em
+        margin-left: 32px
+    span
+      width: 130px
+      position: relative
+      a
+        max-width: 130px
+        position: relative
+      .drop_up
+        background-color: #fff
+        box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2)
+        position: absolute
+        bottom: 30px
+        left: 65px
+        margin-left: -20px
+        z-index: 3
+        min-width: 150px
+        border-radius: 4px
+        padding: 10px 20px
+        display: none
+        &:before, &:after
+          content: ''
+          display: inline-block
+          position: absolute
+          bottom: -7px
+          left: 20px
+          border-left: 7px solid transparent
+          border-right: 7px solid transparent
+          border-top: 7px solid #fff
+          width: 0
+          filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .2))
+      &:hover
+        .drop_up
+          display: inline-block
+
+  .bed span
+    width: 86px
+    position: relative
+    a
+      max-width: 86px
+    .drop_up
+      background-color: #fff
+      box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2)
+      position: absolute
+      bottom: 30px
+      left: 40px
+      margin-left: -20px
+      z-index: 3
+      min-width: 150px
+      border-radius: 4px
+      padding: 10px 20px
+      display: none
+      &:before, &:after
+        content: ''
+        display: inline-block
+        position: absolute
+        bottom: -7px
+        left: 20px
+        border-left: 7px solid transparent
+        border-right: 7px solid transparent
+        border-top: 7px solid #fff
+        width: 0
+        filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .2))
+    &:hover
+      .drop_up
+        display: inline-block
+  .days span
+    width: 100px
+    position: relative
+    a
+      max-width: 100px
+    .drop_up
+      background-color: #fff
+      box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2)
+      position: absolute
+      bottom: 30px
+      left: 28px
+      margin-left: -20px
+      z-index: 3
+      min-width: 150px
+      border-radius: 4px
+      padding: 10px 20px
+      display: none
+      &:before, &:after
+        content: ''
+        display: inline-block
+        position: absolute
+        bottom: -7px
+        left: 20px
+        border-left: 7px solid transparent
+        border-right: 7px solid transparent
+        border-top: 7px solid #fff
+        width: 0
+        filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .2))
+    &:hover
+      .drop_up
+        display: inline-block
+  .breadfast span
+    width: 100px
+  .price-sale span
+    width: 80px
+  .price span
+    width: 100px
+  .profit span
+    width: 50px
+  .operate span
+    width: 200px
+  .product-intro span
+    width: 70px
+  button
+    background: #D82628
+    border-radius: 4px
+    border: none
+    color: #fff
+    padding: 6px 16px
+    cursor: pointer
+    font-size: 14px
+    color: #FFFFFF
+    line-height: 14px
+    margin-right: 10px
+    &:hover
+      background-color: #E53235
+      border-radius: 4px
+    &.disable
+      background: #F0A8A9
+  // &.hotel-prod-list
+  width: 100%
+  td, th
+    padding: 10px 0
+  .room
+    span
+      width: 170px
+      a
+        display: block
+        // width: 100%
+        color: $color-g3
+        text-align: left
+        white-space: normal
+        max-width: 100%
+  .price-sale
+    span
+      width: 80px
+  .operate
+    span
+      width: 150px
+  .down-arrow-icon
+    margin-left: 5px
+
+.search-address
+  display: inline-block
+  width: 346px
+  height: 257px
+  padding: 20px
+  background-color: #fff
+  border-radius: 4px
+  h4
+    font-size: $font-18
+    font-weight: 600
+  .address-cont
+    height: 190px
+    margin-top: 8px
+  &.fixed
+    position: fixed
+    top: 0
+
+.hotel-prod-list
+  .price-sale
+    position: relative
+    width: 145px
+    color: $main-red
+    .popover
+      color: $main-red
+    .popover-up
+      width: 495px
+      padding: 10px
+      left: -110px
+      &:before, &:after
+        right: inherit
+        left: 140px
+      ul
+        overflow: hidden
+        li
+          float: left
+          width: 14.28%
+          text-align: center
+          padding: 0 0 10px
+          div
+            color: $color-g3
+            font-size: $font-12
+            line-height: 30px
+            background-color: #f9f5c5
+            margin-bottom: 10px
+          span
+            display: block
+            font-size: 14px
+            line-height: 1
+          p
+            color: $color-g6
+            font-size: $font-12
+            margin-top: 8px
+
+.hotel-search-top
+  position: relative
+  .hotel-search-top-item
+    >li
+      float: left
+      border-left: 1px solid #EEEEF0
+      &:first-child
+        border-left: none
+    .hotel-search-keyword
+      width: 240px
+    .hotel-search-city
+      width: 200px
+    .hotel-search-date
+      width: 320px
+    .hotel-search-info
+      width: 360px
+    .search-top-tit
+      font-size: $font-12
+      color: $tag-cl
+      line-height: 1
+      margin-bottom: 8px
+      padding: 18px 20px 0
+    .search-top-con
+      position: relative
+      font-size: $font-16
+      input,
+      .hotel-search-info-num
+        display: block
+        width: 100%
+        line-height: 16px
+        border: none
+        font-size: $font-16
+        padding: 0 20px 18px
+        cursor: pointer
+  .hotel-search-top-btn
+    position: absolute
+    top: 0
+    right: 0
+    width: 70px
+    height: 70px
+    background: $main-red
+    border-radius: 4px
+    cursor: pointer
+    .search-icon
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+
+.hotel-search-list
+  padding: 0 32px
+  display: inline-block
+  //width: 826px
+  width: 1186px
+  vertical-align: top
+  margin-right: 12px
+  border-radius: 4px
+  background-color: #fff
+  .search-list-item
+    position: relative
+    overflow: hidden
+    padding: 24px 0 24px 76px
+    border-top: 1px solid #EEEEF0
+    &:first-child
+      border-top: none
+  .search-list-avatar
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    margin: auto
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    overflow: hidden
+    background: url('../../images/hotel/c-logo.png') no-repeat
+    background-size: 100% 100%
+    img
+      width: 100%
+      height: 100%
+  .search-list-info
+    h2
+      font-size: 18px
+      line-height: 24px
+      max-width: 880px
+      font-weight: 600
+      overflow: hidden
+      white-space: nowrap
+    p
+      max-width: 880px
+      font-size: 14px
+      line-height: 1
+      margin-top: 8px
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+      label,
+      span
+        display: inline-block
+        vertical-align: top
+      label
+        width: 70px
+        color: #B2B4BE
+  .search-list-bk
+    position: absolute
+    height: 100%
+    top: 0
+    right: 0
+    display: flex
+    justify-content: center
+    flex-direction: column
+    .search-list-prc
+      font-size: 20px
+      font-weight: 600
+      width: 96px
+      text-align: left
+    .search-list-btn
+      width: 96px
+      height: 38px
+      line-height: 38px
+      text-align: center
+      color: #fff
+      background-color: $main-red
+      border-radius: 4px
+      cursor: pointer
+
+.pagination-wrp
+  margin-bottom: 40px
+  .pageindex
+    float: right
+  .pagination
+    float: left
+
+.airTicket-select-dropdown
+  display: none
+  position: absolute
+  top: 100%
+  left: 0
+  width: 320px
+  margin: 8px 0 0
+  border-radius: 4px
+  box-shadow: 2px 2px 16px 0 RGBA(24, 28, 40, 0.1)
+  z-index: 1
+  .select-dropdown-hd
+    height: 42px
+    line-height: 42px
+    padding: 0 20px
+    color: #333
+    font-size: $font-14
+    background-color: #F4F4F4
+  .select-dropdown-bd
+    padding: 0 20px 14px
+    background-color: #fff
+    .tourists-select
+      li
+        overflow: hidden
+        height: 42px
+        line-height: 42px
+        border-bottom: 1px solid #ECECEC
+        font-size: 14px
+        em
+          color: $color-g9
+        .stepper-select
+          float: right
+          .stepper-num
+            display: inline-block
+            vertical-align: top
+            width: 32px
+            font-size: $font-14
+            color: $color-g3
+            text-align: center
+            user-select: none
+          .minus-btn,
+          .add-btn
+            vertical-align: top
+            margin-top: 11px
+    .airTicket-select-btn
+      margin-top: 24px
+      overflow: hidden
+      a
+        font-size: 14px
+      .cancel-btn
+        float: left
+        color: #333
+        background-color: transparent
+        width: auto
+        height: auto
+        line-height: 22px
+      .sure-btn
+        float: right
+        color: #F52A51
+.list-ctl-ctx
+  li
+    user-select: none
+  .list-ctl-tip
+    position: absolute
+    right: 20px
+    top: 0
+    line-height: 50px
+    color: #7F8593
+
+.child-age-sel
+  display: none
+  font-size: $font-14
+  margin: 20px 0 0
+  .age-sel-tit
+    color: #7F8593
+    line-height: 1
+  .select-item
+    display: inline-block
+    margin: 0 -4px
+    font-size: 14px
+    .select-list-item
+      float: left
+      text-align: left
+      width: 136px
+      height: 34px
+      line-height: 34px
+      border: 1px solid $clr-border
+      border-radius: 4px
+      margin: 8px 4px 0
+      position: relative
+      cursor: pointer
+      .item-con
+        position: relative
+        display: inline-block
+        vertical-align: top
+        width: 100%
+        padding: 0 20px 0 15px
+        z-index: 1
+      .g-arrow-down-icon
+        position: absolute
+        right: 10px
+        top: 0
+        bottom: 0
+        margin: auto
+      .select-item-list
+        display: none
+        position: absolute
+        width: 100%
+        max-height: 202px
+        overflow: auto
+        left: 0
+        background-color: #fff
+        box-shadow: 0 2px 12px 0 rgba(24,28,40,0.10)
+        border-radius: 4px
+        padding: 8px 12px
+        margin-top: 4px
+        z-index: 3
+        li
+          height: 34px
+          line-height: 34px
+          border-radius: 4px
+          padding: 0 8px
+          margin-top: 4px
+          &:first-child
+            margin: 0
+          &:hover
+            background: #F4F4F4
+            color: #F30A37
+.btn-list
+  .start-price
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      right: -8px
+      top: 0
+      bottom: 0
+      margin: auto
+      width: 4px
+      height: 1px
+      background: #e6e6e6
+.search-none
+  position: relative
+  width: 1186px
+  height: 184px
+  margin: auto
+  background-color: #fff
+  border-radius: 4px
+  .portfolio-choice-tip
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    text-align: center
+    &:after
+      content: ''
+      width: 0
+      height: 100%
+      display: inline-block
+      vertical-align: middle
+    .tip-con
+      max-width: 98%
+      display: inline-block
+      vertical-align: middle
+      h2
+        color: #333
+        font-size: 20px
+        line-height: 1
+        margin-bottom: 14px
+      p
+        color: #7F8593
+        line-height: 1
+        margin-bottom: 14px
+        font-size: $font-14
+      a
+        display: inline-block
+        width: 96px
+        height: 34px
+        line-height: 34px
+        color: #fff
+        background-color: #4779D4
+        border-radius: 4px
+.no-more
+  display: none
+  text-align: center
+  line-height: 80px
+  color: #A7ACB7
+  span
+    position: relative
+    &:before,
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      margin: auto
+      width: 120px
+      height: 1px
+      background-color: #D6D6E9
+    &:before
+      left: -132px
+    &:after
+      right: -132px
+
+.show-more-list
+  width: 1186px
+  height: 48px
+  line-height: 46px
+  text-align: center
+  font-size: 16px
+  margin: 14px auto 0
+  color: #7F8593
+  background: #FFFFFF
+  border: 1px solid #EAEAEA
+  border-radius: 4px
+  cursor: pointer
+  &:hover
+    color: #fff
+    background: #ADADB7
+    border: 1px solid #ADADB7
+  &.loading
+    &:hover
+      color: #7F8593
+      background: #FFFFFF
+      border: 1px solid #EAEAEA
+    .more-text
+      display: none
+    .loading-tip
+      display: inline-block
+  .loading-tip
+    display: none
+    font-size: 16px
+    color: #181C28
+    .loading-gif
+      width: 24px
+      height: 24px
+      vertical-align: top
+      margin: 11px 8px 0 0

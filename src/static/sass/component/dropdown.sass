@@ -1,0 +1,171 @@
+@import "../common/params"
+@import "../common/function"
+// 下拉
+.select-group
+  position: relative
+  display: inline-block
+  width: 70px
+  cursor: pointer
+  .select
+    position: relative
+    padding: 8px 20px 8px 15px
+    border: 1px solid $color-gd
+    i
+      position: absolute
+      right: 10px
+      top: 0
+      bottom: 0
+      margin: auto
+    .select-val
+      display: block
+      width: 100%
+      height: 20px
+      line-height: 20px
+      background: transparent
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      border: none
+      cursor: pointer
+  .select-dropdown
+    display: none
+    position: absolute
+    top: 100%
+    width: 100%
+    background-color: #fff
+    border: 1px solid $color-gd
+    padding: 8px 12px
+    z-index: 1
+    li
+      line-height: 34px
+      padding: 0 8px
+      border: none
+      border-radius: 4px
+      margin-top: 4px
+      &:first-child
+        margin-top: 0
+      &.active
+        color: $main-red
+      &:hover
+        color: $main-red
+        background: #F4F4F4
+.sg-multi-choice
+  position: relative
+  display: inline-block
+  width: 70px
+  cursor: pointer
+  .choice
+    position: relative
+    padding: 8px 20px 8px 15px
+    border: 1px solid $color-gd
+    i
+      position: absolute
+      right: 10px
+      top: 0
+      bottom: 0
+      margin: auto
+    .choice-val
+      display: block
+      width: 100%
+      height: 20px
+      line-height: 20px
+      background: transparent
+      user-select: none
+      border: none
+      cursor: pointer
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  .choice-dropdown
+    display: none
+    position: absolute
+    min-width: 100px;
+    background-color: #fff
+    border: 1px solid $color-gd
+    p
+      font-size: 16px;
+      color: #181C28;
+      height: 48px;
+      line-height: 48px;
+      border-bottom: 1px solid #ddd;
+      padding-left: 12px;
+    ul
+      top: 100%
+      width: 100%
+      padding: 0 12px 8px 12px
+      li
+        padding: 0 8px
+        border: none
+        border-radius: 4px
+        font-size: 0;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        i
+          display: inline-block;
+          vertical-align: top;
+          line-height: 36px;
+          &.icon-uncheck
+            color: #B2B4BE;
+          &.icon-check
+            color: #F30A37;
+        .choice-wrap
+          vertical-align: top;
+          display: inline-block;
+          width: 420px;
+          font-size: 14px;
+          padding-right: 20px;
+          .choice-tit
+            line-height: 36px;
+            white-space: nowrap;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+          .choice-desc
+            font-size: 12px;
+            line-height: 18px;
+            color: #B1B4BE;
+            margin-bottom: 10px;
+        .choice-price
+          display: inline-block;
+          height: 36px;
+          line-height: 36px;
+          max-width: 50px;
+          vertical-align: top;
+          font-size: 14px;
+          text-align: right;
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin-right: 24px;
+        &:first-child
+          margin-top: 0
+        &.active
+          color: $main-red
+        &:hover
+          background: #F4F4F4
+        &:last-child
+          margin-bottom: 32px;
+    .choice-btn-warp
+      font-size: 0
+      margin-bottom: 32px;
+      overflow: hidden;
+      padding: 0 12px
+      span 
+        display: inline-block
+        width: 100px;
+        height: 40px;
+        line-height: 40px
+        font-size: 14px;
+        border-radius: 4px;
+        float: right;
+        text-align: center;
+      .sure
+        background-color: #F30A37;
+        color: #fff
+      .cancel
+        background-color: #EEEEF0;
+        color: #000
+        margin-right: 14px;
+
+      

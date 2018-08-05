@@ -1,0 +1,24 @@
+include ../../component/common/mixin
+
+script(type="js/template", id="user-concact")
+  div.tourist-item-block.tourist-adult
+    ul.tourist-form
+      li.tourist-tr
+        span.tourist-left.must-fill
+          label.tourist-label.must-fill
+            font.red-star *
+            | 姓名
+          input.tourist-input.tourist-name-input(value='',placeholder='请输入中文姓名')
+        span.tourist-right
+          label.tourist-label 固定电话
+          input.tourist-input.tourist-enname-input(value='',placeholder='请输入英文名称/拼音', onkeyup="if(!/^[A-Za-z ]+$/.test(this.value)){this.value='';}")
+      li.tourist-tr
+        span.tourist-left.must-fill
+          label.tourist-label
+            font.red-star *
+            | 手机
+          input.tourist-input.tourist-phone-input(value='',placeholder='请输入手机号码')
+        span.tourist-right.must-fill
+          label.tourist-label 邮箱
+          input.tourist-input.tourist-email-input(value='',placeholder='请输入邮箱')
+    include buttonlist

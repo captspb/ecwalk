@@ -1,0 +1,466 @@
+@import "../common/params"
+@import "../component/indexlist"
+
+
+
+.b2b-main-focus-wrp
+    height: 500px
+    position: relative
+    .swiper-container
+        height: 500px
+        position: relative
+        .b2b-main-swiper
+            height: 500px
+            // z-index: auto
+            .swiper-slide
+                height: 500px
+                overflow: hidden
+                a
+                    display: block
+                    text-align: center
+                    position: relative
+                    img
+                        position: absolute
+                        left: 50%
+                        margin-left: -960px
+        .swiper-pagination-cont
+            display: block
+            text-align: center
+        .swiper-pagination
+            display: inline-block
+            position: relative
+            bottom: 38px
+            z-index: 2
+            text-align: center
+            font-size: 0
+            background-color: rgba(0,0,0,.3)
+            padding: 8px 10px
+            border-radius: 13px
+            .swiper-pagination-bullet
+                width: 10px
+                height: 10px
+                display: inline-block
+                border-radius: 5px
+                background-color: #fff
+                opacity: .6
+                margin: 0 4px 0 0
+                &:hover
+                    opacity: 1
+                &.swiper-pagination-bullet-active
+                    opacity: 1
+                    width: 20px
+        .swiper-button-prev
+            background-image: url(../../images/swiper/prev_normal.png)
+            left: -84px
+            width: 64px
+            height: 128px
+            opacity: 1
+            background-size: 64px 128px
+            margin-top: -32px
+
+            &:hover
+                background-image: url(../../images/swiper/prev_hover.png)
+        .swiper-button-next
+            background-image: url(../../images/swiper/next_normal.png)
+            right: -84px
+            width: 64px
+            height: 128px
+            margin-top: -32px
+            opacity: 1
+            background-size: 64px 128px
+            &:hover
+                background-image: url(../../images/swiper/next_hover.png)
+    .b2b-pro-separate-msg
+        width: 1190px
+        height: 500px
+        left: 50%
+        margin-left: -595px
+        position: absolute
+        top: 0
+        // z-index: 2
+        .b2b-pro-separate
+            width: 288px
+            position: relative
+            float: left
+            border-radius: 4px
+            background-color: $color-gF
+            padding: 8px 0
+            margin-top: 10px
+            z-index: 3
+            position: relative
+            ul
+                li.main-list
+                    height: 66px
+                    padding: 15px 12px 0 20px
+                    cursor: pointer
+                    border-top: 1px solid $color-f0
+                    &:first-child
+                        border-top: 0
+                        border-top: none
+                    &:hover
+                        background-color: $color-f6
+                    .pro-type-text
+                        float: left
+                        margin-left: 14px
+                        margin-top: -6px
+                        .pro-type-title
+                            font-size: $font-16
+                            font-family: webfontbold
+                        .tag-list
+                            a
+                                font-size: $font-12
+                                color: $color-g6
+                                margin-right: 8px
+                                &.hot
+                                    color: $main-red
+                                &:hover
+                                    color: #466094
+            .b2b-prolist-hover-show
+                display: none
+                transition: .5s
+                background-color: $color-gF
+                position: absolute
+                top: 0
+                left: 0
+                margin-left: 286px
+                height: 478px
+                width: 600px
+                border-left: 1px solid $color-f0
+                padding: 30px
+                z-index: 10
+                cursor: auto
+                .b2b-prolist-header
+                    line-height: 18px
+                    span.red-line
+                        height: 18px
+                        width: 3px
+                        border-radius: 1px
+                        background-color: $main-red
+                        display: inline-block
+                        margin-right: 6px
+                    span.prolist-header-text
+                        display: inline-block
+                        font-size: 18px
+                        vertical-align: top
+                .b2b-prolist-ctx
+                    margin-top: 30px
+                    // height: 210px
+                    // overflow: hidden
+                    height: 386px
+                    overflow: auto
+                    .b2b-prolist-ctx-wrp
+                        line-height: 1
+                        .b2b-prolist-ctx-rpart
+                            display: inline-block
+                            width: 400px
+                            ul
+                                font-size: 0
+                                width: 435px
+                                overflow: hidden
+                                li
+                                    // float: left
+                                    font-size: 12px;
+                                    color: #666666;
+                                    letter-spacing: 0;
+                                    // line-height: 12px;
+                                    display: inline-block
+                                    padding: 0 10px
+                                    margin-left: -1px
+                                    margin-bottom: 20px
+                                    a
+                                        color: $color-g3
+                                        position: relative
+                                        &:before
+                                            display: inline-block
+                                            width: 1px
+                                            height: 12px
+                                            content: ''
+                                            background-color: #ccc
+                                            position: absolute
+                                            left: -10px
+                                        &.hot
+                                            color: $main-red
+                                        &:hover
+                                            color: #466094 !important
+                        .b2b-prolist-ctx-lpart
+                            width: 86px;
+                            display: inline-block
+                            vertical-align: top
+                .image-part
+                    margin-top: 46px
+                    ul
+                        li
+                            width: 170px
+                            height: 105px
+                            border-radius: 4px
+                            overflow: hidden
+                            float: left
+                            margin-left: 14px
+                            &:first-child
+                                margin-left: 0px
+
+        .b2b-pro-msg
+            width: 288px
+            border-radius: 4px
+            background-color: $color-gF
+            float: right
+            margin-top: 10px
+            overflow: hidden
+            position: relative
+            z-index: 1
+            .b2b-pro-msg-list-title
+                font-size: $font-16
+                text-align: center
+                margin-top: 20px
+                position: relative
+                &:before
+                    display: inline-block
+                    width: 8px
+                    height: 2px
+                    background-color: #333333;
+                    border-radius: 1px
+                    content: ''
+                    position: absolute
+                    left: 75px
+                    top: 13px
+                &:after
+                    display: inline-block
+                    width: 8px
+                    height: 2px
+                    background-color: #333333;
+                    border-radius: 1px
+                    content: ''
+                    position: absolute
+                    top: 13px
+                    right: 75px
+            .my-buy-info
+                ul
+                    li
+                        width: 50%
+                        text-align: center
+                        float: left
+                        height: 80px
+                        background-color: $color-f2
+                        a
+                            display: block
+                            color: $color-g3
+                            margin-top: 16px
+                            .my-buy-title
+                                margin-bottom: 4px
+                            .my-buy-num
+                                font-size: $font-24
+                                color: $main-red
+                                line-height: 1
+
+            .pro-msg-swiper
+                height: 354px
+                overflow: hidden
+                position: relative
+                padding: 0 20px
+                .pro-msg-mask
+                    position: absolute
+                    width: 100%
+                    height: 45px
+                    bottom: 0
+                    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #ffffff 70%)
+                    z-index: 1
+                .swiper-slide
+                    height: auto
+                    padding: 20px 0
+                    border-bottom: 1px solid $color-f0
+
+.buyer-name
+    font-size: $font-12
+    color: $color-b3
+.proinfo
+    color: $color-g3
+    margin: 10px 0
+    a
+        color: $color-g3
+        display: block
+        &:hover
+            color: $font-blue
+.buyinfo-price
+    font-size: $font-12
+    float: left
+    .buyinfo-price-title
+        color: $color-b3
+    .buyinfo-price-num
+        color: $main-red
+.start-place
+    float: right
+    font-size: $font-12
+    color: $color-b3
+
+.bbuyer-name
+    color: $color-b3
+.bproinfo
+    font-size: $font-16
+    color: $color-g3
+    margin: 10px 0
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+    overflow: hidden
+    max-height: 48px
+    a
+        color: $color-g3
+        &:hover
+            color: #466094
+.bbuyinfo-price
+    float: left
+    .buyinfo-price-title
+        color: $color-b3
+    .buyinfo-price-num
+        color: $main-red
+.bstart-place
+    float: right
+    color: $color-b3
+
+.b2b-index-column-wrp
+    width: 1190px
+    margin: 0 auto
+    margin-top: 40px
+    padding-bottom: 50px
+    .b2b-index-column-header
+        margin-bottom: 10px
+    .b2b-index-column
+        width: 386px
+        float: left
+        margin-left: 14px
+        &:first-child
+            margin-left: 0px
+        .b2b-index-header-lpart
+            float: left
+        .b2b-index-header-rpart
+            float: right
+            margin-top: -18px
+
+.b2b-hotsale-column
+    .color-title
+        color: $main-green
+.b2b-specialsale-column
+    .color-title
+        color: $main-blue
+.b2b-newsale-colum
+    .color-title
+        color: $main-red
+.color-title
+    font-size: $font-24
+    margin-right: 10px
+.big-title
+    color: $color-b3
+.regular-title
+    font-size: $font-10
+    color: $color-b3
+.grey-wrps-wrp
+    background-color: $color-f7
+.grey-wrps
+    position: relative
+    width: 1190px
+    margin: 0 auto
+.ce-nav-ul
+    width: 50px
+    border-radius: 4px
+    overflow: hidden
+    position: absolute
+    // left: -64px
+    margin-left: -64px;
+    top: 94px
+    &.fixed
+        position: fixed
+        left: auto
+        top: 10px
+        margin-left: -64px
+    li
+        background-color: #fff
+        text-align: center
+        cursor: pointer
+        border-bottom: 1px solid #F0F0F0
+        a.ce-nav
+            width: 50px
+            height: 50px
+            padding: 10px
+            display: inline-block
+            font
+                color: $color-g3
+                font-size: 14px
+                line-height: 14px
+                display: inline-block
+        &.cur, &:hover, &.active
+            background-color: $main-red
+            font
+                color: $color-gF !important
+.grey-wrp
+    background-color: $color-f7
+    width: 1190px
+    margin: 0 auto
+    .hot-pro-list-wrp
+        width: 1190px
+        margin: 0 auto
+        position: relative
+
+        .hot-pro-list
+            padding-top: 54px
+
+        .hot-pro-list-header
+            float: left
+            margin-top: -10px
+        .index-tab
+            float: left
+            margin-left: 116px
+            margin-top: -20px
+        .image-show
+            height: 516px
+            padding-bottom: 50px
+            a
+                display: inline-block
+                &:hover
+                    transform: translate3d(0, -2px, 0)
+                    box-shadow: 0 15px 30px rgba(0,0,0,0.1)
+            .image-row-1
+                width: 466px
+                // height: 100%
+                // overflow: hidden
+                float: left
+                img
+                    display: block
+                    height: 100%
+                    border-radius: 4px
+            .image-row-2
+                width: 226px
+                // height: 100%
+                // overflow: hidden
+                float: left
+                margin-left: 14px
+                img
+                    display: block
+                    height: 100%
+                    border-radius: 4px
+            .image-row-3
+                width: 466px
+                height: 100%
+                // overflow: hidden
+                border-radius: 4px
+                float: left
+                margin-left: 14px
+                .db-img-1
+                    height: 226px
+                    margin-bottom: 14px
+                    // overflow: hidden
+                    a
+                        &:first-child
+                            margin-right: 14px
+                    img
+                        width: 226px
+                        height: 100%
+                        border-radius: 4px
+                        float: left
+
+                .db-img-2
+                    height: 226px
+                    // overflow: hidden
+                    img
+                        border-radius: 4px
+                        height: 100%
+

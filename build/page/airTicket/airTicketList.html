@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/airTicket/airTicketList.css">
+  </head>
+  <title>国际机票</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx"><a><img src="../../static/images/index/LogoTitle.png"></a>
+        <div class="b2b-address"><span><span class="img"></span><font>广州市
+              <ul class="drop_down">
+                <li> <a>北京市</a></li>
+                <li> <a>乌鲁木齐市</a></li>
+                <li> <a>上海市</a></li>
+                <li> <a>吐鲁番市</a></li>
+                <li> <a>深圳市</a></li>
+              </ul></font></span></div>
+        <div class="b2b-header-search">
+          <div class="search-box">
+            <div class="select-group">
+              <div class="select"><span class="select-val">全部产品</span><i class="select-down-arrow-icon"></i></div>
+              <ul style="display: none;" class="select-dropdown">
+                <li class="active">全部产品</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地玩乐</li>
+                <li>酒店</li>
+                <li>门票</li>
+                <li>签证</li>
+                <li>邮轮</li>
+                <li>WIFI</li>
+              </ul>
+            </div>
+            <div class="search-input">
+              <input placeholder="请输入搜索关键字...">
+            </div><a class="search-btn">搜索</a>
+          </div>
+          <div class="search-hot"></div>
+        </div>
+        <div class="b2b-header-bitMap">
+          <div class="bitMapDiv">
+            <div class="bitMapInnerDiv">
+              <div class="wx-kf popover"><i class="wx-kf-icon"></i><span class="contact">
+                  <p>欢迎使用</p>
+                  <p>在线客服</p></span>
+                <div class="popover-down">
+                  <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                  <div class="code-tip">扫码关注公众号</div>
+                </div>
+              </div>
+              <div class="tel-kf"><i class="tel-icon"></i><span class="contact">
+                  <p>020-86338888</p>
+                  <p>400-863-8888</p></span></div>
+            </div><img src="../../static/images/index/monkey.png" class="r">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="zyx"><a href="#">
+              <div>自由行</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="ddwl"><a href="#">
+              <div>当地玩乐</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="qz"><a href="#">
+              <div>签证</div><span class="white-line"></span></a></li>
+          <li nav-type="wifi"><a href="#">
+              <div>WIFI</div><span class="white-line"></span></a></li>
+          <li nav-type="jp"><a href="#">
+              <div>机票</div><span class="white-line"></span><i class="new-tip-icon"></i></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="airTicket-page">
+      <div class="airTicket-top">
+        <div class="airTicket-top-con">
+          <div class="airTicket-search-trip">
+            <ul class="airTicket-trip-list">
+              <li class="airTicket-trip-item clearfix">
+                <div class="airTicket-trip-index">第1程已选</div>
+                <div class="airTicket-trip-info">
+                  <div class="airTicket-trip-place">香港国际机场T1  -  盖亚维克机场N</div>
+                  <div class="airTicket-trip-date">
+                    <div class="airTicket-trip-start">出发：2018.5.24  18:35</div>
+                    <div class="airTicket-trip-end">到达：2018.5.24  23:35</div>
+                  </div>
+                  <div class="airTicket-trip-line">一程中转</div>
+                </div>
+                <div class="to-choose">重新选择</div>
+              </li>
+              <li class="airTicket-trip-item clearfix">
+                <div class="airTicket-trip-index">第2程已选</div>
+                <div class="airTicket-trip-info">
+                  <div class="airTicket-trip-place">香港国际机场T1  -  盖亚维克机场N</div>
+                  <div class="airTicket-trip-date">
+                    <div class="airTicket-trip-start">出发：2018.5.24  18:35</div>
+                    <div class="airTicket-trip-end">到达：2018.5.24  23:35</div>
+                  </div>
+                  <div class="airTicket-trip-line">一程中转</div>
+                </div>
+                <div class="to-choose">重新选择</div>
+              </li>
+              <li class="airTicket-trip-item clearfix active">
+                <div class="airTicket-trip-index">第3程</div>
+                <div class="airTicket-trip-info">
+                  <div class="airTicket-trip-place">香港国际机场T1  -  盖亚维克机场N</div>
+                  <div class="airTicket-trip-date">
+                    <div class="airTicket-trip-start">出发：2018.5.24  18:35</div>
+                    <div class="airTicket-trip-end">到达：2018.5.24  23:35</div>
+                  </div>
+                  <div class="airTicket-trip-line">一程中转</div>
+                </div>
+                <div class="to-choose">重新选择</div>
+              </li>
+            </ul>
+            <div class="more-airTicket-trip">
+              <div class="point-group"><i></i><i></i><i></i></div>
+              <div class="m-popover">
+                <div class="m-popover-con s-down">
+                  <p>第一程：2018.5.24出发，香港国际机场T12(HKG)  -  盖亚维克机场N(ABC)</p>
+                  <p>第二程：2018.6.24出发，曼谷(BKK)  -  广州(CAN)</p>
+                  <p>第三程：2018.6.24出发，首都国际机场(PEK)  -  广州(CAN)</p>
+                </div>
+              </div>
+            </div>
+            <div class="edit-airTicket-trip">编辑</div>
+          </div>
+          <div class="search-airTicket-select">
+            <div class="airTicket-select-item"><span class="adult-num"><em>1</em>成人</span><span class="child-num"><em>0</em>儿童</span><span class="tank-type">经济舱</span><em class="g-arrow-down-icon"></em></div>
+            <div class="airTicket-select-dropdown">
+              <div class="select-dropdown-hd">最多选择9个旅客</div>
+              <div class="select-dropdown-bd">
+                <ul class="tourists-select">
+                  <li>成人
+                    <div data-min="1" class="stepper-select adult-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">1</span><span class="c-add-icon add-btn"></span></div>
+                  </li>
+                  <li>儿童<em>（2-12）</em>
+                    <div data-min="0" class="stepper-select child-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">0</span><span class="c-add-icon add-btn"></span></div>
+                  </li>
+                </ul>
+                <ul class="airTicket-tank-type">
+                  <li class="active">经济舱</li>
+                  <li>高端经济舱</li>
+                  <li>商务舱</li>
+                  <li>头等舱</li>
+                </ul>
+                <div class="airTicket-select-btn"><a class="cancel-btn">取消</a><a class="sure-btn">确定</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="airTicket-trip-popup">
+            <div class="choose-way-item">
+              <div class="popup-tit">选择方式</div>
+              <ul class="choose-way">
+                <li data-trip="one-way" class="active">单程</li>
+                <li data-trip="back-forth">往返</li>
+                <li data-trip="multipass">多程</li>
+              </ul>
+            </div>
+            <div class="select-passengers">
+              <div class="popup-tit">选择乘客（最多只能选择9名乘客）</div>
+              <ul class="tourists-select">
+                <li>成人
+                  <div data-min="1" data-type="edit-popup" class="stepper-select adult-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">1</span><span class="c-add-icon add-btn"></span></div>
+                </li>
+                <li>儿童<em>（2-12）</em>
+                  <div data-min="0" data-type="edit-popup" class="stepper-select child-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">0</span><span class="c-add-icon add-btn"></span></div>
+                </li>
+              </ul>
+            </div>
+            <div class="choose-tank-level">
+              <div class="popup-tit">选择舱级</div>
+              <ul data-type="edit-popup" class="airTicket-tank-type">
+                <li class="active">经济舱</li>
+                <li>高端经济舱</li>
+                <li>商务舱</li>
+                <li>头等舱</li>
+              </ul>
+            </div>
+            <div class="choose-trip">
+              <div class="popup-tit">选择航程</div>
+              <ul class="airTicket-trip-list">
+                <li class="clearfix">
+                  <div class="airTicket-place clearfix">
+                    <div class="trip-list-index">1</div>
+                    <div class="airTicket-origin">
+                      <input type="text" placeholder="出发地" data-code="" data-tip="出发地"><em class="input-tip airTicket-place-tip">出发</em>
+                    </div>
+                    <div class="airTicket-place-switch"><i class="switch-icon"></i></div>
+                    <div class="airTicket-dest">
+                      <input type="text" placeholder="目的地" data-code="" data-tip="目的地"><em class="input-tip airTicket-place-tip">到达</em>
+                    </div>
+                  </div>
+                  <div class="airTicket-date clearfix">
+                    <div class="airTicket-date-start">
+                      <input id="start-date" placeholder="出发日期" data-tip="出发日期" readonly><em class="input-tip">出发日期</em>
+                    </div>
+                    <div class="airTicket-date-end">
+                      <input id="end-date" placeholder="返回日期" data-tip="返回日期" readonly><em class="input-tip">返回日期</em>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="choose-add"><span>增加航程<i class="more-2-icon"></i></span></div>
+            <div class="choose-btn"><span class="cancel-btn">取消</span><span class="sure-btn">重新搜索</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="airTicket-main">
+        <div class="toTop-icon"></div>
+        <div class="portfolio-choice clearfix">
+          <!-- 搜索提示-->
+          <div class="portfolio-choice-tip">
+            <div class="tip-con">
+              <h2>找不到合适的结果</h2>
+              <p>请尝试调整搜索条件。您可以更改出发时间、出发地等条件。</p><a>重新搜索</a>
+            </div>
+          </div>
+          <div class="choice-tab clearfix">
+            <label class="portfolio-tit">预定形式</label>
+            <ul class="choice-tab-item clearfix">
+              <li class="active">自由组合</li>
+              <li>多程组合</li>
+            </ul>
+          </div>
+          <div class="airTicket-trip-select-con">
+            <div class="airTicket-trip-select">
+              <div class="tip-item">选择第2程</div>
+              <h2 class="tit-item">曼谷(BKK) - 南苑机场(NAY)</h2>
+              <div class="date-item">出发日期：2018.7.21</div>
+              <div class="select-item clearfix">
+                <div class="select-line-item"><span class="item-con">直飞/中转</span><i class="g-arrow-down-icon"></i>
+                  <ul class="select-item-list">
+                    <li>不限</li>
+                    <li>直飞</li>
+                    <li>1程中转</li>
+                  </ul>
+                </div>
+                <div class="select-start-time"><span class="item-con">起飞时间<em></em></span><i class="g-arrow-down-icon"></i>
+                  <ul class="select-item-list">
+                    <li>不限</li>
+                    <li>00:00-06:00</li>
+                    <li>06:01-12:00</li>
+                    <li>12:01-18:00</li>
+                    <li>18:01-23:59</li>
+                  </ul>
+                </div>
+                <div class="select-end-time"><span class="item-con">到达时间<em></em></span><i class="g-arrow-down-icon"></i>
+                  <ul class="select-item-list">
+                    <li>不限</li>
+                    <li>00:00-06:00</li>
+                    <li>06:01-12:00</li>
+                    <li>12:01-18:00</li>
+                    <li>18:01-23:59</li>
+                  </ul>
+                </div>
+                <div class="select-airlines"><span class="item-con">航司联盟/航空公司</span><i class="g-arrow-down-icon"></i>
+                  <div class="select-airlines-popup">
+                    <div class="select-airlines-item">
+                      <div class="group-name"><i class="checkbox-icon"></i><span>寰宇一家0</span></div>
+                      <ul class="group-list">
+                        <li><i class="checkbox-icon"></i><span title="酷航">酷航</span></li>
+                        <li><i class="checkbox-icon"></i><span title="酷航">酷航</span></li>
+                        <li><i class="checkbox-icon"></i><span title="酷航">酷航</span></li>
+                      </ul>
+                    </div>
+                    <div class="select-airlines-item">
+                      <div class="group-name"><i class="checkbox-icon"></i><span>寰宇一家1</span></div>
+                      <ul class="group-list">
+                        <li><i class="checkbox-icon"></i><span title="酷航">酷航</span></li>
+                        <li><i class="checkbox-icon"></i><span title="酷航">酷航</span></li>
+                        <li><i class="checkbox-icon"></i><span title="酷航">酷航</span></li>
+                      </ul>
+                    </div>
+                    <div class="select-airlines-item">
+                      <div class="group-name"><i class="checkbox-icon"></i><span>寰宇一家2</span></div>
+                      <ul class="group-list">
+                        <li><i class="checkbox-icon"></i><span title="酷航">酷航</span></li>
+                        <li><i class="checkbox-icon"></i><span title="酷航">酷航</span></li>
+                        <li><i class="checkbox-icon"></i><span title="酷航">酷航</span></li>
+                      </ul>
+                    </div>
+                    <div class="select-airlines-btn"><span class="cancel-btn">取消</span><span class="sure-btn">确定</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="airTicket-sort">
+          <ul class="airTicket-sort-item clearfix">
+            <li>价格<i class="up-screen-icon"></i>
+            </li>
+            <li>航程时长<i class="up-screen-icon"></i>
+            </li>
+            <li>出发时间<i class="up-screen-icon"></i>
+            </li>
+            <li>到达时间<i class="up-screen-icon"></i>
+            </li>
+          </ul>
+          <div class="airTicket-sort-tip">为您提供26个航班信息 / 18个直飞（所有起飞/降落时间均为当地时间）</div>
+        </div>
+        <!-- 搜索提示-->
+        <div class="portfolio-choice-tip-box">
+          <div class="portfolio-choice-tip">
+            <div class="tip-con">
+              <h2>找不到合适的结果</h2>
+              <p>请尝试调整搜索条件。您可以更改出发时间、出发地等条件。</p><a>重新搜索</a>
+            </div>
+          </div>
+        </div>
+        <div class="airTicket-list-box">
+          <div class="airTicket-list-group">
+            <ul class="airTicket-list">
+              <li>
+                <div class="airTicket-list-item">
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <div class="airTicket-time">07:50</div>
+                        <div class="airTicket-airport">香港国际机场T1</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                            <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                        <div class="airTicket-airport">盖亚维克机场N</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                      <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="transit-icon"></span>
+                  </div>
+                  <div class="airTicket-airlines"><span class="airlines-avatar"><img src="../../static/images/airTicket/CZ.png"></span><span class="airlines-con">
+                      <div class="m-popover underline"><span class="ellipsis">阿联酋航空</span>
+                        <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                      </div></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="show-detail">展开详情</div>
+                </div>
+                <div class="airTicket-detail">
+                  <ul class="airTicket-detail-item">
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="airTicket-booking">
+              <li class="airTicket-booking-item">
+                <div class="airTicket-tag"><i class="slyx-icon"></i>
+                </div>
+                <div class="airTicket-other"><span class="cabin-type"><em class="underline m-popover">经济舱
+                      <div class="m-popover-con s-up">
+                        <p><em>香港 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 香港</em><em>经济舱(V)</em></p>
+                        <p><em>伦敦 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 伦敦</em><em>经济舱(V)</em></p>
+                      </div></em></span><span class="trip-type"><em class="underline m-popover">行程单
+                      <div class="m-popover-con s-up">只提供行程单</div></em></span><span class="endorse-type"><em class="underline m-popover">行李额及退改签</em></span><span>剩余<em class='main-red'>4</em>张</span></div>
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span><em>起</em></li>
+                      <li class="tax-prc">人均含税价</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking-btn"><a>立即预订</a>
+                </div>
+              </li>
+              <li class="airTicket-booking-item">
+                <div class="airTicket-tag"><i class="djtj-icon"></i>
+                </div>
+                <div class="airTicket-other"><span class="cabin-type"><em class="underline m-popover">经济舱
+                      <div class="m-popover-con s-up">
+                        <p><em>香港 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 香港</em><em>经济舱(V)</em></p>
+                        <p><em>伦敦 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 伦敦</em><em>经济舱(V)</em></p>
+                      </div></em></span><span class="trip-type"><em class="underline m-popover">行程单
+                      <div class="m-popover-con s-up">只提供行程单</div></em></span><span class="endorse-type"><em class="underline m-popover">行李额及退改签</em></span><span>剩余<em class='main-red'>4</em>张</span></div>
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span><em>起</em></li>
+                      <li class="tax-prc">人均含税价</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking-btn"><a>立即预订</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="airTicket-list-group">
+            <ul class="airTicket-list">
+              <li>
+                <div class="airTicket-list-item">
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <div class="airTicket-time">07:50</div>
+                        <div class="airTicket-airport">香港国际机场T1</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                            <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                        <div class="airTicket-airport">盖亚维克机场N</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                      <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="transit-icon"></span>
+                  </div>
+                  <div class="airTicket-airlines"><span class="airlines-avatar"><img src="../../static/images/airTicket/CZ.png"></span><span class="airlines-con">
+                      <div class="m-popover underline"><span class="ellipsis">阿联酋航空</span>
+                        <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                      </div></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="show-detail">展开详情</div>
+                </div>
+                <div class="airTicket-detail">
+                  <ul class="airTicket-detail-item">
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="airTicket-list-item">
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <div class="airTicket-time">07:50</div>
+                        <div class="airTicket-airport">香港国际机场T1</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                            <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                        <div class="airTicket-airport">盖亚维克机场N</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                      <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="plane-icon"></span>
+                  </div>
+                  <div class="airTicket-airlines"><span class="airlines-avatar"><img src="../../static/images/airTicket/CZ.png"></span><span class="airlines-con">
+                      <div class="m-popover underline"><span class="ellipsis">阿联酋航空</span>
+                        <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                      </div></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="show-detail">展开详情</div>
+                </div>
+                <div class="airTicket-detail">
+                  <ul class="airTicket-detail-item">
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="airTicket-booking">
+              <li class="airTicket-booking-item">
+                <div class="airTicket-tag"><i class="slyx-icon"></i>
+                </div>
+                <div class="airTicket-other"><span class="cabin-type"><em class="underline m-popover">经济舱
+                      <div class="m-popover-con s-up">
+                        <p><em>香港 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 香港</em><em>经济舱(V)</em></p>
+                        <p><em>伦敦 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 伦敦</em><em>经济舱(V)</em></p>
+                      </div></em></span><span class="trip-type"><em class="underline m-popover">行程单
+                      <div class="m-popover-con s-up">只提供行程单</div></em></span><span class="endorse-type"><em class="underline m-popover">行李额及退改签</em></span><span>剩余<em class='main-red'>4</em>张</span></div>
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span><em>起</em></li>
+                      <li class="tax-prc">多程人均含税价</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking-btn"><a>立即预订</a>
+                </div>
+              </li>
+              <li class="airTicket-booking-item">
+                <div class="airTicket-tag"><i class="djtj-icon"></i>
+                </div>
+                <div class="airTicket-other"><span class="cabin-type"><em class="underline m-popover">经济舱
+                      <div class="m-popover-con s-up">
+                        <p><em>香港 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 香港</em><em>经济舱(V)</em></p>
+                        <p><em>伦敦 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 伦敦</em><em>经济舱(V)</em></p>
+                      </div></em></span><span class="trip-type"><em class="underline m-popover">行程单
+                      <div class="m-popover-con s-up">只提供行程单</div></em></span><span class="endorse-type"><em class="underline m-popover">行李额及退改签</em></span><span>剩余<em class='main-red'>4</em>张</span></div>
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span><em>起</em></li>
+                      <li class="tax-prc">多程人均含税价</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking-btn"><a>立即预订</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="airTicket-list-group">
+            <ul class="airTicket-list">
+              <li>
+                <div class="airTicket-list-item">
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <div class="airTicket-time">07:50</div>
+                        <div class="airTicket-airport">香港国际机场T1</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                            <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                        <div class="airTicket-airport">盖亚维克机场N</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                      <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="transit-icon"></span>
+                  </div>
+                  <div class="airTicket-airlines"><span class="airlines-avatar"><img src="../../static/images/airTicket/CZ.png"></span><span class="airlines-con">
+                      <div class="m-popover underline"><span class="ellipsis">阿联酋航空</span>
+                        <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                      </div></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="show-detail">展开详情</div>
+                </div>
+                <div class="airTicket-detail">
+                  <ul class="airTicket-detail-item">
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="airTicket-list-item">
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <div class="airTicket-time">07:50</div>
+                        <div class="airTicket-airport">香港国际机场T1</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                            <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                        <div class="airTicket-airport">盖亚维克机场N</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                      <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="plane-icon"></span>
+                  </div>
+                  <div class="airTicket-airlines"><span class="airlines-avatar"><img src="../../static/images/airTicket/CZ.png"></span><span class="airlines-con">
+                      <div class="m-popover underline"><span class="ellipsis">阿联酋航空</span>
+                        <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                      </div></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="show-detail">展开详情</div>
+                </div>
+                <div class="airTicket-detail">
+                  <ul class="airTicket-detail-item">
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="airTicket-booking">
+              <li class="airTicket-booking-item">
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span><em>起</em></li>
+                      <li class="tax-prc">多程人均含税价</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking-btn"><a>选为第2程</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="airTicket-list-group">
+            <ul class="airTicket-list">
+              <li>
+                <div class="airTicket-list-item">
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <div class="airTicket-time">07:50</div>
+                        <div class="airTicket-airport">香港国际机场T1</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                            <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                        <div class="airTicket-airport">盖亚维克机场N</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                      <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="transit-icon"></span>
+                  </div>
+                  <div class="airTicket-airlines"><span class="airlines-avatar"><img src="../../static/images/airTicket/CZ.png"></span><span class="airlines-con">
+                      <div class="m-popover underline"><span class="ellipsis">阿联酋航空</span>
+                        <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                      </div></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="show-detail">展开详情</div>
+                </div>
+                <div class="airTicket-detail">
+                  <ul class="airTicket-detail-item">
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="airTicket-list-item">
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <div class="airTicket-time">07:50</div>
+                        <div class="airTicket-airport">香港国际机场T1</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                            <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                        <div class="airTicket-airport">盖亚维克机场N</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                      <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="plane-icon"></span>
+                  </div>
+                  <div class="airTicket-airlines"><span class="airlines-avatar"><img src="../../static/images/airTicket/CZ.png"></span><span class="airlines-con">
+                      <div class="m-popover underline"><span class="ellipsis">阿联酋航空</span>
+                        <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                      </div></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="show-detail">展开详情</div>
+                </div>
+                <div class="airTicket-detail">
+                  <ul class="airTicket-detail-item">
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="airTicket-list-item">
+                      <div class="airTicket-transit-tip"><span>中转停留8H20M</span></div>
+                      <div class="airTicket-phase">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                      </div>
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <p>2018.06.01  19:10</p>
+                            <p>2018.06.01  19:10</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <p>素万那普国际机场(BKK)</p>
+                            <p>浦东国际机场T2(PVG)</p>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-airlines">
+                        <div class="airTicket-airlines-con"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                            <div><strong>阿联酋航空</strong></div>
+                            <p>QR817/波音747(大)/飞行8H20M</p>
+                            <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                      </div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="airTicket-booking">
+              <li class="airTicket-booking-item">
+                <div class="airTicket-tag"><i class="slyx-icon"></i>
+                </div>
+                <div class="airTicket-other"><span class="cabin-type"><em class="underline m-popover">经济舱
+                      <div class="m-popover-con s-up">
+                        <p><em>香港 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 香港</em><em>经济舱(V)</em></p>
+                        <p><em>伦敦 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 伦敦</em><em>经济舱(V)</em></p>
+                      </div></em></span><span class="trip-type"><em class="underline m-popover">行程单
+                      <div class="m-popover-con s-up">只提供行程单</div></em></span><span class="endorse-type"><em class="underline m-popover">行李额及退改签</em></span><span>剩余<em class='main-red'>4</em>张</span></div>
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span><em>起</em></li>
+                      <li class="tax-prc">多程人均含税价</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking-btn"><a>立即预订</a>
+                </div>
+              </li>
+              <li class="airTicket-booking-item">
+                <div class="airTicket-tag"><i class="djtj-icon"></i>
+                </div>
+                <div class="airTicket-other"><span class="cabin-type"><em class="underline m-popover">经济舱
+                      <div class="m-popover-con s-up">
+                        <p><em>香港 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 香港</em><em>经济舱(V)</em></p>
+                        <p><em>伦敦 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 伦敦</em><em>经济舱(V)</em></p>
+                      </div></em></span><span class="trip-type"><em class="underline m-popover">行程单
+                      <div class="m-popover-con s-up">只提供行程单</div></em></span><span class="endorse-type"><em class="underline m-popover">行李额及退改签</em></span><span>剩余<em class='main-red'>4</em>张</span></div>
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span><em>起</em></li>
+                      <li class="tax-prc">多程人均含税价</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking-btn"><a>立即预订</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="no-more"><span>没有更多结果了</span></div>
+        <div class="show-more-list"><span class="more-text">查看更多</span><span class="loading-tip"><i class="loading-gif"></i>正在加载，请稍后…</span></div>
+        <div class="endorse-type-popup">
+          <div class="endorse-type-popup-box">
+            <div class="endorse-type-tit">行李额及退改签
+              <div class="c-close-icon"></div>
+            </div>
+            <div class="endorse-type-bd">
+              <div class="endorse-type-tab">
+                <ul class="endorse-type-tab-item">
+                  <li data-show="language" class="active"><span>成人退改签</span></li>
+                  <li data-show="language"><span>儿童退改签</span></li>
+                  <li><span>行李额</span></li>
+                  <li><span>客服备注</span></li>
+                </ul>
+                <ul class="language-sel">
+                  <li class="active">中文</li>
+                  <li>英文</li>
+                </ul>
+              </div>
+              <div class="endorse-type-tab-con">
+                <div class="language ch">中文</div>
+                <div class="language en">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque consectetur expedita fugit illum molestiae nam pariatur possimus, quaerat quia quibusdam rem sequi sunt vitae. Ad doloribus laborum nam?</div>
+              </div>
+              <div class="endorse-type-tab-con">
+                <div class="language ch">中文</div>
+                <div class="language en">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis facere ipsa itaque nam nobis quas! Ad animi commodi cumque delectus, dignissimos, dolorem nam odio omnis praesentium ullam veniam voluptas.</div>
+              </div>
+              <div class="endorse-type-tab-con">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt distinctio dolores ea eligendi harum illum ipsam nobis provident quisquam voluptatum? Architecto delectus doloribus enim illum quam rem rerum vel voluptates!</div>
+              <div class="endorse-type-tab-con">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores assumenda aut delectus distinctio ducimus enim eum exercitationem fugiat laudantium nam, odit officia omnis, quaerat reiciendis, rem rerum tenetur totam.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/airTicket/airTicketList.js"></script>
+  </body>
+</html>

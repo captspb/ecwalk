@@ -1,0 +1,137 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append head
+    title 邮轮详情
+
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/prodDetails.css')
+    link(rel='stylesheet', href='../../static/css/cruise/cruiseDetails.css')
+
+block content
+    include ../../../model/cruise/cruiseDetailsData
+    +bread(bread)
+    .cruise-details
+        .prod-dt-main
+            h2.prod-dt-tit 春节·迪拜邮轮 MSC邮轮 迪拜阿布扎比阿曼 千年古城马斯喀特 神秘阿拉伯9天 EK香港去回广州 13.8万吨 豪华邮轮辉煌号
+            .prod-dt-info.clearfix
+                .img-box
+                    img(src='../../static/images/details/logo.png')
+                    .contact-info.popover 联系方式
+                        .popover-down
+                            h2 广之旅
+                            p 11321321adsfasd
+                            p 11321321adsfasd
+                ul
+                    -for (var i=0;i<prodInfo.length;i++)
+                        li
+                            label #{prodInfo[i].text}
+                            p #{prodInfo[i].con}
+                .prod-dt-prc.sold-out
+                    em ￥<span>23380</span>起
+
+        // 邮轮预定
+        .cruise-booking
+            .cruise-date-sel
+                label 出发日期
+                .cruise-date-sel-btn
+                    span.left-btn
+                        i.arrow-left.disabled
+                    span.right-btn
+                        i.arrow-right
+                .cruise-date-list
+                    ul
+                        -var cruiseDate = ['2017/12/03 周日','2017/12/17 周日','2018/01/05 周五','2018/01/19 周五','2018/01/19 周五','2018/01/19 周五','2017/12/03 周日','2017/12/17 周日','2018/01/05 周五','2018/01/19 周五','2018/01/19 周五','2018/01/19 周五']
+                            -for(var i=0;i<cruiseDate.length;i++)
+                                if (i == 0)
+                                    li.active
+                                        span #{cruiseDate[i]}
+                                else
+                                    li
+                                        span #{cruiseDate[i]}
+            .cruise-bk-list
+                table.cruise-bk-table
+                    tr
+                        th.pr
+                            .cruise-bk-room-sel
+                                span  <em>全部房型</em><i class='arrow-down'></i>
+                                ul
+                                    li 全部房型
+                                    li 内舱房
+                                    li 海景房
+                                    li 阳台房
+                                    li 套房
+                        th 舱房面积
+                        th 最大入住人数
+                        th 第1 / 2人价
+                        th 第3 / 4人价
+                        th 第3 / 4人儿童价
+                        th 成人数
+                        th 儿童数
+                        th 房间数
+                    -for(var i=0;i<5;i++)
+                        tr
+                            td.cruise-prod-name
+                                span.popover 浪漫法式露台房
+                                    .popover-up 13213213232132132132
+                            td.cruise-prod-area 2层 / 12㎡
+                            td.cruise-people-num
+                                -for (var j=0;j<5;j++)
+                                    i.people-icon
+                            td.cruise-bk-prc ￥385000
+                            td.cruise-bk-prc ￥385000
+                            td.cruise-bk-prc ￥385000
+                            td.cruise-bk-stepper
+                            td.cruise-bk-stepper.sellout
+                            td.cruise-room-num 1
+
+            .cruise-prod-operation
+                .operation-item
+                    a <i class='print-icon'></i>打印行程
+                    a <i class='download-icon'></i>下载行程
+                    a <i class='file-icon'></i>下载出团通知书
+        .cruise-bk-dt
+            .cruise-bk-dt-table
+                table
+                    tr
+                        th 舱房名称
+                        th 第1/2人价
+                        th 第3/4人价
+                        th 第3/4儿童
+                        th.room-diff 房差
+                            i.icon-warn.m-popover
+                                .m-popover-con.s-up 房差说明：实际入住人数小于可住人数的情况下，需要补充空床的费用。
+                        th 价格
+                        th 成人数
+                        th 儿童数
+                        th 房间数
+                    -for (var i=0;i<2;i++)
+                        tr
+                            td.cruise-bk-dt-name 浪漫法式露台房
+                            td.cruise-bk-dt-prc ￥385000
+                            td.cruise-bk-dt-prc ￥385000
+                            td.cruise-bk-dt-prc ￥385000
+                            td.cruise-bk-diff-prc ￥300
+                            td.cruise-bk-dt-total ￥385000
+                            td.cruise-bk-dt-steppr
+                            td.cruise-bk-dt-steppr
+                            td 2
+            .cruise-bk-con
+                span.cruise-bk-date-con 出发日期：2017/12/03
+                span.cruise-bk-num-con
+                    span 成人：<em><b>2</b>人</em>
+                    span 儿童：<em><b>1</b>人</em>
+                    span 房间：<em><b>2</b>间</em>
+                span.cruise-total
+                    p 销售总价￥
+                        strong 2380000
+                    p 结算总价￥
+                        strong 2380000
+                a.cruise-bk-btn(href="cruiseOrder.html") 立即预订
+
+        // 邮轮预定 end
+
+        include ../../component/prodDetails/prodDetailsCon
+block append script
+    script(src='../../static/js/cruise/cruiseDetails.js')

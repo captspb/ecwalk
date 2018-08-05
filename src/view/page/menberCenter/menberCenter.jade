@@ -1,0 +1,119 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+block append head
+  title 会员中心
+block append style
+  link(rel='stylesheet', href='../../static/css/menberCenter/menberCenter.css')
+block content
+  include ../../../model/menberCenter/menbercenterData
+  .menbercenter-page.clearfix
+    .menbercenter-sidebar
+      .user-item
+        .user-avatar.pointer
+          img(src="http://www.gzl.com.cn/b2c-image/2017/3/30/5d65287c-694d-436a-8ddb-8f41c825d4b1_300X200.jpg")
+        .user-type 翠江B2B测试专用
+        .user-name zcj
+      ul.sidebar-nav
+        -for(var i=0;i<sidebar.length;i++)
+          li.sidebar-nav-list
+            a.sidebar-list-item #{sidebar[i].name}
+    .menbercenter-con
+      .menbercenter-data.clearfix
+        .credit-quota
+          h2.quota-tit 授信额度
+          ul.quota-data.clearfix
+            li.B2B-quota
+              .quota-progress
+              .quota-con
+                .quota-total
+                  p B2B平台运营管理公司
+                  p 总额度：
+                    strong.total-item 12,000
+                .quota-detail
+                  p 已用额度：6,257
+                  p 可用额度：<em class='usable-item'>5,743</em>
+            li.GHM-quota
+              .quota-progress
+              .quota-con
+                .quota-total
+                  p 粤港澳游总部
+                  p 总额度：
+                    strong.total-item 20,000
+                .quota-detail
+                  p 已用额度：19,750
+                  p.usable 可用额度：<em class='usable-item'>250</em>
+        ul.menber-account-info
+          li.account-balance
+            .info-icon-item
+              i.icon-wallet
+            .info-con
+              p.balance-num 账户余额：
+                strong 50,000
+              p.show-balance-record
+                a.main-blue 查看记录
+          li.child-account
+            .info-icon-item
+              i.icon-human
+            .info-con
+              p.balance-num 子账号：
+                strong 50,000
+              p.child-account-status
+                span 已启用：9
+                span 已停用：5
+              p.account-management
+                a.main-blue 账号管理
+      .no-footprints
+        .no-footprints-tip
+          img.img-con(src='../../static/images/menberCenter/no-footprints.png')
+          span.tip-con
+            h2 您好像还没在行走网留下痕迹哦
+            p 我们为您提供了海量资源和优质服务哦，快去看看吧
+            .tip-con-btn
+              a.browse-btn 去逛逛
+      .menbercenter-info-group
+        .menbercenter-info-item
+          .menbercenter-info-tit.clearfix
+            strong.tit-text 我的收藏
+            a 查看全部收藏
+          ul.menbercenter-info-list
+            li.menbercenter-info-list-item
+              span.w480 产品
+              span.w120 销售价
+              span.w120 同行价
+              span.w120 利润
+              span.w74 操作
+            -for(var i=0;i<6;i++)
+              li.menbercenter-info-list-item
+                span.w480
+                  a 美国东海岸+华盛顿+波士顿+尼亚加拉瀑布+纽约9日7晚跟团游(3钻)·可联运/双名校参观/女神游船/听涛山庄入内/双名校参观/女神游船
+                span.w120 ￥800
+                span.w120 ￥800
+                span.w120 ￥80022
+                span.w74
+                  em.cancel-btn.pointer 取消
+        .menbercenter-info-item
+          .menbercenter-info-tit.clearfix
+            strong.tit-text 我的订单
+            a 查看全部订单
+          ul.menbercenter-info-list
+            li.menbercenter-info-list-item
+              span.w408 产品
+              span.w64 数量
+              span.w120 销售价
+              span.w120 同行价
+              span.w120 利润
+              span.w74 操作
+            -for(var i=0;i<6;i++)
+              li.menbercenter-info-list-item
+                span.w408
+                  a 美国东海岸+华盛顿+波士顿+尼亚加拉瀑布+纽约9日7晚跟团游(3钻)·可联运/双名校参观/女神游船/听涛山庄入内/双名校参观/女神游船
+                span.w64 1
+                span.w120 ￥800
+                span.w120 ￥800
+                span.w120 ￥80022
+                span.w74
+                  em.pay-btn.pointer 支付
+
+block append script
+  script(src='../../static/js/lib/circleChart.min.js')
+  script(src='../../static/js/menberCenter/menberCenter.js')

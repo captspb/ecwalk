@@ -1,0 +1,133 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append head
+    title 酒店
+
+block append style
+    link(rel='stylesheet', href='../../static/css/component/calendar.css')
+    link(rel='stylesheet', href='../../static/css/swiper.min.css')
+    link(rel='stylesheet', href='../../static/css/hotel/hotel.css')
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+
+
+block content
+    include ../../../model/common/hotelData
+    .b2b-hotel-banner
+        .b2b-banner-filter
+            ul
+                li.filter-li
+                    .filter-p 目的地
+                    input(type="text" placeholder="城市/地标/商圈" id="city-picker" class="filter-input")
+                li.filter-li
+                    .filter-p 酒店
+                    input(type="text" placeholder="请输入酒店" id="hotel-input" class="filter-input")
+
+                li.filter-li
+                    .filter-p 入离时间
+                    input(type="text" id="config-demo1" class="filter-input")
+                li.filter-li
+                    .filter-p 入住信息(选填)
+                    input(type="text" id="checkin-info-input" placeholder="可选择入住信息" class="filter-input")
+                    .checkin-info-picker
+                        .head 请填写入住信息
+                        ul
+                            li
+                                span 房间
+                                .counter(id="room-counter" )
+                                    em.minus
+                                        span.c-minus-icon
+
+                                    input(type="text" value="")
+                                    em.plus
+                                        span.c-add-icon
+                            li
+                                span 成人
+                                .counter(id="adult-counter" )
+                                    em.minus
+                                        span.c-minus-icon
+
+                                    input(type="text" value="")
+                                    em.plus
+                                        span.c-add-icon
+
+                            li
+                                span 儿童
+                                .counter(id="children-counter")
+                                    em.minus
+                                        span.c-minus-icon
+                                    input(type="text" value="")
+                                    em.plus
+                                        span.c-add-icon.add-btn
+                        .children-area
+                            p.years-select-tip 请选择儿童年龄
+                            .children-select-items
+
+                            .clear
+                        .canel-cfm
+                            span.cancel 取消
+                            span.cfm 确认
+
+            a.filter-btn 立即搜索
+        .swiper-container.main-focus-swiper
+            .b2b-main-swiper.swiper-wrapper
+                 - for (var i=0; i<swiper.length; i++)
+                     .swiper-slide
+                         a(href=swiper[i].url)
+                             img(src= swiper[i].img)
+
+                .swiper-button-prev
+                    em.icon-zuoqiehuan
+                .swiper-button-next
+                    em.icon-youqiehuan
+
+            .swiper-pagination-cont
+                .swiper-pagination
+    ul.hotel-home-list
+        li
+            .hotel-home-list-head
+                .head-title
+                    span.chinese 热门酒店
+                    span.english HOT THE HOTEL
+                .index-tab
+                    + tabctl(tabHot, 'tab-red')
+
+            .tab-ctx-wrp
+                .tab-ctx.cur
+                    + hotel-items(hotHotels)
+                .tab-ctx
+                    + hotel-items(hotHotels)
+                .tab-ctx
+                    + hotel-items(hotHotels)
+                .tab-ctx
+                    + hotel-items(hotHotels)
+                .tab-ctx
+                    + hotel-items(hotHotels)
+                .tab-ctx
+                    + hotel-items(hotHotels)
+                .tab-ctx
+                    + hotel-items(hotHotels)
+
+
+        li.hotPlace
+            .hotel-home-list-head
+                .head-title
+                    span.chinese 人气目的地
+                    span.english OPULAR DESTINATIONS
+                .index-tab
+                    + tabctl(tabPlace, 'tab-blue')
+
+            .tab-ctx-wrp
+                .tab-ctx.cur
+                    + place-items(hotPlace)
+                .tab-ctx
+                    + place-items(hotPlace)
+
+
+
+
+block append script
+    script(src='../../static/js/lib/swiper.min.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/hotel/hotel.js')

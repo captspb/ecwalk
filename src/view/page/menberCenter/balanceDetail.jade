@@ -1,0 +1,32 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+block append head
+    title 余额记录
+block append style
+    link(rel='stylesheet', href='../../static/css/menberCenter/balanceDetail.css')
+block header
+    include ../../component/common/header_center
+block content
+    - var bread = ['首页','个人中心','余额记录'];
+    +bread(bread)
+    .balance-dt-page
+        .balance-dt-table
+            table
+                tr
+                    th 时间
+                    th 类型
+                    th 订单号
+                    th 金额
+                -for (var i=0;i<5;i++)
+                    tr
+                        td 2017/12/31
+                        td 充值
+                        td
+                            a Arx071622
+                        th 500元
+        .page-cont
+            +pagese('个结果')
+
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/menberCenter/balanceDetail.js')

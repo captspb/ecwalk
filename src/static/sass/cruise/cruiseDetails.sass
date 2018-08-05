@@ -1,0 +1,270 @@
+@import "../common/params"
+@import "../common/function"
+
+.pr
+  position: relative
+.cruise-booking
+  position: relative
+  width: 1190px
+  margin: 0 auto
+  background-color: #fff
+  padding: 0 40px
+
+.cruise-date-sel
+  overflow: hidden
+  position: relative
+  height: 60px
+  line-height: 60px
+  color: #666
+  padding: 0 52px 0 75px
+  label
+    position: absolute
+    top: 0
+    left: 0
+    color: $color-b3
+  .cruise-date-sel-btn
+    position: absolute
+    top: 0
+    right: -10px
+    background-color: #fff
+    span
+      display: inline-block
+      cursor: pointer
+
+    i
+      margin: 0 10px
+      &.disabled
+        opacity: .3
+        filter: alpha(opacity=30)
+  .cruise-date-list
+    overflow: auto
+    ul
+      width: 1000em
+      overflow: hidden
+      li
+        float: left
+        //padding: 0 20px
+        cursor: pointer
+        span
+          display: inline-block
+          width: 160px
+          height: 36px
+          line-height: 36px
+          text-align: center
+          font-size: $font-16
+        &.active
+          span
+            color: #fff
+            background-color: $main-red
+            border-radius: 36px
+
+
+.cruise-bk-table
+  width: 100%
+  tr
+    border-bottom: 1px dashed $color-f0
+    &:first-child
+      border-bottom: none
+  th
+    height: 40px
+    line-height: 40px
+    background-color: #fafafa
+    color: $color-g6
+    font-weight: normal
+    &.pr
+      min-width: 90px
+    i
+      //.arrow-down(4px,@color-g6)
+      margin-left: 3px
+      vertical-align: middle
+  td
+    text-align: center
+    padding: 10px 0
+    .stepper
+      border: none
+      width: 90px
+      display: inline-block
+      vertical-align: top
+      input
+        width: 28px
+  .cruise-prod-name
+    width: 175px
+    text-align: left
+    span
+      color: $font-blue
+      border-bottom: 1px dashed
+    .popover-up
+      width: 1110px
+      margin-bottom: 5px
+      &:before,&:after
+        right: inherit
+        left: 15px
+  .cruise-prod-area
+    width: 125px
+  .cruise-people-num
+    width: 125px
+    i
+      margin: 0 3px
+  .cruise-bk-prc
+    width: 125px
+    color: $main-red
+  .cruise-bk-stepper
+    width: 110px
+
+.cruise-prod-operation
+  overflow: hidden
+  padding: 20px 40px
+  .operation-item
+    color: #466094
+    float: right
+    a
+      margin-left: 40px
+    i
+      vertical-align: -3px
+      margin-right: 10px
+.cruise-bk-room-sel
+  position: absolute
+  padding: 0 10px
+  width: 90px
+  top: 0
+  left: 0
+  right: 0
+  margin: auto
+  span
+    color: $font-blue
+  ul
+    display: none
+    li
+      height: 40px
+      line-height: 40px
+      text-align: center
+      border-top: 1px solid $color-f0
+      cursor: pointer
+      &:hover
+        color: orange
+  &:hover
+    background-color: #fff
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1)
+    z-index: 1
+    span
+      color: orange
+    i
+      display: none
+    ul
+      display: block
+
+.cruise-bk-dt
+  width: 1190px
+  margin: 0 auto
+  position: relative
+  border: 1px solid $main-red
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.2)
+  background-color: #fff
+  .cruise-bk-dt-table
+    position: relative
+    padding: 0 40px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 40px
+      background-color: $color-f7
+    table
+      position: relative
+      width: 100%
+      tr
+        border-bottom: 1px dashed $color-f0
+        &:first-child
+          border-bottom: none
+      th
+        height: 40px
+        line-height: 40px
+        font-weight: normal
+        background-color: $color-f7
+      td
+        padding: 10px 0
+        text-align: center
+        .stepper
+          border: none
+          width: 90px
+          display: inline-block
+          vertical-align: top
+          input
+            width: 28px
+      .room-diff
+        .m-popover
+          margin-left: 4px
+          color: $main-red
+          .m-popover-con
+            width: 275px
+            font-size: 12px
+            color: #fff
+            line-height: 20px
+            text-align: left
+            margin-left: -60px
+      .cruise-bk-dt-name
+        width: 175px
+        text-align: left
+      .cruise-bk-dt-prc
+        width: 125px
+      .cruise-bk-diff-prc
+        width: 125px
+      .cruise-bk-dt-total
+        width: 125px
+      .cruise-bk-dt-steppr
+        width: 110px
+  .cruise-bk-con
+    position: relative
+    overflow: hidden
+    height: 60px
+    line-height: 60px
+    background-color: #fff8f8
+    padding: 0 180px 0 40px
+    font-size: $font-16
+    .cruise-bk-date-con
+      margin-right: 100px
+    .cruise-bk-num-con
+      span
+        margin-left: 40px
+        em
+          color: $main-red
+          margin-left: 5px
+        &:first-child
+          margin: 0
+    .cruise-total
+      float: right
+      color: $main-red
+      line-height: 22px
+      font-size: 18px
+      padding: 8px 0
+    .cruise-bk-btn
+      position: absolute
+      top: 0
+      right: 0
+      width: 160px
+      height: 60px
+      line-height: 60px
+      text-align: center
+      background-color: $main-red
+      color: #fff
+      font-size: $font-18
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+
+
+
+
+

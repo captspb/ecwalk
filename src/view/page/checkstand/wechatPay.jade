@@ -1,0 +1,48 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append style
+    link(rel='stylesheet', href='../../static/css/pay/wechatPay.css')
+        
+
+body
+  block header
+    include ../../component/common/header_order
+
+  block content
+    include ../../../model/menberCenter/accountManageData
+    .wechatpay-cont
+        .b2b-wechat-cont-border
+        .b2b-wechat-cont
+            .b2b-wechat-top
+                .b2b-wechat-left
+                    span.b2b-wechat-tit 微信支付
+                    span.b2b-wechat-desc
+                        | 订单提交成功，请尽快付款！订单号：
+                        span 7068376289
+                .b2b-wechat-right 应付金额
+                    span.red-money 79.90
+                    | 元
+            .b2b-wechat-mid
+                img.b2b-wechat-codePic(src='../../static/images/pay/code.png')
+                .b2b-wechat-codeBtn
+                    i.b2b-wechat-btn-icon
+                    span.b2b-wechat-btn-txt
+                        span 请使用微信扫描
+                        br
+                        span 二维码以完成支付
+            .b2b-wechat-bottom
+                a(href='#')
+                    i.left-link-icon
+                    span 选择其它的支付方式
+
+
+                    
+
+
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/bootstrap.min.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/pay/wechatPay.js')

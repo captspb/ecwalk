@@ -1,0 +1,115 @@
+body{background-color:#f7f7f7}
+.checkstand-page{width:1190px;margin:20px auto}
+.checkstand-header{background-color:#fff;border-top:3px solid #F30A37;margin:0 0 20px 0;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.checkstand-header .checkstand-status{position:relative;padding:43px 100px}
+.checkstand-header .checkstand-status:after,.checkstand-header .checkstand-status:before{content:'';width:30px;height:30px;background-color:#f7f7f7;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;position:absolute;bottom:-15px}
+.checkstand-header .checkstand-status:before{left:-15px}
+.checkstand-header .checkstand-status:after{right:-15px}
+.checkstand-header .checkstand-status .order-status-icon{float:left;margin:7px 30px 0 0}
+.checkstand-header .checkstand-status .order-suc-icon{float:left;margin:-15px 30px 0 0}
+.checkstand-header .checkstand-status .order-status-con{overflow:hidden;color:#666}
+.checkstand-header .checkstand-status .order-status-con h2{font-size:28px;color:#1cab22;margin:0 0 8px 0}
+.checkstand-header .checkstand-status .order-status-con div{font-size:18px;margin:0 0 10px 0}
+.checkstand-header .checkstand-status .dash-line{position:absolute;width:100%;bottom:-2px;left:0;height:4px}
+.checkstand-header .checkstand-status .dash-line g{stroke:#f7f7f7;stroke-width:8}
+.checkstand-header .payment-suc{padding-top:58px}
+.checkstand-header .payment-suc:after,.checkstand-header .payment-suc:before{display:none}
+.checkstand-header .payment-suc .payment-suc-btn{padding:40px 0 0 140px}
+.checkstand-header .payment-suc .payment-suc-btn a{margin-left:20px}
+.checkstand-header .payment-suc .payment-suc-btn a:first-child{margin-left:0}
+.checkstand-header .checkstand-order-info{padding:35px 100px}
+.checkstand-header .checkstand-order-info h2{font-size:20px;font-weight:400;line-height:28px;margin:0 0 25px 0}
+.checkstand-header .checkstand-order-info .order-deadline-wrp{font-size:20px;margin-bottom:36px}
+.checkstand-header .checkstand-order-info .order-total{font-size:16px}
+.checkstand-header .checkstand-order-info .order-total span{color:#181C28}
+.checkstand-header .checkstand-order-info .order-total span em{font-size:32px;line-height:1;font-weight:700;color:#F30A37}
+.checkstand-header .checkstand-order-info .order-total a.toDetail{background:#EEEEF0;-webkit-border-radius:24px;-moz-border-radius:24px;border-radius:24px;display:inline-block;font-size:16px;color:#4779D4;line-height:42px;padding:0 19px;margin-left:40px}
+.order-payment{background-color:#fff;padding:30px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.order-payment .payment-method span.payment-method-span{position:relative;display:inline-block;width:230px;height:60px;border:1px solid #e5e5e5;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin-top:35px;cursor:pointer;margin-right:14px;vertical-align:top;text-align:center}
+.order-payment .payment-method span.payment-method-span span{font-size:18px;color:#333;letter-spacing:0;vertical-align:middle;display:inline-block;line-height:60px}
+.order-payment .payment-method span.payment-method-span .method-icon{position:absolute;top:0;left:0;bottom:0;right:0;margin:auto}
+.order-payment .payment-method span.payment-method-span .red-tick-icon{display:none;position:absolute;right:-2px;bottom:-2px}
+.order-payment .payment-method span.payment-method-span.active{border:2px solid #F30A37}
+.order-payment .payment-method span.payment-method-span.active span{line-height:58px}
+.order-payment .payment-method span.payment-method-span.active .red-tick-icon{display:block}
+.order-payment .payment-method .bank-pay{padding:38px 60px;background-color:#EAF8FF;border:1px solid #D5E7F0;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin-top:14px;display:none}
+.order-payment .payment-method .bank-pay li{margin-top:10px;font-size:0}
+.order-payment .payment-method .bank-pay li:first-child{margin-top:0}
+.order-payment .payment-method .bank-pay li.err span{color:#F30A37;display:inline-block}
+.order-payment .payment-method .bank-pay li.err input{color:#F30A37;border:1px solid #F30A37}
+.order-payment .payment-method .bank-pay label{margin-right:10px;display:inline-block;width:60px;text-align:right;vertical-align:middle;font-size:14px}
+.order-payment .payment-method .bank-pay input{background:#FFF;border:1px solid #D5E7F0;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:8px 10px;font-size:14px;color:#333;letter-spacing:0;line-height:14px;vertical-align:middle}
+.order-payment .payment-method .bank-pay input:focus{border:1px solid #999}
+.order-payment .payment-method .bank-pay span{display:none;margin-left:10px;vertical-align:middle;font-size:14px}
+.order-payment .payment-btn{display:block;font-size:20px;color:#fff;width:200px;height:60px;line-height:60px;text-align:center;background-color:#F30A37;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:90px 0}
+.order-payment .payment-explain{color:#999}
+.order-payment .payment-explain .grey-line{display:inline-block;height:1px;width:100%;background-color:#F0F0F0;position:relative;bottom:-20px}
+.order-payment .payment-explain h2{font-weight:400;font-size:16px;margin:0 0 12px 0;padding-left:22px;position:relative;background-color:#fff;display:inline-block;width:106px}
+.order-payment .payment-explain h2:before{position:absolute;display:inline-block;width:16px;height:16px;content:'';background-image:url(../../images/pay/tip-grey.png);left:0;top:4px}
+.payment-method h5.payment-method-tit{font-size:22px;color:#333;letter-spacing:0;font-weight:400;margin-bottom:30px}
+.payment-method h5.payment-method-tit span{font-size:16px;margin-left:5px}
+.payment-method h5.payment-method-tit span em{font-size:22px}
+.payment-method .accountMoney{position:relative;background:#FFFBF2;border:1px solid #EFE4CA;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:15px;font-size:0}
+.payment-method .accountMoney.noSet .account-passw{display:none}
+.payment-method .accountMoney.noSet .set-account-passw{display:inline-block}
+.payment-method .accountMoney span{vertical-align:middle;display:inline-block;position:static;width:auto;height:auto;border:none;margin:0 100px 0 0;line-height:20px;font-size:16px}
+.payment-method .accountMoney span.red-font{color:#F30A37;margin-right:0}
+.payment-method .accountMoney span.account-left{position:relative;margin-right:40px;cursor:default;font-size:14px}
+.payment-method .accountMoney span.account-left label{font-size:14px}
+.payment-method .accountMoney span.account-left span{font-size:14px;cursor:default}
+.payment-method .accountMoney span.account-left:before{display:inline-block;content:'';width:1px;height:14px;background-color:#EFE4CA;position:absolute;right:-22px;top:3px}
+.payment-method .accountMoney span.account-pay{font-size:14px;margin-right:40px;position:relative}
+.payment-method .accountMoney span.account-pay:before{display:inline-block;content:'';width:1px;height:14px;background-color:#EFE4CA;position:absolute;right:-22px;top:9px}
+.payment-method .accountMoney span.account-pay.dis{color:#D6D2CB}
+.payment-method .accountMoney span.account-pay.dis input{background:#FFFDF8;border:1px solid #F7F0DE;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.payment-method .accountMoney span.account-pay label{font-size:14px}
+.payment-method .accountMoney span.account-pay span{font-size:14px;cursor:default}
+.payment-method .accountMoney span.account-pay input{padding:0 8px}
+.payment-method .accountMoney span.account-passw{font-size:0;position:relative}
+.payment-method .accountMoney span.account-passw.dis{color:#D6D2CB}
+.payment-method .accountMoney span.account-passw.dis input{background:#FFFDF8;border:1px solid #F7F0DE;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.payment-method .accountMoney span.account-passw label{font-size:14px}
+.payment-method .accountMoney span.account-passw ul{display:inline-block}
+.payment-method .accountMoney span.account-passw ul.correct input{border:1px solid #1cab22}
+.payment-method .accountMoney span.account-passw li{display:inline-block}
+.payment-method .accountMoney span.account-passw li input{display:inline-block;width:24px;height:30px;margin-right:4px;font-size:14px;text-align:center}
+.payment-method .accountMoney span.account-passw .drop_up{background-color:#F30A37;color:#fff;font-size:14px;padding:10px 20px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;position:absolute;bottom:42px;left:18px;right:-10px;display:none}
+.payment-method .accountMoney span.account-passw .drop_up:before{display:inline-block;content:'';position:absolute;bottom:-6px;left:50%;width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:6px solid #F30A37}
+.payment-method .accountMoney span.account-passw .tick_icon{background-image:url(../../images/pay/tick_icon.png);width:11px;height:8px;display:none;margin-left:6px}
+.payment-method .accountMoney span.account-passw .sure-passw{display:inline-block;background:#4779D4;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;width:64px;height:30px;line-height:30px;text-align:center;color:#fff;font-size:14px;vertical-align:top;margin-left:2px;cursor:pointer}
+.payment-method .accountMoney span.account-passw.err{color:#333}
+.payment-method .accountMoney span.account-passw.err input{border:1px solid #F30A37}
+.payment-method .accountMoney span.account-passw.err .drop_up{display:inline-block}
+.payment-method .accountMoney span.set-account-passw{display:none;width:116px;height:30px;line-height:30px;background:#4779D4;font-size:14px;color:#FFF;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-align:center;cursor:pointer}
+.payment-method .accountMoney span.account-more{position:absolute;top:0;bottom:0;right:17px;margin:auto 0;height:16px;line-height:16px}
+.payment-method .accountMoney span.account-more .icon-warn-c{width:16px;height:16px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-color:#fff;margin-right:6px}
+.payment-method .accountMoney span.account-more>span{margin-right:0;font-size:14px;color:#999;vertical-align:middle}
+.payment-method .accountMoney span .check-icon{background-image:url(../../images/pay/check-icon.png);display:inline-block;width:20px;height:20px;margin-right:6px;background-repeat:no-repeat;vertical-align:middle;background-position:0;cursor:pointer}
+.payment-method .accountMoney span .checked-icon{background-image:url(../../images/pay/checked-icon.png);background-position:0;display:inline-block;width:20px;height:20px;margin-right:6px;background-repeat:no-repeat;vertical-align:middle}
+.payment-method .accountMoney span .tip-icon{background-image:url(../../images/pay/tip-red.png);display:inline-block;width:16px;height:16px;margin-right:6px;background-repeat:no-repeat;vertical-align:middle;line-height:20px}
+.payment-method .accountMoney span label{display:inline-block;margin-right:6px;font-size:16px}
+.payment-method .accountMoney span input{border:1px solid #EFE4CA;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#fff;width:80px;height:30px;margin-right:10px}
+.payment-method .accountMoney span input:focus{border:1px solid #999}
+.payment-method .accountMoney span input .focus{border:1px solid #999}
+.checkstand-top{position:relative;margin-bottom:14px}
+.checkstand-top:before{content:'';position:absolute;top:-5px;left:-2px;width:1194px;height:10px;background:#F30A37;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+.checkstand-top-box{position:relative;background-color:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.checkstand-top-con{position:relative;padding:24px 48px 16px 168px;height:136px}
+.checkstand-top-con .order-status-icon{position:absolute;top:24px;left:48px}
+.checkstand-top-con .checkstand-order-info{line-height:1}
+.checkstand-top-con .checkstand-order-info h2{margin-top:21px;font-size:22px;color:#181C28;font-weight:400}
+.checkstand-top-con .checkstand-order-info .checkstand-order-code{margin-top:16px;font-size:16px;color:#7F8593}
+.checkstand-top-con .checkstand-order-prc{position:absolute;top:40px;right:24px;font-size:16px;line-height:1}
+.checkstand-top-con .checkstand-order-prc em{font-size:24px}
+.checkstand-top-con .checkstand-order-prc .booking-info{margin-top:18px;text-align:right}
+.checkstand-top-con .checkstand-order-prc .booking-info span{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.checkstand-top-info{padding:0 24px 32px 168px}
+.checkstand-top-info .checkstand-top-info-tit{position:relative;padding:0 0 0 12px;font-size:16px}
+.checkstand-top-info .checkstand-top-info-tit:before{content:'';position:absolute;width:4px;height:4px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;top:0;bottom:0;left:0;margin:auto;background:#181C28}
+.checkstand-top-info li{overflow:hidden;font-size:16px;color:#7F8593;line-height:22px}
+.checkstand-top-info li:not(:first-child){margin-top:14px}
+.checkstand-top-info li label{float:left}
+.checkstand-top-info li p{overflow:hidden}
+.account-tel{line-height:1;font-size:14px;margin-bottom:20px}
+.account-tel label{display:inline-block;vertical-align:middle;width:98px;text-align:right;padding:0 10px 0 0}
+.account-tel span{display:inline-block;vertical-align:middle}

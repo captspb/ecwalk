@@ -1,0 +1,189 @@
+@charset "UTF-8"
+@import "params"
+
+/*气泡弹出框*/
+.popover 
+  position: relative
+  cursor: pointer
+  .popover-up, .popover-down, .popover-left, .popover-right 
+    display: none
+    position: absolute
+    width: 100%
+    padding: 20px
+    background: #fff
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1)
+    border-radius: 4px
+    z-index: 1
+    &:before, &:after
+      content: ""
+      position: absolute
+      width: 0
+      height: 0
+
+    &:before
+      -webkit-filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, .1))
+      filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, .1))
+
+
+  // 上气泡弹出框
+  .popover-up
+    left: 0
+    bottom: 100%
+    word-break: break-all
+    &:before, &:after
+      bottom: -7px
+      left: 0
+      right: 0
+      margin: auto
+      border-left: 7px solid transparent
+      border-right: 7px solid transparent
+
+    &:before
+      border-top: 7px solid #fff
+
+    &:after
+      border-top: 10px solid #fff
+
+
+  // 下气泡弹出框
+  .popover-down
+    left: 0
+    top: 100%
+    &:before, &:after
+      top: -7px
+      left: 0
+      right: 0
+      margin: auto
+      border-left: 7px solid transparent
+      border-right: 7px solid transparent
+
+    &:before
+      border-bottom: 7px solid #fff
+
+    &:after
+      border-bottom: 10px solid #fff
+
+
+  // 左气泡弹出框
+  .popover-left
+    top: 0
+    right: 100%
+    &:before, &:after
+      top: 10px
+      right: -7px
+      border-bottom: 7px solid transparent
+      border-top: 7px solid transparent
+
+    &:before
+      border-left: 7px solid #fff
+
+    &:after
+      border-left: 7px solid #fff
+
+
+  // 右气泡弹出框
+  .popover-right
+    top: 0
+    left: 100%
+    &:before, &:after
+      top: 10px
+      left: -7px
+      border-top: 7px solid transparent
+      border-bottom: 7px solid transparent
+
+    &:before
+      border-right: 7px solid #fff
+
+    &:after
+      border-right: 10px solid #fff
+  
+
+  &:hover 
+    .popover-up, .popover-down, .popover-left, .popover-right 
+      display: block
+
+//----------------------------
+.m-popover
+  position: relative
+  cursor: pointer
+  &:hover
+    .m-popover-con
+      display: block
+.m-popover-con
+  display: none
+  position: absolute
+  padding: 12px 16px
+  font-size: 12px
+  color: #fff
+  background: #333
+  border-radius: 4px
+  box-shadow: 0 3px 6px 0 rgba(24,28,40,0.15)
+  &.popover-red
+    background: $main-red
+    &.s-up,
+    &.s-down
+      &:after
+        color: $main-red
+  &.s-up,
+  &.s-down
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 10px
+      left: 0
+    &:after
+      font-family: 'iconfont'
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      width: 20px
+      height: 8px
+      margin: auto
+      font-size: 20px
+      line-height: 1
+      color: #333
+  &.s-up
+    bottom: 100%
+    margin: 0 0 10px
+    &:before
+      bottom: -10px
+    &:after
+      bottom: -8px
+      content: '\e627'
+  &.s-down
+    top: 100%
+    margin: 10px 0 0
+    &:before
+      top: -10px
+    &:after
+      top: -9px
+      line-height: 0
+      content: '\e628'
+  &.s-left
+    top: 0
+    left: 100%
+    margin: 0 0 0 10px
+    &:before
+      content: ''
+      position: absolute
+      width: 10px
+      height: 100%
+      top: 0
+      left: -10px
+    &:after
+      font-family: 'iconfont'
+      position: absolute
+      left: -14px
+      top: 0
+      bottom: 0
+      width: 20px
+      height: 8px
+      margin: auto
+      font-size: 20px
+      line-height: 1
+      color: #333
+      content: '\e627'
+      transform: rotate(90deg)
+

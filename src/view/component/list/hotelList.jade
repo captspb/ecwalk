@@ -1,0 +1,57 @@
+div.table_cont
+	table.productList
+		tr
+			th.room 房型
+			th.bed 床型
+			th.days 行程天数
+			th.breadfast 早餐
+			th.price-sale 均价
+			//- th.price 同行价
+			//- th.profit 利润
+			th.operate 预定
+		- for (var i=0; i<4; i++)
+			tr
+				td.room
+					span
+						a 高级城景客房高级城景客房高级城景客房
+						.drop_up
+							h5 标准房(双十一特惠)
+							ul.roomInfos
+								li
+									label 房间面积：
+									span 32平方米
+								li
+									label 床型：
+									span 大床/双床
+								li
+									label 标准入住人数：
+									span 2人
+								li
+									label 最多入住人数：
+									span 2人
+				td.product-intro
+					span
+						a.product-intro(style='margin-right: 4px') 产品介绍
+				td.bed
+					span
+						a 大床
+						.drop_up 大床
+				td.days
+					span
+						a 立即确认
+						.drop_up 立即确认
+				td.breadfast 
+					span 是
+				td.price-sale 
+					span.popover ￥385000
+						.popover-up
+							ul
+								- for (var j=0;j<14;j++)
+									li
+										div 08-04 五
+										span ￥385
+										p 双早
+				td.operate
+					span
+						button 散房
+						button(style='margin-right: 0px') 团房

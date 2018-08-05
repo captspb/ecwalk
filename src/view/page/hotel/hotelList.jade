@@ -1,0 +1,79 @@
+extends ../../component/common/layout
+
+include ../../component/common/mixin
+block append head
+  title 酒店搜索列表
+block append style
+  link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+  link(rel='stylesheet', href='../../static/css/hotel/hotelLists.css')
+
+block content
+  include ../../../model/hotel/hotelListsData
+  +bread(bread)
+  .search-pannel-wrp
+    .com-search-pannel
+      include ../../component/list/hotelsearchheader
+      include ../../component/list/hotelsearchctx
+    .list-ctl-wrp
+      .list-ctl-ctx
+        ul
+          li.select
+            span 销量
+            span.down-screen-icon
+          li.select
+            span 价格
+            span.down-screen-icon
+          li.select
+            span 星级
+            span.down-screen-icon
+        .list-ctl-tip 团房价格单团单议，以我司回复结果为准！(游客名单请留意备注)
+    .search-none
+      .portfolio-choice-tip
+        .tip-con
+          h2 找不到合适的结果
+          p 请尝试调整搜索条件。您可以更改出发时间、出发地等条件。
+          a 重新搜索
+    .tab-ctx-wrp
+      .search-list-result.search-list-avatar
+        //.search-tip 团房价格单团单议，以我司回复结果为准！(游客名单请留意备注)
+        ul.hotel-search-list
+          -for(var i=0;i<10;i++)
+            li.search-list-item
+              .search-list-avatar
+                img(src='http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg')
+              .search-list-info
+                h2(title="广州番禺香江大酒店") 广州番禺香江大酒店
+                p
+                  label 酒店星级：
+                  span 豪华
+                p
+                  label 所在区域：
+                  span 广州市天河区
+                p
+                  label 酒店地址：
+                  span(title="天河区珠江新城珠江西路5号") 天河区珠江新城珠江西路5号
+              .search-list-bk
+                .search-list-prc.main-red ￥8000
+                .search-list-btn 查看房型
+        .no-more
+          span 没有更多结果了
+        //- address
+        .search-address
+          h4 交通信息
+          .address-cont#baidumap
+      .show-more-list
+        span.more-text 查看更多
+        span.loading-tip
+          i.loading-gif
+          | 正在加载，请稍后…
+    //-.pagination-wrp.clearfix
+      .pagination
+
+
+block append script
+  script(type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=tmH4FzWYevQmsqCSbPA3u3A8")
+  script(src='../../static/js/lib/jquery.pagination.js')
+  script(src='../../static/js/lib/moment.js')
+  script(src='../../static/js/lib/daterangepicker.js')
+  script(src='../../static/js/baidumap/baidumap.js')
+  script(src='../../static/js/hotel/hotelList.js')

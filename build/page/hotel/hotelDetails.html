@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/component/calendar.css">
+    <link rel="stylesheet" href="../../static/css/prodDetails.css">
+    <link rel="stylesheet" href="../../static/css/hotel/hotelDetails.css">
+  </head>
+  <title>酒店详情</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx"><a><img src="../../static/images/index/LogoTitle.png"></a>
+        <div class="b2b-address"><span><span class="img"></span><font>广州市
+              <ul class="drop_down">
+                <li> <a>北京市</a></li>
+                <li> <a>乌鲁木齐市</a></li>
+                <li> <a>上海市</a></li>
+                <li> <a>吐鲁番市</a></li>
+                <li> <a>深圳市</a></li>
+              </ul></font></span></div>
+        <div class="b2b-header-search">
+          <div class="search-box">
+            <div class="select-group">
+              <div class="select"><span class="select-val">全部产品</span><i class="select-down-arrow-icon"></i></div>
+              <ul style="display: none;" class="select-dropdown">
+                <li class="active">全部产品</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地玩乐</li>
+                <li>酒店</li>
+                <li>门票</li>
+                <li>签证</li>
+                <li>邮轮</li>
+                <li>WIFI</li>
+              </ul>
+            </div>
+            <div class="search-input">
+              <input placeholder="请输入搜索关键字...">
+            </div><a class="search-btn">搜索</a>
+          </div>
+          <div class="search-hot"></div>
+        </div>
+        <div class="b2b-header-bitMap">
+          <div class="bitMapDiv">
+            <div class="bitMapInnerDiv">
+              <div class="wx-kf popover"><i class="wx-kf-icon"></i><span class="contact">
+                  <p>欢迎使用</p>
+                  <p>在线客服</p></span>
+                <div class="popover-down">
+                  <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                  <div class="code-tip">扫码关注公众号</div>
+                </div>
+              </div>
+              <div class="tel-kf"><i class="tel-icon"></i><span class="contact">
+                  <p>020-86338888</p>
+                  <p>400-863-8888</p></span></div>
+            </div><img src="../../static/images/index/monkey.png" class="r">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="zyx"><a href="#">
+              <div>自由行</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="ddwl"><a href="#">
+              <div>当地玩乐</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="qz"><a href="#">
+              <div>签证</div><span class="white-line"></span></a></li>
+          <li nav-type="wifi"><a href="#">
+              <div>WIFI</div><span class="white-line"></span></a></li>
+          <li nav-type="jp"><a href="#">
+              <div>机票</div><span class="white-line"></span><i class="new-tip-icon"></i></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="hotel-details">
+      <div class="hotel-bk-top">
+        <div class="hotel-bk-top-con clearfix">
+          <div class="hotel-bk-top-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+          <div class="hotel-bk-top-info">
+            <h2>香港百乐酒店（Park Hotel Hong Kong）</h2>
+            <div class="info-star"><i class="y-star-icon"></i><i class="y-star-icon"></i><i class="y-star-icon"></i><i class="y-star-icon"></i><i class="y-star-icon"></i>
+            </div>
+            <ul class="top-info-list">
+              <li class="clearfix">
+                <label class="tit-item">酒店编号：</label>
+                <div class="com-item">RJD002019</div>
+              </li>
+              <li class="clearfix">
+                <label class="tit-item">所在区域：</label>
+                <div class="com-item">中国香港九龙区</div>
+              </li>
+              <li class="clearfix">
+                <label class="tit-item">酒店地址：</label>
+                <div class="com-item">香港九龙尖沙咀漆咸道南61-65号</div>
+              </li>
+              <li class="clearfix">
+                <label class="tit-item">酒店介绍：</label>
+                <div class="com-item">香港百乐酒店(Park Hotel Hong Kong)位于尖沙嘴心脏地带</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hotel-bk-top-btn"><a class="booking-btn">立即预订</a><a class="collection-btn">收藏</a></div>
+      </div>
+      <div class="hotel-bk-search">
+        <div class="hotel-bk-search-item clearfix">
+          <div class="isbreakfast"><i class="checkbox-icon"></i><span>含早餐</span></div>
+          <div class="hotel-bk-search-date">
+            <input placeholder="入住时间-离店时间"><em class="hotel-bk-search-tip">入住时间-离店时间</em>
+          </div>
+          <div class="hotel-bk-search-num"><em class="hotel-bk-search-tip">入住信息</em>
+            <div class="hotel-search-info-num"><em class='room-num'>1</em>间 / 每间<em class='adult-num'>1</em>成人，<em class='child-num'>0</em>儿童</div>
+            <div class="airTicket-select-dropdown">
+              <div class="select-dropdown-hd">请选择入住信息</div>
+              <div class="select-dropdown-bd">
+                <ul class="tourists-select">
+                  <li>房间
+                    <div data-min="1" data-max="5" class="stepper-select room-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">1</span><span class="c-add-icon add-btn"></span></div>
+                  </li>
+                  <li>成人/间
+                    <div data-min="1" data-max="4" class="stepper-select adult-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">1</span><span class="c-add-icon add-btn"></span></div>
+                  </li>
+                  <li>儿童/间
+                    <div data-min="0" data-max="2" class="stepper-select child-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">0</span><span class="c-add-icon add-btn"></span></div>
+                  </li>
+                </ul>
+                <div class="child-age-sel">
+                  <div class="age-sel-tit">请选择儿童年龄</div>
+                  <div class="select-item clearfix">
+                    <div class="select-list-item"><span class="item-con">儿童1：<em>< 1岁</em></span><i class="g-arrow-down-icon"></i>
+                      <ul class="select-item-list">
+                        <li>< 1岁</li>
+                        <li>1岁</li>
+                        <li>2岁</li>
+                        <li>3岁</li>
+                        <li>4岁</li>
+                      </ul>
+                    </div>
+                    <div class="select-list-item"><span class="item-con">儿童2：<em>< 1岁</em></span><i class="g-arrow-down-icon"></i>
+                      <ul class="select-item-list">
+                        <li>< 1岁</li>
+                        <li>1岁</li>
+                        <li>2岁</li>
+                        <li>3岁</li>
+                        <li>4岁</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="airTicket-select-btn"><a class="cancel-btn">取消</a><a class="sure-btn">确定</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="hotel-bk-search-btn">搜索</div>
+        </div>
+        <div class="hotel-bk-search-con">
+          <div class="search-loading-tip">
+            <div class="text-tip">正在为您查询…</div>
+            <div class="portfolio-choice-tip">
+              <div class="tip-con">
+                <h2>找不到合适的结果</h2>
+                <p>请尝试调整搜索条件。您可以更改出发时间、出发地等条件。</p>
+              </div>
+            </div>
+          </div>
+          <ul class="hotel-bk-search-list">
+            <li class="list-item">
+              <div class="list-info clearfix">
+                <div class="list-info-img"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+                <div class="list-info-con">
+                  <h2>海景高级房</h2>
+                  <p>床型描述：双人床1.8米，1张或单人床1.2米</p>
+                  <p>供应商：广之旅岭南</p>
+                  <p title="房间设施：书桌，熨衣设备，房内保险箱，空调，衣柜/衣橱，暖气，闹钟，电热水壶，咖啡机，茶包，吹风机，浴室，熨衣设备，房内保险箱，空调">房间设施：书桌，熨衣设备，房内保险箱，空调，衣柜/衣橱，暖气，闹钟，电热水壶，咖啡机，茶包，吹风机，浴室，熨衣设备，房内保险箱，空调</p>
+                </div>
+              </div>
+              <div class="list-table">
+                <div class="list-table-th">
+                  <div class="list-room-type">房型</div>
+                  <div class="list-policy">退改政策</div>
+                  <div class="list-breakfast">含早餐</div>
+                  <div class="list-bed-type">床型</div>
+                  <div class="list-can-live">可住成人</div>
+                  <div class="list-total-prc">总销售价</div>
+                  <div class="list-unit-prc">每天单价</div>
+                </div>
+                <ul class="list-table-tb">
+                  <li>
+                    <div class="list-room-type"><span>海景高级房（含早）</span>
+                    </div>
+                    <div class="list-policy main-blue">
+                      <div class="m-popover">限时退改
+                        <div class="m-popover-con s-up">如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。</div>
+                      </div>
+                    </div>
+                    <div class="list-breakfast">含早</div>
+                    <div class="list-bed-type">大床</div>
+                    <div class="list-can-live">2</div>
+                    <div class="list-total-prc">¥<span>872</span></div>
+                    <div class="list-unit-prc main-red">¥<span>872</span></div>
+                    <div class="list-table-btn">预定</div>
+                  </li>
+                  <li>
+                    <div class="list-room-type"><span>海景高级房（含早）</span>
+                    </div>
+                    <div class="list-policy main-blue">
+                      <div class="m-popover">限时退改
+                        <div class="m-popover-con s-up">如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。</div>
+                      </div>
+                    </div>
+                    <div class="list-breakfast">含早</div>
+                    <div class="list-bed-type">大床</div>
+                    <div class="list-can-live">2</div>
+                    <div class="list-total-prc">¥<span>872</span></div>
+                    <div class="list-unit-prc main-red">¥<span>872</span></div>
+                    <div class="list-table-btn">预定</div>
+                  </li>
+                  <li>
+                    <div class="list-room-type"><span>海景高级房（含早）</span>
+                    </div>
+                    <div class="list-policy main-blue">
+                      <div class="m-popover">限时退改
+                        <div class="m-popover-con s-up">如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。</div>
+                      </div>
+                    </div>
+                    <div class="list-breakfast">含早</div>
+                    <div class="list-bed-type">大床</div>
+                    <div class="list-can-live">2</div>
+                    <div class="list-total-prc">¥<span>872</span></div>
+                    <div class="list-unit-prc main-red">¥<span>872</span></div>
+                    <div class="list-table-btn presell m-popover">即将开始
+                      <div class="m-popover-con s-up"><i class="icon-clock"></i>开售时间：2017-08-01</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="list-info clearfix">
+                <div class="list-info-img"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+                <div class="list-info-con">
+                  <h2>海景高级房</h2>
+                  <p>床型描述：双人床1.8米，1张或单人床1.2米</p>
+                  <p>供应商：广之旅岭南</p>
+                  <p title="房间设施：书桌，熨衣设备，房内保险箱，空调，衣柜/衣橱，暖气，闹钟，电热水壶，咖啡机，茶包，吹风机，浴室，熨衣设备，房内保险箱，空调">房间设施：书桌，熨衣设备，房内保险箱，空调，衣柜/衣橱，暖气，闹钟，电热水壶，咖啡机，茶包，吹风机，浴室，熨衣设备，房内保险箱，空调</p>
+                </div>
+              </div>
+              <div class="list-table">
+                <div class="list-table-th">
+                  <div class="list-room-type">房型</div>
+                  <div class="list-policy">退改政策</div>
+                  <div class="list-breakfast">含早餐</div>
+                  <div class="list-bed-type">床型</div>
+                  <div class="list-can-live">可住成人</div>
+                  <div class="list-total-prc">总销售价</div>
+                  <div class="list-unit-prc">每天单价</div>
+                </div>
+                <ul class="list-table-tb">
+                  <li>
+                    <div class="list-room-type"><span>海景高级房（含早）</span>
+                    </div>
+                    <div class="list-policy main-blue">
+                      <div class="m-popover">限时退改
+                        <div class="m-popover-con s-up">如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。</div>
+                      </div>
+                    </div>
+                    <div class="list-breakfast">含早</div>
+                    <div class="list-bed-type">大床</div>
+                    <div class="list-can-live">2</div>
+                    <div class="list-total-prc">¥<span>872</span></div>
+                    <div class="list-unit-prc main-red">¥<span>872</span></div>
+                    <div class="list-table-btn">预定</div>
+                  </li>
+                  <li>
+                    <div class="list-room-type"><span>海景高级房（含早）</span>
+                    </div>
+                    <div class="list-policy main-blue">
+                      <div class="m-popover">限时退改
+                        <div class="m-popover-con s-up">如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。</div>
+                      </div>
+                    </div>
+                    <div class="list-breakfast">含早</div>
+                    <div class="list-bed-type">大床</div>
+                    <div class="list-can-live">2</div>
+                    <div class="list-total-prc">¥<span>872</span></div>
+                    <div class="list-unit-prc main-red">¥<span>872</span></div>
+                    <div class="list-table-btn">预定</div>
+                  </li>
+                  <li>
+                    <div class="list-room-type"><span>海景高级房（含早）</span>
+                    </div>
+                    <div class="list-policy main-blue">
+                      <div class="m-popover">限时退改
+                        <div class="m-popover-con s-up">如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。</div>
+                      </div>
+                    </div>
+                    <div class="list-breakfast">含早</div>
+                    <div class="list-bed-type">大床</div>
+                    <div class="list-can-live">2</div>
+                    <div class="list-total-prc">¥<span>872</span></div>
+                    <div class="list-unit-prc main-red">¥<span>872</span></div>
+                    <div class="list-table-btn presell m-popover">即将开始
+                      <div class="m-popover-con s-up"><i class="icon-clock"></i>开售时间：2017-08-01</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="list-info clearfix">
+                <div class="list-info-img"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+                <div class="list-info-con">
+                  <h2>海景高级房</h2>
+                  <p>床型描述：双人床1.8米，1张或单人床1.2米</p>
+                  <p>供应商：广之旅岭南</p>
+                  <p title="房间设施：书桌，熨衣设备，房内保险箱，空调，衣柜/衣橱，暖气，闹钟，电热水壶，咖啡机，茶包，吹风机，浴室，熨衣设备，房内保险箱，空调">房间设施：书桌，熨衣设备，房内保险箱，空调，衣柜/衣橱，暖气，闹钟，电热水壶，咖啡机，茶包，吹风机，浴室，熨衣设备，房内保险箱，空调</p>
+                </div>
+              </div>
+              <div class="list-table">
+                <div class="list-table-th">
+                  <div class="list-room-type">房型</div>
+                  <div class="list-policy">退改政策</div>
+                  <div class="list-breakfast">含早餐</div>
+                  <div class="list-bed-type">床型</div>
+                  <div class="list-can-live">可住成人</div>
+                  <div class="list-total-prc">总销售价</div>
+                  <div class="list-unit-prc">每天单价</div>
+                </div>
+                <ul class="list-table-tb">
+                  <li>
+                    <div class="list-room-type"><span>海景高级房（含早）</span>
+                    </div>
+                    <div class="list-policy main-blue">
+                      <div class="m-popover">限时退改
+                        <div class="m-popover-con s-up">如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。</div>
+                      </div>
+                    </div>
+                    <div class="list-breakfast">含早</div>
+                    <div class="list-bed-type">大床</div>
+                    <div class="list-can-live">2</div>
+                    <div class="list-total-prc">¥<span>872</span></div>
+                    <div class="list-unit-prc main-red">¥<span>872</span></div>
+                    <div class="list-table-btn">预定</div>
+                  </li>
+                  <li>
+                    <div class="list-room-type"><span>海景高级房（含早）</span>
+                    </div>
+                    <div class="list-policy main-blue">
+                      <div class="m-popover">限时退改
+                        <div class="m-popover-con s-up">如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。</div>
+                      </div>
+                    </div>
+                    <div class="list-breakfast">含早</div>
+                    <div class="list-bed-type">大床</div>
+                    <div class="list-can-live">2</div>
+                    <div class="list-total-prc">¥<span>872</span></div>
+                    <div class="list-unit-prc main-red">¥<span>872</span></div>
+                    <div class="list-table-btn">预定</div>
+                  </li>
+                  <li>
+                    <div class="list-room-type"><span>海景高级房（含早）</span>
+                    </div>
+                    <div class="list-policy main-blue">
+                      <div class="m-popover">限时退改
+                        <div class="m-popover-con s-up">如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。</div>
+                      </div>
+                    </div>
+                    <div class="list-breakfast">含早</div>
+                    <div class="list-bed-type">大床</div>
+                    <div class="list-can-live">2</div>
+                    <div class="list-total-prc">¥<span>872</span></div>
+                    <div class="list-unit-prc main-red">¥<span>872</span></div>
+                    <div class="list-table-btn presell m-popover">即将开始
+                      <div class="m-popover-con s-up"><i class="icon-clock"></i>开售时间：2017-08-01</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hotel-bk-map">
+        <div class="hotel-bk-tip">酒店位置</div>
+        <div id="baidumap" geo="113.2759952545166,23.117055306224895"></div>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&amp;ak=tmH4FzWYevQmsqCSbPA3u3A8"></script>
+    <script src="../../static/js/calendar/calendar.js"></script>
+    <script type="js/template" id="price-calendar-single-wrp">
+      <div class="price-calendar-single-wrp">
+        <div class="price-calendar-ctx">
+          <div class="price-calendar-header-wrp">
+            <div class="price-calendar-header">
+              <div class="b-left-arrow">
+                <div class="b-left-arrow-icon c-icon"></div>
+              </div>
+              <div class="price-calendar-title"></div>
+              <div class="b-right-arrow">
+                <div class="b-right-arrow-icon c-icon"></div>
+              </div>
+            </div>
+            <div class="weekday-wrp"><span class="weekday">日</span><span class="weekday">一</span><span class="weekday">二</span><span class="weekday">三</span><span class="weekday">四</span><span class="weekday">五</span><span class="weekday">六</span>
+            </div>
+          </div>
+          <div class="price-calendar-route">
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script type="js/template" id="range-calendar-single-wrp">
+      <div class="range-calendar-single-wrp">
+        <div class="price-calendar-ctx">
+          <div class="price-calendar-header-wrp">
+            <div class="price-calendar-header">
+              <div class="b-left-arrow">
+                <div class="b-left-arrow-icon c-icon"></div>
+              </div>
+              <div class="price-calendar-title"></div>
+              <div class="b-right-arrow">
+                <div class="b-right-arrow-icon c-icon"></div>
+              </div>
+            </div>
+            <div class="weekday-wrp"><span class="weekday">日</span><span class="weekday">一</span><span class="weekday">二</span><span class="weekday">三</span><span class="weekday">四</span><span class="weekday">五</span><span class="weekday">六</span>
+            </div>
+          </div>
+          <div class="price-calendar-route">
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script type="js/template" id="price-calendar-double-wrp">
+      <div class="price-calendar-double-wrp">
+        <div class="price-calendar-ctx">
+          <div class="price-calendar-header-wrp">
+            <div class="price-calendar-header">
+              <div class="b-left-arrow">
+                <div class="b-left-arrow-icon c-icon"></div>
+              </div>
+              <div class="price-calendar-title"></div>
+            </div>
+            <div class="weekday-wrp"><span class="weekday">日</span><span class="weekday">一</span><span class="weekday">二</span><span class="weekday">三</span><span class="weekday">四</span><span class="weekday">五</span><span class="weekday">六</span>
+            </div>
+          </div>
+          <div class="price-calendar-route">
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="price-calendar-ctx">
+          <div class="price-calendar-header-wrp">
+            <div class="price-calendar-header">
+              <div class="price-calendar-title"></div>
+              <div class="b-right-arrow">
+                <div class="b-right-arrow-icon c-icon"></div>
+              </div>
+            </div>
+            <div class="weekday-wrp"><span class="weekday">日</span><span class="weekday">一</span><span class="weekday">二</span><span class="weekday">三</span><span class="weekday">四</span><span class="weekday">五</span><span class="weekday">六</span>
+            </div>
+          </div>
+          <div class="price-calendar-route">
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script type="js/template" id="range-calendar-double-wrp">
+      <div class="range-calendar-double-wrp">
+        <div class="price-calendar-ctx">
+          <div class="price-calendar-header-wrp">
+            <div class="price-calendar-header">
+              <div class="b-left-arrow">
+                <div class="b-left-arrow-icon c-icon"></div>
+              </div>
+              <div class="price-calendar-title"></div>
+            </div>
+            <div class="weekday-wrp"><span class="weekday">日</span><span class="weekday">一</span><span class="weekday">二</span><span class="weekday">三</span><span class="weekday">四</span><span class="weekday">五</span><span class="weekday">六</span>
+            </div>
+          </div>
+          <div class="price-calendar-route">
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="price-calendar-ctx">
+          <div class="price-calendar-header-wrp">
+            <div class="price-calendar-header">
+              <div class="price-calendar-title"></div>
+              <div class="b-right-arrow">
+                <div class="b-right-arrow-icon c-icon"></div>
+              </div>
+            </div>
+            <div class="weekday-wrp"><span class="weekday">日</span><span class="weekday">一</span><span class="weekday">二</span><span class="weekday">三</span><span class="weekday">四</span><span class="weekday">五</span><span class="weekday">六</span>
+            </div>
+          </div>
+          <div class="price-calendar-route">
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+            <div class="price-calendar-line">
+              <ul>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+                <li class="date-blank"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+    <script src="../../static/js/hotel/hotelDetails.js"></script>
+  </body>
+</html>

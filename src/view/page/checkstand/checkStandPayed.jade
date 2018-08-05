@@ -1,0 +1,28 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append head
+    title 支付成功
+
+block append style
+    link(rel='stylesheet', href='../../static/css/checkstand/checkstand.css')
+
+block header
+    include ../../component/common/header_order
+
+block content
+    .checkstand-page
+        .checkstand-header
+            .checkstand-status.payment-suc
+                i.order-suc-icon
+                .order-status-con
+                    h2 恭喜您！订单支付成功！
+                    div 订单号：201705160002688
+                    p 如您发现订单⾦额或⽀付⾦额有误，请拨打客服热线 <em class='main-blue'>020-86338888</em> 联系客服处理
+                .payment-suc-btn
+                    a.btn.btn-md 查看订单
+                    a.btn.btn-md.btn-default 随便逛逛
+
+block footer
+block append script
+    script(src='../../static/js/checkstand/checkStandPayed.js')

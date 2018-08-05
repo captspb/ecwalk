@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/menberCenter/orderManage.css">
+  </head>
+  <title>订单管理</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx">
+        <div class="b2c-header-logo"><img src="../../static/images/index/LogoTitle.png"></div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="grzc" class="cur"><a href="#">
+              <div>个人中心</div><span class="white-line"></span></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="menber-center">
+      <div class="center-cont">
+        <ul class="left-nav">
+          <li class="first_nav cur"><a>对账单管理</a>
+            <ul>
+              <li class="second_nav"> <a href="left_centerNavs[i].children[j].url">未付款</a></li>
+              <li class="second_nav"> <a href="left_centerNavs[i].children[j].url">已付款</a></li>
+            </ul>
+          </li>
+          <li class="first_nav"><a>订单管理</a>
+            <ul>
+              <li class="second_nav"> <a href="left_centerNavs[i].children[j].url">未付款</a></li>
+              <li class="second_nav"> <a href="left_centerNavs[i].children[j].url">已付款</a></li>
+            </ul>
+          </li>
+          <li class="first_nav"><a>账号管理</a>
+            <ul>
+            </ul>
+          </li>
+          <li class="first_nav"><a>账号安全</a>
+            <ul>
+            </ul>
+          </li>
+          <li class="first_nav"><a>个人信息</a>
+            <ul>
+            </ul>
+          </li>
+          <li class="first_nav"><a>我的收藏</a>
+            <ul>
+            </ul>
+          </li>
+        </ul>
+        <div class="search-content">
+          <div class="searchbar-info-box">
+            <ul class="searchbar-info">
+              <li><span><strong>授信额度</strong></span></li>
+              <li><span>粤港澳授信</span><span>
+                  <label>总额度:</label><span>5000</span></span><span>
+                  <label>剩余:</label><span>1000</span></span></li>
+              <li><span>平台授信</span><span>
+                  <label>总额度:</label><span>5000</span></span><span>
+                  <label>剩余:</label><span>1000</span></span></li>
+            </ul>
+            <ul class="searchbar-info">
+              <li><span><strong>账户余额</strong></span></li>
+              <li><span>
+                  <label>剩余:</label><span>2000</span></span><span class="main-blue"><a href="balanceDetail.html">查看余额使用记录</a></span></li>
+            </ul>
+          </div>
+          <div class="searchbar-cont">
+            <ul class="searchbar">
+              <li class="search-item">
+                <label>订单编号</label>
+                <input placeholder="请输入订单编号">
+              </li>
+              <li class="search-item">
+                <label>商家订单号</label>
+                <input placeholder="请输入商家订单号">
+              </li>
+              <li class="search-item">
+                <label>线路名称</label>
+                <input placeholder="请输入线路关键字">
+              </li>
+              <li class="search-item">
+                <label>客人名称</label>
+                <input placeholder="请输入客人全称">
+              </li>
+              <li class="search-item">
+                <label>酒店名称</label>
+                <input placeholder="请输入酒店名称">
+              </li>
+            </ul>
+            <button>搜索</button>
+          </div>
+          <div class="searchbar-cont">
+            <ul class="searchbar order-screen">
+              <li class="search-item">
+                <label>订单状态：</label>
+                <select>
+                  <option>全部</option>
+                </select>
+              </li>
+              <li class="search-item">
+                <label>订单类型：</label>
+                <select>
+                  <option>全部</option>
+                  <option>类型1</option>
+                  <option>类型2</option>
+                  <option>类型3</option>
+                  <option>类型4</option>
+                  <option>类型5</option>
+                </select>
+              </li>
+              <li class="search-item">
+                <label>支付状态：</label>
+                <select>
+                  <option>全部</option>
+                  <option>类型1</option>
+                  <option>类型2</option>
+                  <option>类型3</option>
+                  <option>类型4</option>
+                  <option>类型5</option>
+                </select>
+              </li>
+            </ul>
+            <ul class="searchbar order-screen">
+              <li style="margin-right: 10px" class="search-item">
+                <label>出发日期：</label>
+                <input id="start-date" placeholder="请选择日期" class="date">
+                <label>-</label>
+                <input id="end-date" placeholder="请选择日期" class="date"><span class="clear-date">清空日期</span>
+              </li>
+              <li class="search-item">
+                <label>下单日期：</label>
+                <input id="order-start-date" placeholder="请选择日期" value="2017/11/11" class="date">
+                <label>-</label>
+                <input id="order-end-date" placeholder="请选择日期" value="2017/11/13" class="date"><span class="clear-date">清空日期</span>
+              </li>
+            </ul>
+            <div class="picked-tag"><span class="had-pick-title web-font-bold">已选</span>
+              <ul>
+                <li><span>下单日期：2013/03/09-2014/05/12</span><span class="sclose"></span></li>
+              </ul><span class="clear-all">清空已选</span><span class="orders-pay"><i class="orders-pay-icon"></i><a href="orderManagePay.html">批量支付</a></span>
+            </div>
+          </div>
+          <ul class="searchResult-cont">
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn alert-cancel"><a>取消订单</a></li>
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+            <li class="order-item">
+              <div class="order-item-top">
+                <ul class="order-item-No">
+                  <li>
+                    <label>订单编号：</label><span>66545648984</span>
+                  </li>
+                  <li>
+                    <label>商家订单号：</label><span>80018222</span>
+                  </li>
+                  <li>
+                    <label>下单人：</label><span>何绮祺</span>
+                  </li>
+                </ul>
+                <ul class="order-item-btns">
+                  <li class="order-item-btn cancel-order"> <a>取消订单</a></li>
+                  <li class="order-item-btn comfirm-ticket"><a>出票</a></li>
+                  <li class="order-item-btn update"><a>变更</a></li>
+                  <li class="order-item-btn"><a href="#">支付余额</a></li>
+                  <li class="order-item-btn order-item-No"><a>查看详情</a></li>
+                </ul>
+              </div>
+              <div class="order-item-mid"><span class="order-item-blk order-item-blk-4">
+                  <label>团队名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>产品名称</label>
+                  <div>南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车</div></span><span class="order-item-blk order-item-blk-1">
+                  <label>数量</label>
+                  <div style="display: block">2</div></span><span style="padding:0" class="order-item-blk order-item-blk-1"><span style="height:50%" class="order-item-blk payed-blk">
+                    <label>已付</label>
+                    <div style="display: block">￥1000</div></span><span style="height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7" class="order-item-blk">
+                    <label>未付</label>
+                    <div style="display: block">-</div></span></span><span class="order-item-blk order-item-blk-2">
+                  <label>总价</label>
+                  <div style="display: block">￥2,418</div></span></div>
+              <div class="order-item-bottom"><span class="order-item-blk order-item-blk-4">
+                  <label>出发日期</label>
+                  <div>2017/05/24</div></span><span class="order-item-blk order-item-blk-4">
+                  <label>游客名单</label>
+                  <div> 
+                    <ul class="name-list">
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                      <li>李诗敏</li>
+                    </ul>
+                  </div></span><span class="order-item-blk order-item-blk-4 status-blk">
+                  <label>已付款</label>
+                  <label>进行中</label></span></div>
+            </li>
+          </ul>
+          <div class="page-cont">
+            <div class="pagination-wrp">
+              <div class="pageindex"><span>1</span> -<span>39</span> / 共<span>80</span>个结果</div>
+              <div class="pagination"></div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/jquery.pagination.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/menberCenter/orderManage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+block append head
+    title 账户管理
+block append style
+    link(rel='stylesheet', href='../../static/css/menberCenter/accountManage.css')
+        
+
+body
+  block header
+    include ../../component/common/header_center
+
+  block content
+    include ../../../model/menberCenter/accountManageData
+    .menber-center
+        .center-cont
+            //- 左导航
+            ul.left-nav
+                - for (var i=0; i<left_centerNavs.length; i++)
+                    if i==0  
+                        li.first_nav.cur
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+                    else 
+                        li.first_nav
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+            //- 右边内容
+            .search-content
+                
+
+                .searchbar-cont
+                    ul.searchbar
+                        - for (var i = 0;i<=search_items.length - 1; i++)
+                            li.search-item
+                                label #{search_items[i].label}
+                                input(placeholder=search_items[i].placeholder)
+                    button 搜索
+               
+                .searchResult-cont
+                    table
+                        tr.headRow
+                            th.No
+                                span 序号
+                            th.account 
+                                span 账号
+                            th.name 
+                                span 姓名
+                            th.tel 
+                                span 手机
+                            th.mainAccount 
+                                span 是否主账号
+                            th.active 
+                                span  是否启用
+                            th.operate 
+                                span 更多操作
+                        - for (var i = 0;i<=9; i++) 
+                            if i%2 == 0
+                                tr
+                                    td.No #{i+1}
+                                    td.account testtest1
+                                    td.name 测试1
+                                    td.tel 13712341234
+                                    td.mainAccount 
+                                        if i%2 ==0 
+                                            | 是
+                                        else 
+                                            | -
+                                    td.active 
+                                        if i===0
+                                            img.dis(src='../../static/images/menberCenter/checked.png')
+                                        else 
+                                            img.checked(src='../../static/images/menberCenter/checked.png')
+
+                                    td.operate 
+                                        button.modifyInfo(style='margin-right:20px') 编辑资料
+                                        button.updatePassw 修改密码
+                            else
+                                tr.forbidden
+                                    td.No #{i+1}
+                                    td.account testtest1
+                                    td.name 测试1
+                                    td.tel 13712341234
+                                    td.mainAccount 
+                                        if i%2 ==0 
+                                            | 是
+                                        else 
+                                            | -
+                                    td.active 
+                                        img.forbidden(src='../../static/images/menberCenter/forbidden.png')
+                                    td.operate 
+                                        button.modifyInfo(style='margin-right:20px') 编辑资料
+                                        button.updatePassw 修改密码
+                    .add-account
+                        i.plus_icon
+                        font 添加新账号          
+                .page-cont
+                    +pagese('个结果')
+                    
+
+
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/bootstrap.min.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/menberCenter/accountManage.js')

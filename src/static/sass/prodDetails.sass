@@ -1,0 +1,398 @@
+@import "common/params"
+@import "common/function"
+@import "component/preview"
+
+body
+  background-color: $color-f7
+.prod-dt-main
+  width: 1190px
+  margin: 0 auto 20px
+  background-color: #fff
+  padding: 30px 0 0 0
+  border-radius: 4px
+  .prod-dt-tit
+    font-size: $font-24
+    font-weight: normal
+    line-height: 28px
+    padding: 0 40px 30px
+    span
+      font-size: $font-18
+      margin: 0 20px 0 10px
+    .y-star-icon,.a-icon
+      margin: 0 5px
+      vertical-align: -2px
+  .prod-dt-info
+    position: relative
+    padding: 0 40px 30px
+    .img-box
+      position: relative
+      float: left
+      margin-right: 20px
+      width: 160px
+      height: 160px
+      .contact-info
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 100%
+        background-color: $color-f7
+        color: $font-blue
+        height: 30px
+        line-height: 30px
+        text-align: center
+      .popover-down
+        width: 300px
+        text-align: left
+        &:before,&:after
+          right: inherit
+          left: 70px
+        h2
+          font-size: $font-18
+          color: $color-g3
+        p
+          color: $color-b3
+    img
+      float: left
+      margin-right: 20px
+      width: 160px
+      height: 160px
+    ul
+      padding: 0 0 0 180px
+      li
+        padding: 3px 0
+        margin: 10px 0 0 0
+        min-height: 32px
+        &:first-child
+          margin-top: 0
+        label
+          float: left
+          width: 80px
+          height: 30px
+          line-height: 30px
+          text-align: center
+          background-color: $color-f7
+          color: $color-b3
+          margin: -3px 14px 0 0
+          border-radius: 4px
+        p
+          overflow: hidden
+          font-size: $font-16
+          width: 400px
+    .prod-dt-prc
+      position: absolute
+      top: 0
+      right: -10px
+      width: 360px
+      height: 120px
+      line-height: 120px
+      text-align: right
+      background: url(../images/details/prc-bg.png) no-repeat
+      background-size: 100% 100%
+      padding: 0 50px 0 0
+      font-size: 20px
+      color: $main-red
+      span
+        font-size: 48px
+        margin-right: 5px
+      &:after
+        position: absolute
+        right: 0
+        bottom: -10px
+        @include triarrow($color: #dcdcdc)
+      &.sold-out
+        &:before
+          content: '已售罄'
+          position: absolute
+          top: 0
+          right: 144px
+          font-size: 24px
+          color: #7F8593
+.prod-img
+  float: left
+  width: 450px
+.prod-con
+  position: relative
+  float: right
+  width: 660px
+  min-height: auto
+  padding: 0 0 40px 0
+  .price-info
+    .price-tit
+      background-image: url('../../static/images/details/price-tit.png')
+      padding: 9px 10px
+      color: #fff
+      font-size: 14px
+      line-height: 1
+      border-radius: 4px 4px 0 0
+      .prod-id-wrp
+        float: right
+        font-size: 12px
+        line-height: 14px
+    .price-info-box
+      position: relative
+      min-height: 82px
+      background-color: #FEF9E5
+      border: 1px solid #F1ECD9
+      padding: 18px 30px
+      border-radius: 0 0 4px 4px
+      &.not-login
+        .price-info-item
+          display: none
+        .login-entrance
+          display: block
+          font-size: 16px
+          span
+            position: relative
+            font-size: 20px
+            border-bottom: 2px solid
+            margin-right: 8px
+      .login-entrance
+        display: none
+        line-height: 44px
+        span
+          cursor: pointer
+    .price-info-item
+      li
+        display: inline-block
+        padding: 0 20px
+        border-left: 1px solid #EEEEF0
+        height: 38px
+        &:first-child
+          border-left: none
+          padding-left: 0
+        label
+          font-size: 12px
+          color: #B2B4BE
+          line-height: 12px
+          display: inline-block
+          vertical-align: top
+        div
+          margin-top: -2px
+          font-size: 20px
+          color: #D92628
+          line-height: 20px
+          //display: inline-block
+          vertical-align: bottom
+          //width: 100%
+          &.green-font
+            color: #51C75B
+  .price-detail-info
+    margin-top: 20px
+    li
+      padding-left: 30px
+      margin-bottom: 15px
+      line-height: 14px
+      label
+        font-size: 14px
+        color: #B2B4BE
+        line-height: 14px
+        display: inline-block
+        margin-right: 10px
+        width: 100px
+        height: 14px
+      div
+        display: inline-block
+        span
+          color: #FF284D
+    .btns
+      padding-left: 30px
+      margin-top: 50px
+      margin-bottom: 0
+      .btn
+        margin-right: 10px
+        min-width: 130px
+        height: 44px
+        line-height: 44px
+        display: inline-block
+        vertical-align: middle
+        &.collection-btn
+          background-color: #FEEDEB
+          border: 1px solid #D92628
+          color: #D92628
+// 详情
+.prod-detail-info
+  padding: 0 30px
+  h1
+    margin-bottom: 20px
+    font-size: 18px
+    color: #181C28
+    line-height: 24px
+// tab
+.prod-dt-con
+  width: 1190px
+  margin: auto
+  .index-tab
+    overflow: hidden
+    &.fixed
+      width: 1190px
+      top: 0
+      background-color: $color-f7
+      z-index: 1
+  .tab-ctx-wrp
+    background-color: #fff
+    padding: 20px
+    .tab-ctx
+      display: block
+
+// 行程介绍
+.trip-info-box
+  text-align: center
+  margin-bottom: 20px
+  .trip-info
+    display: inline-block
+    padding: 0 20px
+    height: 40px
+    line-height: 40px
+    font-size: $font-18
+    color: $main-red
+    border: 1px dashed
+    border-radius: 40px
+    span
+      margin: 0 13px
+    a
+      margin: 0 13px
+      color: $font-blue
+      font-size: 14px
+      border-bottom: 1px dashed
+      vertical-align: 2px
+.trip-main
+  position: relative
+  .trip-sidebar
+    position: absolute
+    top: 0
+    left: 0
+    &.fixed
+      position: fixed
+      top: 56px
+    li
+      width: 36px
+      height: 36px
+      line-height: 38px
+      text-align: center
+      margin: 0 0 10px
+      cursor: pointer
+      background-color: #eee
+      border-radius: 36px
+      &.active
+        background-color: $main-red
+        color: #fff
+      &:hover
+        color: $main-hover-red
+        border: 1px solid
+        background-color: #fff
+        line-height: 36px
+  .trip-list
+    padding: 0 0 0 100px
+    .trip-tit
+      overflow: hidden
+      height: 36px
+      line-height: 36px
+      color: $color-g3
+      font-size: $font-16
+      border-radius: 36px
+      @include gradient(90deg, $main-pink, #fff)
+      background-color: #fff7e6
+      margin-left: -40px
+      span
+        float: left
+        width: 80px
+        padding: 0 0 0 20px
+    .trip-con
+      padding: 20px 0 0
+      border-left: 1px dashed $color-f0
+      li
+        position: relative
+        padding: 0 40px 16px
+      h3
+        color: $color-g3
+        font-size: $font-16
+        line-height: 28px
+        font-weight: normal
+        margin: 0 0 10px
+      p
+        color: $color-g6
+        margin: 0 0 8px
+
+.tab-ctx-wrp
+    background-color: #fff
+    padding: 20px
+    .tab-ctx-tit
+      position: relative
+    h3
+      left: 0
+      background-color: #fff
+      display: inline-block
+    p
+      //margin-left: 140px
+      //margin-right: 50px
+    .ques
+      border-radius: 4px
+      margin-left: 140px
+      margin-right: 50px
+      background-color: #fff
+      font-size: 16px
+      color: #181C28
+      .que
+        border-top: 1px solid #EEEEF0
+        &:first-child
+          border-top: none
+        span 
+          line-height: 30px
+          font-size: 16px
+          color: #181C28
+        a.right_downLoad
+          float: right
+          font-size: 14px
+          color: #4779D4
+          line-height: 30px
+    .tab-ctx-tit-icon
+      display: inline-block
+      width: 0
+      height: 0
+      border-top: 12px solid transparent
+      border-left: 20px solid $main-red
+      border-bottom: 12px solid transparent
+      position: relative
+      vertical-align: middle
+      &:before
+        content: ''
+        display: inline-block
+        width: 0
+        height: 0
+        border-top: 11px solid transparent
+        border-left: 18px solid #fff
+        border-bottom: 11px solid transparent
+        position: absolute
+        left: -19px
+        top: -11px
+      &:after
+        content: ''
+        position: absolute
+        display: inline-block
+        width: 0
+        height: 0
+        border-top: 12px solid transparent
+        border-left: 20px solid $main-red
+        border-bottom: 12px solid transparent
+        left: -25px
+        top: -12px
+    span.tab-ctx-tit-text
+      margin-left: 10px
+      color: $main-red
+      font-size: 20px
+      vertical-align: middle
+      font-weight: normal
+    .tit-line
+      display: block
+      height: 1px
+      background-color: $main-red
+      top: 13px
+      right: 0
+      width: 90%
+      overflow: hidden
+      position: absolute
+
+
+
+
+

@@ -1,0 +1,49 @@
+
+.prod-dt-con
+    .index-tab
+        + tabctl(tabobj, 'tab-red')
+    .tab-ctx-wrp
+        -for(var i=0;i<tabobj.length;i++)
+            if i==0
+                .tab-ctx.cur
+                    .tab-ctx-tit 
+                        h3 
+                            i.tab-ctx-tit-icon
+                            span.tab-ctx-tit-text #{tabobj[i].text}
+                        span.tit-line
+                    if tabobj[i].text == '行程介绍'
+                       include prodTrip
+                    else if tabobj[i].text == '资料下载'
+                        ul.ques
+                            li.que
+                                span 个签常识问题
+                                a(href="#").right_downLoad 下载
+                            li.que
+                                span 个签材料问题
+                                a(href="#").right_downLoad 下载
+                            li.que
+                                span 个签材料问题
+                                a(href="#").right_downLoad 下载
+                    else
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero odit cupiditate, aut dolore ex ad vero sunt officia, mollitia nam molestias maxime necessitatibus perferendis eaque distinctio autem. Facilis, in, dolores.#{i + 1}
+            else
+                .tab-ctx
+                    .tab-ctx-tit 
+                        h3 
+                            i.tab-ctx-tit-icon
+                            span.tab-ctx-tit-text #{tabobj[i].text}
+                        span.tit-line
+                    if tabobj[i].text == '行程介绍'
+                        include prodTrip
+                    else if tabobj[i].text == '资料下载'
+                        ul.ques
+                            li.que
+                                span 个签常识问题
+                                a(href="#").right_downLoad 下载
+                            li.que
+                                span 个签材料问题
+                                a(href="#").right_downLoad 下载
+                    else if tabobj[i].text == '交通指南'
+                        .baidumap#baidumap(geo="113.2759952545166,23.117055306224895")
+                    else
+                        p #{i + 1}

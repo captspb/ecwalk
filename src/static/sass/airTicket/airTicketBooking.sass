@@ -1,0 +1,1049 @@
+@charset "UTF-8"
+@import "../common/params"
+.airTicket-bk
+  width: 1186px
+  margin: 14px auto 110px
+.airTicket-bk-main
+  float: left
+.airTicket-bk-tip
+  width: 826px
+  background: #FFF
+  border-radius: 4px
+  padding: 20px
+  margin: 0 0 14px
+  p
+    font-size: $font-12
+    line-height: 16px
+    &:not(:first-child)
+      margin-top: 10px
+    i
+      display: inline-block
+      vertical-align: top
+      margin-right: 10px
+      color: $main-red
+.airTicket-visitor-item
+  background-color: #fff
+  border-radius: 4px
+  margin-top: 14px
+  &.contact-info
+    .airTicket-visitor-info
+      .info-con
+        .name-group
+          .name-item
+            input
+              border-radius: 4px 0 0 4px
+  &.other-info
+    .airTicket-visitor-info
+      .info-tit
+        width: 80px
+      .info-con
+        padding: 0 0 0 80px
+  .airTicket-visitor-top
+    position: relative
+    height: 40px
+    line-height: 40px
+    padding: 0 20px
+    border-bottom: 1px solid #F4F4F6
+    .airTicket-visitor-tit
+      font-size: $font-16
+      font-weight: 600
+    .common-visitor
+      position: absolute
+      right: 52px
+      top: 0
+      bottom: 0
+      margin: auto
+      width: 68px
+      height: 18px
+      line-height: 16px
+      text-align: center
+      border: 1px solid #E3E3E7
+      border-radius: 3px
+      font-size: $font-12
+      color: #7F8593
+      cursor: pointer
+    .order-help
+      position: absolute
+      right: 20px
+      cursor: pointer
+  .airTicket-visitor-info
+    padding: 20px
+    .info-list
+      &:not(:first-child)
+        margin-top: 16px
+      .error-tip
+        display: none
+        margin-top: 6px
+        font-size: $font-12
+        line-height: 14px
+        padding: 0 10px
+        text-align: left
+      .error
+        position: relative
+        z-index: 1
+        input,textarea
+          border: 1px solid $main-red !important
+        .error-tip
+          display: block
+    .info-tit
+      float: left
+      font-size: 14px
+      color: #7F8593
+      line-height: 36px
+      width: 66px
+    .info-con
+      padding: 0 0 0 66px
+      %box
+        display: inline-block
+        vertical-align: top
+        border-radius: 4px
+      .name-group
+        @extend %box
+        >div
+          float: left
+          width: 240px
+        input
+          width: 100%
+          padding: 6px 10px
+          border: 1px solid #E7E8EA
+        .surname-item
+          input
+            border-radius: 4px 0 0 4px
+        .name-item,.phone-num-item
+          margin-left: -1px
+          input
+            border-radius: 0 4px 4px 0
+      .other-group
+        margin-top: 16px
+      .gender-item
+        float: left
+        width: 80px
+        border-radius: 4px
+        text-align: center
+        &.error
+          span
+            border: 1px solid $main-red
+        .error-tip
+          float: left
+        span
+          width: 40px
+          float: left
+          color: $color-gc
+          cursor: pointer
+          border: 1px solid #E7E8EA
+          height: 36px
+          line-height: 36px
+          &:not(:first-child)
+            margin-left: -1px
+          &.men
+            border-radius: 4px 0 0 4px
+          &.women
+            border-radius: 0 4px 4px 0
+          &.active
+            color: #fff
+            background-color: $main-red
+            border: 1px solid $main-red
+      .nationality-item
+        float: left
+        width: 199px
+        height: 36px
+        border: 1px solid #E7E8EA
+        border-radius: 4px
+        margin-left: 10px
+        .select-group
+          width: 100%
+          .select
+            border: none
+      .birth-date-item
+        float: left
+        width: 180px
+        margin-left: 10px
+        .birth-date-input
+          position: relative
+        input
+          width: 100%
+          border: 1px solid #E7E8EA
+          border-radius: 4px
+          padding: 6px 10px
+        .g-arrow-down-icon
+          position: absolute
+          right: 10px
+          top: 0
+          bottom: 0
+          margin: auto
+      .phone-group
+        @extend %box
+        .region-item
+          float: left
+          width: 111px
+          height: 36px
+          line-height: 34px
+          text-align: center
+          border: 1px solid #E7E8EA
+          border-radius: 4px 0 0 4px
+          .select-group
+            width: 100%
+            .select
+              border: none
+          .select-dropdown
+            z-index: 2
+        .phone-num-item
+          float: left
+          width: 369px
+          margin-left: -1px
+          input
+            width: 100%
+            padding: 6px 10px
+            border: 1px solid #E7E8EA
+            border-radius: 0 4px 4px 0
+      .passport-group
+        @extend %box
+        input
+          width: 100%
+          padding: 6px 10px
+          border: 1px solid #E7E8EA
+        .passport-num-item
+          float: left
+          width: 240px
+          input
+            border-radius: 4px 0 0 4px
+        .passport-type-item
+          position: relative
+          float: left
+          width: 240px
+          margin-left: -1px
+          .passport-type-input
+            position: relative
+          input
+            border-radius: 0 4px 4px 0
+          .g-arrow-down-icon
+            position: absolute
+            right: 10px
+            top: 0
+            bottom: 0
+            margin: auto
+            z-index: 1
+      .email-item,
+      .other-item
+        width: 479px
+        input,textarea
+          width: 100%
+          padding: 6px 10px
+          border: 1px solid #E7E8EA
+          border-radius: 4px
+      .other-item
+        textarea
+          height: 76px
+          resize: none
+  .airTicket-visitor-ft
+    padding: 20px
+    .empty-btn
+      float: left
+      cursor: pointer
+      line-height: 16px
+      font-size: $font-12
+    .airTicket-visitor-check
+      float: right
+      .check-item
+        float: left
+        line-height: 16px
+        font-size: 12px
+        color: #7F8593
+        user-select: none
+        &:not(:first-child)
+          margin-left: 40px
+        i
+          display: inline-block
+          vertical-align: top
+          margin-right: 8px
+          cursor: pointer
+          color: #B2B4BE
+        .icon-check
+          color: $main-red
+      .checkbox-icon
+        vertical-align: top
+        margin-right: 8px
+.airTicket-bk-sidebar
+  float: right
+  %sidebar-box
+    width: 346px
+    background-color: #fff
+    border-radius: 4px
+  .order-assist
+    @extend %sidebar-box
+    li
+      float: left
+      width: 86px
+      font-size: 12px
+      color: #171717
+      line-height: 1
+      text-align: center
+      padding: 14px 0
+      cursor: pointer
+      &.hasData
+        &:hover
+          .m-popover-con
+            display: none
+      [class ^= "icon-"]
+        font-size: 24px
+        color: #171717
+      p
+        margin-top: 8px
+      .m-popover-con
+        width: 296px
+        bottom: 55px
+        text-align: left
+        &:after
+          left: 32px
+          right: inherit
+  .airTicket-bk-prc
+    @extend %sidebar-box
+    margin-top: 14px
+    .airTicket-bk-prc-list
+      padding: 20px
+      border-bottom: 1px solid #F4F4F6
+      line-height: 1
+      .tit-item
+        float: left
+        margin-top: 1px
+      .prc-item
+        float: right
+        em
+          display: inline-block
+          vertical-align: top
+          margin-left: 8px
+      dt
+        margin-bottom: 14px
+        font-weight: 600
+        .prc-item
+          font-size: $font-16
+      dd
+        font-size: $font-12
+        color: #7F8593
+        margin-top: 6px
+        .prc-item
+          font-size: $font-14
+    .airTicket-bk-prc-total
+      position: relative
+      height: 64px
+      line-height: 1
+      text-align: right
+      padding: 0 20px
+      .search-btn
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        width: 88px
+        height: 22px
+        line-height: 22px
+        background: #F30A37
+        border-radius: 0 22px 22px 0
+        color: #fff
+        text-align: left
+        padding: 0 0 0 8px
+        cursor: pointer
+        .icon-back
+          font-size: $font-14
+          margin-right: 4px
+        span
+          font-size: $font-12
+      .prc-con
+        display: flex
+        height: 100%
+        justify-content: center
+        flex-direction: column
+      h2
+        font-size: $font-24
+      .tax-item
+        color: #7F8593
+        font-size: $font-12
+        margin-top: 4px
+  .flight-info
+    @extend %sidebar-box
+    margin-top: 14px
+    position: relative
+    line-height: 18px
+    font-size: 18px
+    padding: 18px 20px
+    .show-flight-detail
+      position: absolute
+      right: 20px
+      font-size: $font-14
+      cursor: pointer
+  .flight-schedule
+    margin-top: 14px
+    .flight-schedule-list
+      @extend %sidebar-box
+      &:not(:first-child)
+        margin-top: 10px
+      .flight-schedule-list-hd
+        position: relative
+        line-height: 1
+        height: 68px
+        overflow: hidden
+        border-bottom: 1px solid #F4F4F6
+        border-radius: 4px 4px 0 0
+        .hd-tip
+          position: absolute
+          top: 0
+          left: 0
+          width: 0
+          height: 0
+          border-top: 40px solid $main-red
+          border-right: 40px solid transparent
+          span
+            position: absolute
+            bottom: 21px
+            left: 1px
+            color: #fff
+            font-size: $font-12
+            transform: rotate(-45deg)
+            white-space: nowrap
+        .hd-con
+          display: flex
+          height: 100%
+          justify-content: center
+          flex-direction: column
+          align-items: center
+          h2
+            font-size: $font-18
+          p
+            margin-top: 8px
+            font-size: $font-12
+            em
+              margin: 0 4px
+              &:first-child
+                margin-left: 0
+      .flight-schedule-list-time
+        position: relative
+        padding: 15px 0 14px
+        border-bottom: 1px solid #F4F4F6
+        .flight-time
+          position: absolute
+          top: 14px
+          left: 0
+          right: 0
+          margin: auto
+          text-align: center
+          width: 80px
+          font-size: 14px
+          color: #B2B4BE
+          line-height: 1
+          p
+            margin-bottom: 5px
+            font-weight: 600
+          i
+            font-size: 24px
+        .start-time,
+        .end-time
+          float: left
+          width: 50%
+          line-height: 1
+          h2
+            font-size: 24px
+          p
+            font-size: 12px
+            color: #7F8593
+            margin-top: 6px
+          span
+            display: inline-block
+            vertical-align: top
+            font-size: 12px
+            line-height: 24px
+            margin-left: 10px
+            color: $main-red
+          em
+            display: inline-block
+            vertical-align: top
+            height: 16px
+            line-height: 16px
+            padding: 0 2px
+            background: #F30A37
+            border-radius: 3px
+            color: #fff
+            font-size: $font-12
+            font-weight: 400
+            margin: 4px 0 0 7px
+        .start-time
+          padding: 0 40px 0 0
+          text-align: right
+        .end-time
+          padding: 0 0 0 40px
+      //
+      .airlines-list
+        .airlines-list-item
+          position: relative
+          padding: 10px 10px 10px 42px
+          &:not(:first-child)
+            border-top: 1px solid #F4F4F6
+          .airlines-avatar
+            position: absolute
+            left: 10px
+            top: 0
+            bottom: 0
+            margin: auto
+            width: 24px
+            height: 24px
+            border-radius: 50%
+            overflow: hidden
+            img
+              width: 100%
+              height: 100%
+          .airlines-info
+            position: relative
+            padding: 9px 0
+            overflow: hidden
+            .con-item
+              display: flex
+              align-items: center
+              line-height: 1
+              .tit-item
+                flex-grow: 1
+              .tip-item
+                width: 105px
+                p
+                  font-size: 12px
+                  color: #7F8593
+                  &:not(:first-child)
+                    margin-top: 8px
+              .airlines-num
+                font-size: 12px
+                color: #7F8593
+                margin-top: 8px
+          .airlines-tip
+            position: absolute
+            top: -10px
+            left: 0
+            right: 0
+            margin: auto
+            width: 68px
+            height: 20px
+            line-height: 18px
+            text-align: center
+            font-size: 12px
+            color: #7F8593
+            background: #EAF3FC
+            border: 1px solid #D9E7F4
+            border-radius: 20px
+.airTicket-bk-popup
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  text-align: center
+  z-index: 9
+  &:before
+    content: ''
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,.3)
+  &:after
+    content: ''
+    width: 0
+    height: 100%
+    display: inline-block
+    vertical-align: middle
+  .bk-popup-box
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    background-color: #fff
+    width: 1000px
+    border-radius: 4px
+    text-align: left
+    overflow: hidden
+    .bk-popup-tit
+      position: relative
+      padding: 0 16px
+      height: 50px
+      line-height: 50px
+      font-size: $font-16
+      border-bottom: 1px solid rgba(238,238,240,0.50)
+      .icon-close
+        position: absolute
+        right: 16px
+        cursor: pointer
+        color: #D0D2D8
+    .bk-popup-con
+      overflow: auto
+      .flight-details
+        display: none
+.common-tourists
+  display: none
+  padding: 0 0 20px
+  .common-tourists-list
+    padding: 6px 0 24px 47px
+    .list-item
+      float: left
+      width: 163px
+      height: 144px
+      background: #F7F7F9
+      border: 1px solid #F7F7F9
+      border-radius: 4px
+      display: flex
+      justify-content: center
+      flex-direction: column
+      margin: 18px 9px 0
+      cursor: pointer
+      user-select: none
+      &.active
+        position: relative
+        border: 1px solid $main-red
+        &:after
+          font-family: 'iconfont'
+          content: '\e622'
+          position: absolute
+          top: 0
+          right: 0
+          color: $main-red
+          font-size: 16px
+          line-height: 1
+      .info-item
+        overflow: hidden
+        font-size: $font-12
+        line-height: 14px
+        &:not(:first-child)
+          margin-top: 14px
+        label
+          float: left
+          width: 66px
+          color: #7F8593
+          text-align: right
+        p
+          overflow: hidden
+          color: #000
+          word-break: break-word
+  .pagination-wrp
+    width: 100%
+    margin: 0
+    text-align: center
+    .pagination
+      float: inherit
+      display: inline-block
+      vertical-align: top
+  .submit-btn
+    text-align: center
+    margin-top: 14px
+    a
+      display: inline-block
+      vertical-align: top
+      width: 108px
+      height: 40px
+      line-height: 40px
+      text-align: center
+      background: #F30A37
+      border-radius: 4px
+      color: #fff
+.instructions
+  display: none
+  padding: 24px 56px
+  .mb24
+    margin-bottom: 24px
+  .endorse-type-tab
+    position: relative
+    margin-bottom: 24px
+    ul.endorse-type-tab-item
+      overflow: hidden
+      border-bottom: 1px solid #EEEEF0
+      li
+        float: left
+        padding: 7px 0 11px
+        line-height: 1
+        cursor: pointer
+        font-size: 14px
+        color: #7F8593
+        &:hover
+          color: $main-red
+        &:not(:first-child)
+          margin-left: 40px
+        &.active
+          span
+            position: relative
+            color: $main-red
+            &:before
+              content: ''
+              position: absolute
+              left: 0
+              right: 0
+              bottom: -7px
+              margin: auto
+              width: 12px
+              height: 3px
+              border-radius: 3px
+              background-color: $main-red
+        span
+          display: inline-block
+          vertical-align: top
+          padding: 0
+    .language-sel
+      position: absolute
+      top: 0
+      right: 0
+      li
+        float: left
+        width: 52px
+        line-height: 22px
+        text-align: center
+        font-size: 12px
+        border-radius: 0 4px 4px 0
+        border: 1px solid #E3E3E7
+        cursor: pointer
+        &:first-child
+          border-radius: 4px 0 0 4px
+          margin-right: -1px
+        &.active
+          color: #F30A37
+          border: 1px solid #F30A37
+          position: relative
+  .endorse-type-tab-con
+    display: none
+    font-size: 14px
+    .en
+      display: none
+.fill-in-help
+  display: none
+  padding: 24px 56px
+  .help-tab
+    position: relative
+    margin-bottom: 24px
+    ul.help-tab-item
+      overflow: hidden
+      border-bottom: 1px solid #EEEEF0
+      li
+        float: left
+        padding: 7px 0 11px
+        line-height: 1
+        cursor: pointer
+        font-size: 14px
+        color: #7F8593
+        &:hover
+          color: $main-red
+        &:not(:first-child)
+          margin-left: 40px
+        &.active
+          span
+            position: relative
+            color: $main-red
+            &:before
+              content: ''
+              position: absolute
+              left: 0
+              right: 0
+              bottom: -7px
+              margin: auto
+              width: 12px
+              height: 3px
+              border-radius: 3px
+              background-color: $main-red
+        span
+          display: inline-block
+          vertical-align: top
+          padding: 0
+  .help-tab-con
+    display: none
+    min-height: 495px
+    .passport-img
+      display: block
+      width: 547px
+      margin: auto
+.airTicket-list-group
+  background-color: #fff
+  border-radius: 4px
+  margin-bottom: 14px
+  .m-popover-con
+    z-index: 3
+  .airTicket-list-tit
+    position: relative
+    text-align: center
+    color: #333
+    line-height: 18px
+    border-top: 1px solid $clr-bg
+    padding: 22px 0 0
+    margin-bottom: -5px
+    .airTicket-list-trip
+      position: absolute
+      top: 17px
+      left: 10px
+      padding: 0 10px
+      height: 26px
+      line-height: 26px
+      background: #F7F7F9
+      border-radius: 4px
+  .airTicket-list-item
+    position: relative
+    height: 82px
+    border-bottom: 1px solid $clr-bg
+    margin-top: -1px
+    // 机票信息
+    .airTicket-info
+      height: 100%
+      li
+        position: relative
+        float: left
+        width: 50%
+        height: 100%
+        padding: 0 0 0 56px
+        &:first-child
+          text-align: right
+          padding: 0 56px 0 0
+        &:after
+          content: ''
+          width: 0
+          height: 100%
+          display: inline-block
+          vertical-align: middle
+      .airTicket-origin-info,
+      .airTicket-dest-info
+        display: inline-block
+        vertical-align: middle
+        line-height: 1
+        .airTicket-time
+          font-weight: 600
+          font-size: $font-24
+          margin: 0 0 6px
+          span
+            display: inline-block
+            vertical-align: top
+            font-size: $font-12
+            line-height: 24px
+            margin-left: 10px
+          .m-popover-con
+            font-weight: normal
+            width: 175px
+            margin-left: -77px
+            white-space: nowrap
+            padding: 12px 0
+            text-align: center
+        .airTicket-airport
+          font-size: $font-12
+          color: $tag-cl
+          max-width: 150px
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+        p
+          max-width: 150px
+          margin: 6px 0 0
+          font-size: $font-12
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+          &:first-child
+            margin: 0
+    // 时长
+    .airTicket-duration
+      position: absolute
+      width: 92px
+      top: 25px
+      left: 0
+      right: 0
+      margin: auto
+      color: $clr-tip
+      text-align: center
+      line-height: 1
+      .m-popover-con
+        width: 218px
+        left: 50%
+        margin-left: -109px
+      .plane-icon,
+      .transit-icon
+        display: block
+        margin: 0 auto
+    // 航空公司
+    .airTicket-airlines
+      position: absolute
+      height: 100%
+      top: 0
+      bottom: 0
+      left: 20px
+      margin: auto
+      white-space: nowrap
+      &:after
+        content: ''
+        width: 0
+        height: 100%
+        display: inline-block
+        vertical-align: middle
+      .airTicket-airlines-con
+        display: inline-block
+        vertical-align: middle
+        max-width: 98%
+      .airlines-avatar
+        display: inline-block
+        vertical-align: middle
+        width: 32px
+        height: 32px
+        border-radius: 50%
+        overflow: hidden
+        margin: 0 10px 0 0
+        img
+          width: 100%
+          margin-top: 2px
+      .airlines-con
+        display: inline-block
+        vertical-align: middle
+        color: $tag-cl
+        div,p
+          line-height: 1
+        p
+          font-size: $font-12
+          margin: 4px 0 0
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+        .m-popover-con
+          left: 50%
+          width: 138px
+          margin-left: -69px
+      .shared-aviation
+        margin: 8px 0 0
+        font-size: $font-12
+        line-height: 20px
+        em,
+        span
+          display: inline-block
+          vertical-align: top
+          line-height: 20px
+        em
+          width: 40px
+          height: 20px
+          color: #fff
+          background: #4779D4
+          border-radius: 4px
+          margin-right: 4px
+          text-align: center
+    // 线路信息
+    .airTicket-line
+      position: absolute
+      top: 0
+      left: 770px
+      height: 100%
+      .airTicket-line-con
+        position: relative
+        height: 100%
+        &:after
+          content: ''
+          width: 0
+          height: 100%
+          display: inline-block
+          vertical-align: middle
+        ul
+          display: inline-block
+          vertical-align: middle
+          max-width: 98%
+        li
+          line-height: 18px
+          color: $tag-cl
+          font-size: $font-12
+          margin: 0 0 4px
+        .airTicket-line-tip
+          display: inline-block
+          vertical-align: top
+          padding: 0 5px
+          height: 18px
+          line-height: 16px
+          text-align: center
+          border: 1px solid #D0D2D8
+          margin-right: 10px
+        .ellipsis
+          display: inline-block
+          vertical-align: top
+          max-width: 76px
+        .m-popover-con
+          left: 50%
+          width: 118px
+          margin-left: -59px
+.airTicket-detail
+  position: relative
+  padding: 0 10px 10px
+  margin-top: -1px
+  background-color: #fff
+  .airTicket-detail-item
+    position: relative
+    background-color: #EAF3FC
+    border: 1px solid #D9E7F4
+    border-radius: 4px
+    .airTicket-transit-tip
+      position: absolute
+      top: -11px
+      left: 0
+      right: 0
+      margin: auto
+      text-align: center
+      z-index: 2
+      span
+        display: inline-block
+        padding: 0 14px
+        height: 22px
+        line-height: 20px
+        background: #EAF3FC
+        border: 1px solid #D9E7F4
+        border-radius: 22px
+        color: $tag-cl
+        font-size: $font-12
+    .airTicket-list-item
+      height: 92px
+      margin: 0
+      border-top: none
+      border-bottom: 1px solid #D9E7F4
+      &:last-child
+        border-bottom: none
+      .airTicket-info
+        li
+          padding: 0 0 0 24px
+          &:first-child
+            padding: 0 24px 0 0
+      .airlines-con
+        div
+          color: $clr-text
+    .airTicket-line
+      left: 760px
+    .airTicket-phase
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 8px
+      height: 26px
+      &:before
+        content: ''
+        position: absolute
+        top: 10px
+        left: 0
+        right: 0
+        margin: auto
+        width: 2px
+        height: 6px
+        border-radius: 2px
+        background: #C7D6F2
+      .circle
+        display: block
+        width: 8px
+        height: 8px
+        border-radius: 8px
+        background-color: #EAF3FC
+        border: 2px solid #4779D4
+        margin-top: 10px
+        &:first-child
+          margin-top: 0
+.order-footer
+  z-index: 1
+.flight-change-con
+  h2
+    font-size: 14px
+    line-height: 20px
+    margin-bottom: 14px
+  p
+    font-size: 12px
+    color: #181C28
+    line-height: 1
+    margin-top: 8px

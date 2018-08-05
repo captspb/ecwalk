@@ -1,0 +1,34 @@
+div.table_cont
+	table.productList
+		tr
+			th.room 房型
+			th.bed 床型
+			th.days 行程天数
+			th.breadfast 早餐
+			th.price-sale 销售价
+			th.price 同行价
+			th.profit 利润
+			th.operate
+		- for (var i=0; i<4; i++)
+			tr
+				td.room
+					span
+						a(title='高级城景客房高级城景客房高级城景客房') 高级城景客房高级城景客房高级城景客房
+				td.bed
+					span
+						a(title='大床') 大床
+				td.days
+					span
+						a 立即确认
+				td.breadfast 
+					span 是
+				td.price-sale 
+					span ￥800
+				td.price 
+					span ￥800
+				td.profit
+					span ￥800
+				td.operate
+					span
+						button(style='margin-right: 6px') 散房
+						button 团房

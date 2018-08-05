@@ -1,0 +1,51 @@
+table
+    tr.headRow
+        th.check
+            span 选择
+        th.No
+            span 订单编号
+        th.route 
+            span 线路
+        th.orderTime 
+            span 下单时间
+        th.startTime 
+            span 出发时间
+        th.fareType
+            span 费用类型
+        th.totalPrice 
+            span 金额
+        th.currency 
+            span 币种
+        th.rate 
+            span 汇率
+    - for (var i = 0;i<=9; i++)
+        if (i%2 === 0)
+            tr.cur
+                td.check
+                    span
+                        img.checked_icon(src='../../static/images/menberCenter/checked.png')                 
+                td.No 
+                    span 80018222
+                td.route 
+                    span 【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd
+                td.orderTime 2016/03/12
+                td.startTime 2016/03/20
+                td.fareType 5
+                td.totalPrice ￥5000
+                td.payed 人民币
+                td.rate 1.23
+        else
+            tr
+                td.check
+                    span
+                        img.check_icon(src='../../static/images/menberCenter/check.png')
+                td.No 
+                    span 80018222
+                td.route 
+                    span 【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd
+                td.orderTime 2016/03/12
+                td.startTime 2016/03/20
+                td.fareType 5
+                td.totalPrice ￥5000
+                td.payed 人民币
+                td.rate 1.23

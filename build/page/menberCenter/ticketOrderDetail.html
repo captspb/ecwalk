@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/menberCenter/ticketOrderDetail.css">
+  </head>
+  <title>票券订单详情</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx">
+        <div class="b2c-header-logo"><img src="../../static/images/index/LogoTitle.png"></div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="grzc" class="cur"><a href="#">
+              <div>个人中心</div><span class="white-line"></span></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="menber-center">
+      <div class="center-cont">
+        <ul class="left-nav">
+          <li style="margin-bottom: 14px" class="bottom-part">
+            <ul class="bottom-infos">
+              <li class="bottom-info cancel-travel"> <i class="del-icon"></i><span>取消行程</span></li>
+              <li class="bottom-info update-travel"> <i class="cycle-icon"></i><span>变更行程</span></li>
+              <li class="bottom-info"><i class="downLoad-icon"></i><span> <a>下载出团通知书</a></span></li>
+              <li class="bottom-info"><i class="downLoad-travel-icon"></i><span><a>下载行程</a></span></li>
+              <li class="bottom-info comfirm-domestic"><i class="comfirm-domestic-icon"></i><span><a>确认入住</a></span></li>
+              <li class="bottom-info comfirm-ticket"><i class="comfirm-ticket-icon"></i><span><a>确认出票</a></span></li>
+              <li class="bottom-info continue-pay"><i class="continue-pay-icon"></i><span><a>继续支付</a></span></li>
+            </ul>
+          </li>
+          <li class="top-part">
+            <ul class="top-infos">
+              <li class="top-info"><span>基本信息</span><span class="red-span"></span>
+                <ul class="inner-infos">
+                  <li class="inner-info"><span>订单号：</span><span>201712070002155</span></li>
+                  <li class="inner-info"><span>商家订单号：</span><span>123</span></li>
+                  <li class="inner-info"><span>订单状态：</span><span>已取消</span></li>
+                </ul>
+              </li>
+              <li class="top-info"><span>费用清单：</span><span class="red-span">￥100</span>
+                <ul class="inner-infos">
+                  <li class="inner-info"><span>房间费：</span><span>－¥260</span></li>
+                  <li class="inner-info"><span>房间费：</span><span>¥260</span></li>
+                </ul>
+              </li>
+              <li class="top-info"><span>结算清单：</span><span class="red-span">￥0</span>
+                <ul class="inner-infos">
+                  <li class="inner-info"><span>已付金额：</span><span>－¥100</span></li>
+                  <li class="inner-info"><span>未付金额：</span><span>¥0</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mid-part">
+            <ul class="mid-infos">
+              <li class="mid-info popover">联系供应商
+                <div class="popover-up">12313123123211231312312321123131231232112313123123211231312312321123131231232112313123123211231312312321</div>
+              </li>
+              <li class="mid-info popover">联系分销商
+                <div class="popover-up">1231312312321</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="info-pannel">
+          <li class="info-tbl">
+            <h5 class="tbl-tit">产品信息</h5>
+            <table>
+              <tr>
+                <th>景点名称</th>
+                <th>票券名称</th>
+                <th>出游时间</th>
+                <th>出票方式</th>
+                <th>出价</th>
+                <th>数量</th>
+                <th>总计</th>
+              </tr>
+              <tr>
+                <td><span class="product-name">上海迪士尼</span></td>
+                <td><span class="ticket-name">上海迪士尼乐园－上海迪士尼乐园［两日联票］标准票</span></td>
+                <td><span class="travel-date">2017-12-20</span></td>
+                <td> <span class="ticket-type">后台出票</span></td>
+                <td>2天</td>
+                <td>1</td>
+                <td>¥0</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">价格明细</h5>
+            <table style="width: auto">
+              <tr>
+                <th width="120" class="price-date-th"><span>日期</span></th>
+                <th class="price-fee-th">费用</th>
+                <th>注意事项</th>
+              </tr>
+              <tr>
+                <td class="price-date dis">--</td>
+                <td class="price-fee dis">--</td>
+                <td class="attention dis">--</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">取票人信息</h5>
+            <table>
+              <tr>
+                <th class="getTicket-name-th">姓名</th>
+                <th class="getTikcet-tel-th">手机</th>
+                <th>电话</th>
+                <th>邮箱</th>
+                <th>证件类型</th>
+                <th>证件号</th>
+              </tr>
+              <tr>
+                <td class="getTicket-name dis">--</td>
+                <td class="getTikcet-tel dis">--</td>
+                <td class="getTicket-phone">123456789</td>
+                <td class="getTicket-email dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+              </tr>
+            </table>
+          </li>
+          <li style="padding-bottom:23px" class="info-tbl">
+            <h5 class="tbl-tit">备注信息<span class="right-content">
+                 
+                共有 <span class="red">5 </span> 条备注信息</span></h5>
+            <table>
+              <tr>
+                <th class="create-date-th">创建时间</th>
+                <th class="create-depart-th">创建部门</th>
+                <th class="creator-th">创建人</th>
+                <th>备注内容</th>
+              </tr>
+              <tr>
+                <td class="create-date">2017-12-15</td>
+                <td class="create-depart">B2B门户-(gzlds)演示账号GZLDS</td>
+                <td class="creator">测试演示(020-86347054)</td>
+                <td>123</td>
+              </tr>
+              <tr>
+                <td class="create-date">2017-12-15</td>
+                <td class="create-depart">B2B门户-(gzlds)演示账号GZLDS</td>
+                <td class="creator">测试演示(020-86347054)</td>
+                <td>123</td>
+              </tr>
+            </table>
+            <div class="add-note"><i class="plus_icon"></i><font>添加新备注</font></div>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">变更信息<span class="right-content">
+                 
+                共查询到 <span class="red">0 </span> 条信息</span></h5>
+            <table>
+              <tr>
+                <th class="upOrder-No-th">变更单号</th>
+                <th class="upOrder-tit-th">变更单标题</th>
+                <th>提交时间</th>
+                <th>变更前</th>
+                <th>变更后</th>
+                <th>备注</th>
+                <th>状态</th>
+              </tr>
+              <tr>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">跟单人信息</h5>
+            <table>
+              <tr>
+                <th>跟单人姓名</th>
+                <th>跟单人电话</th>
+                <th>跟单人办公电话</th>
+                <th>跟单人邮件</th>
+              </tr>
+              <tr>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">操作员信息<span class="right-content">（gzlds）演示账号GZLDS</span></h5>
+            <table>
+              <tr>
+                <th>操作员姓名</th>
+                <th>操作员电话</th>
+                <th>操作员手机</th>
+                <th>操作员邮件</th>
+              </tr>
+              <tr>
+                <td>测试演示</td>
+                <td>020-123456</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">汇款信息<a class="right-content remittance-info">查看完整汇款订单记录</a></h5>
+            <table>
+              <tr>
+                <th class="upOrder-No-th">汇款银行</th>
+                <th class="upOrder-tit-th">账户名称</th>
+                <th>汇款金额</th>
+                <th>流水号</th>
+              </tr>
+              <tr>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+              </tr>
+            </table>
+            <div class="remittanceTbl-wrp">
+              <div class="remittanceTbl">
+                <div class="common-close-btn close-icon"></div>
+                <div class="t-head">
+                  <table>
+                    <tr class="headRow">
+                      <td class="No"><span>订单编号</span></td>
+                      <td class="route"> <span style="text-align: center">线路</span></td>
+                      <td class="orderTime"> <span>下单时间</span></td>
+                      <td class="startTime"> <span>出发时间</span></td>
+                      <td class="fareType"><span>费用类型</span></td>
+                      <td class="totalPrice"> <span>金额</span></td>
+                      <td class="currency"> <span>币种</span></td>
+                      <td class="rate"> <span>汇率</span></td>
+                    </tr>
+                  </table>
+                </div>
+                <div style="height: 348px;overflow-y: auto" class="t-body">
+                  <table>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                    <tr>                
+                      <td class="No"><span>80018222</span></td>
+                      <td class="route"> <span>【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd</span></td>
+                      <td class="orderTime"> <span>2016/03/12</span></td>
+                      <td class="startTime"> <span>2016/03/20</span></td>
+                      <td class="fareType"> <span>5</span></td>
+                      <td class="totalPrice"> <span>￥5000</span></td>
+                      <td class="currency"> <span>人民币</span></td>
+                      <td class="rate"> <span>1.23</span></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/jquery.pagination.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/menberCenter/ticketOrderDetail.js"></script>
+  </body>
+</html>

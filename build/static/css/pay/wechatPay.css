@@ -1,0 +1,18 @@
+.wechatpay-cont{background-color:#f7f7f7;padding-top:18px;padding-bottom:50px}
+.b2b-wechat-cont-border{margin:0 auto 0 auto;width:1194px;height:10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;background-color:#F30A37}
+.b2b-wechat-cont{margin:-1px auto 0 auto;width:1186px;height:739px;background-color:#fff;position:relative;padding:30px}
+.b2b-wechat-left{display:inline-block;vertical-align:middle}
+.b2b-wechat-tit{font-size:24px;color:#333;line-height:24px;margin-bottom:7px;display:block}
+.b2b-wechat-desc{font-size:16px;color:#333;line-height:16px}
+.b2b-wechat-right{display:inline-block;vertical-align:middle;font-size:16px;color:#333;line-height:52px;float:right;margin-right:30px}
+.b2b-wechat-right .red-money{color:#F30A37;font-size:20px}
+.b2b-wechat-mid{width:260px;height:360px;margin:150px auto 0 auto}
+.b2b-wechat-mid .b2b-wechat-codePic{display:inline-block;width:260px;height:260px;margin-bottom:16px}
+.b2b-wechat-mid .b2b-wechat-codeBtn{background-color:#F30A37;color:#fff;width:260px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:13px 15px}
+.b2b-wechat-mid .b2b-wechat-codeBtn i.b2b-wechat-btn-icon{display:inline-block;width:50px;height:50px;margin-right:24px;vertical-align:top;background-image:url(../../images/pay/wechatBtn-icon.png)}
+.b2b-wechat-mid .b2b-wechat-codeBtn span.b2b-wechat-btn-txt{vertical-align:top;display:inline-block;color:#fff;font-size:18px;width:145px;line-height:25px}
+.b2b-wechat-mid .b2b-wechat-codeBtn span.b2b-wechat-btn-txt span{line-height:25px}
+.left-link-icon{margin-right:8px;display:inline-block;width:14px;height:14px;background-image:url(../../images/pay/left-link-icon.png);vertical-align:middle}
+.b2b-wechat-bottom{position:absolute;bottom:30px}
+.b2b-wechat-bottom a{display:block}
+.b2b-wechat-bottom span{font-size:16px;color:#466094;vertical-align:middle}

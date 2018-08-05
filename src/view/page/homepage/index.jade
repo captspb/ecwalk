@@ -1,0 +1,383 @@
+extends ../../component/common/layout
+
+include ../../../model/common/headerData
+include ../../component/common/mixin
+block append head
+    title 首页
+block append style
+    link(rel='stylesheet', href='../../static/css/swiper.min.css')
+    link(rel='stylesheet', href='../../static/css/index/index.css')
+
+block content
+    .b2b-main-focus-wrp
+        .swiper-container.main-focus-swiper
+            .b2b-main-swiper.swiper-wrapper
+                - for (var i=0; i<swiper.length; i++)
+                    .swiper-slide
+                        a(href=swiper[i].url)
+                            img(src= swiper[i].img)
+            
+            .b2b-pro-separate-msg
+                .swiper-button-prev
+                .swiper-button-next
+                .b2b-pro-separate
+                    ul
+                        - for (var i=0; i<prolist.length; i++)
+                            li.main-list
+                                div(class='pro-type-icon ' + prolist[i].icon)
+                                .pro-type-text
+                                    .pro-type-title.web-font-bold
+                                        span #{prolist[i].text}
+                                        span.hot-separate
+                                    .tag-list
+                                        - for (var j=0; j<prolist[i].tag.length; j++)
+                                            - if (prolist[i].tag[j].ishot)
+                                                a.toward.hot #{prolist[i].tag[j].name}
+                                            - else
+                                                a.toward #{prolist[i].tag[j].name}
+                                .b2b-prolist-hover-show
+                                    .b2b-prolist-header
+                                        span.red-line
+                                        span.prolist-header-text #{listshow[i].main}
+                                    .b2b-prolist-ctx
+                                        - for (var j=0; j<listshow[i].list.length; j++)
+                                            - var this_item = listshow[i].list[j]
+                                            .b2b-prolist-ctx-wrp
+                                                .b2b-prolist-ctx-lpart.web-font-bold #{this_item.main}
+                                                .b2b-prolist-ctx-rpart
+                                                    ul
+                                                        - for (var m=0; m<this_item.tag.length; m++)
+                                                            if m===(this_item.tag.length-1)
+                                                                li
+                                                                    a.borderNone(href=this_item.tag[m].url, class=this_item.tag[m].ishot ? 'hot' : '') #{this_item.tag[m].name}
+                                                            else
+                                                                li
+                                                                    a(href=this_item.tag[m].url, class=this_item.tag[m].ishot ? 'hot' : '') #{this_item.tag[m].name}
+                                    .image-part
+                                        ul
+                                            - for (var k=0; k<listshow[i].img.length; k++)
+                                                li
+                                                    img(src=listshow[i].img[k])
+                                div.right-arrow-wrp
+                                    span.right-arrow
+                .b2b-pro-msg
+                    .b2b-pro-msg-list-title.web-font-bold 即时采购状态
+                    .swiper-container.pro-msg-swiper
+                        .swiper-wrapper
+                            - for (var i=0; i<buyinfo.length; i++)
+                                .swiper-slide
+                                    .buyer-name #{buyinfo[i].name}
+                                    .proinfo
+                                        a(href=buyinfo[i].prourl) #{buyinfo[i].proname}
+                                    .buyinfo-bottom
+                                        .buyinfo-price
+                                            span.buyinfo-price-title 同行价：
+                                            span.buyinfo-price-num #{buyinfo[i].price}
+                                        .start-place #{buyinfo[i].start}
+                                        .clear
+                        .pro-msg-mask
+                    .my-buy-info
+                        ul
+                            - for (var i=0; i<mybuy.length; i++)
+                                li
+                                    a(href=mybuy[i].url)
+                                        .my-buy-title #{mybuy[i].text}
+                                        .my-buy-num #{mybuy[i].num}
+                            .clear
+            .swiper-pagination-cont
+                .swiper-pagination
+    //- .b2b-main-focus-wrp
+        .swiper-container.main-focus-swiper
+            .b2b-main-swiper.swiper-wrapper
+                - for (var i=0; i<swiper.length; i++)
+                    .swiper-slide
+                        a(href=swiper[i].url)
+                            img(src= swiper[i].img)
+            
+            .b2b-pro-separate-msg
+                .swiper-button-prev
+                .swiper-button-next
+                .b2b-pro-separate
+                    ul
+                        - for (var i=0; i<prolist.length; i++)
+                            li.main-list
+                                div(class='pro-type-icon ' + prolist[i].icon)
+                                .pro-type-text
+                                    .pro-type-title.web-font-bold
+                                        span #{prolist[i].text}
+                                        span.hot-separate
+                                    .tag-list
+                                        - for (var j=0; j<prolist[i].tag.length; j++)
+                                            - if (prolist[i].tag[j].ishot)
+                                                a.toward.hot #{prolist[i].tag[j].name}
+                                            - else
+                                                a.toward #{prolist[i].tag[j].name}
+                                .b2b-prolist-hover-show
+                                    .b2b-prolist-header
+                                        span.red-line
+                                        span.prolist-header-text #{listshow[i].main}
+                                    .b2b-prolist-ctx
+                                        - for (var j=0; j<listshow[i].list.length; j++)
+                                            - var this_item = listshow[i].list[j]
+                                            .b2b-prolist-ctx-wrp
+                                                .b2b-prolist-ctx-lpart.web-font-bold #{this_item.main}
+                                                .b2b-prolist-ctx-rpart
+                                                    ul
+                                                        - for (var m=0; m<this_item.tag.length; m++)
+                                                            if m===(this_item.tag.length-1)
+                                                                li
+                                                                    a.borderNone(href=this_item.tag[m].url, class=this_item.tag[m].ishot ? 'hot' : '') #{this_item.tag[m].name}
+                                                            else
+                                                                li
+                                                                    a(href=this_item.tag[m].url, class=this_item.tag[m].ishot ? 'hot' : '') #{this_item.tag[m].name}
+                                    .image-part
+                                        ul
+                                            - for (var k=0; k<listshow[i].img.length; k++)
+                                                li
+                                                    img(src=listshow[i].img[k])
+                                div.right-arrow-wrp
+                                    span.right-arrow
+                .b2b-pro-msg
+                    .b2b-pro-msg-list-title.web-font-bold 即时采购状态
+                    .swiper-container.pro-msg-swiper
+                        .swiper-wrapper
+                            - for (var i=0; i<buyinfo.length; i++)
+                                .swiper-slide
+                                    .buyer-name #{buyinfo[i].name}
+                                    .proinfo
+                                        a(href=buyinfo[i].prourl) #{buyinfo[i].proname}
+                                    .buyinfo-bottom
+                                        .buyinfo-price
+                                            span.buyinfo-price-title 同行价：
+                                            span.buyinfo-price-num #{buyinfo[i].price}
+                                        .start-place #{buyinfo[i].start}
+                                        .clear
+                        .pro-msg-mask
+                    .my-buy-info
+                        ul
+                            - for (var i=0; i<mybuy.length; i++)
+                                li
+                                    a(href=mybuy[i].url)
+                                        .my-buy-title #{mybuy[i].text}
+                                        .my-buy-num #{mybuy[i].num}
+                            .clear
+            .swiper-pagination-cont
+                .swiper-pagination
+    ul.b2b-index-column-wrp
+            li.b2b-hotsale-column.b2b-index-column
+                .b2b-index-column-header
+                    span.b2b-index-header-lpart
+                        span.color-title 热销
+                        span.big-title H
+                        span.regular-title OT PRODUCTS
+                    span.b2b-index-header-rpart
+                        img(src='../../static/images/index/green.png')
+                    .clear
+                +indexlist(5, 2)
+            li.b2b-specialsale-column.b2b-index-column
+                .b2b-index-column-header
+                    span.b2b-index-header-lpart
+                        span.color-title 特价
+                        span.big-title S
+                        span.regular-title PECIAL OFFER
+                    span.b2b-index-header-rpart
+                        img(src='../../static/images/index/blue.png')
+                    .clear
+                +indexlist(5, 1)
+            li.b2b-newsale-colum.b2b-index-column
+                .b2b-index-column-header
+                    span.b2b-index-header-lpart
+                        span.color-title 上新
+                        span.big-title N
+                        span.regular-title EW PRODUCTS
+                    span.b2b-index-header-rpart
+                        img(src='../../static/images/index/red.png')
+                    .clear
+                +indexlist(5, 2)
+            .clear
+    .grey-wrps-wrp
+        .grey-wrps
+            ul.ce-nav-ul
+                li.ce-nav-wrp.active
+                    a.ce-nav(href='#gty') 
+                        font 跟团游
+                li.ce-nav-wrp
+                    a.ce-nav(href='#yl',style='line-height: 32px') 
+                        font 邮轮
+                 li.ce-nav-wrp
+                    a.ce-nav(href='#jd',style='line-height: 32px') 
+                        font 酒店
+                li.ce-nav-wrp(style='border-bottom:none')
+                    a.ce-nav(href='#mp') 
+                        font 门票
+                li.ce-nav-wrp(style='border-bottom:none')
+                    a.ce-nav(href='#mdd') 
+                        font 目的地
+            .grey-wrp#gty(data-index='prod-trip')
+                .hot-pro-list-wrp
+                    .hot-pro-list
+                        .hot-pro-list-header-wrp
+                            .hot-pro-list-header.b2b-newsale-colum
+                                span.color-title 跟团游
+                                span.big-title P
+                                span.regular-title ACKAGE TOUR
+                            .index-tab
+                                + tabctl(tabobj, 'tab-red')
+                            .clear
+                        .tab-ctx-wrp
+                            .tab-ctx.cur
+                                +list(listobj)
+                            .tab-ctx
+                                +list(listobj)
+                            .tab-ctx
+                                +list(listobj)
+                            .tab-ctx
+                                +list(listobj)
+                            .tab-ctx
+                                +list(listobj)
+                            .tab-ctx
+                                +list(listobj)
+                            .tab-ctx
+                                +list(listobj)
+                            .tab-ctx
+                                +list(listobj)
+            .grey-wrp#yl(data-index='prod-trip')
+                .hot-pro-list-wrp
+                    
+                    .hot-pro-list
+                        .hot-pro-list-header-wrp
+                            .hot-pro-list-header.b2b-newsale-colum
+                                span.color-title 邮轮
+                                span.big-title P
+                                span.regular-title ACKAGE TOUR
+                            .index-tab
+                                + tabctl(tabobj, 'tab-red')
+                            .clear
+                        .tab-ctx-wrp
+                            .tab-ctx.cur
+                                +list_cruise_index(listobj_cruise)
+                            .tab-ctx
+                                +list_cruise_index(listobj_cruise)
+                            .tab-ctx
+                                +list_cruise_index(listobj_cruise)
+                            .tab-ctx
+                                +list_cruise_index(listobj_cruise)
+                            .tab-ctx
+                                +list_cruise_index(listobj_cruise)
+                            .tab-ctx
+                                +list_cruise_index(listobj_cruise)
+                            .tab-ctx
+                                +list_cruise_index(listobj_cruise)
+            .grey-wrp#jd(data-index='prod-trip')
+                .hot-pro-list-wrp
+                    .hot-pro-list
+                        .hot-pro-list-header-wrp
+                            .hot-pro-list-header.b2b-newsale-colum
+                                span.color-title 酒店
+                                span.big-title P
+                                span.regular-title ACKAGE TOUR
+                            .index-tab
+                                + tabctl(tabobj, 'tab-red')
+                            .clear
+                        .tab-ctx-wrp
+                            .tab-ctx.cur
+                                +list_hotel(listobj_hotel)
+                            .tab-ctx
+                                +list_hotel(listobj_hotel)
+                            .tab-ctx
+                                +list_hotel(listobj_hotel)
+                            .tab-ctx
+                                +list_hotel(listobj_hotel)
+                            .tab-ctx
+                                +list_hotel(listobj_hotel)
+                            .tab-ctx
+                                +list_hotel(listobj_hotel)
+                            .tab-ctx
+                                +list_hotel(listobj_hotel)
+                            .tab-ctx
+                                +list_hotel(listobj_hotel)
+            .grey-wrp#mp(data-index='prod-trip')
+                .hot-pro-list-wrp
+                    
+                    .hot-pro-list
+                        .hot-pro-list-header-wrp
+                            .hot-pro-list-header.b2b-newsale-colum
+                                span.color-title 门票
+                                span.big-title P
+                                span.regular-title ACKAGE TOUR
+                            .index-tab
+                                + tabctl(tabobj, 'tab-red')
+                            .clear
+                        .tab-ctx-wrp
+                            .tab-ctx.cur
+                                +list_ticket(listobj_ticket)
+                            .tab-ctx
+                                +list_ticket(listobj_ticket)
+                            .tab-ctx
+                                +list_ticket(listobj_ticket)
+                            .tab-ctx
+                                +list_ticket(listobj_ticket)
+                            .tab-ctx
+                                +list_ticket(listobj_ticket)
+                            .tab-ctx
+                                +list_ticket(listobj_ticket)
+                            .tab-ctx
+                                +list_ticket(listobj_ticket)
+                            .tab-ctx
+                                +list_ticket(listobj_ticket)
+            .grey-wrp#mdd(data-index='prod-trip')
+                .hot-pro-list-wrp
+                    .hot-pro-list
+                        .hot-pro-list-header-wrp
+                            .hot-pro-list-header.b2b-specialsale-column
+                                span.color-title 热门目的地
+                                span.big-title P
+                                span.regular-title OPULAR DESTINATIONS
+                            .index-tab
+                                + tabctl(tabobj2, 'tab-blue')
+                            .clear
+                        .tab-ctx-wrp
+                            .tab-ctx.cur
+                                .image-show
+                                    .image-row-1
+                                        a(href='#', alt='')
+                                            img(src=imglist[0])
+                                    .image-row-2
+                                        a(href='#', alt='')
+                                            img(src=imglist[1])
+                                    .image-row-3
+                                        .db-img-1
+                                            a(href='#', alt='')
+                                                img(src=imglist[4])
+                                            a(href='#', alt='')
+                                                img(src=imglist[3])
+                                            .clear
+                                        .db-img-2
+                                            a(href='#', alt='')
+                                                img(src=imglist[2])
+                                    .clear
+                            .tab-ctx
+                                .image-show
+                                    .image-row-1
+                                        a(href='#', alt='')
+                                            img(src=imglist[0])
+                                    .image-row-2
+                                        a(href='#', alt='')
+                                            img(src=imglist[1])
+                                    .image-row-3
+                                        .db-img-1
+                                            a(href='#', alt='')
+                                                img(src=imglist[4])
+                                            a(href='#', alt='')
+                                                img(src=imglist[3])
+                                            .clear
+                                        .db-img-2
+                                            a(href='#', alt='')
+                                                img(src=imglist[2])
+                                    .clear
+
+
+
+block append script
+    script(src='../../static/js/lib/swiper.min.js')
+    script(src='../../static/js/index/index.js')

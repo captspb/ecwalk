@@ -1,0 +1,98 @@
+@import "../common/params"
+@import "../common/function"
+
+
+.room-person-icon
+  display: inline-block
+  width: 16px
+  height: 16px
+  background-image: url(../../images/sprite-img/room-person.png)
+  background-size: 16px
+.order-left-cont
+  .order-top-cont
+    h2
+      font-size: 32px
+    p
+      margin-bottom: 5px
+  .form-group
+    label
+      width: 82px
+
+.hotel-screen
+  padding: 29px 0
+  span,a
+    display: inline-block
+    vertical-align: middle
+  .hotel-date-screen
+    width: 235px
+    &:first-child
+      margin: 0
+    p
+      color: $color-b3
+      line-height: 16px
+      margin-bottom: 8px
+    div
+      font-size: $font-18
+      line-height: 20px
+    input
+      font-size: $font-18
+      border: none
+      width: 100%
+    &.room-num
+      padding: 0 0 0 40px
+      border-left: 1px solid $color-gd
+  .stepper
+    width: 90px
+    height: 20px
+    margin-left: -6px
+    input
+      width: 28px
+      height: 20px
+      line-height: 20px
+    span
+      height: 20px
+      line-height: 20px
+
+.hotel-bk-tip
+  padding: 0 20px
+  margin: 0 0 10px 0
+  color: #ff6a00
+  height: 40px
+  line-height: 40px
+  border: 1px solid #f5ebd3
+  border-radius: 4px
+  background-color: #fff9ea
+
+.hotel-bk-info
+  .hotel-bk-table
+    overflow: hidden
+  table
+    width: 100%
+    text-align: center
+  tr
+    border-bottom: 1px dashed $color-f0
+    &:first-child
+      border-bottom: none
+  th
+    height: 40px
+    line-height: 40px
+    background-color: $color-f7
+    border-radius: 4px
+    color: $color-g6
+    font-weight: normal
+  td
+    padding: 20px 0
+    font-size: $font-16
+    &.be-careful
+      font-size: $font-14
+  .be-careful
+    width: 365px
+  .show-more
+    padding: 20px 0
+    text-align: center
+    color: $font-blue
+    span
+      cursor: pointer
+    i
+      margin: 0 0 0 5px
+

@@ -1,0 +1,110 @@
+extends ../../component/common/layout
+
+include ../../component/common/mixin
+
+block append style
+    link(rel='stylesheet', href='../../static/css/ticket/ticketLists.css')
+
+block content
+    include ../../../model/ticket/ticketListsData
+    +bread(bread)
+    .search-pannel-wrp
+        .com-search-pannel
+            include ../../component/list/ticketsearchheader
+            include ../../component/list/ticketsearchctx
+        include ../../component/list/listctl
+        .tab-ctx-wrp
+            .search-list-result
+                ul.search-result-list
+                    li.search-result-item
+                        .search-item-cont
+                            .result-head
+                                div.logo
+                                    img(src='../../static/images/index/Logo.png')
+                                div.font
+                                    div.top
+                                        font.hotel-name 广州长隆野生动物世界
+                                    div.bottom
+                                        span.left
+                                            label 酒店地址：
+                                            font 天河区珠江新城珠江西路5号
+                                        span.mid
+                                            label 服务供应商：
+                                            font 广之旅
+                                        span.right
+                                            label 等级：
+                                            font 豪华
+                                button 立即预定
+                            include ../../component/list/ticketList
+                            a.btn_div.expan_btn 展开所有
+                    li.search-result-item
+                        .search-item-cont
+                            .result-head
+                                div.logo
+                                    img(src='../../static/images/index/Logo.png')
+                                div.font
+                                    div.top
+                                        font.hotel-name 广州长隆野生动物世界
+                                    div.bottom
+                                        span.left
+                                            label 酒店地址：
+                                            font 天河区珠江新城珠江西路5号
+                                        span.mid
+                                            label 服务供应商：
+                                            font 广之旅
+                                        span.right
+                                            label 等级：
+                                            font 豪华
+                                button 立即预定
+                            include ../../component/list/ticketList
+                            a.btn_div.expan_btn 展开所有
+                    li.search-result-item
+                        .search-item-cont
+                            .result-head
+                                div.logo
+                                    img(src='../../static/images/index/Logo.png')
+                                div.font
+                                    div.top
+                                        font.hotel-name 广州长隆野生动物世界
+                                    div.bottom
+                                        span.left
+                                            label 酒店地址：
+                                            font 天河区珠江新城珠江西路5号
+                                        span.mid
+                                            label 服务供应商：
+                                            font 广之旅
+                                        span.right
+                                            label 等级：
+                                            font 豪华
+                                button 立即预定
+                            include ../../component/list/ticketList
+                            a.btn_div.expan_btn 展开所有
+                            
+                    li.search-result-item
+                        .search-item-cont(style='border-bottom:none;')
+                            .result-head
+                                div.logo
+                                    img(src='../../static/images/index/Logo.png')
+                                div.font
+                                    div.top
+                                        font.hotel-name 广州长隆野生动物世界
+                                    div.bottom
+                                        span.left
+                                            label 酒店地址：
+                                            font 天河区珠江新城珠江西路5号
+                                        span.mid
+                                            label 服务供应商：
+                                            font 广之旅
+                                        span.right
+                                            label 等级：
+                                            font 豪华
+                                button 立即预定
+                            include ../../component/list/ticketList
+                            a.btn_div.expan_btn 展开所有
+
+        +pagese('件商品')
+        
+
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/ticket/ticketList.js')

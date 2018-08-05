@@ -1,0 +1,394 @@
+@import "../common/params"
+@import "../common/function"
+
+.travel-details
+  background-color: $color-f7
+.prod-dt-main
+  background: none
+  padding: 0
+  .prod-detail-info
+    padding: 30px 30px 0
+    background-color: #fff
+    border-radius: 4px
+.travel-bk-box
+  position: relative
+  margin-top: 14px
+  background: #fff
+  border-radius: 4px
+  &.partialLoad-tip
+    .travel-bk-tab-hd,
+    .travel-bk-tab,
+    .travel-prod-operation
+      display: none
+.travel-bk-tab-hd
+  height: 40px
+  line-height: 40px
+  background-color: #fff7f7
+  color: $color-g6
+  padding: 0 20px
+  span
+    display: inline-block
+    text-align: center
+  .travel-bk-go-date,.travel-bk-prc
+    cursor: pointer
+.travel-bk-tab
+  max-height: 510px
+  overflow: auto
+  padding: 0 20px
+  table
+    width: 100%
+  tr
+    border-bottom: 1px dashed $color-f0
+  td
+    position: relative
+    padding: 18px 0
+    font-size: $font-16
+    color: $color-g6
+    text-align: center
+    word-break: break-all
+  .alreadyformed-img
+    display: none
+    position: absolute
+    top: 0
+    left: -20px
+    width: 48px
+    height: 49px
+  .alreadyformed
+    .alreadyformed-img
+      display: block
+  .travel-bk-prc
+    color: $main-red
+  .travel-bk-sel
+    text-align: right
+    i
+      cursor: pointer
+.loading-bar
+  padding: 36px 0
+  p
+    text-align: center    
+.travel-prod-operation
+  overflow: hidden
+  padding: 20px 40px
+  .operation-item
+    color: #466094
+    float: right
+    a
+      margin-left: 40px
+      &.collect-wrp
+        color: $color-g6
+    i
+      vertical-align: -3px
+      margin-right: 10px
+.travel-bk-id
+  width: 135px
+  text-align: left
+.travel-bk-name
+  width: 100px
+.travel-bk-go-date
+  width: 160px
+.travel-bk-days
+  width: 120px
+.travel-bk-num
+  width: 120px
+.travel-bk-back-date
+  width: 160px
+.travel-bk-prc
+  width: 118px
+  .travel-bk-prc-hide
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    text-align: center
+    background-color: #fff
+    line-height: 60px
+
+////////////////////////////////////
+.travel-bk-dt
+  width: 1190px
+  margin: 0 auto
+  border: 2px solid $main-red
+  .travel-bk-total
+    position: relative
+    padding: 20px 40px
+    height: 120px
+    background-color: $main-pink
+    .travel-booking
+      float: left
+      .travel-bk-stepper
+        margin-bottom: 5px
+        font-size: $font-16
+        position: relative
+        label
+          float: left
+          line-height: 36px
+          margin-right: 10px
+          span
+            display: inline-block
+            vertical-align: middle
+          .tip-icon
+            vertical-align: middle
+            margin-left: 8px
+            cursor: pointer
+        .grey-popover
+          display: none
+          position: absolute
+          background-color: #333
+          font-size: 14px
+          color: #7F8593
+          padding: 24px 20px
+          z-index: 1
+          box-shadow: 0 4px 16px 0 rgba(0,0,0,0.30)
+          border-radius: 4px
+          bottom: 40px
+          width: 310px
+          left: -113px
+          &:before
+            -webkit-filter: drop-shadow(0 -1px 2px rgba(0, 0, 0, .1))
+            filter: drop-shadow(0 -1px 2px rgba(0, 0, 0, .1))
+            border-top: 10px solid #333
+            content: ""
+            position: absolute
+            width: 0
+            height: 0
+            bottom: -10px
+            margin-left: -5px
+            left: 50%
+            border-left: 10px solid transparent
+            border-right: 10px solid transparent
+        .stepper
+          overflow: hidden
+      p
+        padding: 3px 0 0 42px
+      &.child-num,&.baby-num
+        margin-left: 100px
+    .total-info
+      position: absolute
+      right: 184px
+      top: 0
+      bottom: 0
+      margin: auto
+      height: 54px
+      font-size: $font-18
+      color: $main-red
+      span
+        font-size: 30px
+        // vertical-align: -2px
+        vertical-align: middle
+        display: inline-block
+      .prices
+        display: inline-block
+        // margin-top: 10px
+        vertical-align: middle
+    .travel-bk-btn
+      position: absolute
+      right: 40px
+      top: 0
+      bottom: 0
+      margin: auto
+
+.travel-additional-item
+  padding: 20px 0
+  background-color: #fff
+.travel-add-item
+  margin: 40px 40px 0
+  &:first-child
+    margin-top: 0
+  .travel-add-item-tit
+    color: #333
+    font-size: 16px
+    font-weight: normal
+    margin-bottom: 20px
+    i
+      margin-right: 10px
+      vertical-align: -7px
+    span
+      color: #999
+      font-size: 14px
+      margin-left: 20px
+  .travel-add-item-con
+    position: relative
+    .service-popover
+      display: none
+      position: absolute
+      width: 100%
+      padding: 20px
+      background: #fffddd
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1)
+      left: 0
+      top: 100%
+      z-index: 1
+      &:before
+        content: ""
+        position: absolute
+        width: 0
+        height: 0
+        top: -10px
+        left: 100px
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+  .travel-add-item-tip
+    color: #999
+    font-size: 12px
+
+.travel-booking .travel-add-item .travel-add-item-con .service-popover:after
+  content: ""
+  position: absolute
+  width: 0
+  height: 0
+  top: -10px
+  left: 100px
+  border-left: 10px solid transparent
+  border-right: 10px solid transparent
+
+.travel-add-item
+  .travel-add-item-con .service-popover
+    &:before
+      -webkit-filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, 0.1))
+      filter: drop-shadow(0px -1px 2px rgba(0, 0, 0, 0.1))
+      border-bottom: 10px solid #fffddd
+    &:after
+      border-bottom: 15px solid #fffddd
+  .travel-add-item-list
+    overflow: hidden
+    max-height: 165px
+    padding: 0 20px 0 60px
+    li
+      overflow: hidden
+      line-height: 36px
+      padding: 9px 0
+      border-top: 1px dashed #ddd
+      &:first-child
+        border-top: none
+    .travel-add-item-name
+      float: left
+      width: 720px
+      margin-right: 40px
+      color: $main-blue
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      a
+        color: $main-blue
+        border-bottom: 1px dashed $main-blue
+        &:hover
+          text-decoration: none
+    .travel-add-item-pri
+      float: left
+      color: $main-red
+      em
+        font-style: normal
+    .travel-add-item-num
+      float: right
+  .show-more
+    padding: 9px 0
+    margin: 0 20px 0 60px
+    color: $color-g6
+    line-height: 36px
+    cursor: pointer
+    border-top: 1px dashed #ddd
+    i
+      margin-left: 4px
+      vertical-align: 3px
+
+///////////////////////
+.prod-dt-con
+  width: 1190px
+  margin: auto
+  .index-tab
+    overflow: hidden
+  .tab-ctx-wrp
+    background-color: #fff
+    padding: 20px
+    .tab-ctx-tit
+      position: relative
+    h3
+      left: 0
+      background-color: #fff
+      display: inline-block
+    .tab-ctx-tit-icon
+      display: inline-block
+      width: 0
+      height: 0
+      border-top: 12px solid transparent
+      border-left: 20px solid $main-red
+      border-bottom: 12px solid transparent
+      position: relative
+      vertical-align: middle
+      &:before
+        content: ''
+        display: inline-block
+        width: 0
+        height: 0
+        border-top: 11px solid transparent
+        border-left: 18px solid #fff
+        border-bottom: 11px solid transparent
+        position: absolute
+        left: -19px
+        top: -11px
+      &:after
+        content: ''
+        position: absolute
+        display: inline-block
+        width: 0
+        height: 0
+        border-top: 12px solid transparent
+        border-left: 20px solid $main-red
+        border-bottom: 12px solid transparent
+        left: -25px
+        top: -12px
+    span
+      margin-left: 10px
+      color: $main-red
+      font-size: 20px
+      vertical-align: middle
+      font-weight: normal
+    .tit-line
+      display: block
+      height: 1px
+      background-color: $main-red
+      // margin-top: 13px
+      top: 13px
+      right: 0
+      width: 90%
+      overflow: hidden
+      position: absolute
+    .detail-cont
+      margin-left: 135px
+
+.show-more-list
+  width: 1126px
+  height: 48px
+  line-height: 46px
+  text-align: center
+  font-size: 16px
+  margin: 14px auto 0
+  color: #7F8593
+  background: #FFFFFF
+  border: 1px solid #EAEAEA
+  border-radius: 4px
+  cursor: pointer
+  &:hover
+    color: #fff
+    background: #ADADB7
+    border: 1px solid #ADADB7
+  &.loading
+    &:hover
+      color: #7F8593
+      background: #FFFFFF
+      border: 1px solid #EAEAEA
+    .more-text
+      display: none
+    .loading-tip
+      display: inline-block
+  .loading-tip
+    display: none
+    font-size: 16px
+    color: #181C28
+    .loading-gif
+      width: 24px
+      height: 24px
+      vertical-align: top
+      margin: 11px 8px 0 0

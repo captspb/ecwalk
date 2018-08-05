@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/cal.css">
+    <link rel="stylesheet" href="../../static/css/cruise/cruiseLists.css">
+  </head>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx"><a><img src="../../static/images/index/LogoTitle.png"></a>
+        <div class="b2b-address"><span><span class="img"></span><font>广州市
+              <ul class="drop_down">
+                <li> <a>北京市</a></li>
+                <li> <a>乌鲁木齐市</a></li>
+                <li> <a>上海市</a></li>
+                <li> <a>吐鲁番市</a></li>
+                <li> <a>深圳市</a></li>
+              </ul></font></span></div>
+        <div class="b2b-header-search">
+          <div class="search-box">
+            <div class="select-group">
+              <div class="select"><span class="select-val">全部产品</span><i class="select-down-arrow-icon"></i></div>
+              <ul style="display: none;" class="select-dropdown">
+                <li class="active">全部产品</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地玩乐</li>
+                <li>酒店</li>
+                <li>门票</li>
+                <li>签证</li>
+                <li>邮轮</li>
+                <li>WIFI</li>
+              </ul>
+            </div>
+            <div class="search-input">
+              <input placeholder="请输入搜索关键字...">
+            </div><a class="search-btn">搜索</a>
+          </div>
+          <div class="search-hot"></div>
+        </div>
+        <div class="b2b-header-bitMap">
+          <div class="bitMapDiv">
+            <div class="bitMapInnerDiv">
+              <div class="wx-kf popover"><i class="wx-kf-icon"></i><span class="contact">
+                  <p>欢迎使用</p>
+                  <p>在线客服</p></span>
+                <div class="popover-down">
+                  <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                  <div class="code-tip">扫码关注公众号</div>
+                </div>
+              </div>
+              <div class="tel-kf"><i class="tel-icon"></i><span class="contact">
+                  <p>020-86338888</p>
+                  <p>400-863-8888</p></span></div>
+            </div><img src="../../static/images/index/monkey.png" class="r">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="zyx"><a href="#">
+              <div>自由行</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="ddwl"><a href="#">
+              <div>当地玩乐</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="qz"><a href="#">
+              <div>签证</div><span class="white-line"></span></a></li>
+          <li nav-type="wifi"><a href="#">
+              <div>WIFI</div><span class="white-line"></span></a></li>
+          <li nav-type="jp"><a href="#">
+              <div>机票</div><span class="white-line"></span><i class="new-tip-icon"></i></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="breadcrumb">
+      <ul>
+        <li><font>您当前的位置：</font></li>
+        <li><a>邮轮</a><span>&gt;</span></li>
+        <li><a class='cur'>搜索</a></li>
+      </ul>
+    </div>
+    <div class="search-pannel-wrp">
+      <div class="com-search-pannel">
+        <div class="com-search-pannel-header travel-search-header">
+          <div class="short-search-part">
+            <div class="short-search-title">入住日期</div>
+            <div class="short-search-input">
+              <input placeholder="请选择入住日期" id="start-date" readonly class="start-date">
+            </div>
+          </div>
+          <div class="short-search-part">
+            <div class="short-search-title">退房日期</div>
+            <div class="short-search-input">
+              <input placeholder="请选择退房日期" id="end-date" readonly class="end-date">
+            </div>
+          </div>
+          <div class="long-search-part">
+            <div class="long-search-title">关键字</div>
+            <div class="long-search-input">
+              <input placeholder="请输入关键字" class="key-word cruise-search">
+            </div>
+          </div>
+          <div class="seach-pannel-btn"></div>
+        </div>
+        <div class="com-search-ctx travel-search-ctx">
+          <ul>
+            <li>
+              <div class="search-item-wrp">
+                <div class="search-item-lpart"><span class="web-font-bold">邮轮品牌</span></div>
+                <div class="search-item-rpart"><span class="tag-wrp">
+                    <div class="search-tag">不限(10)</div></span><span class="tag-wrp">
+                    <div class="search-tag">皇家加勒比(2)</div></span><span class="tag-wrp">
+                    <div class="search-tag">银海邮轮(8)</div></span>
+                  <div class="confirm-btn-list-wrp">
+                    <div class="confirm-btn-list"><span class="cancel-btn">取消</span><span class="sr-btn ok-btn">确定</span></div>
+                  </div>
+                </div>
+                <div class="btn-list"><span class="down-ctl"></span>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li>
+              <div class="search-item-wrp">
+                <div class="search-item-lpart"><span class="web-font-bold">出发港口</span></div>
+                <div class="search-item-rpart"><span class="tag-wrp"><span data-val="不限" class="check-box tag-check-box"></span>
+                    <div class="search-tag">不限(10)</div></span><span class="tag-wrp"><span data-val="广州" class="check-box tag-check-box"></span>
+                    <div class="search-tag">广州(20)</div></span>
+                  <div class="confirm-btn-list-wrp">
+                    <div class="confirm-btn-list"><span class="cancel-btn">取消</span><span class="sr-btn ok-btn">确定</span></div>
+                  </div>
+                </div>
+                <div class="btn-list"><span class="down-ctl"></span><span class="more-ctl">多选</span>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li>
+              <div class="search-item-wrp">
+                <div class="search-item-lpart"><span class="web-font-bold">行程天数</span></div>
+                <div class="search-item-rpart"><span class="tag-wrp">
+                    <div class="search-tag">1天</div></span><span class="tag-wrp">
+                    <div class="search-tag">2天</div></span>
+                  <div class="confirm-btn-list-wrp">
+                    <div class="confirm-btn-list"><span class="cancel-btn">取消</span><span class="sr-btn ok-btn">确定</span></div>
+                  </div>
+                </div>
+                <div class="btn-list"><span class="start-price">
+                    <input></span><span class="end-price">
+                    <input></span>
+                  <spna class="price-confirm sr-btn ban">确定</spna>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li>
+              <div class="search-item-wrp">
+                <div class="search-item-lpart"><span class="web-font-bold">价格区间</span></div>
+                <div class="search-item-rpart"><span class="tag-wrp">
+                    <div class="search-tag">500元以下</div></span><span class="tag-wrp">
+                    <div class="search-tag">501-1000元</div></span>
+                  <div class="confirm-btn-list-wrp">
+                    <div class="confirm-btn-list"><span class="cancel-btn">取消</span><span class="sr-btn ok-btn">确定</span></div>
+                  </div>
+                </div>
+                <div class="btn-list"><span class="start-price">
+                    <input></span><span class="end-price">
+                    <input></span>
+                  <spna class="price-confirm sr-btn ban">确定</spna>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="picked-tag"><span class="had-pick-title web-font-bold">已选</span>
+          <ul>
+            <li><span>价格区间：500以下</span><span class="sclose"></span></li>
+            <li class="clear-all">清空已选</li>
+          </ul>
+        </div>
+      </div>
+      <div class="list-ctl-wrp">
+        <div class="list-ctl-ctx">
+          <ul>
+            <li class="select"><span>销量</span><span class="down-screen-icon"></span></li>
+            <li class="select"><span>价格</span><span class="up-screen-icon"></span></li>
+            <li class="select"><span>利润</span><span class="up-screen-icon"></span></li>
+            <li class="list-cbox"><span class="check-box yct"></span><span class="check-box-text">已成团</span></li>
+            <li class="list-cbox toggle-price"><span class="check-box ycthj"></span><span class="check-box-text">隐藏同行价</span></li>
+          </ul>
+          <div class="index-tab">
+            <ul class="right_float">
+              <li class="active">产品显示</li>
+              <li>排期显示</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-ctx-wrp">
+        <div class="search-list-result">
+          <div class="com-list-wrp">
+            <ul>
+              <li class="list-wrp">
+                <div class="all-part">
+                  <div class="yct-icon">已成团</div>
+                  <div class="prolist-left-part">
+                    <div class="prolist-icon-title">
+                      <div class="prolist-icon"><img src="../../static/images/index/Logo.png"/></div>
+                      <div class="prolist-title web-font-bold"><a href="#"><span>【欧洲河轮】维京河轮 莱茵河之旅8天 品质深度游 【瑞士-法国-德国-荷兰】（阿姆斯特丹-巴塞尔）</span></a></div>
+                    </div>
+                    <div class="prolist-main-info">
+                      <ul>
+                        <li>
+                          <div class="prolist-main-info-title">供应商</div>
+                          <div class="prolist-main-info-ctx">广之旅</div>
+                        </li>
+                        <li>
+                          <div class="prolist-main-info-title">邮轮品牌</div>
+                          <div class="prolist-main-info-ctx">维京河轮</div>
+                        </li>
+                        <li>
+                          <div class="prolist-main-info-title">行程天数</div>
+                          <div class="prolist-main-info-ctx"><span>15</span><span class="days-icon"></span></div>
+                        </li>
+                        <!-- li-->
+                        <!--     .prolist-main-info-title 出发地-->
+                        <!--     .prolist-main-info-ctx #{listobj[i].toward}-->
+                        <div class="clear"></div>
+                      </ul>
+                    </div>
+                    <div class="prolist-start-date">出行日期：<span class="date-item">2017/05/22</span><span class="date-item">2017/05/24</span><span class="date-item">2017/05/27</span><span class="date-item">2017/05/29</span>
+                      <div class="more-btn"></div>
+                    </div>
+                  </div>
+                  <div class="prolist-right-part">
+                    <div class="source-price"><span class="title">同行价</span><span class="main-red">￥6,266</span></div>
+                    <div class="sale-price"><span class="title">销售价</span><span class="main-red">￥7,266</span></div>
+                    <div class="sale-money"><span class="title">利　润</span><span class="price"><span class="main-green">￥1,000</span></span></div>
+                    <div class="book-btn"><a>立即预定</a></div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li class="list-wrp">
+                <div class="all-part">
+                  <div class="yct-icon">已成团</div>
+                  <div class="prolist-left-part">
+                    <div class="prolist-icon-title">
+                      <div class="prolist-icon"><img src="../../static/images/index/Logo.png"/></div>
+                      <div class="prolist-title web-font-bold"><a href="#"><span>【欧洲河轮】维京河轮 莱茵河之旅8天 品质深度游 【瑞士-法国-德国-荷兰】（阿姆斯特丹-巴塞尔）</span></a></div>
+                    </div>
+                    <div class="prolist-main-info">
+                      <ul>
+                        <li>
+                          <div class="prolist-main-info-title">供应商</div>
+                          <div class="prolist-main-info-ctx">广之旅</div>
+                        </li>
+                        <li>
+                          <div class="prolist-main-info-title">邮轮品牌</div>
+                          <div class="prolist-main-info-ctx">维京河轮</div>
+                        </li>
+                        <li>
+                          <div class="prolist-main-info-title">行程天数</div>
+                          <div class="prolist-main-info-ctx"><span>15</span><span class="days-icon"></span></div>
+                        </li>
+                        <!-- li-->
+                        <!--     .prolist-main-info-title 出发地-->
+                        <!--     .prolist-main-info-ctx #{listobj[i].toward}-->
+                        <div class="clear"></div>
+                      </ul>
+                    </div>
+                    <div class="prolist-start-date">出行日期：<span class="date-item">2017/05/22</span><span class="date-item">2017/05/24</span><span class="date-item">2017/05/27</span><span class="date-item">2017/05/29</span>
+                      <div class="more-btn"></div>
+                    </div>
+                  </div>
+                  <div class="prolist-right-part">
+                    <div class="source-price"><span class="title">同行价</span><span class="main-red">￥6,266</span></div>
+                    <div class="sale-price"><span class="title">销售价</span><span class="main-red">￥7,266</span></div>
+                    <div class="sale-money"><span class="title">利　润</span><span class="price"><span class="main-green">￥1,000</span></span></div>
+                    <div class="book-btn"><a>立即预定</a></div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li class="list-wrp">
+                <div class="all-part">
+                  <div class="yct-icon">已成团</div>
+                  <div class="prolist-left-part">
+                    <div class="prolist-icon-title">
+                      <div class="prolist-icon"><img src="../../static/images/index/Logo.png"/></div>
+                      <div class="prolist-title web-font-bold"><a href="#"><span>【欧洲河轮】维京河轮 莱茵河之旅8天 品质深度游 【瑞士-法国-德国-荷兰】（阿姆斯特丹-巴塞尔）</span></a></div>
+                    </div>
+                    <div class="prolist-main-info">
+                      <ul>
+                        <li>
+                          <div class="prolist-main-info-title">供应商</div>
+                          <div class="prolist-main-info-ctx">广之旅</div>
+                        </li>
+                        <li>
+                          <div class="prolist-main-info-title">邮轮品牌</div>
+                          <div class="prolist-main-info-ctx">维京河轮</div>
+                        </li>
+                        <li>
+                          <div class="prolist-main-info-title">行程天数</div>
+                          <div class="prolist-main-info-ctx"><span>15</span><span class="days-icon"></span></div>
+                        </li>
+                        <!-- li-->
+                        <!--     .prolist-main-info-title 出发地-->
+                        <!--     .prolist-main-info-ctx #{listobj[i].toward}-->
+                        <div class="clear"></div>
+                      </ul>
+                    </div>
+                    <div class="prolist-start-date">出行日期：<span class="date-item">2017/05/22</span><span class="date-item">2017/05/24</span><span class="date-item">2017/05/27</span><span class="date-item">2017/05/29</span>
+                      <div class="more-btn"></div>
+                    </div>
+                  </div>
+                  <div class="prolist-right-part">
+                    <div class="source-price"><span class="title">同行价</span><span class="main-red">￥6,266</span></div>
+                    <div class="sale-price"><span class="title">销售价</span><span class="main-red">￥7,266</span></div>
+                    <div class="sale-money"><span class="title">利　润</span><span class="price"><span class="main-green">￥1,000</span></span></div>
+                    <div class="book-btn"><a>立即预定</a></div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li class="list-wrp">
+                <div class="all-part">
+                  <div class="yct-icon">已成团</div>
+                  <div class="prolist-left-part">
+                    <div class="prolist-icon-title">
+                      <div class="prolist-icon"><img src="../../static/images/index/Logo.png"/></div>
+                      <div class="prolist-title web-font-bold"><a href="#"><span>【欧洲河轮】维京河轮 莱茵河之旅8天 品质深度游 【瑞士-法国-德国-荷兰】（阿姆斯特丹-巴塞尔）</span></a></div>
+                    </div>
+                    <div class="prolist-main-info">
+                      <ul>
+                        <li>
+                          <div class="prolist-main-info-title">供应商</div>
+                          <div class="prolist-main-info-ctx">广之旅</div>
+                        </li>
+                        <li>
+                          <div class="prolist-main-info-title">邮轮品牌</div>
+                          <div class="prolist-main-info-ctx">维京河轮</div>
+                        </li>
+                        <li>
+                          <div class="prolist-main-info-title">行程天数</div>
+                          <div class="prolist-main-info-ctx"><span>15</span><span class="days-icon"></span></div>
+                        </li>
+                        <!-- li-->
+                        <!--     .prolist-main-info-title 出发地-->
+                        <!--     .prolist-main-info-ctx #{listobj[i].toward}-->
+                        <div class="clear"></div>
+                      </ul>
+                    </div>
+                    <div class="prolist-start-date">出行日期：<span class="date-item">2017/05/22</span><span class="date-item">2017/05/24</span><span class="date-item">2017/05/27</span><span class="date-item">2017/05/29</span>
+                      <div class="more-btn"></div>
+                    </div>
+                  </div>
+                  <div class="prolist-right-part">
+                    <div class="source-price"><span class="title">同行价</span><span class="main-red">￥6,266</span></div>
+                    <div class="sale-price"><span class="title">销售价</span><span class="main-red">￥7,266</span></div>
+                    <div class="sale-money"><span class="title">利　润</span><span class="price"><span class="main-green">￥1,000</span></span></div>
+                    <div class="book-btn"><a>立即预定</a></div>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pagination-wrp">
+        <div class="pageindex"><span>1</span> -<span>39</span> / 共<span>80</span>件商品</div>
+        <div class="pagination"></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/jquery.pagination.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/cruise/cruiseList.js"></script>
+  </body>
+</html>

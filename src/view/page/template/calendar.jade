@@ -1,0 +1,107 @@
+- var calendar = ["日", "一", "二", "三", "四", "五", "六"];
+
+script(type="js/template", id="price-calendar-single-wrp")
+  .price-calendar-single-wrp
+    .price-calendar-ctx
+      .price-calendar-header-wrp
+        .price-calendar-header
+          .b-left-arrow
+            .b-left-arrow-icon.c-icon
+          .price-calendar-title
+          .b-right-arrow
+            .b-right-arrow-icon.c-icon
+        .weekday-wrp
+          - for week in calendar
+            span.weekday #{week}
+      .price-calendar-route
+        - for (var i=0; i<6; i++)
+          .price-calendar-line
+            ul
+              - for (var j=0; j<7; j++)
+                li.date-blank
+
+script(type="js/template", id="range-calendar-single-wrp")
+  .range-calendar-single-wrp
+    .price-calendar-ctx
+      .price-calendar-header-wrp
+        .price-calendar-header
+          .b-left-arrow
+            .b-left-arrow-icon.c-icon
+          .price-calendar-title
+          .b-right-arrow
+            .b-right-arrow-icon.c-icon
+        .weekday-wrp
+          - for week in calendar
+            span.weekday #{week}
+      .price-calendar-route
+        - for (var i=0; i<6; i++)
+          .price-calendar-line
+            ul
+              - for (var j=0; j<7; j++)
+                li.date-blank
+
+script(type="js/template", id="price-calendar-double-wrp")
+  .price-calendar-double-wrp
+    .price-calendar-ctx
+      .price-calendar-header-wrp
+        .price-calendar-header
+          .b-left-arrow
+            .b-left-arrow-icon.c-icon
+          .price-calendar-title
+        .weekday-wrp
+          - for week in calendar
+            span.weekday #{week}
+      .price-calendar-route
+        - for (var i=0; i<6; i++)
+          .price-calendar-line
+            ul
+              - for (var j=0; j<7; j++)
+                li.date-blank
+    .price-calendar-ctx
+      .price-calendar-header-wrp
+        .price-calendar-header
+          .price-calendar-title
+          .b-right-arrow
+            .b-right-arrow-icon.c-icon
+        .weekday-wrp
+          - for week in calendar
+            span.weekday #{week}
+      .price-calendar-route
+        - for (var i=0; i<6; i++)
+          .price-calendar-line
+            ul
+              - for (var j=0; j<7; j++)
+                li.date-blank
+
+script(type="js/template", id="range-calendar-double-wrp")
+  .range-calendar-double-wrp
+    .price-calendar-ctx
+      .price-calendar-header-wrp
+        .price-calendar-header
+          .b-left-arrow
+            .b-left-arrow-icon.c-icon
+          .price-calendar-title
+        .weekday-wrp
+          - for week in calendar
+            span.weekday #{week}
+      .price-calendar-route
+        - for (var i=0; i<6; i++)
+          .price-calendar-line
+            ul
+              - for (var j=0; j<7; j++)
+                li.date-blank
+    .price-calendar-ctx
+      .price-calendar-header-wrp
+        .price-calendar-header
+          .price-calendar-title
+          .b-right-arrow
+            .b-right-arrow-icon.c-icon
+        .weekday-wrp
+          - for week in calendar
+            span.weekday #{week}
+      .price-calendar-route
+        - for (var i=0; i<6; i++)
+          .price-calendar-line
+            ul
+              - for (var j=0; j<7; j++)
+                li.date-blank

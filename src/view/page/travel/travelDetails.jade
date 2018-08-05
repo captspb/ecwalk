@@ -1,0 +1,176 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append head
+    title 跟团游详情
+
+block append style
+    link(rel='stylesheet', href='../../static/css/prodDetails.css')
+    link(rel='stylesheet', href='../../static/css/travel/travelDetails.css')
+
+block content
+    include ../../../model/travel/travelDetailsData
+    +bread(bread)
+    //.toload
+    //    img(src='../../static/images/index/toload.gif')
+    .travel-details
+        .prod-dt-main
+            //-h2.prod-dt-tit 土耳其 埃及18天 全景大环游 跨越欧亚非 全程升级14晚超豪华酒店埃及红海度假 船游博斯普鲁斯海峡 洞 穴餐厅特色餐
+            //-.prod-dt-info.clearfix
+                .img-box
+                    img(src='../../static/images/details/logo.png')
+                    .contact-info.popover 联系方式
+                        .popover-down
+                            h2 广之旅
+                            p 11321321adsfasd
+                            p 11321321adsfasd
+                ul
+                    -for (var i=0;i<prodInfo.length;i++)
+                        li
+                            label #{prodInfo[i].text}
+                            p #{prodInfo[i].con}
+                .prod-dt-prc ￥<span>23380</span>起
+            .prod-detail-info
+                div.prod-big-tit
+                    // 主副标题时主标题加粗
+                    h1 【典·博览】土耳其12天＊全景环游＊土耳其航空直航＊广州往返＜地中海，棉花堡，卡帕多奇亚，番红花城＞ 【典·博览】土耳其12天＊全景环游＊土耳其航空直航＊广州往返＜地中海，棉花堡，卡帕多奇亚，番红花城＞
+                div.clearfix
+                    div.prod-img
+                    div.prod-con
+                        .price-info
+                            .price-tit
+                                label 会员价格
+                                span.prod-id-wrp
+                                    label 产品ID：
+                                    span 80011509
+                            .price-info-box.not-login
+                                .login-entrance
+                                    span.main-red 登录
+                                    | 后获取价格
+                                ul.price-info-item
+                                    li
+                                        label 同业价
+                                        div ¥14,839
+                                    li
+                                        label 销售价
+                                        div ¥37,352
+                                    li
+                                        label 利润
+                                        div.green-font ¥50,890
+                        ul.price-detail-info
+                            li
+                                label 产品编号
+                                div I12313131313313
+                            li
+                                label 出发城市
+                                div 广州
+                            li
+                                label 行程天数
+                                div
+                                    span 6
+                                    | 天
+                            li
+                                label 目的地
+                                div 土耳其-阿联酋-迪拜
+                            li
+                                label 集合地点
+                                div 广州白云机场
+                            li.btns
+                                a.btn 立即预订
+                                a.btn.collection-btn 收藏
+            // 排期table
+            .travel-bk-box
+                .travel-bk-tab-hd
+                    span.travel-bk-id 团队编号
+                    span.travel-bk-name 团队名称
+                    span.travel-bk-go-date 出发日期<i class='down-screen-icon'></i>
+                    span.travel-bk-days 行程天数
+                    span.travel-bk-num 可售数量
+                    span.travel-bk-back-date 截止日期
+                    span.travel-bk-prc 销售价
+                    span.travel-bk-prc 同行价<i class='eye-icon'></i>
+                    span.travel-bk-prc 利润
+                .travel-bk-tab.scrollbar
+                    table
+                        -for(var i=0;i<7;i++)
+                            tr.alreadyformed
+                                td.travel-bk-id Arx071622
+                                    if i == 0
+                                        img(src='../../static/images/details/alreadyformed.png',class='alreadyformed-img')
+                                td.travel-bk-name GQS10#广州直航#
+                                td.travel-bk-go-date 2017/12/01
+                                td.travel-bk-days 10
+                                td.travel-bk-num 9+loading-bar
+                                td.travel-bk-back-date 2017/12/31
+                                td.travel-bk-prc ￥385000
+                                td.travel-bk-prc ￥385000
+                                    .travel-bk-prc-hide --
+                                td.travel-bk-prc ￥385000
+                                    .travel-bk-prc-hide --
+                                td.travel-bk-sel
+                                    i.uncheck-icon
+                .show-more-list
+                    span.more-text 查看更多
+                    span.loading-tip
+                        i.loading-gif
+                        | 正在加载，请稍后…
+                .travel-prod-operation
+                    .operation-item
+                        a.collect-wrp
+                            i.collect-star
+                            span 收藏
+                        a <i class='print-icon'></i>打印行程
+                        a <i class='download-icon'></i>下载行程
+                        a <i class='file-icon'></i>下载出团通知书
+        .travel-bk-dt
+            .travel-bk-total
+                .travel-booking.adult-num
+                    .travel-bk-stepper
+                        label 成人
+                    p 销售价￥385000
+                    p 结算价￥480000
+                .travel-booking.child-num
+                    .travel-bk-stepper
+                        label
+                            span 儿童
+                            i.tip-icon
+                        .service-popover.grey-popover
+                            | 1、儿童适用年龄：2~11周岁，回团日期年满12周岁请按成人价报名；
+                            br
+                            | 2、儿童入住酒店需遵循酒店儿童政策
+                    p 销售价￥385000
+                    p 结算价￥480000
+                .travel-booking.baby-num
+                    .travel-bk-stepper
+                        label 婴儿
+                    p 销售价￥385000
+                    p 结算价￥480000
+                .total-info
+                    //总价：￥<span>2380000</span>
+                    p 销售总价￥<strong>385000</strong>
+                    p 结算总价￥<strong>480000</strong>
+                a.btn.travel-bk-btn(href='travelOrder.html') 立即预定
+            .travel-additional-item
+                .travel-add-item
+                    .travel-add-item-tit <i class='safe-icon'></i>保险
+                    .travel-add-item-con
+                        ul.travel-add-item-list
+                            - for (var i=0;i<4;i++)
+                                li
+                                    p.travel-add-item-name
+                                        a  太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋
+                                    span.travel-add-item-pri ¥<em>8000</em>
+                .travel-add-item
+                    .travel-add-item-tit <i class='service-icon'></i>可选服务
+                    .travel-add-item-con
+                        ul.travel-add-item-list
+                            - for (var i=0;i<3;i++)
+                                li
+                                    p.travel-add-item-name
+                                        a.option-service  太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋
+                                    span.travel-add-item-pri ¥<em>8000</em>
+                        .service-popover  132132132132131343213213
+                    .travel-add-item-tip 点击预订后可选择需要购买的可选项服务
+        include ../../component/prodDetails/prodDetailsCon
+block append script
+    script(src='../../static/js/travel/travelDetails.js')

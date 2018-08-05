@@ -1,0 +1,604 @@
+@import "../common/params"
+::-webkit-input-placeholder
+	color: #B3B3B3
+	font-size: 16px
+::-moz-placeholder
+	color: #B3B3B3
+	font-size: 16px
+::-moz-placeholder
+	font-size: 16px
+	color: #B3B3B3
+::-ms-input-placeholder
+	font-size: 16px
+	color: #B3B3B3
+
+.menber-center
+	background-color: #f7f7f7
+.center-cont
+	width: 1200px
+	margin: 0 auto
+	padding-top: 14px
+	font-size: 0
+	position: relative
+// 左导航栏
+.left-nav
+	position: absolute
+	background-color: #fff
+	padding: 30px 30px 10px 44px
+	display: inline-block
+	width: 166px
+	border-radius: 4px
+	list-style: outside disc none
+	color: #333
+	&.fixed
+		max-height: 100%
+		overflow: auto
+		position: fixed
+		top: 0
+	a
+		margin-bottom: 20px
+		display: inline-block
+	.first_nav
+		list-style: outside disc none
+		color: #333
+		font-size: 10px
+		&.cur
+			color: #D82628
+			&>a
+				color: #D82628
+		&>a
+			font-family: webfontregular
+			font-size: 14px
+			letter-spacing: 0
+	.second_nav
+		a
+			font-family: webfontregular
+			font-size: 14px
+			color: #666666
+			letter-spacing: 0
+// 右内容区
+.search-content
+	display: inline-block
+	padding-left: 180px
+	// margin-left: 14px
+	width: 1186px
+	vertical-align: top
+	.searchbar-info-box
+		padding: 20px 0
+		background-color: #fff
+		margin-bottom: 16px
+		border-radius: 4px
+	.searchbar-info
+		font-size: 14px
+		li
+			display: inline-block
+			vertical-align: middle
+			// height: 30px
+			// width: 50%
+			padding: 0 20px
+			&> span
+				margin-right: 15px
+			a
+				color: $main-blue
+	.searchbar-cont
+		position: relative
+		background-color: #fff
+		width: 100%
+		border-radius: 4px
+		margin-bottom: 14px
+	.searchbar
+		padding: 0 0 20px 20px
+		display: inline-block
+		vertical-align: top
+		.search-item
+			display: inline-block
+			padding-top: 20px
+			&.no-search-item
+				width: 153px
+			label
+				font-family: webfontregular
+				font-size: 14px
+				color: #333333
+				letter-spacing: 0
+				line-height: 14px
+				display: inline-block
+				&.no-search
+					font-size: 14px
+					color: #B2B4BE
+			input
+				margin-top: 10px
+				display: block
+				border: none
+				font-family: webfontregular
+				font-size: 16px
+				letter-spacing: 0
+				width: 100%
+				margin-top: 0
+				&#statement-date-range
+					width: 200px
+			select
+				background-color: #F0F0F0
+				border-radius: 3px
+				border: none
+				font-family: webfontregular
+				font-size: 14px
+				color: #333
+				letter-spacing: 0
+				line-height: 26px
+				appearance: none
+				-webkit-appearance: none
+				padding-left: 10px
+				padding-right: 26px
+				padding-right: 0px\9
+				background-image: url(../../images/menberCenter/down_arrow.png)
+				background-image: none\9
+				background-position: 44px 10px
+				background-repeat: no-repeat
+				margin-top: 10px
+			span
+				display: inline-block
+				font-size: 14px
+				padding: 6px 30px 6px 10px
+				background-color: #F0F0F0
+				line-height: 1
+				border-radius: 3px
+				&.clear-date
+					display: inline-block
+					vertical-align: top
+					cursor: pointer
+					color: #b3b3b3
+					margin-left: 10px
+					background-color: transparent
+				&.no-search-cont
+					background-color: transparent
+					padding: 0
+				&.no-search-money
+					color: #D92628
+					background-color: transparent
+					padding: 0
+			.date
+				display: inline-block
+				line-height: 1
+				font-size: 14px
+				border-radius: 3px
+				padding: 6px 20px 6px 10px
+				background-color: #F0F0F0
+				background-image: url(../../images/menberCenter/calendar.png)
+				background-repeat: no-repeat
+				background-position: 92px 7px
+				width: 110px
+				&::-webkit-input-placeholder 
+					color: #333
+					font-size: 14px
+				&::-moz-placeholder
+					color: #333
+					font-size: 14px
+				&::-moz-placeholder
+					font-size: 14px
+					color: #333
+				&::-ms-input-placeholder
+					font-size: 14px
+					color: #333
+		&.order-screen
+			.search-item
+				margin-left: 135px
+				padding-top: 2px
+				&:first-child
+					margin-left: 0
+	button
+		position: absolute
+		top: 0
+		right: 0
+		border-radius: 4px
+		background-color: #D82628
+		font-size: 18px
+		width: 80px
+		height: 80px
+		border: none
+		color: #fff
+		cursor: pointer
+	.picked-tag
+		position: relative
+		height: 54px
+		line-height: 54px
+		font-size: 14px
+		border-top: 1px solid #f0f0f0
+		.had-pick-title
+			display: inline-block
+			width: 48px
+			text-align: right
+			vertical-align: middle
+			// line-height: 26px
+		ul
+			display: inline-block
+			margin-left: 20px
+			li
+				padding: 0 10px
+				border-radius: 4px
+				background-color: #D82628
+				color: #fff
+				margin-right: 10px
+				display: inline-block
+				vertical-align: middle
+				height: 26px
+				span
+					line-height: 26px
+					font-size: 14px
+					vertical-align: middle
+					display: inline-block
+					float: left
+			.sclose
+				margin-top: 5px
+				margin-left: 4px
+				cursor: pointer
+		.clear-all
+			display: inline-block
+			vertical-align: middle
+			cursor: pointer
+			color: #b3b3b3
+			margin-left: 10px
+			line-height: 26px
+		.orders-pay
+			float: right
+			margin-right: 20px
+			.orders-pay-icon
+				background-image: url(../../images/menberCenter/orders-pay-icon.png)
+				background-size: 24px
+				display: inline-block
+				width: 24px
+				height: 24px
+				vertical-align: middle
+				margin-right: 8px
+			a
+				font-size: 14px
+				color: #5A6BA5
+				display: inline-block
+				vertical-align: middle
+				// line-height: 14px
+	.searchResult-cont
+		font-size: 14px
+		& > li
+			background-color: #fff
+			margin-bottom: 14px
+			// padding: 20px
+			border-radius: 4px
+			.order-item-blk
+				border-left: 1px solid #E3E3E7
+				display: inline-block
+				font-size: 14px
+				padding: 14px
+				vertical-align: top
+				&:first-child
+					border-left: none
+				label
+					font-size: 12px
+					color: #B2B4BE
+					vertical-align: top
+					line-height: 1
+				div
+					display: inline-block
+					margin-top: -5px
+				&.order-item-blk-1
+					width: 8.33%
+					height: 100%
+				&.order-item-blk-2
+					height: 100%
+					width: 16.67%
+					font-size: 24px
+					color: $main-red
+				.payed-blk
+					div
+						color: #51C75B
+				&.order-item-blk-4
+					width: 33.33%
+					height: 100%
+					padding-bottom: 24px
+					div
+						overflow : hidden
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-line-clamp: 3
+						-webkit-box-orient: vertical
+						margin-top: 0px
+						// line-height: 14px
+					ul
+						margin-right: -6px
+					li
+						display: inline-block
+						margin-right: 4px
+			.order-item-top
+				position: relative
+				padding: 18px 14px
+				border-bottom: 1px solid #EEEEF0
+				height: 50px
+			.order-item-No
+				font-size: 14px
+				color: #333333
+				line-height: 14px
+				display: inline-block
+				vertical-align: top
+				li
+					padding-left: 10px
+					border-left: 1px solid #E3E3E7
+					float: left
+					padding-right: 10px
+					max-width: 180px
+					white-space: nowrap
+					overflow: hidden
+					text-overflow: ellipsis
+					&:first-child
+						max-width: 205px
+						padding-left: 0
+						border-left: none
+			ul.order-item-btns
+				vertical-align: top
+				display: inline-block
+				float: right
+				font-size: 14px
+				line-height: 14px
+				position: absolute
+				white-space: nowrap
+				right: 0
+				li
+					display: inline-block
+					padding-left: 10px
+					border-left: 1px solid #E3E3E7
+					padding-right: 10px
+					color: #4779D4
+					&:first-child
+						padding-left: 0
+						border-left: none
+						color: $main-red
+						a
+							color: $main-red
+				a
+					color: #4779D4
+			.order-item-mid
+				position: relative
+				font-size: 0
+				height: 120px
+				border-bottom: 1px solid #E3E3E7
+				.order-item-blk-4
+					div
+						height: 60px
+						margin-top: -3px	
+			.order-item-bottom
+				.order-item-blk-4
+					padding-bottom: 14px
+					height: 60px
+					div
+						line-height: 1
+					&.status-blk
+						padding: 20px
+						label
+							display: inline-block
+							height: 20px
+							line-height: 20px
+							font-size: 12px
+							color: #7F8593
+							&:not(:first-child)
+								position: relative
+								padding: 0 0 0 29px
+								&:before
+									content: ''
+									position: absolute
+									left: 14px
+									top: 4px
+									bottom: 0
+									width: 1px
+									height: 12px
+									background-color: #EEEEF0
+
+			.order-item-left
+				font-size: 16px
+				color: #333333
+				letter-spacing: 0
+				display: inline-block
+				width: 686px
+				vertical-align: middle
+				font-weight: bold
+				&:hover
+					color: #466094
+			.order-item-num
+				font-size: 16px
+				color: #B3B3B3
+				line-height: 16px
+				margin-left: 58px
+				vertical-align: middle
+			.order-item-right
+				float: right
+				width: 140px
+			.order-item-price
+				font-size: 16px
+				color: #B3B3B3
+				line-height: 16px
+				margin-bottom: 10px
+				display: block
+				text-align: right
+			.order-item-pay
+				display: block
+				text-align: right
+			.payed
+				display: inline-block
+				// width: 58px
+				font-size: 12px
+				margin-right: 20px
+				position: relative
+				&:before
+					content: ''
+					display: inline-block
+					height: 12px
+					width: 1px
+					background-color: #E6E6E6
+					position: absolute
+					right: -12px
+					top: 3px
+				.green-mon
+					color: #1cab22
+			.pay
+				display: inline-block
+				// width: 58px
+				font-size: 12px
+				.red-mon
+					color: #D82628
+					display: inline-block
+			.order-item-time
+				font-size: 14px
+				color: #B3B3B3
+				span.order-time,span.start-time
+					position: relative
+					display: inline-block
+					margin-right: 40px
+					&:after
+						position: absolute
+						content: ''
+						display: inline-block
+						height: 14px
+						width: 1px
+						background-color: #f0f0f0
+						right: -20px
+						top: 2px
+				.tourists-name
+					span
+						display: inline-block
+						width: 150px
+						white-space: nowrap
+						overflow: hidden
+						text-overflow: ellipsis
+						vertical-align: middle
+			.order-item-operate
+				float: right
+				li
+					display: inline-block
+					margin-left: 40px
+					position: relative
+					font-size: 14px
+					&.update
+						a
+							color: #5A6BA5
+					&:before
+						content: ''
+						display: inline-block
+						position: absolute
+						left: -20px
+						width: 1px
+						height: 14px
+						background-color: #f0f0f0
+						top: 2px
+					&:first-child
+						margin-left: 0
+						&:before
+							display: none
+				.ticketed
+					color: #CCCCCC
+					i
+						background-image: url(../../images/menberCenter/grey_tick_icon.png)
+						display: inline-block
+						width: 11px
+						height: 9px
+						margin-right: 10px
+				.comfirm-ticket
+					color: #5A6BA5
+				.cancel-alert,.cancel-order
+					a
+						color: #D82628
+				.pay-left
+					background-color: #EDA63B
+					border-radius: 50px
+					width: 84px
+					height: 26px
+					text-align: center
+					&:before
+						top: 4px
+					a
+						line-height: 26px
+						color: #fff
+// .searchResult-cont
+// 	width: 1006px
+// 	padding: 0 20px
+// 	background-color: #fff
+// 	display: inline-block
+// 	table
+// 		width: 966px
+// 		font-family: webfontregular
+// 		font-size: 14px
+// 		color: #333333
+// 		letter-spacing: 0
+// 	tbody
+// 		display: inline-block
+// 		width: 970px
+// 	tr
+// 		border-bottom: 1px solid #F0F0F0
+// 		text-align: center
+// 		font-family: webfontregular
+// 		font-size: 14px
+// 		color: #333333
+// 		letter-spacing: 0
+// 		// display: inline-block
+// 		&:last-child
+// 			border-bottom: none
+// 	.headRow
+// 		// width: 970px
+// 		background-color: #fff
+// 		// display: inline-block
+// 		&.fixed
+// 			top: 0
+// 			width: 970px
+// 	th
+// 		font-family: webfontregular
+// 		font-size: 14px
+// 		color: #333333
+// 		letter-spacing: 0
+// 		font-weight: normal
+// 		span
+// 			display: inline-block
+// 	.No
+// 		width: 14%
+// 		height: 60px
+// 		line-height: 60px
+// 		text-align: center
+// 		span
+// 			width: 135px
+// 	.route
+// 		width: 223px
+// 	.status,.num,.totalPrice,.payed,.unpay
+// 		width: 76px
+// 		span
+// 			width: 76px
+// 	.orderTime,.startTime
+// 		width: 14%
+// 		span
+// 			width: 115px
+// 	td
+// 		height: 80px
+// 		&.unpay
+// 			color: #D82628
+// 	td.route
+// 		font-family: PingFangSC-Regular
+// 		font-size: 14px
+// 		color: #466094
+// 		letter-spacing: 0
+// 		height: 80px
+// 		a
+// 			height: 40px
+// 			overflow: hidden
+// 			display: inline-block
+
+	
+.page-cont
+	margin-bottom: 30px
+.pagination-wrp
+	width: 1006px
+	.jump-ipt
+		&::-webkit-input-placeholder 
+			color: #B3B3B3
+			font-size: 14px
+		&::-moz-placeholder
+			color: #B3B3B3
+			font-size: 14px
+		&::-moz-placeholder
+			font-size: 14px
+			color: #B3B3B3
+		&::-ms-input-placeholder
+			font-size: 14px
+			color: #B3B3B3

@@ -1,0 +1,27 @@
+
+<!-- index list component-->
+<!-- tab control-->
+<!-- list travel-->
+<script type="js/template" id="user-concact">
+  <div class="tourist-item-block tourist-adult">
+    <ul class="tourist-form">
+      <li class="tourist-tr"><span class="tourist-left must-fill">
+          <label class="tourist-label must-fill"><font class="red-star">*</font>姓名</label>
+          <input value="" placeholder="请输入中文姓名" class="tourist-input tourist-name-input"/></span><span class="tourist-right">
+          <label class="tourist-label">固定电话</label>
+          <input value="" placeholder="请输入英文名称/拼音" onkeyup="if(!/^[A-Za-z ]+$/.test(this.value)){this.value='';}" class="tourist-input tourist-enname-input"/></span></li>
+      <li class="tourist-tr"><span class="tourist-left must-fill">
+          <label class="tourist-label"><font class="red-star">*</font>手机</label>
+          <input value="" placeholder="请输入手机号码" class="tourist-input tourist-phone-input"/></span><span class="tourist-right must-fill">
+          <label class="tourist-label">邮箱</label>
+          <input value="" placeholder="请输入邮箱" class="tourist-input tourist-email-input"/></span></li>
+    </ul>
+    <ul class="vistor-data-change">
+      <li class="save-common-vistor"><span class="radio-16"></span><span class="radio-text">保存</span></li>
+      <li class="change-common-vistor">
+      </li>
+      <li class="clean-common-vistor"><span class="trash"></span><span class="radio-text">清空</span></li>
+      <div class="clear"></div>
+    </ul>
+  </div>
+</script>

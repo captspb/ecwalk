@@ -1,0 +1,302 @@
+@charset "UTF-8"
+@import "../common/params"
+body
+  background-color: #f7f7f7
+.airTicket-order-detail
+  width: 1186px
+  margin: 14px auto 40px
+.airTicket-order-main
+  float: left
+  width: 946px
+.airTicket-order-top
+  padding: 16px 0
+  background-color: #fff
+  border-radius: 4px
+.airTicket-order-state
+  display: inline-block
+  vertical-align: middle
+  line-height: 1
+  width: 320px
+  margin-right: 16px
+  padding: 16px 30px
+  box-shadow: inset -1px 0 0 0 #EEEEF0
+  h2
+    font-size: 24px
+    color: #F30A37
+    margin-bottom: 32px
+    &.clr-blue
+      color: #4779D4
+    &.clr-green
+      color: #35B764
+    &.clr-gray
+      color: #9B9B9B
+  p
+    font-size: 14px
+    color: #181C28
+    margin-top: 12px
+.airTicket-order-prc
+  display: inline-block
+  vertical-align: middle
+  padding: 32px 40px
+  .prc-item
+    position: relative
+    padding: 0 0 0 12px
+    line-height: 1
+    &:not(:first-child)
+      margin-top: 12px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      margin: auto
+      width: 4px
+      height: 4px
+      border-radius: 50%
+      background: #181C28
+    .prc-dt
+      position: relative
+      display: inline-block
+      color: #4779D4
+      margin-left: 8px
+    .prc-dt-con
+      width: 346px
+      padding: 20px
+      top: -32px
+      &:after
+        top: 35px
+        bottom: inherit
+      .prc-dt-con-item
+        &:not(:first-child)
+          margin-top: 12px
+        span
+          display: inline-block
+          vertical-align: top
+        .prc-dt-con-name
+          width: 197px
+        .prc-dt-con-prc
+          width: 80px
+  .pay-btn
+    width: 96px
+    height: 32px
+    line-height: 32px
+    text-align: center
+    color: #fff
+    background: #F30A37
+    border-radius: 3px
+    margin: 24px 0 0 12px
+
+.airTicket-order-group
+  padding: 24px 30px 10px
+  margin: 14px 0 0
+  background-color: #fff
+  border-radius: 4px
+  .airTicket-order-group-tit
+    position: relative
+    font-size: 18px
+    line-height: 18px
+    font-weight: normal
+    padding: 0 0 10px
+    .tit-text
+      font-weight: 600
+      span
+        font-size: 14px
+        font-weight: normal
+        color: #DE342C
+    .tit-tip
+      position: absolute
+      right: 0
+      top: 0
+      font-size: 14px
+      span
+        color: #D0D2D8
+      .clr-blue
+        color: #4779D4
+      em
+        margin: 0 3px
+.airTicket-order-info
+  .info-list
+    line-height: 1
+    &:first-child
+      >span
+        padding: 20px 8px 16px
+    &:not(:first-child)
+      box-shadow: inset 0 1px 0 0 #EEEEF0
+    >span
+      display: inline-block
+      vertical-align: middle
+      padding: 10px 8px
+      &:not(:first-child)
+        margin-left: 8px
+.airTicket-order-passenger
+  .airTicket-passenger-list
+    padding: 16px 2px 38px
+    box-shadow: inset 0 1px 0 0 #EEEEF0
+    .list-item
+      float: left
+      width: 50%
+      padding: 0 0 0 32px
+      margin-top: 32px
+      &:nth-child(even)
+        box-shadow: inset 1px 0 0 0 #EEEEF0
+      h3
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 7px
+        font-weight: normal
+        em
+          color: #0C0000
+          margin-left: 2px
+      li
+        float: left
+        width: 176px
+        margin-right: 16px
+        line-height: 20px
+        margin-top: 12px
+        .text-blue
+          color: $main-blue
+        .text-red
+          color: $main-red
+        .text-gray
+          color: #003700
+  .travel-time
+    width: 422px
+  .airlines
+    width: 200px
+  .shipping-space
+    width: 144px
+  .refund-policy
+    width: 96px
+    a:hover
+      color: #4779D4
+  .airlines,
+  .shipping-space,
+  .refund-policy
+    p
+      &:not(:first-child)
+        margin-top: 4px
+  .travel-time-con
+    display: inline-block
+    vertical-align: top
+    li
+      padding: 8px 0
+      &:not(:first-child)
+        border-top: 1px solid #EEEEF0
+    .place-item
+      line-height: 20px
+    .date-item,
+    .transit-item
+      font-size: 12px
+      color: #7F8593
+    .date-item
+      margin-top: 4px
+    .transit-item
+      margin-top: 8px
+  .airlines-con
+    li
+      &:not(:first-child)
+        margin-top: 13px
+      .gary
+        color: #7F8593
+.airTicket-order-contact
+  .contact-name
+    width: 184px
+  .contact-tel
+    width: 248px
+  .contact-email
+    width: 264px
+  .contact-phone
+    width: 166px
+  .airTicket-order-info
+    .info-list
+      >span
+        padding: 20px 8px 16px
+.airTicket-order-note
+  .add-note
+    margin-left: 20px
+  .note-con
+    width: 594px
+  .note-operate
+    width: 280px
+  .info-list
+    .note-con-info
+      line-height: 20px
+  .note-operate
+    p
+      font-size: 14px
+      color: #7F8593
+      letter-spacing: 0
+      line-height: 20px
+.airTicket-order-change
+  .info-list:not(:first-child)
+    line-height: 20px
+  .change-start,
+  .change-end
+    width: 293px
+  .change-operate
+    width: 280px
+  .change-operate
+    color: #7F8593
+.airTicket-order-buyer-info
+  padding: 0 0 30px
+  li
+    overflow: hidden
+    line-height: 1
+    color: #7F8593
+    margin-top: 12px
+    label
+      float: left
+    p
+      overflow: hidden
+.airTicket-order-sidebar
+  float: right
+  width: 226px
+  background-color: #fff
+  border-radius: 4px
+  margin-top: 10px
+  li
+    padding: 13px 20px
+    line-height: 24px
+    span
+      cursor: pointer
+    [class^="icon-"]
+      display: inline-block
+      vertical-align: top
+      font-size: 24px
+      margin-right: 10px
+    .m-popover-con
+      left: 0
+      width: 192px
+      &:after
+        left: 3px
+        right: inherit
+
+.change-trip-con
+  margin: -10px -26px
+  textarea
+    display: block
+    width: 100%
+    background: #F6F6F6
+    border-radius: 4px
+    padding: 9px 20px
+    border: none
+    resize: none
+    &:not(:first-child)
+      margin-top: 14px
+  .change-trip-tit
+    height: 60px
+  .change-trip-before,
+  .change-trip-after
+    height: 134px
+.add-note-con
+  margin: 0 -26px
+  textarea
+    display: block
+    width: 100%
+    height: 180px
+    background: #F6F6F6
+    border-radius: 4px
+    padding: 9px 20px
+    border: none
+    resize: none

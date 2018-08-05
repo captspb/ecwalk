@@ -1,0 +1,17 @@
+include ../../../model/common/headerData
+include headerbar
+- var step_text = ["选择产品", "填写订单", "合同确认", "在线支付", "预订成功"];
+.b2b-header-ctx-wrp
+    .b2b-header-ctx.b2b-order-header
+        .b2c-header-logo
+            img(src=header.logo.url)
+        .com-step-wrp
+            ul
+                - for (var i=0;i<9;i++)
+                    if i % 2 == 0
+                        li
+                            .step.step-icon(step-index=i / 2 + 1) #{i / 2 + 1}
+                            .step-text #{step_text[i / 2]}
+                    else
+                        li(class="line")
+                            .line-ctx

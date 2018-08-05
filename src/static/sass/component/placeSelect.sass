@@ -1,0 +1,126 @@
+@import "../common/params"
+
+.place-select-popup
+  //display: none
+  position: absolute
+  top: 100%
+  left: 0
+  width: 538px
+  margin-top: 4px
+  background: #FFFFFF
+  border: 1px solid #EBEBEB
+  box-shadow: 2px 2px 16px 0 rgba(0,0,0,0.10)
+  border-radius: 4px
+  z-index: 2
+  .place-select-tab
+    padding: 0 5px
+    li
+      position: relative
+      float: left
+      padding: 0 15px
+      color: $tag-cl
+      font-size: 14px
+      line-height: 49px
+      cursor: pointer
+      font-weight: 300
+      &:hover
+        color: $main-red
+        font-weight: 600
+      &.active
+        color: $main-red
+        font-weight: 600
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          right: 0
+          bottom: 6px
+          margin: auto
+          width: 10px
+          height: 3px
+          border-radius: 3px
+          background-color: $main-red
+  .place-select-city-box
+    padding: 18px 18px 20px
+    border-top: 1px solid $clr-bg
+  .place-select-city
+    display: none
+    max-height: 107px
+    overflow: hidden
+    li
+      float: left
+      width: 98px
+      height: 24px
+      line-height: 24px
+      margin: 2px 1px 0
+      padding: 0 9px
+      border-radius: 4px
+      font-size: $font-12
+      cursor: pointer
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      &.active,
+      &:hover
+        color: $main-red
+.keyup-search
+  display: none
+  position: absolute
+  top: 100%
+  left: 0
+  margin-top: 4px
+  padding: 8px 12px
+  background-color: #fff
+  border-radius: 4px
+  box-shadow: 2px 2px 16px 0 RGBA(24, 28, 40, 0.1)
+  z-index: 2
+  &.search-normal
+    padding: 0
+    dl
+      display: none
+    .search-normal-tip
+      display: block
+  .search-normal-tip
+    display: none
+    width: 296px
+    height: 46px
+    line-height: 46px
+    font-size: 12px
+    border-radius: 4px
+    color: #F52A51
+    padding: 0 20px
+  .keyup-search-list
+    max-height: 300px
+    overflow: auto
+  dl
+    line-height: 30px
+    &:not(:first-child)
+      margin-top: 4px
+  dt
+    font-size: 14px
+    padding: 0 8px
+    font-weight: bold
+    white-space: nowrap
+  dd
+    position: relative
+    padding: 0 8px 0 19px
+    font-size: 12px
+    margin-top: 4px
+    white-space: nowrap
+    &:before
+      content: ''
+      position: absolute
+      left: 8px
+      top: 0
+      bottom: 0
+      margin: auto
+      width: 3px
+      height: 3px
+      background-color: #333
+      border-radius: 50%
+  dt,dd
+    &:hover
+      color: #F52A51
+      background-color: #F4F4F4
+      border-radius: 4px
+      cursor: pointer

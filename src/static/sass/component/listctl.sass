@@ -1,0 +1,45 @@
+@import "../common/params"
+
+.list-ctl-wrp
+    margin: 14px 0
+    .list-ctl-ctx
+        position: relative
+        width: 1190px
+        margin: 0 auto
+        height: 50px
+        background-color: $color-gF
+        padding: 0 20px
+        overflow: hidden
+        border-radius: 4px
+        ul
+            li
+                padding: 0 20px
+                line-height: 50px
+                cursor: pointer
+                float: left
+                .check-box-text
+                    vertical-align: 3px
+                    margin-left: 4px
+                &.cur,
+                &:hover
+                    color: $main-red
+        .index-tab
+            float: right
+            ul
+                li
+                    height: 50px
+                    cursor: pointer
+                    &.active
+                        color: $main-red
+                        position: relative
+                        &:before
+                            content: ''
+                            display: inline-block
+                            width: 14px
+                            height: 3px
+                            position: absolute
+                            background-color: $main-red
+                            bottom: 7px
+                            border-radius: 2px
+                            left: 50%
+                            margin-left: -7px

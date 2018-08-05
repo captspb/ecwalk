@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/prodDetails.css">
+    <link rel="stylesheet" href="../../static/css/cruise/cruiseDetails.css">
+  </head>
+  <title>邮轮详情</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx"><a><img src="../../static/images/index/LogoTitle.png"></a>
+        <div class="b2b-address"><span><span class="img"></span><font>广州市
+              <ul class="drop_down">
+                <li> <a>北京市</a></li>
+                <li> <a>乌鲁木齐市</a></li>
+                <li> <a>上海市</a></li>
+                <li> <a>吐鲁番市</a></li>
+                <li> <a>深圳市</a></li>
+              </ul></font></span></div>
+        <div class="b2b-header-search">
+          <div class="search-box">
+            <div class="select-group">
+              <div class="select"><span class="select-val">全部产品</span><i class="select-down-arrow-icon"></i></div>
+              <ul style="display: none;" class="select-dropdown">
+                <li class="active">全部产品</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地玩乐</li>
+                <li>酒店</li>
+                <li>门票</li>
+                <li>签证</li>
+                <li>邮轮</li>
+                <li>WIFI</li>
+              </ul>
+            </div>
+            <div class="search-input">
+              <input placeholder="请输入搜索关键字...">
+            </div><a class="search-btn">搜索</a>
+          </div>
+          <div class="search-hot"></div>
+        </div>
+        <div class="b2b-header-bitMap">
+          <div class="bitMapDiv">
+            <div class="bitMapInnerDiv">
+              <div class="wx-kf popover"><i class="wx-kf-icon"></i><span class="contact">
+                  <p>欢迎使用</p>
+                  <p>在线客服</p></span>
+                <div class="popover-down">
+                  <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                  <div class="code-tip">扫码关注公众号</div>
+                </div>
+              </div>
+              <div class="tel-kf"><i class="tel-icon"></i><span class="contact">
+                  <p>020-86338888</p>
+                  <p>400-863-8888</p></span></div>
+            </div><img src="../../static/images/index/monkey.png" class="r">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="zyx"><a href="#">
+              <div>自由行</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="ddwl"><a href="#">
+              <div>当地玩乐</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="qz"><a href="#">
+              <div>签证</div><span class="white-line"></span></a></li>
+          <li nav-type="wifi"><a href="#">
+              <div>WIFI</div><span class="white-line"></span></a></li>
+          <li nav-type="jp"><a href="#">
+              <div>机票</div><span class="white-line"></span><i class="new-tip-icon"></i></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="breadcrumb">
+      <ul>
+        <li><font>您当前的位置：</font></li>
+        <li><a>首页</a><span>&gt;</span></li>
+        <li><a>出境游</a><span>&gt;</span></li>
+        <li><a class='cur'>香港迪士尼乐园</a></li>
+      </ul>
+    </div>
+    <div class="cruise-details">
+      <div class="prod-dt-main">
+        <h2 class="prod-dt-tit">春节·迪拜邮轮 MSC邮轮 迪拜阿布扎比阿曼 千年古城马斯喀特 神秘阿拉伯9天 EK香港去回广州 13.8万吨 豪华邮轮辉煌号</h2>
+        <div class="prod-dt-info clearfix">
+          <div class="img-box"><img src="../../static/images/details/logo.png">
+            <div class="contact-info popover">联系方式
+              <div class="popover-down">
+                <h2>广之旅</h2>
+                <p>11321321adsfasd</p>
+                <p>11321321adsfasd</p>
+              </div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <label>产品编号</label>
+              <p>As23131321</p>
+            </li>
+            <li>
+              <label>邮轮品牌</label>
+              <p>维京河轮</p>
+            </li>
+            <li>
+              <label>出发城市</label>
+              <p>广州</p>
+            </li>
+            <li>
+              <label>行程天数</label>
+              <p>8天</p>
+            </li>
+          </ul>
+          <div class="prod-dt-prc sold-out"><em>￥<span>23380</span>起</em></div>
+        </div>
+      </div>
+      <!-- 邮轮预定-->
+      <div class="cruise-booking">
+        <div class="cruise-date-sel">
+          <label>出发日期</label>
+          <div class="cruise-date-sel-btn"><span class="left-btn"><i class="arrow-left disabled"></i></span><span class="right-btn"><i class="arrow-right"></i></span></div>
+          <div class="cruise-date-list">
+            <ul>
+              <li class="active"><span>2017/12/03 周日</span></li>
+              <li><span>2017/12/17 周日</span></li>
+              <li><span>2018/01/05 周五</span></li>
+              <li><span>2018/01/19 周五</span></li>
+              <li><span>2018/01/19 周五</span></li>
+              <li><span>2018/01/19 周五</span></li>
+              <li><span>2017/12/03 周日</span></li>
+              <li><span>2017/12/17 周日</span></li>
+              <li><span>2018/01/05 周五</span></li>
+              <li><span>2018/01/19 周五</span></li>
+              <li><span>2018/01/19 周五</span></li>
+              <li><span>2018/01/19 周五</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="cruise-bk-list">
+          <table class="cruise-bk-table">
+            <tr>
+              <th class="pr">
+                <div class="cruise-bk-room-sel"><span> <em>全部房型</em><i class='arrow-down'></i></span>
+                  <ul>
+                    <li>全部房型</li>
+                    <li>内舱房</li>
+                    <li>海景房</li>
+                    <li>阳台房</li>
+                    <li>套房</li>
+                  </ul>
+                </div>
+              </th>
+              <th>舱房面积</th>
+              <th>最大入住人数</th>
+              <th>第1 / 2人价</th>
+              <th>第3 / 4人价</th>
+              <th>第3 / 4人儿童价</th>
+              <th>成人数</th>
+              <th>儿童数</th>
+              <th>房间数</th>
+            </tr>
+            <tr>
+              <td class="cruise-prod-name"><span class="popover">浪漫法式露台房
+                  <div class="popover-up">13213213232132132132</div></span></td>
+              <td class="cruise-prod-area">2层 / 12㎡</td>
+              <td class="cruise-people-num"><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i>
+              </td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-stepper"></td>
+              <td class="cruise-bk-stepper sellout"></td>
+              <td class="cruise-room-num">1</td>
+            </tr>
+            <tr>
+              <td class="cruise-prod-name"><span class="popover">浪漫法式露台房
+                  <div class="popover-up">13213213232132132132</div></span></td>
+              <td class="cruise-prod-area">2层 / 12㎡</td>
+              <td class="cruise-people-num"><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i>
+              </td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-stepper"></td>
+              <td class="cruise-bk-stepper sellout"></td>
+              <td class="cruise-room-num">1</td>
+            </tr>
+            <tr>
+              <td class="cruise-prod-name"><span class="popover">浪漫法式露台房
+                  <div class="popover-up">13213213232132132132</div></span></td>
+              <td class="cruise-prod-area">2层 / 12㎡</td>
+              <td class="cruise-people-num"><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i>
+              </td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-stepper"></td>
+              <td class="cruise-bk-stepper sellout"></td>
+              <td class="cruise-room-num">1</td>
+            </tr>
+            <tr>
+              <td class="cruise-prod-name"><span class="popover">浪漫法式露台房
+                  <div class="popover-up">13213213232132132132</div></span></td>
+              <td class="cruise-prod-area">2层 / 12㎡</td>
+              <td class="cruise-people-num"><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i>
+              </td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-stepper"></td>
+              <td class="cruise-bk-stepper sellout"></td>
+              <td class="cruise-room-num">1</td>
+            </tr>
+            <tr>
+              <td class="cruise-prod-name"><span class="popover">浪漫法式露台房
+                  <div class="popover-up">13213213232132132132</div></span></td>
+              <td class="cruise-prod-area">2层 / 12㎡</td>
+              <td class="cruise-people-num"><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i><i class="people-icon"></i>
+              </td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-prc">￥385000</td>
+              <td class="cruise-bk-stepper"></td>
+              <td class="cruise-bk-stepper sellout"></td>
+              <td class="cruise-room-num">1</td>
+            </tr>
+          </table>
+        </div>
+        <div class="cruise-prod-operation">
+          <div class="operation-item"><a><i class='print-icon'></i>打印行程</a><a><i class='download-icon'></i>下载行程</a><a><i class='file-icon'></i>下载出团通知书</a></div>
+        </div>
+      </div>
+      <div class="cruise-bk-dt">
+        <div class="cruise-bk-dt-table">
+          <table>
+            <tr>
+              <th>舱房名称</th>
+              <th>第1/2人价</th>
+              <th>第3/4人价</th>
+              <th>第3/4儿童</th>
+              <th class="room-diff">房差<i class="icon-warn m-popover">
+                  <div class="m-popover-con s-up">房差说明：实际入住人数小于可住人数的情况下，需要补充空床的费用。</div></i></th>
+              <th>价格</th>
+              <th>成人数</th>
+              <th>儿童数</th>
+              <th>房间数</th>
+            </tr>
+            <tr>
+              <td class="cruise-bk-dt-name">浪漫法式露台房</td>
+              <td class="cruise-bk-dt-prc">￥385000</td>
+              <td class="cruise-bk-dt-prc">￥385000</td>
+              <td class="cruise-bk-dt-prc">￥385000</td>
+              <td class="cruise-bk-diff-prc">￥300</td>
+              <td class="cruise-bk-dt-total">￥385000</td>
+              <td class="cruise-bk-dt-steppr"></td>
+              <td class="cruise-bk-dt-steppr"></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td class="cruise-bk-dt-name">浪漫法式露台房</td>
+              <td class="cruise-bk-dt-prc">￥385000</td>
+              <td class="cruise-bk-dt-prc">￥385000</td>
+              <td class="cruise-bk-dt-prc">￥385000</td>
+              <td class="cruise-bk-diff-prc">￥300</td>
+              <td class="cruise-bk-dt-total">￥385000</td>
+              <td class="cruise-bk-dt-steppr"></td>
+              <td class="cruise-bk-dt-steppr"></td>
+              <td>2</td>
+            </tr>
+          </table>
+        </div>
+        <div class="cruise-bk-con"><span class="cruise-bk-date-con">出发日期：2017/12/03</span><span class="cruise-bk-num-con"><span>成人：<em><b>2</b>人</em></span><span>儿童：<em><b>1</b>人</em></span><span>房间：<em><b>2</b>间</em></span></span><span class="cruise-total">
+            <p>销售总价￥<strong>2380000</strong></p>
+            <p>结算总价￥<strong>2380000</strong></p></span><a href="cruiseOrder.html" class="cruise-bk-btn">立即预订</a></div>
+      </div>
+      <!-- 邮轮预定 end-->
+      <div class="prod-dt-con">
+        <div class="index-tab">
+          <div class="com-tab-ctl">
+            <ul class="tab-ctl-ul tab-red">
+              <li class="cur"><span class="tab-ctl-text">产品特色</span><span class="red-line"></span></li>
+              <li><span class="tab-ctl-text">行程介绍</span><span class="red-line"></span></li>
+              <li><span class="tab-ctl-text">交通指南</span><span class="red-line"></span></li>
+              <li><span class="tab-ctl-text">预订须知</span><span class="red-line"></span></li>
+              <li><span class="tab-ctl-text">服务项目</span><span class="red-line"></span></li>
+              <li><span class="tab-ctl-text">资料下载</span><span class="red-line"></span></li>
+              <li><span class="tab-ctl-text">销售须知</span><span class="red-line"></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-ctx-wrp">
+          <div class="tab-ctx cur">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">产品特色</span></h3><span class="tit-line"></span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero odit cupiditate, aut dolore ex ad vero sunt officia, mollitia nam molestias maxime necessitatibus perferendis eaque distinctio autem. Facilis, in, dolores.1</p>
+          </div>
+          <div class="tab-ctx">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">行程介绍</span></h3><span class="tit-line"></span>
+            </div>
+            <div class="prod-trip">
+              <div class="trip-info-box">
+                <div class="trip-info"><span>此行程信息出发日期：2017-10-19</span><span>路线编号：GZLZ17ZDCSK1710191001</span><a>下载行程</a></div>
+              </div>
+              <div class="trip-main">
+                <ul class="trip-sidebar">
+                  <li class="active">D1</li>
+                  <li>D2</li>
+                  <li>D3</li>
+                  <li>D4</li>
+                  <li>D5</li>
+                  <li>D6</li>
+                  <li>D7</li>
+                  <li>D8</li>
+                  <li>D9</li>
+                  <li>D10</li>
+                </ul>
+                <ol class="trip-list">
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第1天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第2天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第3天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第4天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第5天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第6天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第7天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第8天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第9天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li data-index="prod-trip">
+                    <div class="trip-tit"><span>第10天</span>
+                      <p>广州-利雅得- 开罗</p>
+                    </div>
+                    <ul class="trip-con">
+                      <li>
+                        <h3>参考航班</h3>
+                        <p>请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。</p>
+                        <p><i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                        <p><i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="tab-ctx">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">交通指南</span></h3><span class="tit-line"></span>
+            </div>
+            <div id="baidumap" geo="113.2759952545166,23.117055306224895" class="baidumap"></div>
+          </div>
+          <div class="tab-ctx">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">预订须知</span></h3><span class="tit-line"></span>
+            </div>
+            <p>4</p>
+          </div>
+          <div class="tab-ctx">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">服务项目</span></h3><span class="tit-line"></span>
+            </div>
+            <p>5</p>
+          </div>
+          <div class="tab-ctx">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">资料下载</span></h3><span class="tit-line"></span>
+            </div>
+            <ul class="ques">
+              <li class="que"><span>个签常识问题</span><a href="#" class="right_downLoad">下载</a></li>
+              <li class="que"><span>个签材料问题</span><a href="#" class="right_downLoad">下载</a></li>
+            </ul>
+          </div>
+          <div class="tab-ctx">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">销售须知</span></h3><span class="tit-line"></span>
+            </div>
+            <p>7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/cruise/cruiseDetails.js"></script>
+  </body>
+</html>

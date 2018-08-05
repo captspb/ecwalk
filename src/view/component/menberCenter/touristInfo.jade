@@ -1,0 +1,49 @@
+table.touristTbl
+    tr
+        //- th
+        th 游客姓名
+        th 证件类型
+        th 证件号码
+        th 手机
+    tr
+        //- td
+            input.weui-check(type="checkbox" name="checkbox1") 
+            i.weui-icon-check
+        td.tourist-name 
+            span.outer 
+                span.inner 徐先生
+            input(type='text',value='徐先生')
+        td.card-type
+            span.outer
+                span.inner.dis 身份证
+            select
+                option 身份证
+                option 学生证
+                option 军人证
+        td.card-No
+            span.outer
+                span.inner.dis --
+            input(type='text')
+        td.tourist-tel
+            span.outer
+                span.inner 18875834342
+            input(type='text',value='18875834342')
+     tr
+        td.tourist-name 
+            span.outer
+                span.inner.dis --
+            input(type='text')
+        td.card-type
+            span.outer
+                span.inner.dis 身份证
+            select
+                option 身份证
+        td.card-No
+            span.outer
+                span.inner.dis --
+            input(type='text')
+        td.tourist-tel
+            span.outer
+                span.inner 18875834342
+            input(type='text')   
+        

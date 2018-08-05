@@ -1,0 +1,50 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+//- include ../../component/common/pagese
+block append head
+    title 帮助中心
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/menberCenter/helpCenter.css')
+
+body
+  block header
+    include ../../component/common/header_center
+
+  block content
+    include ../../../model/menberCenter/orderManageData
+    .menber-center
+        .center-cont
+            //- 左导航
+            ul.left-nav
+                - for (var i=0; i<left_centerNavs.length; i++)
+                    if i==0  
+                        li.first_nav.cur
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+                    else 
+                        li.first_nav
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+            
+            //- 右边内容
+            div.ques-pannel
+                ul.ques
+                    - for (var i=0; i<ques_centerNavs.length; i++) 
+                        li.que
+                            span #{ques_centerNavs[i].text}
+                            a.right_downLoad(href='#') 下载
+                    
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/menberCenter/travelOrderDetail.js')

@@ -1,0 +1,125 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append head
+    title 支付
+
+block append style
+    link(rel='stylesheet', href='../../static/css/checkstand/checkstand.css')
+
+block header
+    include ../../component/common/header_order
+
+block content
+    .checkstand-page
+        //-.checkstand-header
+            .checkstand-status
+                i.order-status-icon
+                .order-status-con
+                    h2 订单提交成功，请您尽快支付！
+                    div 订单号：201705160002688
+                    p 请您在提交订单后<em class='main-red'>24小时</em>内完成支付，否则订单会自动取消。
+                svg.dash-line
+                    g
+                        path(d="M0 0 l1200 0", stroke-dasharray="10,10")
+            .checkstand-order-info
+                //h2  澳洲（悉尼 布里斯本 黄金海岸墨尔本）7天 欢乐名城 广州或香港往返 歌剧院入内悉尼港渡轮 奇趣捉蟹 野生动 物园澳洲（悉尼
+                .order-total.order-deadline-wrp 账期：
+                    span.order-deadline 2018-20
+                    a.toDetail(href='/page/menberCenter/ticketOrderdetail.html') 查看订单
+                .order-total 账单金额：
+                    span <em>¥2000086</em>
+        .checkstand-top
+            .checkstand-top-box
+                .checkstand-top-con
+                    i.order-status-icon
+                    .checkstand-order-info
+                        h2 订单提交成功，已扣除信用额度 ¥1215
+                        .checkstand-order-code 订单号：201807170000128
+                    .checkstand-order-prc
+                        .prc-item 订单金额：
+                            span.main-red ¥
+                                em 1215
+                        .booking-info.main-red
+                            span 预订信息
+                                i.icon-packup
+                ul.checkstand-top-info
+                    .checkstand-top-info-tit B2B平台运营管理公司
+                    -for(var i=0;i<3;i++)
+                        li
+                            label 产品：
+                            p 【乐·全景】华东六市、扬州、双飞6天＊乌镇南浔双水乡＊夜游凤城河＊乐游＜游泰州梅园，游扬州东关街＊夜游凤城河＊乐游＜游泰州梅园，游扬州东关街＞
+        .order-payment
+            .payment-method
+                h5.payment-method-tit 待支付金额
+                    span.main-red ¥
+                        em 200
+                    | ，请选择以下支付方式付款
+                .accountMoney.noSet
+                    span
+                        i.check-icon
+                        input(type='checkbox',style='display:none')
+                        | 账户支付
+                    span.account-left
+                        label 余额：
+                        span.red-font ￥400
+                    span.account-pay.dis
+                        label 本次支付
+                        input(readonly='true')
+                        | 元
+                    span.account-passw.dis
+                        label 密码
+                        ul
+                            -for(var i=0;i<=5;i++)
+                                li
+                                    input(type='password',maxlength='1',readonly='true')
+                        .tick_icon
+                        .sure-passw 确定
+                        .drop_up 密码错误,请重新输入!
+                    span.set-account-passw 设置支付密码
+                    span.account-more
+                        i.icon-warn-c.main-red
+                        span 余额支付后仍需支付 
+                            em.main-red 200
+                            | 元
+                span.payment-method-span.active
+                    i.method-icon.zfb-method
+                    i.red-tick-icon
+                span.payment-method-span
+                    i.method-icon.wechat-method
+                    i.red-tick-icon
+                span.payment-method-span.bank-method-span
+                    span 汇款支付
+                    i.red-tick-icon
+                ul.bank-pay
+                    li
+                        label 汇款金额
+                        span(style='font-size: 14px;display:inline-block') 200.00
+                        span(style='display:inline-block') 元
+                    li.err
+                        label 汇款银行
+                        input
+                        span 不存在银行
+                    li
+                        label 账户姓名
+                        input
+                        span 错误
+                    li
+                        label 流水号
+                        input
+                        span 流水号错误
+            a.payment-btn(href='checkStandPayed.html') 立即支付
+            .payment-explain
+                span.grey-line
+                h2 支付说明
+                p.
+                    我们严格按照支付卡行业数据安全标准存储、处理、传输客人的相关卡信息。<br/>
+                    我们的员工经过严格的筛选、培训，我们建立了标准的处理流程，并且监控敏感处理过程和处理区域。<br/>
+                    如您是通过电话告知预订员相应信息，我们的预订员是经过严格培训，并会有电话录音记录，以便核查当时情况。<br/>
+                    如您是通过网上直接提交，信用卡信息及相关个人资料在传输中采用SSL加密处理，整个过程非常安全。<br/>
+                    您可以核对您的信用卡对帐单，如发现扣款情况与实际不符，请与客服联系，我们会为您尽快核实处理。<br/>
+                    鉴于信用卡本身使用性质所致，建议您妥善保存信用卡、身份证件等相关信息材料，如果发生遗失等情况，请在第一时间和您的发卡行联系。
+
+block footer
+block append script
+    script(src='../../static/js/checkstand/checkStandUnpay.js')

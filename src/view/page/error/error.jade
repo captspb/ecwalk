@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html', charset='UTF-8')
+		title 哎呀！页面出错了
+		link(rel='stylesheet', href='../../static/css/common.css')
+		link(rel='stylesheet', href='../../static/css/error/error.css')
+	body.error-page
+		.error-box
+			.error-img
+				img(src="../../static/images/error/error-bg.png")
+			.error-con
+				h2.error-tit 哎呀！页面出错了
+				p.error-info 这可能是服务器异常或者网络连接失败导致的
+				.error-btn-bar
+					a.back-home-btn(href="javascript:;") 返回首页
+					a.refresh-btn(href="javascript:;") 返回上一步

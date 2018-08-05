@@ -1,0 +1,65 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+//- include ../../component/common/pagese
+block append head
+    title 邮轮订单详情
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/menberCenter/cruiseOrderDetail.css')
+
+body
+  block header
+    include ../../component/common/header_center
+
+  block content
+    //- include ../../../model/menberCenter/orderManageData
+    .menber-center
+        .center-cont
+            //- 左导航
+            include ../../../view/component/menberCenter/left_orderDetailNav
+            
+
+            //- 右边内容
+            ul.info-pannel
+                li.info-tbl
+                    h5.tbl-tit 邮轮信息
+                    include ../../../view/component/menberCenter/cruiseInfo
+                li.info-tbl
+                    h5.tbl-tit 联系人信息
+                    include ../../../view/component/menberCenter/contactInfo
+                li.info-tbl
+                    h5.tbl-tit 舱房信息
+                    include ../../../view/component/menberCenter/cruiseRoomInfo
+                li.info-tbl
+                    h5.tbl-tit.open-lock
+                        span 游客信息
+                        i.lock-status-icon
+                        span.right-content.add-tourist 补录信息
+                    include ../../../view/component/menberCenter/touristInfo
+                li.info-tbl(style='padding-bottom:23px')
+                    h5.tbl-tit 备注信息
+                        span.right-content 
+                            | 共有 
+                            span.red 5 
+                            |  条备注信息
+                    include ../../../view/component/menberCenter/noteInfo
+                li.info-tbl
+                    h5.tbl-tit 变更信息
+                        span.right-content 
+                            | 共查询到 
+                            span.red 0 
+                            |  条信息
+                    include ../../../view/component/menberCenter/updateInfo
+                li.info-tbl
+                    h5.tbl-tit 跟单人信息
+                    include ../../../view/component/menberCenter/followerInfo
+                li.info-tbl
+                    h5.tbl-tit 操作员信息
+                        span.right-content （gzlds）演示账号GZLDS
+                    include ../../../view/component/menberCenter/operateInfo
+                    
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/menberCenter/cruiseOrderDetail.js')

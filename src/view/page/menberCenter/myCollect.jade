@@ -1,0 +1,73 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+//- include ../../component/common/pagese
+block append head
+    title 我的收藏
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/menberCenter/helpCenter.css')
+
+body
+  block header
+    include ../../component/common/header_center
+
+  block content
+    include ../../../model/menberCenter/orderManageData
+    include ../../../model/travel/travelListsData
+    .menber-center
+        .center-cont
+            //- 左导航
+            ul.left-nav
+                - for (var i=0; i<left_centerNavs.length; i++)
+                    if i==4
+                        li.first_nav.cur
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+                    else 
+                        li.first_nav
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+            
+            //- 右边内容
+            .info-pannel
+                .tab-ctx-wrp
+                    .search-list-result
+                        //+list_time_collect(listobj)
+                        .com-list-wrp.myCollect-tab
+                            ul.com-list-header
+                                li.router 路线
+                                li.saleprice 销售价
+                                li.sourceprice 同行价
+                                li.salemoney 利润
+                                li.main-label 标签
+                                li.recordop 操作
+                            ul.com-list-body
+                                - for (var i=0; i< 6; i++)
+                                    li.list-item-wrp
+                                        .prolist-main-part
+                                            ul.main-top-part
+                                                li.router 南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇式风情小镇斯泰伦博斯非洲大陆最南端厄加勒斯角非洲大陆最南端厄加勒斯角非洲大陆最南端厄加勒斯角非洲大陆最南端厄加勒斯角非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈
+                                                li.saleprice ￥7,266
+                                                li.sourceprice ￥6,266
+                                                li.salemoney ￥1,000
+                                                li.main-label 标签
+                                                li.recordop 删除
+                +pagese('件商品')
+            .clear
+
+                
+                    
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/menberCenter/travelOrderDetail.js')
+    script(src='../../static/js/menberCenter/mycollect.js')

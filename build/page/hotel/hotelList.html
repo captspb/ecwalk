@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/hotel/hotelLists.css">
+  </head>
+  <title>酒店搜索列表</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx"><a><img src="../../static/images/index/LogoTitle.png"></a>
+        <div class="b2b-address"><span><span class="img"></span><font>广州市
+              <ul class="drop_down">
+                <li> <a>北京市</a></li>
+                <li> <a>乌鲁木齐市</a></li>
+                <li> <a>上海市</a></li>
+                <li> <a>吐鲁番市</a></li>
+                <li> <a>深圳市</a></li>
+              </ul></font></span></div>
+        <div class="b2b-header-search">
+          <div class="search-box">
+            <div class="select-group">
+              <div class="select"><span class="select-val">全部产品</span><i class="select-down-arrow-icon"></i></div>
+              <ul style="display: none;" class="select-dropdown">
+                <li class="active">全部产品</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地玩乐</li>
+                <li>酒店</li>
+                <li>门票</li>
+                <li>签证</li>
+                <li>邮轮</li>
+                <li>WIFI</li>
+              </ul>
+            </div>
+            <div class="search-input">
+              <input placeholder="请输入搜索关键字...">
+            </div><a class="search-btn">搜索</a>
+          </div>
+          <div class="search-hot"></div>
+        </div>
+        <div class="b2b-header-bitMap">
+          <div class="bitMapDiv">
+            <div class="bitMapInnerDiv">
+              <div class="wx-kf popover"><i class="wx-kf-icon"></i><span class="contact">
+                  <p>欢迎使用</p>
+                  <p>在线客服</p></span>
+                <div class="popover-down">
+                  <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                  <div class="code-tip">扫码关注公众号</div>
+                </div>
+              </div>
+              <div class="tel-kf"><i class="tel-icon"></i><span class="contact">
+                  <p>020-86338888</p>
+                  <p>400-863-8888</p></span></div>
+            </div><img src="../../static/images/index/monkey.png" class="r">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="zyx"><a href="#">
+              <div>自由行</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="ddwl"><a href="#">
+              <div>当地玩乐</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="qz"><a href="#">
+              <div>签证</div><span class="white-line"></span></a></li>
+          <li nav-type="wifi"><a href="#">
+              <div>WIFI</div><span class="white-line"></span></a></li>
+          <li nav-type="jp"><a href="#">
+              <div>机票</div><span class="white-line"></span><i class="new-tip-icon"></i></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="breadcrumb">
+      <ul>
+        <li><font>您当前的位置：</font></li>
+        <li><a>酒店</a><span>&gt;</span></li>
+        <li><a class='cur'>搜索</a></li>
+      </ul>
+    </div>
+    <div class="search-pannel-wrp">
+      <div class="com-search-pannel">
+        <div class="hotel-search-top">
+          <ul class="hotel-search-top-item clearfix">
+            <li class="hotel-search-keyword">
+              <div class="search-top-tit">关键字</div>
+              <div class="search-top-con">
+                <input placeholder="请输入酒店关键字">
+              </div>
+            </li>
+            <li class="hotel-search-city">
+              <div class="search-top-tit">城市</div>
+              <div class="search-top-con">
+                <input placeholder="请输入城市">
+              </div>
+            </li>
+            <li class="hotel-search-date">
+              <div class="search-top-tit">入住时间-离店时间</div>
+              <div class="search-top-con">
+                <input placeholder="入住时间-离店时间">
+              </div>
+            </li>
+            <li class="hotel-search-info">
+              <div class="search-top-tit">入住信息</div>
+              <div class="search-top-con">
+                <div class="hotel-search-info-num"><em class='room-num'>1</em>间 / 每间<em class='adult-num'>1</em>成人，<em class='child-num'>0</em>儿童</div>
+                <div class="airTicket-select-dropdown">
+                  <div class="select-dropdown-hd">请选择入住信息</div>
+                  <div class="select-dropdown-bd">
+                    <ul class="tourists-select">
+                      <li>房间
+                        <div data-min="1" data-max="5" class="stepper-select room-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">1</span><span class="c-add-icon add-btn"></span></div>
+                      </li>
+                      <li>成人
+                        <div data-min="1" data-max="4" class="stepper-select adult-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">1</span><span class="c-add-icon add-btn"></span></div>
+                      </li>
+                      <li>儿童
+                        <div data-min="0" data-max="2" class="stepper-select child-item"><span class="c-minus-icon minus-btn disable"></span><span class="stepper-num">0</span><span class="c-add-icon add-btn"></span></div>
+                      </li>
+                    </ul>
+                    <div class="child-age-sel">
+                      <div class="age-sel-tit">请选择儿童年龄</div>
+                      <div class="select-item clearfix">
+                        <div class="select-list-item"><span class="item-con">儿童1：<em>< 1岁</em></span><i class="g-arrow-down-icon"></i>
+                          <ul class="select-item-list">
+                            <li>< 1岁</li>
+                            <li>1岁</li>
+                            <li>2岁</li>
+                            <li>3岁</li>
+                            <li>4岁</li>
+                            <li>5岁</li>
+                            <li>6岁</li>
+                            <li>7岁</li>
+                            <li>8岁</li>
+                            <li>9岁</li>
+                            <li>10岁</li>
+                            <li>11岁</li>
+                            <li>12岁</li>
+                            <li>13岁</li>
+                            <li>14岁</li>
+                            <li>15岁</li>
+                            <li>16岁</li>
+                            <li>17岁</li>
+                          </ul>
+                        </div>
+                        <div class="select-list-item"><span class="item-con">儿童2：<em>< 1岁</em></span><i class="g-arrow-down-icon"></i>
+                          <ul class="select-item-list">
+                            <li>< 1岁</li>
+                            <li>1岁</li>
+                            <li>2岁</li>
+                            <li>3岁</li>
+                            <li>4岁</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="airTicket-select-btn"><a class="cancel-btn">取消</a><a class="sure-btn">确定</a></div>
+                  </div>
+                </div>
+                <!--input(placeholder='入住信息')-->
+              </div>
+            </li>
+          </ul>
+          <div class="hotel-search-top-btn"><i class="search-icon"></i></div>
+        </div>
+        <div class="com-search-ctx travel-search-ctx">
+          <ul>
+            <li>
+              <div class="search-item-wrp">
+                <div class="search-item-lpart"><span class="web-font-bold">预留房</span></div>
+                <div class="search-item-rpart"><span class="tag-wrp">
+                    <div class="search-tag">不限</div></span><span class="tag-wrp">
+                    <div class="search-tag">有预留房</div></span>
+                  <div class="confirm-btn-list-wrp">
+                    <div class="confirm-btn-list"><span class="cancel-btn">取消</span><span class="sr-btn ok-btn">确定</span></div>
+                  </div>
+                </div>
+                <div class="btn-list"><span class="down-ctl"></span>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li>
+              <div class="search-item-wrp">
+                <div class="search-item-lpart"><span class="web-font-bold">价格区间</span></div>
+                <div class="search-item-rpart"><span class="tag-wrp">
+                    <div class="search-tag">不限</div></span><span class="tag-wrp">
+                    <div class="search-tag">500元以下</div></span><span class="tag-wrp">
+                    <div class="search-tag">501-1000元</div></span>
+                  <div class="confirm-btn-list-wrp">
+                    <div class="confirm-btn-list"><span class="cancel-btn">取消</span><span class="sr-btn ok-btn">确定</span></div>
+                  </div>
+                </div>
+                <div class="btn-list"><span class="start-price">
+                    <input></span><span class="end-price">
+                    <input></span>
+                  <spna class="price-confirm sr-btn ban">确定</spna>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li>
+              <div class="search-item-wrp">
+                <div class="search-item-lpart"><span class="web-font-bold">星级</span></div>
+                <div class="search-item-rpart"><span class="tag-wrp">
+                    <div class="search-tag">不限</div></span><span class="tag-wrp">
+                    <div class="search-tag">三星</div></span><span class="tag-wrp">
+                    <div class="search-tag">五星</div></span>
+                  <div class="confirm-btn-list-wrp">
+                    <div class="confirm-btn-list"><span class="cancel-btn">取消</span><span class="sr-btn ok-btn">确定</span></div>
+                  </div>
+                </div>
+                <div class="btn-list">
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+            <li>
+              <div class="search-item-wrp">
+                <div class="search-item-lpart"><span class="web-font-bold">主题</span></div>
+                <div class="search-item-rpart"><span class="tag-wrp">
+                    <div class="search-tag">不限</div></span><span class="tag-wrp">
+                    <div class="search-tag">周边游(44)</div></span><span class="tag-wrp">
+                    <div class="search-tag">50包邮(17)</div></span>
+                  <div class="confirm-btn-list-wrp">
+                    <div class="confirm-btn-list"><span class="cancel-btn">取消</span><span class="sr-btn ok-btn">确定</span></div>
+                  </div>
+                </div>
+                <div class="btn-list"><span class="down-ctl"></span>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="picked-tag"><span class="had-pick-title web-font-bold">已选</span>
+          <ul>
+            <li><span>主题：休闲</span><span class="sclose"></span></li>
+            <li><span>主题：海岛</span><span class="sclose"></span></li>
+            <li class="clear-all">清空已选</li>
+          </ul>
+        </div>
+      </div>
+      <div class="list-ctl-wrp">
+        <div class="list-ctl-ctx">
+          <ul>
+            <li class="select"><span>销量</span><span class="down-screen-icon"></span></li>
+            <li class="select"><span>价格</span><span class="down-screen-icon"></span></li>
+            <li class="select"><span>星级</span><span class="down-screen-icon"></span></li>
+          </ul>
+          <div class="list-ctl-tip">团房价格单团单议，以我司回复结果为准！(游客名单请留意备注)</div>
+        </div>
+      </div>
+      <div class="search-none">
+        <div class="portfolio-choice-tip">
+          <div class="tip-con">
+            <h2>找不到合适的结果</h2>
+            <p>请尝试调整搜索条件。您可以更改出发时间、出发地等条件。</p><a>重新搜索</a>
+          </div>
+        </div>
+      </div>
+      <div class="tab-ctx-wrp">
+        <div class="search-list-result search-list-avatar">
+          <!--.search-tip 团房价格单团单议，以我司回复结果为准！(游客名单请留意备注)-->
+          <ul class="hotel-search-list">
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+            <li class="search-list-item">
+              <div class="search-list-avatar"><img src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg"></div>
+              <div class="search-list-info">
+                <h2 title="广州番禺香江大酒店">广州番禺香江大酒店</h2>
+                <p>
+                  <label>酒店星级：</label><span>豪华</span>
+                </p>
+                <p>
+                  <label>所在区域：</label><span>广州市天河区</span>
+                </p>
+                <p>
+                  <label>酒店地址：</label><span title="天河区珠江新城珠江西路5号">天河区珠江新城珠江西路5号</span>
+                </p>
+              </div>
+              <div class="search-list-bk">
+                <div class="search-list-prc main-red">￥8000</div>
+                <div class="search-list-btn">查看房型</div>
+              </div>
+            </li>
+          </ul>
+          <div class="no-more"><span>没有更多结果了</span></div>
+          <div class="search-address">
+            <h4>交通信息</h4>
+            <div id="baidumap" class="address-cont"></div>
+          </div>
+        </div>
+        <div class="show-more-list"><span class="more-text">查看更多</span><span class="loading-tip"><i class="loading-gif"></i>正在加载，请稍后…</span></div>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=tmH4FzWYevQmsqCSbPA3u3A8"></script>
+    <script src="../../static/js/lib/jquery.pagination.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/baidumap/baidumap.js"></script>
+    <script src="../../static/js/hotel/hotelList.js"></script>
+  </body>
+</html>

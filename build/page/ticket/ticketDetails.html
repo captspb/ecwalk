@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/prodDetails.css">
+    <link rel="stylesheet" href="../../static/css/ticket/ticketDetails.css">
+  </head>
+  <title>门票详情</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx"><a><img src="../../static/images/index/LogoTitle.png"></a>
+        <div class="b2b-address"><span><span class="img"></span><font>广州市
+              <ul class="drop_down">
+                <li> <a>北京市</a></li>
+                <li> <a>乌鲁木齐市</a></li>
+                <li> <a>上海市</a></li>
+                <li> <a>吐鲁番市</a></li>
+                <li> <a>深圳市</a></li>
+              </ul></font></span></div>
+        <div class="b2b-header-search">
+          <div class="search-box">
+            <div class="select-group">
+              <div class="select"><span class="select-val">全部产品</span><i class="select-down-arrow-icon"></i></div>
+              <ul style="display: none;" class="select-dropdown">
+                <li class="active">全部产品</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地玩乐</li>
+                <li>酒店</li>
+                <li>门票</li>
+                <li>签证</li>
+                <li>邮轮</li>
+                <li>WIFI</li>
+              </ul>
+            </div>
+            <div class="search-input">
+              <input placeholder="请输入搜索关键字...">
+            </div><a class="search-btn">搜索</a>
+          </div>
+          <div class="search-hot"></div>
+        </div>
+        <div class="b2b-header-bitMap">
+          <div class="bitMapDiv">
+            <div class="bitMapInnerDiv">
+              <div class="wx-kf popover"><i class="wx-kf-icon"></i><span class="contact">
+                  <p>欢迎使用</p>
+                  <p>在线客服</p></span>
+                <div class="popover-down">
+                  <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                  <div class="code-tip">扫码关注公众号</div>
+                </div>
+              </div>
+              <div class="tel-kf"><i class="tel-icon"></i><span class="contact">
+                  <p>020-86338888</p>
+                  <p>400-863-8888</p></span></div>
+            </div><img src="../../static/images/index/monkey.png" class="r">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="zyx"><a href="#">
+              <div>自由行</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="ddwl"><a href="#">
+              <div>当地玩乐</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="qz"><a href="#">
+              <div>签证</div><span class="white-line"></span></a></li>
+          <li nav-type="wifi"><a href="#">
+              <div>WIFI</div><span class="white-line"></span></a></li>
+          <li nav-type="jp"><a href="#">
+              <div>机票</div><span class="white-line"></span><i class="new-tip-icon"></i></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="breadcrumb">
+      <ul>
+        <li><font>您当前的位置：</font></li>
+        <li><a>首页</a><span>&gt;</span></li>
+        <li><a>出境游</a><span>&gt;</span></li>
+        <li><a class='cur'>香港迪士尼乐园</a></li>
+      </ul>
+    </div>
+    <div class="ticket-details">
+      <div class="prod-dt-main">
+        <h2 class="prod-dt-tit">罗托鲁瓦智选假日酒店<span>Holiday Inn Rotorua</span><i class="a-icon"></i><i class="a-icon"></i><i class="a-icon"></i><i class="a-icon"></i><i class="a-icon"></i>
+        </h2>
+        <div class="prod-dt-info clearfix">
+          <div class="img-box"><img src="../../static/images/details/logo.png">
+            <div class="contact-info popover">联系方式
+              <div class="popover-down">
+                <h2>广之旅</h2>
+                <p>11321321adsfasd</p>
+                <p>11321321adsfasd</p>
+              </div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <label>景点等级</label>
+              <p>5A级景区</p>
+            </li>
+            <li>
+              <label>景点地址</label>
+              <p>香港大屿山 香港迪士尼乐园度假区</p>
+            </li>
+            <li>
+              <label>开放时间</label>
+              <p>周一至周五10:00~17:00，周末08:00~22:00</p>
+            </li>
+          </ul>
+          <div class="prod-dt-prc">￥<span>23380</span>起</div>
+        </div>
+      </div>
+      <div class="ticket-bk-dt">
+        <div class="ticket-screen">
+          <label>参观日期</label><span class="ticket-screen-date">
+            <input value="2017/11/27" id="screen-date"><i class="date-icon"></i></span>
+        </div>
+        <div class="details-bk">
+          <ul class="ticket-bk-info">
+            <li class="tk-blank">&nbsp;</li>
+            <li class="tk-name">名称</li>
+            <li class="tk-type">类型</li>
+            <li class="tk-period">使用期限</li>
+            <li class="tk-prc">销售价</li>
+          </ul>
+          <div class="ticket-bk-item">
+            <div class="ticket-species">成人/儿童/婴儿</div>
+            <ul class="ticket-bk-list">
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a href="ticketOrder.html" class="btn btn-sm">预订</a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a href="ticketOrder.html" class="btn btn-sm">预订</a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a class="btn btn-sm presell m-popover">即将开始
+                    <div class="m-popover-con s-up"><i class="icon-clock"></i>开售时间：2017-08-01</div></a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="ticket-bk-item">
+            <div class="ticket-species">成人票</div>
+            <ul class="ticket-bk-list">
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a href="ticketOrder.html" class="btn btn-sm">预订</a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a href="ticketOrder.html" class="btn btn-sm">预订</a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a class="btn btn-sm presell m-popover">即将开始
+                    <div class="m-popover-con s-up"><i class="icon-clock"></i>开售时间：2017-08-01</div></a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="ticket-bk-item">
+            <div class="ticket-species">儿童票</div>
+            <ul class="ticket-bk-list">
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a href="ticketOrder.html" class="btn btn-sm">预订</a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a href="ticketOrder.html" class="btn btn-sm">预订</a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a class="btn btn-sm presell m-popover">即将开始
+                    <div class="m-popover-con s-up"><i class="icon-clock"></i>开售时间：2017-08-01</div></a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="ticket-bk-item">
+            <div class="ticket-species">婴儿票</div>
+            <ul class="ticket-bk-list">
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a href="ticketOrder.html" class="btn btn-sm">预订</a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a href="ticketOrder.html" class="btn btn-sm">预订</a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="ticket-info"><span class="ticket-prod"><span>香港迪士尼2日特惠门票<i class='o-down-icon'></i></span></span><span class="ticket-type"><em class="popover">电子票
+                      <div class="popover-up"> 1321321321</div></em></span><span class="ticket-period">自主选择出游日期，当天有效</span><span class="ticket-prc">￥385000</span><a class="btn btn-sm presell m-popover">即将开始
+                    <div class="m-popover-con s-up"><i class="icon-clock"></i>开售时间：2017-08-01</div></a>
+                </div>
+                <div class="ticket-info-dt">
+                  <h2> 香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵</h2>
+                  <ul>
+                    <li>
+                      <label>预订时间：</label>
+                      <div>提前一天23:00点前</div>
+                    </li>
+                    <li>
+                      <label>使⽤期限：</label>
+                      <div>2017-04-01 至 2017-12-31</div>
+                    </li>
+                    <li>
+                      <label>兑换方式：</label>
+                      <div>凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票</div>
+                    </li>
+                    <li>
+                      <label>产品介绍：</label>
+                      <div>
+                        <p>1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <pre>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis consectetur dolores earum fuga, incidunt iste magnam modi molestias nulla numquam optio perspiciatis quas quis sit tempora totam voluptates voluptatibus.</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <label>预定说明：</label>
+                      <div>
+                        <p>1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。</p>
+                        <p>2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。</p>
+                        <p>3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。</p>
+                        <p>4、12岁或以下的⼉童⼊场需要成⼈陪同。</p>
+                        <p>5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30</p>
+                      </div>
+                    </li>
+                    <li>
+                      <label>退改规则：</label>
+                      <div> 该产品⼀经预订成功，不⽀持退改，敬请谅解。</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="prod-dt-con">
+        <div class="index-tab">
+          <div class="com-tab-ctl">
+            <ul class="tab-ctl-ul tab-red">
+              <li class="cur"><span class="tab-ctl-text">景点介绍</span><span class="red-line"></span></li>
+              <li><span class="tab-ctl-text">交通指南</span><span class="red-line"></span></li>
+              <li><span class="tab-ctl-text">销售须知</span><span class="red-line"></span></li>
+              <li><span class="tab-ctl-text">资料下载</span><span class="red-line"></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-ctx-wrp">
+          <div class="tab-ctx cur">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">景点介绍</span></h3><span class="tit-line"></span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero odit cupiditate, aut dolore ex ad vero sunt officia, mollitia nam molestias maxime necessitatibus perferendis eaque distinctio autem. Facilis, in, dolores.1</p>
+          </div>
+          <div class="tab-ctx">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">交通指南</span></h3><span class="tit-line"></span>
+            </div>
+            <div id="baidumap" geo="113.2759952545166,23.117055306224895" class="baidumap"></div>
+          </div>
+          <div class="tab-ctx">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">销售须知</span></h3><span class="tit-line"></span>
+            </div>
+            <p>3</p>
+          </div>
+          <div class="tab-ctx">
+            <div class="tab-ctx-tit"> 
+              <h3> <i class="tab-ctx-tit-icon"></i><span class="tab-ctx-tit-text">资料下载</span></h3><span class="tit-line"></span>
+            </div>
+            <ul class="ques">
+              <li class="que"><span>个签常识问题</span><a href="#" class="right_downLoad">下载</a></li>
+              <li class="que"><span>个签材料问题</span><a href="#" class="right_downLoad">下载</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/ticket/ticketDetails.js"></script>
+  </body>
+</html>

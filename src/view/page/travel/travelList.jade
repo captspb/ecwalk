@@ -1,0 +1,30 @@
+extends ../../component/common/layout
+
+include ../../component/common/mixin
+include ../../../model/common/headerData
+
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/travel/travelLists.css')
+
+block content
+    include ../../../model/travel/travelListsData
+    +bread(bread)
+    .search-pannel-wrp
+        .com-search-pannel
+            include ../../component/list/travelsearchheader
+            include ../../component/list/travelsearchctx
+        include ../../component/list/listctl
+        .tab-ctx-wrp
+            .search-list-result
+                +list(listobj)
+                +list_time_travel(listobj,'hide')
+        +pagese('件商品')
+
+
+
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/travel/travelList.js')

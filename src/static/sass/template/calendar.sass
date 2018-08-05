@@ -1,0 +1,710 @@
+@import "../common/params"
+@import "../common/function"
+
+.calendar-parent 
+  position: relative
+
+
+.price-calendar-double-wrp, .price-calendar-single-wrp, .range-calendar-double-wrp, .range-calendar-single-wrp 
+  .start-text, .end-text 
+    position: absolute
+    font-size: 12px
+    width: 100%
+    text-align: center
+    left: 0
+    margin-top: 25px
+    z-index: 999
+    color: #999
+  
+  &.price-calendar-double-wrp, &.price-calendar-single-wrp 
+    .date-blank:hover 
+      background-color: #eee
+    
+  
+  .price-calendar-ctx 
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    .price-calendar-header-wrp 
+      .price-calendar-header 
+        height: 40px
+        line-height: 40px
+        background-color: $color-calendar
+        font-size: 16px
+        color: #ffffff
+        text-align: center
+        .price-calendar-title 
+          width: 375px
+          height: 40px
+          display: inline-block
+        
+        .b-left-arrow 
+          width: 77px
+          height: 40px
+          display: inline-block
+          cursor: pointer
+          z-index: 1
+          .b-left-arrow-icon 
+            background-repeat: no-repeat
+            width: 16px
+            height: 16px
+            background-size: 7px
+            background-image: url(../../images/sprite-img/left-arrow.png)
+            vertical-align: middle
+            display: inline-block
+          
+        
+        .b-right-arrow 
+          width: 77px
+          height: 40px
+          display: inline-block
+          cursor: pointer
+          z-index: 1
+          .b-right-arrow-icon 
+            background-repeat: no-repeat
+            width: 16px
+            height: 16px
+            background-size: 7px
+            background-image: url(../../images/sprite-img/right-arrow.png)
+            vertical-align: middle
+            display: inline-block
+          
+        
+      
+      .weekday-wrp 
+        height: 30px
+        background-color: $color-calendar
+        border-bottom: 1px solid #ffffff
+        span.weekday 
+          width: 76px
+          text-align: center
+          display: inline-block
+          color: #ffffff
+          font-size: 12px
+          height: 30px
+          line-height: 30px
+        
+
+      
+    
+    .price-calendar-route 
+      position: relative
+      .swiper-container.month-picker, .swiper-container.year-picker 
+        position: absolute
+        top: 0
+        z-index: 99
+        ul 
+          width: 100%
+          height: 100%
+          display: block
+          li 
+            float: left
+            width: 87px
+            height: 100px
+            background-color: #fff
+            line-height: 100px
+            cursor: pointer
+            text-align: center
+            span 
+              width: 50px
+              height: 50px
+              display: inline-block
+              border-radius: 25px
+
+              vertical-align: middle
+              line-height: 50px
+              background-color: #fff
+              transition: .5s
+              &:hover 
+                background-color: $color-pink
+  
+      .price-calendar-line 
+        border-bottom: 1px solid $color-hr
+        ul 
+          height: 60px
+          li 
+            width: 77px
+            height: 60px
+            border-left: 1px solid $color-hr
+            float: left
+            position: relative
+            &:first-child 
+              border-left: 0px
+            
+            &.picked 
+              .calendar-block 
+                background-color: $color-calendar
+                &.date-holiday 
+                  .date-num-wrp 
+                    color: #ffffff
+                    &.status-ban 
+                      color: #ffffff
+                    
+                  
+
+                
+                .date-num-wrp 
+                  color: #ffffff
+                  &.status-ban 
+                    color: #ffffff
+                  
+                
+                .date-price 
+                  font-size: 14px
+                  color: #ffffff
+                  &.status-ban 
+                    color: #ffffff
+                  
+                
+                .route-status 
+                  font-size: 12px
+                  &.status-ok 
+                    color: #ffffff
+                  
+                  &.status-leave 
+                    color: #ffffff
+                  
+                  &.status-ban 
+                    color: #ffffff
+                  
+                
+              
+              .min 
+                color: #ffffff
+                right: 0
+                top: 0
+                position: absolute
+                &:before 
+                  @include triarrow(topright, 28px, #59c659)
+                  margin-left: -28px
+                
+                span 
+                  position: absolute
+                  font-size: 12px
+                  margin-left: -14px
+                  top: 0
+                
+              
+              .discount 
+                color: #ffffff
+                right: 0
+                top: 0
+                position: absolute
+                span 
+                  position: absolute
+                  font-size: 12px
+                  margin-left: -14px
+                
+                &:before 
+                  @include triarrow(topright, 28px, #3ec4c1)
+                  margin-left: -28px
+                
+              
+              .hui 
+                color: #ffffff
+                right: 0
+                top: 0
+                position: absolute
+                span 
+                  position: absolute
+                  font-size: 12px
+                  margin-left: -14px
+                
+                &:before 
+                  @include triarrow(topright, 28px, #ffab00)
+                  margin-left: -28px
+                
+              
+              .qiang 
+                color: #ffffff
+                right: 0
+                top: 0
+                position: absolute
+                span 
+                  position: absolute
+                  font-size: 12px
+                  margin-left: -14px
+                
+                &:before 
+                  @include triarrow(topright, 28px, #ff5555)
+                  margin-left: -28px
+            &.picked 
+              .calendar-block 
+                &.date-holiday 
+                  background-color: $color-calendar
+            .calendar-block 
+              padding: 4px 10px
+              line-height: 1.2
+              cursor: pointer
+              height: 60px
+              .popover-down 
+                width: 450px
+                z-index: 9
+                &:before 
+                  margin-left: 15px
+                
+                &:after 
+                  margin-left: 15px
+                
+              
+              &.disable 
+                &.date-holiday 
+                  .date-num-wrp 
+                    color: $color-warning !important
+                  
+                
+                .date-num-wrp 
+                  color: $color-gc !important
+                
+                .date-price 
+                  color: $color-gc
+                
+              
+              &.date-holiday 
+                background-color: $color-tipbg
+                .date-num-wrp 
+                  color: $color-warning
+                  &.status-ban 
+                    color: $color-g9
+                  
+                  .date-num 
+                    font-size: 16px
+              
+              .date-num-wrp 
+                color: $color-g6
+                &.status-ban 
+                  color: $color-g9
+                
+                .holiday-name 
+                  font-size: 12px 
+                  margin-left: 4px
+                
+                .date-num 
+                  font-size: 16px
+                
+              
+              .date-price 
+                font-size: 14px
+                color: $color-pink
+                &.status-ban 
+                  color: $color-g9              
+              .route-status 
+                font-size: 12px
+                &.status-ok 
+                  color: #6bc3aa
+                
+                &.status-leave 
+                  color: $color-pink             
+                &.status-ban 
+                  color: $color-g9
+                       
+            
+            .min 
+              color: #ffffff
+              right: 0
+              top: 0
+              position: absolute
+              &:before 
+                @include triarrow(topright, 28px, #59c659)
+                margin-left: -28px
+              
+              span 
+                position: absolute
+                font-size: 12px
+                margin-left: -14px
+              
+            
+            .discount 
+              color: #ffffff
+              right: 0
+              top: 0
+              position: absolute
+              span 
+                position: absolute
+                font-size: 12px
+                margin-left: -14px
+              
+              &:before 
+                @include triarrow(topright, 28px, #3ec4c1)
+                margin-left: -28px
+              
+            
+            .hui 
+              color: #ffffff
+              right: 0
+              top: 0
+              position: absolute
+              span 
+                position: absolute
+                font-size: 12px
+                margin-left: -14px
+              
+              &:before 
+                @include triarrow(topright, 28px, #ffab00)
+                margin-left: -28px
+              
+            
+            .qiang 
+              color: #ffffff
+              right: 0
+              top: 0
+              position: absolute
+              span 
+                position: absolute
+                font-size: 12px
+                margin-left: -14px
+              
+              &:before 
+                @include triarrow(topright, 28px, #ff5555)
+                margin-left: -28px
+      
+    
+  
+  &.price-calendar-double-wrp 
+    .price-calendar-ctx 
+      width: 50%
+      float: left
+      &:first-child 
+        .price-calendar-route 
+          border-right: 1px solid $color-hr
+        
+      
+      .price-calendar-header 
+        color: $color-g4
+        background-color: #ffffff
+        position: relative
+        .price-calendar-title 
+          width: 100%
+          height: 40px
+          display: inline-block
+          vertical-align: top
+          position: absolute
+          left: 0
+          top: 0
+        
+        .b-left-arrow 
+          width: 77px
+          height: 40px
+          display: inline-block
+          vertical-align: top
+          cursor: pointer
+          position: absolute
+          left: 0px
+          top: 0px
+          .b-left-arrow-icon 
+            background-repeat: no-repeat
+            width: 16px
+            height: 16px
+            background-size: 7px
+            background-image: url(../../images/sprite-img/left-arrow.png)
+            vertical-align: middle
+            display: inline-block
+          
+        .b-right-arrow 
+          width: 77px
+          height: 40px
+          vertical-align: top
+          display: inline-block
+          cursor: pointer
+          position: absolute
+          right: 0
+          top: 0
+          .b-right-arrow-icon 
+            background-repeat: no-repeat
+            width: 16px
+            height: 16px
+            background-size: 7px
+            background-image: url(../../images/sprite-img/right-arrow.png)
+            vertical-align: middle
+            display: inline-block
+          
+        
+      
+      .weekday-wrp 
+        height: 30px
+        background-color: #ffffff
+        border-bottom: 1px solid $color-hr
+        span.weekday 
+          width: 85px
+          text-align: center
+          display: inline-block
+          color: $color-g4
+          font-size: 12px
+          height: 30px
+          line-height: 30px
+        
+      
+      .price-calendar-line 
+        ul 
+          li 
+            width: 85px
+            &.b-width 
+              width: 88px
+            
+            &.b-width-2 
+              width: 89px
+            
+          
+        
+      
+    
+  
+  &.range-calendar-double-wrp, &.range-calendar-single-wrp 
+    position: absolute
+    z-index: 10
+    zoom: 1
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .1)
+    .price-calendar-route 
+      overflow: hidden
+    
+    &.range-calendar-double-wrp 
+      width: 720px
+      .price-calendar-header 
+        padding-left: 10px
+      
+      .weekday-wrp 
+        padding-left: 10px
+      
+      .price-calendar-route 
+        padding-left: 10px
+        background-color: #fff
+      
+      .price-calendar-ctx:first-child 
+        .price-calendar-header 
+          padding-right: 10px
+          padding-left: 0
+        
+        .weekday-wrp 
+          padding-right: 10px
+          padding-left: 0
+        
+        .price-calendar-route 
+          padding-right: 10px
+          padding-left: 0
+        
+      
+      .price-calendar-ctx 
+        width: 360px
+      
+    
+    &.range-calendar-single-wrp 
+      width: 350px
+      .price-calendar-ctx 
+        width: 350px
+      
+    
+    .price-calendar-ctx 
+      float: left
+      .price-calendar-header 
+        background-color: $main-red
+        color: $color-g4
+        position: relative
+        .price-calendar-title 
+          width: 100%
+          height: 40px
+          display: inline-block
+          vertical-align: top
+          position: absolute
+          left: 0
+          top: 0
+        
+        .b-left-arrow 
+          width: 50px
+          height: 40px
+          display: inline-block
+          vertical-align: top
+          cursor: pointer
+          position: absolute
+          left: 0px
+          top: 0px
+          .b-left-arrow-icon 
+            background-repeat: no-repeat
+            width: 16px
+            height: 16px
+            background-size: 7px
+            background-image: url(../../images/sprite-img/left-arrow.png)
+            vertical-align: middle
+            display: inline-block
+          
+        
+        .b-right-arrow 
+          width: 50px
+          height: 40px
+          vertical-align: top
+          display: inline-block
+          cursor: pointer
+          position: absolute
+          right: 0
+          top: 0
+          .b-right-arrow-icon 
+            background-repeat: no-repeat
+            width: 16px
+            height: 16px
+            background-size: 7px
+            background-image: url(../../images/sprite-img/right-arrow.png)
+            vertical-align: middle
+            display: inline-block
+      
+      .weekday-wrp 
+        height: 30px
+        background-color: $color-bg
+        border-bottom: 1px solid $color-hr
+        span.weekday 
+          width: 50px
+          text-align: center
+          display: inline-block
+          color: $color-g9
+          font-size: 12px
+          height: 30px
+          line-height: 30px
+        
+      
+      .price-calendar-line 
+        border: 0
+        border: none
+        ul 
+          height: 50px
+          li.date-blank 
+            background-color: #ffffff
+            width: 50px
+            height: 50px
+            border: 0
+            border: none
+            &.picked 
+              .calendar-block 
+                background-color: #ffffff
+                .date-num-wrp 
+                  .date-num 
+                    background-color: $color-pink
+                  
+                
+              
+              &.first 
+                .calendar-block 
+                  .picke-range 
+                    left: 25px
+                  
+                
+              
+              &.second 
+                .calendar-block 
+                  .picke-range 
+                    left: -25px
+                  
+                
+              
+            
+            .calendar-block 
+              padding: 10px
+              width: 50px
+              height: 50px
+              .picke-range 
+                display: block
+                width: 50px
+                height: 30px
+                background-color: $color-calendar-y
+                position: absolute
+                top: 10px
+                left: 0
+                display: none
+              
+              .date-num-wrp 
+                width: 30px
+                height: 30px
+                line-height: 30px
+                font-size: 14px
+                color: $color-g6
+                .date-num 
+                  display: block
+                  text-align: center
+                  border-radius: 50%
+                  position: absolute
+                  width: 30px
+                  height: 30px
+                  z-index: 99
+                  &.date-holiday 
+                    font-size: 12px
+                  
+                  &.status-ban 
+                    color: $color-gc
+                  
+                
+              
+            
+            &.date-range 
+              .calendar-block 
+                .picke-range 
+                  display: block
+
+
+.cpop-header 
+  font-size: 14px
+  .ctag-header-wrp 
+    padding-bottom: 20px
+    border-bottom: 1px dashed #e5e5e5
+  
+  span 
+    display: inline-block
+    &.ctag-header-ctx 
+      width: 33.333333333%
+      .ctag-header-tit
+        color: $color-g6
+      
+      .ctag-header-text
+        color: $color-pink
+      
+    
+  
+
+
+.cpop-ctx
+  margin-top: 22px
+  color: $color-g6
+  span
+    display: inline-block
+  
+  .cpop-ctx-tag-wrp
+    margin-bottom: 12px
+  
+  .cu-tag
+    width: 24px
+    height: 24px
+    display: inline-block
+    background-color: #3ec4c1
+    border-radius: 2px
+    line-height: 24px
+    text-align: center
+    color: #fff
+    margin-right: 14px
+    vertical-align: top
+  
+  .jian-tag
+    width: 24px
+    height: 24px
+    display: inline-block
+    background-color: #59c659
+    border-radius: 2px
+    line-height: 24px
+    text-align: center
+    color: #fff
+    margin-right: 14px
+    vertical-align: top
+  
+  .qiang-tag
+    width: 24px
+    height: 24px
+    display: inline-block
+    background-color: #fc5454
+    border-radius: 2px
+    line-height: 24px
+    text-align: center
+    color: #fff
+    margin-right: 14px
+    vertical-align: top
+  
+  .cpop-ctx-text
+    width: 368px
+    line-height: 24px
+  
+

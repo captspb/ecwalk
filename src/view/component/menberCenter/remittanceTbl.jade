@@ -1,0 +1,56 @@
+.t-head
+    table
+        tr.headRow
+            //- th.No
+            //-     span 订单编号
+            //- th.route 
+            //-     span(style='text-align: center') 线路
+            //- th.orderTime 
+            //-     span 下单时间
+            //- th.startTime 
+            //-     span 出发时间
+            //- th.fareType
+            //-     span 费用类型
+            //- th.totalPrice 
+            //-     span 金额
+            //- th.currency 
+            //-     span 币种
+            //- th.rate 
+            //-     span 汇率
+            td.No
+                span 订单编号
+            td.route 
+                span(style='text-align: center') 线路
+            td.orderTime 
+                span 下单时间
+            td.startTime 
+                span 出发时间
+            td.fareType
+                span 费用类型
+            td.totalPrice 
+                span 金额
+            td.currency 
+                span 币种
+            td.rate 
+                span 汇率
+.t-body(style='height: 348px;overflow-y: auto')
+    table
+        - for (var i = 0;i<=9; i++)
+            tr                 
+                td.No
+                    span 80018222
+                td.route 
+                    span 【乐·深度】摩洛哥8天＊印象皇城＊＜卡萨布兰卡，摩洛哥四大皇城sfsfsfsfasd
+                td.orderTime 
+                    span 2016/03/12
+                td.startTime 
+                    span 2016/03/20
+                td.fareType 
+                    span 5
+                td.totalPrice 
+                    span ￥5000
+                td.currency 
+                    span 人民币
+                td.rate 
+                    span 1.23
+        

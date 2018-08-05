@@ -1,0 +1,81 @@
+include ../../component/common/mixin
+
+div.order-info-cont
+  +order-dt-tit('联系人信息','为方便广之旅及时与您联系，请准确填写联系人信息（手机号码，Email）','contact-tit')
+  //- .add-contact-btn
+  //-   a.add-contact 添加联系人
+  //- .contact-info-con-wrp.scrollbar
+  //-   ul.contact-info-con
+  //-     li
+  //-       i.tick-logo.ticked-logo
+  //-       span.name 李小白
+  //-       span.tel 13899678692
+  //-       span.email(title='13899678692weqw2@qq.com') 13899678692weqw2@qq.com
+  //-       span.p-id 44050619930912xxxx
+  //-       span.corp
+  //-         a.edit_btn 编辑
+  //-         a.set_default.grey 默认
+  //-     li
+  //-       i.tick-logo
+  //-       span.name 李小白
+  //-       span.tel 13899678692
+  //-       span.email(title='13899678692weqw2@qq.com') 13899678692weqw2@qq.com
+  //-       span.p-id 44050619930912xxxx
+  //-       span.corp
+  //-         a.edit_btn 编辑
+  //-         a.set_default 设为默认
+  //-     li
+  //-       i.tick-logo
+  //-       span.name 李小白
+  //-       span.tel 13899678692
+  //-       span.email(title='13899678692weqw2@qq.com') 13899678692weqw2@qq.com
+  //-       span.p-id 44050619930912xxxx
+  //-       span.corp
+  //-         a.edit_btn 编辑
+  //-         a.set_default 设为默认
+  //-     li(style='display: none')
+  //-       i.tick-logo
+  //-       span.name 李小白
+  //-       span.tel 13899678692
+  //-       span.email(title='13899678692weqw2@qq.com') 13899678692weqw2@qq.com
+  //-       span.p-id 44050619930912xxxx
+  //-       span.corp
+  //-         a.edit_btn 编辑
+  //-         a.set_default 设为默认
+  //-   div.toggle-btn-cont 展开
+  div.tourist-info-con
+    //- div.order-info-usual-tourist
+    +checkbox-btns-con([{name: '罗大佑', value: '4029819e5fc44a09015fd72092d57e95'},{name: '罗小军', value: '5029819e5fc44a09015fd72092d57e95'},{name: '周孝正', value: '6029819e5fc44a09015fd72092d57e95'},{name: '周杰伦', value: '7029819e5fc44a09015fd72092d57e95'},{name: '张三丰', value: '8029819e5fc44a09015fd72092d57e95'},{name: '童一心', value: '9029819e5fc44a09015fd72092d57e95'}, {name: '周小川', value: '9129819e5fc44a09015fd72092d57e95'}], 5)(class='usual-tourist-con member-check')
+
+    div.user-info-fill
+      ul.order-info-tourist-list
+
+// div.order-info-cont
+  +info-cube('联系人信息')
+  div.order-ncontact-con
+    div.ncontact-list
+      div.ncontact-item-row
+        label.ncontact-lab-label 姓名
+        input.ncontact-lab-input(placeholder='请输入联系人姓名')
+      div.ncontact-item-row
+        label.ncontact-lab-label 手机
+        input.ncontact-lab-input(placeholder='请输入联系人手机', check-type='phone')
+      div.ncontact-item-row
+        label.ncontact-lab-label 邮箱
+        input.ncontact-lab-input(placeholder='请输入联系人邮箱', check-type='mail')
+      div.ncontact-item-row
+        label.ncontact-lab-label 证件类型
+        select.ncontact-lab-input
+          option(value='IDCard') 身份证
+          option(value='PassPort') 护照
+          option(value='MTPs') 台胞证
+          option(value='HVPs') 回乡证
+          option(value='MilitaryID') 军官证
+          option(value='AccountBook') 户口本
+          option(value='BrithCert') 出生证
+          option(value='Pass') 港澳通行证
+          option(value='InputTCard') 台湾通行证
+          option(value='qita') 其他
+      div.ncontact-item-row
+        label.ncontact-lab-label 证件号码
+        input.ncontact-lab-input(placeholder='请输入证件号码', check-type='cardVal')

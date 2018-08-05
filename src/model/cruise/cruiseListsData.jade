@@ -1,0 +1,75 @@
+-
+    var bread = ['邮轮','搜索'];
+    var search = [
+        {
+            main: '邮轮品牌',
+            morepick: false,
+            pricerange: false,
+            downpick: true,
+            taglist: [
+                {
+                    name: '不限',
+                    result: 10
+                },
+                {
+                    name: '皇家加勒比',
+                    result: 2
+                },
+                {
+                    name: '银海邮轮',
+                    result: 8
+                }
+            ]
+        },
+        {
+            main: '出发港口',
+            morepick: true,
+            downpick: true,
+            pricerange: false,
+            taglist: [
+                {
+                   name: '不限',
+                   result: 10
+                },
+                {
+                  name: '广州',
+                  result: 20
+                }
+            ]
+        },
+        {
+            main: '行程天数',
+            morepick: false,
+            downpick: false,
+            pricerange: true,
+            taglist: [
+                {
+                    name: '1天',
+                    result: 0
+                },
+                {
+                    name: '2天',
+                    result: 0
+                }
+            ]
+        },
+        {
+            main: '价格区间',
+            morepick: false,
+            downpick: false,
+            pricerange: true,
+            taglist: [
+                {
+                    name: '500元以下',
+                    result: 0
+                },
+                {
+                    name: '501-1000元',
+                    result: 0
+                }
+            ]
+        },
+
+    ]
+    var hadpick = [{type: '价格区间', name: '500以下'}];
+    var tabobj3 = [{text: '产品显示', iscur: true},{text: '排期显示', iscur: false}];

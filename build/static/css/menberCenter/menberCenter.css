@@ -1,0 +1,70 @@
+.menbercenter-sidebar .user-name,.menbercenter-sidebar .user-type{white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+body{background-color:#f4f4f6}
+.menbercenter-page{width:1186px;margin:14px auto 0}
+.menbercenter-sidebar{float:left;width:166px;padding:10px 0 20px;background-color:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.menbercenter-sidebar .user-item{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;height:166px;line-height:1;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;border-bottom:1px solid #EEEEF0}
+.menbercenter-sidebar .user-avatar{width:76px;height:76px;margin:0 auto;background:url(../../images/c-logo.png) no-repeat;-webkit-background-size:100% 100%;-moz-background-size:100% 100%;-o-background-size:100% 100%;background-size:100% 100%;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;overflow:hidden}
+.menbercenter-sidebar .user-avatar img{display:block;width:100%;height:100%}
+.menbercenter-sidebar .user-type{margin-top:14px;max-width:134px}
+.menbercenter-sidebar .user-name{color:#7F8593;margin-top:8px;max-width:134px}
+.menbercenter-sidebar .sidebar-nav{margin-top:8px}
+.menbercenter-sidebar .sidebar-nav .sidebar-nav-list{height:40px;line-height:40px;padding:0 0 0 44px}
+.menbercenter-sidebar .sidebar-nav .sidebar-nav-list .sidebar-list-item{position:relative}
+.menbercenter-sidebar .sidebar-nav .sidebar-nav-list .sidebar-list-item:before{content:'';position:absolute;left:-14px;top:0;bottom:0;margin:auto;width:4px;height:4px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background:#181C28}
+.menbercenter-sidebar .sidebar-nav .sidebar-nav-list .sidebar-list-item.active,.menbercenter-sidebar .sidebar-nav .sidebar-nav-list .sidebar-list-item:hover{color:#F30A37}
+.menbercenter-sidebar .sidebar-nav .sidebar-nav-list .sidebar-list-item.active:before,.menbercenter-sidebar .sidebar-nav .sidebar-nav-list .sidebar-list-item:hover:before{background:#F30A37}
+.menbercenter-con{float:right;width:1006px;padding:0 0 40px}
+.menbercenter-data{background-color:#fff;padding:24px 30px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin-bottom:14px}
+.credit-quota{float:left}
+.credit-quota .quota-tit{font-size:18px;line-height:1;margin-bottom:24px}
+.credit-quota .quota-data li{position:relative;float:left;width:280px}
+.credit-quota .quota-data li:not(:first-child){margin-left:20px}
+.credit-quota .quota-data li.B2B-quota .quota-progress{color:#7C7CFC}
+.credit-quota .quota-data li.GHM-quota .quota-progress{color:#F30A37}
+.credit-quota .quota-data li .quota-progress{float:left;width:56px;height:56px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;margin:16px 24px 0 0;-webkit-box-shadow:0 0 0 4px #f4f4f6 inset;-moz-box-shadow:0 0 0 4px #f4f4f6 inset;box-shadow:0 0 0 4px #f4f4f6 inset}
+.credit-quota .quota-data li .quota-con{overflow:hidden;line-height:1}
+.credit-quota .quota-data li .quota-con .quota-detail,.credit-quota .quota-data li .quota-con .quota-total{padding:16px 0}
+.credit-quota .quota-data li .quota-con .quota-detail p:not(:first-child),.credit-quota .quota-data li .quota-con .quota-total p:not(:first-child){margin-top:8px}
+.credit-quota .quota-data li .quota-con .quota-detail strong,.credit-quota .quota-data li .quota-con .quota-total strong{display:inline-block;font-size:18px;line-height:1;vertical-align:-2px}
+.credit-quota .quota-data li .quota-con .quota-total{display:inline-block;vertical-align:top;min-width:144px;border-bottom:1px solid #EEEEF0}
+.credit-quota .quota-data li .quota-con .quota-detail{color:#7F8593}
+.menber-account-info{float:right;width:286px;height:187px;background:#F6F6FA;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:0 20px}
+.menber-account-info li:not(:first-child) .info-con{border-top:1px solid #E2E2EA}
+.menber-account-info li.account-balance .info-icon-item{color:#FF0736}
+.menber-account-info li.child-account .info-icon-item{color:#4779D4}
+.menber-account-info li .info-icon-item{width:32px;height:32px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;float:left;margin:20px 14px 0 0;background:#fff;line-height:1}
+.menber-account-info li .info-icon-item i{display:inline-block;vertical-align:top;font-size:32px}
+.menber-account-info li .info-con{padding:20px 0;overflow:hidden;line-height:1}
+.menber-account-info li .info-con .balance-num{color:#7F8593}
+.menber-account-info li .info-con .show-balance-record{margin-top:8px}
+.menber-account-info li .info-con .child-account-status{color:#7F8593;margin:8px 0}
+.menber-account-info li .info-con .child-account-status span{display:inline-block;vertical-align:top}
+.menber-account-info li .info-con .child-account-status span:not(:first-child){position:relative;padding:0 0 0 32px}
+.menber-account-info li .info-con .child-account-status span:not(:first-child):before{content:'';position:absolute;left:15px;top:0;bottom:0;width:1px;height:12px;background:#E2E2EA}
+.menber-account-info li .info-con strong{display:inline-block;vertical-align:-2px;font-size:18px;color:#181C28}
+.menbercenter-info-group .menbercenter-info-item{padding:24px 30px 10px;background:#FFF;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin-top:14px}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-tit .tit-text{float:left;font-size:18px;line-height:18px}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-tit a{float:right;font-size:14px;line-height:18px;color:#7F8593}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-tit a:hover{color:#4779D4}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item:first-child{padding:10px 0}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item:not(:first-child){border-top:1px solid #EEEEF0}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item:nth-child(n+7){display:none}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item span{display:inline-block;vertical-align:middle;line-height:20px;padding:10px 8px}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item span:hover a{color:#4779D4}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item span:not(:first-child){margin-left:8px}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item .cancel-btn{color:#7F8593}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item .cancel-btn:hover{color:#4779D4}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item .pay-btn{color:#4779D4}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item .w480{width:480px}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item .w408{width:408px}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item .w120{width:120px}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item .w74{width:74px}
+.menbercenter-info-group .menbercenter-info-item .menbercenter-info-list-item .w64{width:64px}
+.no-footprints{background:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-align:center;margin-bottom:14px}
+.no-footprints .no-footprints-tip{display:inline-block;padding:48px 0 88px}
+.no-footprints .no-footprints-tip .img-con{display:inline-block;vertical-align:bottom;margin-right:50px}
+.no-footprints .no-footprints-tip .tip-con{display:inline-block;vertical-align:bottom;text-align:left;line-height:1}
+.no-footprints .no-footprints-tip .tip-con h2{font-size:20px;color:#333;font-weight:600}
+.no-footprints .no-footprints-tip .tip-con p{margin-top:14px}
+.no-footprints .no-footprints-tip .tip-con .tip-con-btn{margin-top:24px}
+.no-footprints .no-footprints-tip .tip-con .tip-con-btn .browse-btn{display:inline-block;vertical-align:top;width:90px;height:34px;line-height:34px;text-align:center;color:#fff;background:#4779D4;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}

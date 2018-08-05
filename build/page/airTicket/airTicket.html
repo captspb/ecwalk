@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/airTicket/airTicket.css">
+  </head>
+  <title>国际机票</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx"><a><img src="../../static/images/index/LogoTitle.png"></a>
+        <div class="b2b-address"><span><span class="img"></span><font>广州市
+              <ul class="drop_down">
+                <li> <a>北京市</a></li>
+                <li> <a>乌鲁木齐市</a></li>
+                <li> <a>上海市</a></li>
+                <li> <a>吐鲁番市</a></li>
+                <li> <a>深圳市</a></li>
+              </ul></font></span></div>
+        <div class="b2b-header-search">
+          <div class="search-box">
+            <div class="select-group">
+              <div class="select"><span class="select-val">全部产品</span><i class="select-down-arrow-icon"></i></div>
+              <ul style="display: none;" class="select-dropdown">
+                <li class="active">全部产品</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地玩乐</li>
+                <li>酒店</li>
+                <li>门票</li>
+                <li>签证</li>
+                <li>邮轮</li>
+                <li>WIFI</li>
+              </ul>
+            </div>
+            <div class="search-input">
+              <input placeholder="请输入搜索关键字...">
+            </div><a class="search-btn">搜索</a>
+          </div>
+          <div class="search-hot"></div>
+        </div>
+        <div class="b2b-header-bitMap">
+          <div class="bitMapDiv">
+            <div class="bitMapInnerDiv">
+              <div class="wx-kf popover"><i class="wx-kf-icon"></i><span class="contact">
+                  <p>欢迎使用</p>
+                  <p>在线客服</p></span>
+                <div class="popover-down">
+                  <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                  <div class="code-tip">扫码关注公众号</div>
+                </div>
+              </div>
+              <div class="tel-kf"><i class="tel-icon"></i><span class="contact">
+                  <p>020-86338888</p>
+                  <p>400-863-8888</p></span></div>
+            </div><img src="../../static/images/index/monkey.png" class="r">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="zyx"><a href="#">
+              <div>自由行</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="ddwl"><a href="#">
+              <div>当地玩乐</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="qz"><a href="#">
+              <div>签证</div><span class="white-line"></span></a></li>
+          <li nav-type="wifi"><a href="#">
+              <div>WIFI</div><span class="white-line"></span></a></li>
+          <li nav-type="jp"><a href="#">
+              <div>机票</div><span class="white-line"></span><i class="new-tip-icon"></i></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="airTicket-page">
+      <div class="airTicket-top">
+        <div class="airTicket-top-con">
+          <div class="airTicket-search">
+            <div class="airTicket-trip">
+              <div class="select-group">
+                <div class="select"><span class="select-val">单程</span><i class="g-arrow-down-icon"></i></div>
+                <ul class="select-dropdown">
+                  <li class="active">单程</li>
+                  <li>往返</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="airTicket-search-item clearfix">
+              <li>
+                <div class="airTicket-place clearfix">
+                  <div class="airTicket-origin">
+                    <input type="text" value="上海(SHA)" data-place="国内热门"><em class="airTicket-place-tip">出发</em>
+                  </div>
+                  <div class="airTicket-place-switch"><i class="switch-icon"></i></div>
+                  <div class="airTicket-dest">
+                    <input value="巴黎(PAR)" data-place="欧洲"><em class="airTicket-place-tip">到达</em>
+                  </div>
+                  <!--.airTicket-place-popup-->
+                  <!--    ul.airTicket-place-tab.clearfix-->
+                  <!--        - for(var i=0;i<placeTab.length;i++)-->
+                  <!--            li(class=i==0?'active':'',data-place='#{placeTab[i].tab}') #{placeTab[i].tab}-->
+                  <!--    - for(var i=0;i<placeTab.length;i++)-->
+                  <!--        ul.airTicket-place-city.clearfix-->
+                  <!--            - for (var j=0;j<placeTab[i].city.length;j++)-->
+                  <!--                li(data-city='#{placeTab[i].city[j].name}') #{placeTab[i].city[j].nameStr}-->
+                </div>
+              </li>
+              <li>
+                <div class="airTicket-date clearfix">
+                  <div class="airTicket-date-start">
+                    <input id="start-date">
+                    <div class="start-date-week">周二</div><em>出发日期</em>
+                  </div>
+                  <div class="airTicket-date-end disabled">
+                    <input id="end-date">
+                    <div class="end-date-week">周二</div><em>返回日期</em>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="airTicket-num clearfix">
+                  <div class="airTicket-num-item adult">
+                    <div class="select-group">
+                      <div class="select"><span class="select-val">成人0</span><i class="g-arrow-down-icon"></i></div>
+                      <ul class="select-dropdown">
+                        <li class="active">成人0</li>
+                        <li>成人1</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="airTicket-num-item child">
+                    <div class="select-group">
+                      <div class="select"><span class="select-val">儿童0</span><i class="g-arrow-down-icon"></i></div>
+                      <ul class="select-dropdown">
+                        <li class="active">儿童0</li>
+                        <li>儿童1</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="airTicket-num-item baby">
+                    <div class="select-group">
+                      <div class="select"><span class="select-val">婴儿0</span><i class="g-arrow-down-icon"></i></div>
+                      <ul class="select-dropdown">
+                        <li class="active">婴儿0</li>
+                        <li>婴儿1</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="airTicket-type">
+                  <div class="select-group">
+                    <div class="select"><span class="select-val">经济/超级经济舱</span><i class="g-arrow-down-icon"></i></div>
+                    <ul class="select-dropdown">
+                      <li class="active">经济/超级经济舱</li>
+                      <li>商务/超级商务舱</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="ariTicket-search-btn btn">搜索</div>
+          </div>
+          <div class="ariTicket-go clearfix">
+            <div class="ariTicket-go-tip">  去程</div>
+            <div class="ariTicket-go-info"><span>香港国际机场T1  →  盖亚维克机场N</span><span><em>出发：2018/6/4  18:35</em><em>到达：2018/6/4  18:36</em></span><span>一程中转</span></div>
+            <div class="ariTicket-reset">重新选择</div>
+          </div>
+        </div>
+      </div>
+      <div class="airTicket-main clearfix">
+        <div class="airTicket-con">
+          <div class="airTicket-sort">
+            <ul class="airTicket-sort-item clearfix">
+              <li class="cur">价格<i class="up-screen-icon"></i>
+              </li>
+              <li>航程时长<i class="up-screen-icon"></i>
+              </li>
+              <li>出发时间<i class="up-screen-icon"></i>
+              </li>
+              <li>到达时间<i class="up-screen-icon"></i>
+              </li>
+            </ul>
+            <div class="whether-tax"><i class="checkbox-icon"></i>含税价</div>
+          </div>
+          <div class="airTicket-tit">
+            <div class="plane-b-icon"></div>
+            <div class="airTicket-choose"><span class="active"><em class="underline m-popover">自由搭配
+                  <div class="m-popover-con s-up">① 选择去程 → ② 选择返程（预订）</div></em></span><span><em>往返组合</em></span></div>
+            <div class="airTicket-search-tip">共搜索到49个航班信息<em>/</em>1个直飞</div>
+            <ul class="airTicket-info clearfix">
+              <li>
+                <div class="airTicket-start-info">
+                  <div title="香港(HKG)" class="info-tit ellipsis">香港(HKG)</div>
+                  <div class="info-date">2018/05/24  周一</div>
+                </div>
+              </li>
+              <li>
+                <div class="airTicket-end-info">
+                  <div title="伦敦(LON)" class="info-tit ellipsis">伦敦(LON)</div>
+                  <div class="info-date">2018/05/24 周五</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="airTicket-list-group">
+            <ul class="airTicket-list">
+              <li class="airTicket-list-item">
+                <ul class="airTicket-info clearfix">
+                  <li>
+                    <div class="airTicket-origin-info">
+                      <div class="airTicket-time">07:50</div>
+                      <div class="airTicket-airport">香港国际机场T1</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="airTicket-dest-info">
+                      <div class="airTicket-time">19:45<span class="main-red">+1</span></div>
+                      <div class="airTicket-airport">盖亚维克机场N</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="airTicket-duration"><span class="underline m-popover">15H20M
+                    <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="transit-icon"></span>
+                </div>
+                <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                    <div class="m-popover underline">阿联酋航空
+                      <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                    </div></span></div>
+                <div class="airTicket-line">
+                  <div class="airTicket-line-con">
+                    <ul>
+                      <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                      <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="whether-lock lock-o-icon"></div>
+              </li>
+              <li class="airTicket-list-item">
+                <ul class="airTicket-info clearfix">
+                  <li>
+                    <div class="airTicket-origin-info">
+                      <div class="airTicket-time">07:50</div>
+                      <div class="airTicket-airport">香港国际机场T1</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="airTicket-dest-info">
+                      <div class="airTicket-time">19:45<span class="main-red">+1</span></div>
+                      <div class="airTicket-airport">盖亚维克机场N</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="airTicket-duration"><span class="underline m-popover">15H20M
+                    <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="plane-icon"></span>
+                </div>
+                <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                    <div class="m-popover underline">阿联酋航空
+                      <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                    </div></span></div>
+                <div class="airTicket-line">
+                  <div class="airTicket-line-con">
+                    <ul>
+                      <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                      <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="whether-lock lock-o-icon"></div>
+              </li>
+            </ul>
+            <div class="airTicket-detail">
+              <ul class="airTicket-detail-item">
+                <div class="airTicket-list-tip">去程</div>
+                <div class="airTicket-transit-tip">中转停留8H20M</div>
+                <li class="airTicket-list-item">
+                  <div class="airTicket-phase">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <p>2018.06.01  19:10</p>
+                        <p>2018.06.01  19:10</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <p>HKG 赤腊角机场T1</p>
+                        <p>DOH 多哈机场</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                      <div>阿联酋航空</div>
+                      <p>QR817/波音747(大)/飞行8H20M</p></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="underline m-popover"><span class="ellipsis">迪拜</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="underline m-popover"><span class="ellipsis">曼谷</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="airTicket-list-item">
+                  <div class="airTicket-phase">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <p>2018.06.01  19:10</p>
+                        <p>2018.06.01  19:10</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <p>HKG 赤腊角机场T1</p>
+                        <p>DOH 多哈机场</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                      <div>阿联酋航空</div>
+                      <p>QR817/波音747(大)/飞行8H20M</p></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="underline m-popover"><span class="ellipsis">迪拜</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="underline m-popover"><span class="ellipsis">曼谷</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="airTicket-detail-item">
+                <div class="airTicket-list-tip">返程</div>
+                <li class="airTicket-list-item">
+                  <div class="airTicket-phase">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <p>2018.06.01  19:10</p>
+                        <p>2018.06.01  19:10</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <p>HKG 赤腊角机场T1</p>
+                        <p>DOH 多哈机场</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                      <div>阿联酋航空</div>
+                      <p>QR817/波音747(大)/飞行8H20M</p></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="underline m-popover"><span class="ellipsis">迪拜</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="underline m-popover"><span class="ellipsis">曼谷</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="show-airTicket-detail"><span class="pointer"><em>展开详情</em><i class="more-2-icon"></i></span></div>
+            <ul class="airTicket-booking">
+              <li class="airTicket-booking-item">
+                <div class="airTicket-tag"><i class="slyx-icon"></i></div>
+                <div class="airTicket-other"><span class="cabin-type"><em class="underline m-popover">经济舱
+                      <div class="m-popover-con s-up">
+                        <p><em>香港 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 香港</em><em>经济舱(V)</em></p>
+                        <p><em>伦敦 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 伦敦</em><em>经济舱(V)</em></p>
+                      </div></em></span><span class="trip-type"><em class="underline m-popover">行程单
+                      <div class="m-popover-con s-up">只提供行程单</div></em></span><span class="endorse-type"><em class="underline m-popover">退改签
+                      <div class="m-popover-con s-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at magni rerum voluptatibus! Consectetur, facere id impedit ipsum maiores minima nisi non quas suscipit totam. Cumque distinctio doloribus excepturi optio?</div></em></span><span>剩余<em class='main-red'>4</em>张</span></div>
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span></li>
+                      <li class="tax-prc">税费￥2,000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking"><a>立即预定</a></div>
+              </li>
+            </ul>
+          </div>
+          <div class="airTicket-list-group">
+            <ul class="airTicket-list">
+              <li class="airTicket-list-item">
+                <ul class="airTicket-info clearfix">
+                  <li>
+                    <div class="airTicket-origin-info">
+                      <div class="airTicket-time">07:50</div>
+                      <div class="airTicket-airport">香港国际机场T1</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="airTicket-dest-info">
+                      <div class="airTicket-time">19:45<span class="main-red">+1</span></div>
+                      <div class="airTicket-airport">盖亚维克机场N</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="airTicket-duration"><span class="underline m-popover">15H20M
+                    <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="transit-icon"></span>
+                </div>
+                <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                    <div class="m-popover underline">阿联酋航空
+                      <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                    </div></span></div>
+                <div class="airTicket-line">
+                  <div class="airTicket-line-con">
+                    <ul>
+                      <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                      <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="whether-lock lock-o-icon"></div>
+              </li>
+              <li class="airTicket-list-item">
+                <ul class="airTicket-info clearfix">
+                  <li>
+                    <div class="airTicket-origin-info">
+                      <div class="airTicket-time">07:50</div>
+                      <div class="airTicket-airport">香港国际机场T1</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="airTicket-dest-info">
+                      <div class="airTicket-time">19:45<span class="main-red">+1</span></div>
+                      <div class="airTicket-airport">盖亚维克机场N</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="airTicket-duration"><span class="underline m-popover">15H20M
+                    <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="plane-icon"></span>
+                </div>
+                <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                    <div class="m-popover underline">阿联酋航空
+                      <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                    </div></span></div>
+                <div class="airTicket-line">
+                  <div class="airTicket-line-con">
+                    <ul>
+                      <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                      <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="whether-lock lock-o-icon"></div>
+              </li>
+            </ul>
+            <div class="airTicket-detail">
+              <ul class="airTicket-detail-item">
+                <div class="airTicket-list-tip">去程</div>
+                <div class="airTicket-transit-tip">中转停留8H20M</div>
+                <li class="airTicket-list-item">
+                  <div class="airTicket-phase">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <p>2018.06.01  19:10</p>
+                        <p>2018.06.01  19:10</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <p>HKG 赤腊角机场T1</p>
+                        <p>DOH 多哈机场</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                      <div>阿联酋航空</div>
+                      <p>QR817/波音747(大)/飞行8H20M</p></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="underline m-popover"><span class="ellipsis">迪拜</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="underline m-popover"><span class="ellipsis">曼谷</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="airTicket-list-item">
+                  <div class="airTicket-phase">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <p>2018.06.01  19:10</p>
+                        <p>2018.06.01  19:10</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <p>HKG 赤腊角机场T1</p>
+                        <p>DOH 多哈机场</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                      <div>阿联酋航空</div>
+                      <p>QR817/波音747(大)/飞行8H20M</p></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="underline m-popover"><span class="ellipsis">迪拜</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="underline m-popover"><span class="ellipsis">曼谷</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="airTicket-detail-item">
+                <div class="airTicket-list-tip">返程</div>
+                <li class="airTicket-list-item">
+                  <div class="airTicket-phase">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <p>2018.06.01  19:10</p>
+                        <p>2018.06.01  19:10</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <p>HKG 赤腊角机场T1</p>
+                        <p>DOH 多哈机场</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                      <div>阿联酋航空</div>
+                      <p>QR817/波音747(大)/飞行8H20M</p></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="underline m-popover"><span class="ellipsis">迪拜</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="underline m-popover"><span class="ellipsis">曼谷</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="show-airTicket-detail"><span class="pointer"><em>展开详情</em><i class="more-2-icon"></i></span></div>
+            <ul class="airTicket-booking">
+              <li class="airTicket-booking-item">
+                <div class="airTicket-tag"><i class="slyx-icon"></i></div>
+                <div class="airTicket-other"><span class="cabin-type"><em class="underline m-popover">经济舱
+                      <div class="m-popover-con s-up">
+                        <p><em>香港 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 香港</em><em>经济舱(V)</em></p>
+                        <p><em>伦敦 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 伦敦</em><em>经济舱(V)</em></p>
+                      </div></em></span><span class="trip-type"><em class="underline m-popover">行程单
+                      <div class="m-popover-con s-up">只提供行程单</div></em></span><span class="endorse-type"><em class="underline m-popover">退改签
+                      <div class="m-popover-con s-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at magni rerum voluptatibus! Consectetur, facere id impedit ipsum maiores minima nisi non quas suscipit totam. Cumque distinctio doloribus excepturi optio?</div></em></span><span>剩余<em class='main-red'>4</em>张</span></div>
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span></li>
+                      <li class="tax-prc">税费￥2,000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking"><a>立即预定</a></div>
+              </li>
+            </ul>
+          </div>
+          <div class="airTicket-list-group">
+            <ul class="airTicket-list">
+              <li class="airTicket-list-item">
+                <ul class="airTicket-info clearfix">
+                  <li>
+                    <div class="airTicket-origin-info">
+                      <div class="airTicket-time">07:50</div>
+                      <div class="airTicket-airport">香港国际机场T1</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="airTicket-dest-info">
+                      <div class="airTicket-time">19:45<span class="main-red">+1</span></div>
+                      <div class="airTicket-airport">盖亚维克机场N</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="airTicket-duration"><span class="underline m-popover">15H20M
+                    <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="transit-icon"></span>
+                </div>
+                <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                    <div class="m-popover underline">阿联酋航空
+                      <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                    </div></span></div>
+                <div class="airTicket-line">
+                  <div class="airTicket-line-con">
+                    <ul>
+                      <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                      <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="whether-lock lock-o-icon"></div>
+              </li>
+              <li class="airTicket-list-item">
+                <ul class="airTicket-info clearfix">
+                  <li>
+                    <div class="airTicket-origin-info">
+                      <div class="airTicket-time">07:50</div>
+                      <div class="airTicket-airport">香港国际机场T1</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="airTicket-dest-info">
+                      <div class="airTicket-time">19:45<span class="main-red">+1</span></div>
+                      <div class="airTicket-airport">盖亚维克机场N</div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="airTicket-duration"><span class="underline m-popover">15H20M
+                    <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="plane-icon"></span>
+                </div>
+                <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                    <div class="m-popover underline">阿联酋航空
+                      <div class="m-popover-con s-up">CZ3000 / CZ3509</div>
+                    </div></span></div>
+                <div class="airTicket-line">
+                  <div class="airTicket-line-con">
+                    <ul>
+                      <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                      <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="whether-lock lock-o-icon"></div>
+              </li>
+            </ul>
+            <div class="airTicket-detail">
+              <ul class="airTicket-detail-item">
+                <div class="airTicket-list-tip">去程</div>
+                <div class="airTicket-transit-tip">中转停留8H20M</div>
+                <li class="airTicket-list-item">
+                  <div class="airTicket-phase">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <p>2018.06.01  19:10</p>
+                        <p>2018.06.01  19:10</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <p>HKG 赤腊角机场T1</p>
+                        <p>DOH 多哈机场</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                      <div>阿联酋航空</div>
+                      <p>QR817/波音747(大)/飞行8H20M</p></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="underline m-popover"><span class="ellipsis">迪拜</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="underline m-popover"><span class="ellipsis">曼谷</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="airTicket-list-item">
+                  <div class="airTicket-phase">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <p>2018.06.01  19:10</p>
+                        <p>2018.06.01  19:10</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <p>HKG 赤腊角机场T1</p>
+                        <p>DOH 多哈机场</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                      <div>阿联酋航空</div>
+                      <p>QR817/波音747(大)/飞行8H20M</p></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="underline m-popover"><span class="ellipsis">迪拜</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="underline m-popover"><span class="ellipsis">曼谷</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="airTicket-detail-item">
+                <div class="airTicket-list-tip">返程</div>
+                <li class="airTicket-list-item">
+                  <div class="airTicket-phase">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                  </div>
+                  <ul class="airTicket-info clearfix">
+                    <li>
+                      <div class="airTicket-origin-info">
+                        <p>2018.06.01  19:10</p>
+                        <p>2018.06.01  19:10</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="airTicket-dest-info">
+                        <p>HKG 赤腊角机场T1</p>
+                        <p>DOH 多哈机场</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">
+                      <div>阿联酋航空</div>
+                      <p>QR817/波音747(大)/飞行8H20M</p></span></div>
+                  <div class="airTicket-line">
+                    <div class="airTicket-line-con">
+                      <ul>
+                        <li><span class="airTicket-line-tip">中转</span><span class="underline m-popover"><span class="ellipsis">迪拜</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                        <li><span class="airTicket-line-tip">经停</span><span class="underline m-popover"><span class="ellipsis">曼谷</span>
+                            <div class="m-popover-con s-up">曼谷国际机场T1</div></span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="show-airTicket-detail"><span class="pointer"><em>展开详情</em><i class="more-2-icon"></i></span></div>
+            <ul class="airTicket-booking">
+              <li class="airTicket-booking-item">
+                <div class="airTicket-tag"><i class="slyx-icon"></i></div>
+                <div class="airTicket-other"><span class="cabin-type"><em class="underline m-popover">经济舱
+                      <div class="m-popover-con s-up">
+                        <p><em>香港 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 香港</em><em>经济舱(V)</em></p>
+                        <p><em>伦敦 - 阿布扎比</em><em>经济舱(V)</em></p>
+                        <p><em>阿布扎比 - 伦敦</em><em>经济舱(V)</em></p>
+                      </div></em></span><span class="trip-type"><em class="underline m-popover">行程单
+                      <div class="m-popover-con s-up">只提供行程单</div></em></span><span class="endorse-type"><em class="underline m-popover">退改签
+                      <div class="m-popover-con s-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at magni rerum voluptatibus! Consectetur, facere id impedit ipsum maiores minima nisi non quas suscipit totam. Cumque distinctio doloribus excepturi optio?</div></em></span><span>剩余<em class='main-red'>4</em>张</span></div>
+                <div class="airTicket-prc">
+                  <div class="airTicket-prc-info">
+                    <ul class="m-popover">
+                      <div class="m-popover-con s-up">
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-name">成人</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                        <p class="airTicket-prc-list"><span class="airTicket-prc-item">往返人均票价(含税费)</span><span class="airTicket-prc-num">￥4,560</span><span class="airTicket-people-num">x1人</span></p>
+                      </div>
+                      <li class="total-prc">￥<span>5,000</span></li>
+                      <li class="tax-prc">税费￥2,000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="airTicket-booking"><a>立即预定</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="airTicket-sidebar">
+          <div class="airTicket-filtrate">
+            <dl class="airTicket-filtrate-item">
+              <dt><strong>直飞/中转</strong><span class="empty-filtrate">清空</span></dt>
+              <dd><i class="checkbox-icon"></i>直飞<span>¥5,199</span></dd>
+              <dd><i class="checkbox-icon"></i>1程中转<span>¥7,382</span></dd>
+            </dl>
+            <dl class="airTicket-filtrate-item">
+              <dt><strong>航空公司</strong><span class="empty-filtrate">清空</span></dt>
+              <dd><i class="checkbox-icon"></i>意大利航空<span>¥6,474</span></dd>
+              <dd><i class="checkbox-icon"></i>大韩航空<span>¥6,309</span></dd>
+              <dd><i class="checkbox-icon"></i>芬兰航空<span>¥6,250</span></dd>
+              <dd><i class="checkbox-icon"></i>南航<span>¥6,540</span></dd>
+            </dl>
+            <dl class="airTicket-filtrate-item">
+              <dt><strong>航司联盟</strong><span class="empty-filtrate">清空</span></dt>
+              <dd><i class="checkbox-icon"></i>寰宇一家<span>¥6,474</span></dd>
+              <dd><i class="checkbox-icon"></i>天合联盟<span>¥6,309</span></dd>
+              <dd><i class="checkbox-icon"></i>星空联盟<span>¥6,250</span></dd>
+            </dl>
+            <dl class="airTicket-filtrate-item">
+              <dt><strong>出发时间</strong><span class="empty-filtrate">清空</span></dt>
+              <dd><i class="checkbox-icon"></i>晚上(18:00 - 24:00)<span>¥6,474</span></dd>
+              <dd><i class="checkbox-icon"></i>下午(12:00 - 18:00)<span>¥6,309</span></dd>
+              <dd><i class="checkbox-icon"></i>上午(6:00 - 12:00)<span>¥6,250</span></dd>
+              <dd><i class="checkbox-icon"></i>凌晨(0:00 - 6:00)<span>¥6,250</span></dd>
+            </dl>
+            <dl class="airTicket-filtrate-item">
+              <dt><strong>到达时间</strong><span class="empty-filtrate">清空</span></dt>
+              <dd><i class="checkbox-icon"></i>晚上(18:00 - 24:00)<span>¥6,474</span></dd>
+              <dd><i class="checkbox-icon"></i>下午(12:00 - 18:00)<span>¥6,309</span></dd>
+              <dd><i class="checkbox-icon"></i>上午(6:00 - 12:00)<span>¥6,250</span></dd>
+              <dd><i class="checkbox-icon"></i>凌晨(0:00 - 6:00)<span>¥6,250</span></dd>
+            </dl>
+          </div>
+          <div class="more-filtrate">更多筛选条件</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/airTicket/airTicket.js"></script>
+  </body>
+</html>

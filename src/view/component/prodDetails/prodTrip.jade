@@ -1,0 +1,27 @@
+//- 行程介绍
+div.prod-trip
+    div.trip-info-box
+        .trip-info
+            span 此行程信息出发日期：2017-10-19
+            span 路线编号：GZLZ17ZDCSK1710191001
+            a 下载行程
+    div.trip-main
+        ul.trip-sidebar
+            -for(var j=1;j<=10;j++)
+                if j == 1
+                    li.active D#{j}
+                else
+                    li D#{j}
+        ol.trip-list
+            -for(var j=1;j<=10;j++)
+                li(data-index='prod-trip')
+                    div.trip-tit
+                        span 第#{j}天
+                        p 广州-利雅得- 开罗
+                    ul.trip-con
+                        li
+                            h3 参考航班
+                            p 请各位贵宾于航班起飞前三小时，自行前往广州白云国际机场请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际请各位贵宾于航班起飞前三小时，自行前往广州白云国际集中，乘机经利雅得转机飞往埃及首都开罗，抵达后机场助理接机送入酒店休息。
+                            p <i class='trip-restaurant-icon'></i> 开罗塞米勒米斯洲际酒店
+                            p <i class='trip-stay-icon'></i> 开罗塞米勒米斯洲际酒店
+

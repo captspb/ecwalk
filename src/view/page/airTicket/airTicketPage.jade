@@ -1,0 +1,95 @@
+extends ../../component/common/layout
+include ../../../model/common/headerData
+include ../../component/common/mixin
+block append head
+    title 国际机票
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/airTicket/airTicketPage.css')
+block content
+    .airTicket-page
+        .search-airTicket
+            .search-airTicket-con
+                .search-airTicket-tit 从这里，通往世界各处
+                .search-airTicket-screen
+                    .screen-hd
+                        ul.search-airTicket-trip.clearfix
+                            li(data-trip="back-forth").active 往返
+                            li(data-trip="one-way") 单程
+                            li(data-trip="multipass") 多程
+                    .screen-bd
+                        .search-airTicket-select
+                            .airTicket-select-item
+                                span.adult-num
+                                    em 1
+                                    | 成人
+                                span.child-num
+                                    em 0
+                                    | 儿童
+                                span.tank-type 经济舱
+                                em.c-arrow-down-icon
+                            .airTicket-select-dropdown
+                                .select-dropdown-hd 最多选择9个旅客
+                                .select-dropdown-bd
+                                    ul.tourists-select
+                                        li 成人
+                                            .stepper-select.adult-item(data-min='1')
+                                                span.c-minus-icon.minus-btn.disable
+                                                span.stepper-num 1
+                                                span.c-add-icon.add-btn
+                                        li 儿童
+                                            em （2-12）
+                                            .stepper-select.child-item(data-min='0')
+                                                span.c-minus-icon.minus-btn.disable
+                                                span.stepper-num 0
+                                                span.c-add-icon.add-btn
+                                    ul.airTicket-tank-type
+                                        li.active 经济舱
+                                        li 高端经济舱
+                                        li 商务舱
+                                        li 头等舱
+                                    .airTicket-select-btn
+                                        a.cancel-btn 取消
+                                        a.sure-btn 确定
+                        ul.airTicket-trip-list
+                            - for (var h=0;h<1;h++)
+                                li.clearfix
+                                    .search-airTicket-place
+                                        .place-switch.c-switch-icon
+                                            .m-popover
+                                                .m-popover-con.s-up 互换出发地和目的地
+                                        .place-origin
+                                            input(type="text", placeholder="从哪儿飞", data-tip='出发地')
+                                        .place-dest
+                                            input(type="text", placeholder="飞往哪儿", data-tip='目的地')
+                                    .search-airTicket-date
+                                        .start-date
+                                            input#start-date(value="2018-07-29" type="text", placeholder="出发日期", readonly, data-tip='出发日期')
+                                            span 出发
+                                        .end-date
+                                            input#end-date(type="text", placeholder="返回日期", readonly, data-tip='返回日期')
+                                            span 返回
+                                    .search-airTicke-btn
+                                        i.search-icon
+                        .more-airTicket-trip
+                            .add-more
+                                i.t-add-icon
+                                span 增加目的地（最多6段）
+                            .search-airTicke-btn
+                                i.search-icon
+        .airTicket-list
+            ul.clearfix
+                - for (var i=0;i<8;i++)
+                    li.airTicket-list-item
+                        a
+                            img.airTicket-list-img(src='http://b2c.gzl.cn/b2c-image/2018/6/23/90464967-5231-427b-881a-b3ceb74a9ad8.jpg')
+                            .airTicket-list-info
+                                h2.airTicket-list-tit.ellipsis 北京-悉尼
+                                .airTicket-list-date 8月21日-9月23日
+                                .airTicket-list-prc
+                                    span.prc-num ¥<em>2038</em>起
+                                    span.prc-tip 往返含税
+block append script
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/airTicket/airTicketPage.js')

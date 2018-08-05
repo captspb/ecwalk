@@ -1,0 +1,201 @@
+extends ../../component/common/layout
+include ../../../model/common/headerData
+include ../../component/common/mixin
+block append head
+  title 订单详情
+block append style
+  link(rel='stylesheet', href='../../static/css/airTicket/airTicketOrderDetail.css')
+block content
+  .airTicket-page
+    .airTicket-order-detail.clearfix
+      .airTicket-order-main
+        .airTicket-order-top.clearfix
+          .airTicket-order-state
+            h2 待确认
+            p 订单号：201807230000037
+            p 商家订单号：20180723
+            p 确认号：暂无
+          .airTicket-order-prc
+            ul
+              li.prc-item 费用总计：¥34,000
+                span.m-popover
+                  em.prc-dt 明细
+                    .prc-dt-con.m-popover-con.s-left
+                      p.prc-dt-con-item
+                        span.prc-dt-con-name 成人
+                        span.prc-dt-con-prc ¥86
+                        span.prc-dt-con-num x1
+                      p.prc-dt-con-item
+                        span.prc-dt-con-name 必选跟人最大购买3
+                        span.prc-dt-con-prc ¥123
+                        span.prc-dt-con-num x2
+                      p.prc-dt-con-item
+                        span.prc-dt-con-name 必选跟人最大购买3
+                        span.prc-dt-con-prc ¥234
+                        span.prc-dt-con-num x1
+              li.prc-item 已付金额：¥0
+              li.prc-item 未付金额：¥34,441
+            .pay-btn 订单支付
+        - for (var h=0;h<3;h++)
+          .airTicket-order-group.airTicket-order-passenger
+            h2.airTicket-order-group-tit
+              .tit-text 旅客订座凭证
+                span （PNR：JD6664#{h}）
+            ul.airTicket-order-info
+              li.info-list
+                span.info-item.travel-time 起飞/到达时间
+                span.info-item.airlines 航空公司
+                span.info-item.shipping-space 舱位
+                span.info-item.refund-policy 退改政策
+              -for(var i=0;i<2;i++)
+                li.info-list
+                  span.info-item.travel-time
+                    ul.travel-time-con
+                      li
+                        p.place-item 首都机场T2（PEK）
+                        p.date-item 2018-10-02  15:30
+                      li
+                        if i===0
+                          p.place-item 新加坡国际机场（NAK）
+                        else
+                          p.place-item 新加坡国际机场新加坡国际机场新加坡国际机场（NAK）
+                        p.date-item 2018-10-02  18:30
+                        p.transit-item (经停香港机场)
+                  span.info-item.airlines
+                    ul.airlines-con
+                      li
+                        p 南方航空
+                        p CX5339
+                      li
+                        p Scot Suckling航空
+                        p CX4839
+                        p.gary 共享航班
+                  span.info-item.shipping-space
+                    p 豪华经济舱
+                    p (行李额30KG)
+                  span.info-item.refund-policy
+                    a 查看详情
+            ul.airTicket-passenger-list.clearfix
+              -for(var i=0;i<4;i++)
+                li.list-item
+                  h3 ZHANGXIAOMING
+                    em / 女 / 成人
+                  ul
+                    li 状态：
+                      if i===0
+                        em.text-blue 出票中
+                      else if i===1
+                        em.text-red 出票失败
+                      else if i===2
+                        em.text-gray 已取消
+                      else if i===3
+                        em.text-blue 出票成功
+                    li 出票时间：2018-08-10
+                    li 票号：02000180723
+                    li 联系电话：18303517744
+        .airTicket-order-group.airTicket-order-contact
+          h2.airTicket-order-group-tit
+            .tit-text 联系人
+          ul.airTicket-order-info
+            li.info-list
+              span.contact-name 姓名
+              span.contact-tel 电话
+              span.contact-email 邮箱
+              span.contact-phone 手机
+            li.info-list
+              span.contact-name 欧阳菲菲
+              span.contact-tel -
+              span.contact-email 445202199909123857
+              span.contact-phone 15612341234
+        .airTicket-order-group.airTicket-order-note
+          h2.airTicket-order-group-tit
+            .tit-text 备注信息
+            .tit-tip
+              span 共有<em class="clr-blue">2</em>条备注信息
+              a.clr-blue.add-note 添加备注
+          ul.airTicket-order-info
+            li.info-list
+              span.note-con 内容
+              span.note-operate 操作
+            li.info-list
+              span.note-con.note-con-info 如果订单拆分，优惠券可能不再返还。退款将返还您实际支付的金额，京东支付和白条支付优惠概不退回，白条、微信支付、京东E卡等资产将原路返回。
+              span.note-operate
+                p 创建时间：2018-07-18 17:24:50
+                p 创建部门：翠江B2B测试专用
+                p 创建人：ZCJ
+            li.info-list
+              span.note-con.note-con-info 如果订单拆分，优惠券可能不再返还。
+              span.note-operate
+                p 创建时间：2018-07-18 17:24:50
+                p 创建部门：翠江B2B测试专用
+                p 创建人：ZCJ
+        .airTicket-order-group.airTicket-order-change
+          h2.airTicket-order-group-tit
+            .tit-text 变更信息
+          ul.airTicket-order-info
+            li.info-list
+              span.change-start 变更前信息
+              span.change-end 变更后信息
+              span.change-operate 操作
+            li.info-list
+              span.change-start 如果订单拆分，优惠券可能不再返还。
+              span.change-end 不给就不给
+              span.change-operate
+                p 变更单号：201807250900003
+                p 变更单标题：优惠券变更
+                p 变更状态：待审核
+                p 变更时间：2018-07-18 17:24:50
+        .airTicket-order-group.airTicket-order-buyer
+          h2.airTicket-order-group-tit
+            .tit-text 下单人信息
+          ul.airTicket-order-buyer-info
+            li
+              label 下单人姓名：
+              p zcj-翠江B2B测试专用
+            li
+              label 下单人电话：
+              p 13712341234
+            li
+              label 办公电话：
+              p 02085753734
+            li
+              label 下单人邮件：
+              p hvisdvsidvnsid@qq.com
+            li
+              label 下单人时间：
+              p 2018年10月6日 10:59:53
+      .airTicket-order-sidebar
+        ul
+          li
+            span
+              i.icon-human
+              | 取消行程
+          li
+            span.change-trip
+              i.icon-human
+              | 变更行程
+          li
+            span
+              i.icon-human
+              | 下载行程
+          li
+            span
+              i.icon-human
+              | 下载出团通知书
+          li
+            span
+              i.icon-human
+              | 确认入住
+          li
+            span
+              i.icon-human
+              | 确认出票
+          li
+            span.m-popover
+              i.icon-human
+              | 联系客服
+              .m-popover-con.s-down
+                p 工牌号：010101015
+                p 联系电话：020-8686868
+block append script
+  script(src='../../static/js/airTicket/airTicketOrderDetail.js')

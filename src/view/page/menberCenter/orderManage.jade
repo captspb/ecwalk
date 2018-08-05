@@ -1,0 +1,246 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+//- include ../../component/common/pagese
+block append head
+    title 订单管理
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/menberCenter/orderManage.css')
+
+body
+  block header
+    include ../../component/common/header_center
+
+  block content
+    include ../../../model/menberCenter/orderManageData
+    .menber-center
+        .center-cont
+            //- 左导航
+            ul.left-nav
+                - for (var i=0; i<left_centerNavs.length; i++)
+                    if i==0
+                        li.first_nav.cur
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+                    else 
+                        li.first_nav
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+            //- 右边内容
+            .search-content
+                .searchbar-info-box
+                    ul.searchbar-info
+                        li
+                            span
+                                strong 授信额度
+                        li
+                            span 粤港澳授信
+                            span
+                                label 总额度:
+                                span 5000
+                            span
+                                label 剩余:
+                                span 1000
+                        li
+                            span 平台授信
+                            span
+                                label 总额度:
+                                span 5000
+                            span
+                                label 剩余:
+                                span 1000
+                    ul.searchbar-info
+                        li
+                            span
+                                strong 账户余额
+                        li
+                            span
+                                label 剩余:
+                                span 2000
+                            span.main-blue
+                                a(href='balanceDetail.html') 查看余额使用记录
+                .searchbar-cont
+                    ul.searchbar
+                        - for (var i = 0;i<=search_items.length - 1; i++) 
+                            li.search-item
+                                label #{search_items[i].label}
+                                input(placeholder=search_items[i].placeholder)
+                    button 搜索
+                .searchbar-cont
+                    ul.searchbar.order-screen
+                        li.search-item
+                            label 订单状态：
+                            select
+                                option 全部
+                        li.search-item
+                            label 订单类型：
+                            select
+                                option 全部
+                                option 类型1
+                                option 类型2
+                                option 类型3
+                                option 类型4
+                                option 类型5
+                        li.search-item
+                            label 支付状态：
+                            select
+                                option 全部
+                                option 类型1
+                                option 类型2
+                                option 类型3
+                                option 类型4
+                                option 类型5
+                    ul.searchbar.order-screen
+                        li.search-item(style='margin-right: 10px')
+                            label 出发日期：
+                            input.date#start-date(placeholder='请选择日期')
+                            label -
+                            input.date#end-date(placeholder='请选择日期')
+                            span.clear-date 清空日期
+                            
+                        li.search-item
+                            label 下单日期：
+                            input.date#order-start-date(placeholder='请选择日期',value='2017/11/11')
+                            label -
+                            input.date#order-end-date(placeholder='请选择日期',value='2017/11/13')
+                            span.clear-date 清空日期
+                    .picked-tag
+                        span.had-pick-title.web-font-bold 已选
+                        ul
+                            li
+                                span 下单日期：2013/03/09-2014/05/12
+                                span.sclose
+                        span.clear-all 清空已选
+                        span.orders-pay
+                            i.orders-pay-icon
+                            a(href='orderManagePay.html') 批量支付
+                //- ul.searchResult-cont
+                //-     -for(var i=0;i<10;i++)
+                //-         li.order-item
+                //-             .order-item-No
+                //-                 label 订单编号：
+                //-                 span 80018222
+                //-                 label 商家订单号：
+                //-                 span 80018222
+                //-             .order-item-mid
+                //-                 a(href='#').order-item-left 南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车
+                //-                 span.order-item-num x2
+                //-                 span.order-item-right
+                //-                     span.order-item-price 总价￥2,418
+                //-                     span.order-item-pay 
+                //-                         span.payed 已付
+                //-                             span.green-mon ￥200
+                //-                         span.pay 未付
+                //-                             span.red-mon ￥200
+                //-             .order-item-bottom
+                //-                 span.order-item-time
+                //-                     span.order-time
+                //-                         label 下单时间：
+                //-                         span 2016/05/24
+                //-                     span.start-time
+                //-                         label 出发时间：
+                //-                         span 2016/05/24
+                //-                     span.tourists-name
+                //-                         label 游客名称：
+                //-                         span 陈雪华、华哥、老陈、陈雪、陈华、陈华雪、哥华
+                //-                 ul.order-item-operate
+                //-                     li
+                //-                         if (i==0)
+                //-                             span.ticketed 
+                //-                                 i.ticked
+                //-                                 | 已出票
+                //-                         else
+                //-                             a.comfirm-ticket 出票
+                //-                     li.update
+                //-                         a 变更
+                //-                     li.cancel-order
+                //-                         a 取消订单
+                //-                     if (i !== 0 )
+                //-                         li.pay-left
+                //-                             a(href='#') 支付余额
+                ul.searchResult-cont
+                    -for(var i=0;i<10;i++)
+                        li.order-item
+                            .order-item-top
+                                ul.order-item-No
+                                    li
+                                        label 订单编号：
+                                        span 66545648984
+                                    li
+                                        label 商家订单号：
+                                        span 80018222
+                                    li
+                                        label 下单人：
+                                        span 何绮祺
+                                ul.order-item-btns
+                                    if i==0
+                                        li.order-item-btn.alert-cancel
+                                            a 取消订单
+                                    li.order-item-btn.cancel-order 
+                                        a 取消订单
+                                    li.order-item-btn.comfirm-ticket
+                                        a 出票
+                                    li.order-item-btn.update
+                                        a 变更
+                                    li.order-item-btn
+                                        a(href='#') 支付余额
+                                    li.order-item-btn.order-item-No
+                                        a 查看详情
+                            .order-item-mid
+                                span.order-item-blk.order-item-blk-4
+                                    label 团队名称
+                                    div 南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车
+                                span.order-item-blk.order-item-blk-4
+                                    label 产品名称
+                                    div 南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇 荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈斯纳，桌山、好望角双缆车
+                                span.order-item-blk.order-item-blk-1
+                                    label 数量
+                                    div(style='display: block') 2
+                                span.order-item-blk.order-item-blk-1(style='padding:0')
+                                    span.order-item-blk.payed-blk(style='height:50%')
+                                        label 已付
+                                        div(style='display: block') ￥1000
+                                    span.order-item-blk(style='height:50%;width: 100%;border-left: none;border-top: 1px solid #E3E3E7')
+                                        label 未付
+                                        div(style='display: block') -
+                                span.order-item-blk.order-item-blk-2
+                                    label 总价
+                                    div(style='display: block') ￥2,418
+                            .order-item-bottom
+                                span.order-item-blk.order-item-blk-4
+                                    label 出发日期
+                                    div 2017/05/24
+                                span.order-item-blk.order-item-blk-4
+                                    label 游客名单
+                                    div 
+                                        ul.name-list
+                                            li 李诗敏
+                                            li 李诗敏
+                                            li 李诗敏
+                                            li 李诗敏
+                                            li 李诗敏
+                                span.order-item-blk.order-item-blk-4.status-blk
+                                    label 已付款
+                                    label 进行中
+
+
+                .page-cont
+                    +pagese('个结果')
+                    
+
+
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/menberCenter/orderManage.js')
+
+

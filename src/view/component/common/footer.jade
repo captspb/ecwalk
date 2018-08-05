@@ -1,0 +1,14 @@
+include ../../../model/common/headerData
+
+.footer-wrp
+    .footer-ctx
+        .friendly-link
+            - for (var i=0; i<footer.lyj.length; i++)
+                a(href=footer.lyj[i].url) #{footer.lyj[i].name}
+                span 　/　
+
+        .server-info
+            span 旅行社业务经营许可证号：L-GD-CJ00004
+            span 　|　
+            span ICP经营许可号：粤ICP备13071273号-2
+        .server-info Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.

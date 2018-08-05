@@ -1,0 +1,134 @@
+[
+  {
+    "allDuration":226,
+    "fareList":[
+      {
+        "adultPrice":{
+          "it":"false","passengerCount":2,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"3610.0","settlementPriceWithTax":"4480.0","tax":"870.0","ticketPrice":"3610.0"},
+        "baseClassInfo":"经济舱",
+        "baseTax":218,
+        "baseTicketPrice":3610,
+        "baseTicketTaxPrice":3828,
+        "changeServiceTime":"09:00-19:00",
+        "childPrice":{"it":"false","passengerCount":1,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"3610.0","settlementPriceWithTax":"4328.0","tax":"718.0","ticketPrice":"3610.0"},
+        "classInfo":
+        [
+          {"arriveAirport":"BKK","cabin":"V","depAirport":"CAN","physicalClass":"ECONOMY","physicalClassName":"经济舱"},
+          {"arriveAirport":"NRT","cabin":"V","depAirport":"BKK","physicalClass":"ECONOMY","physicalClassName":"经济舱"},
+          {"arriveAirport":"BKK","cabin":"K","depAirport":"NRT","physicalClass":"ECONOMY","physicalClassName":"经济舱"},
+          {"arriveAirport":"CAN","cabin":"K","depAirport":"BKK","physicalClass":"ECONOMY","physicalClassName":"经济舱"}
+        ],
+        "classInfoData":{"BKK - CAN":"经济舱","BKK - NRT":"经济舱","CAN - BKK":"经济舱","NRT - BKK":"经济舱"},
+        "fareId":"1",
+        "farePriceItem":
+        [
+          {"itemName":"成人","itemNumber":2,"itemPrice":4480.0},
+          {"itemName":"儿童","itemNumber":2,"itemPrice":3610.0},
+          {"itemName":"往返人均票价（含税费）","itemNumber":4,"itemPrice":3828}
+        ],
+        "fareSource":"1",
+        "freeBaggageAllowance":{"BKKCAN":"30公斤","BKKNRT":"30公斤","CANBKK":"30公斤","NRTBKK":"30公斤"},
+        "freeBaggageData":{},
+        "isNeedSwitchPnr":0,
+        "isNeedVerify":0,
+        "productType":"1",
+        "refundServiceTime":"09:00-19:00",
+        "reimbursementVoucher":0,
+        "reimbursementVoucherName":"行程单",
+        "seats":"4",
+        "ticketServiceTime":"09:00-21:00",
+        "ticketType":0,
+        "ticketingCarrier":"TG",
+        "workingTime":"09:00-21:00"
+      }
+    ],
+    "firstDepartureTime":1531659900000,
+    "index":37,
+    "itineraryID":"XINGZOUR0j1jYJJ",
+    "lastArriveTime":1531727100000,
+    "minTicketPrice":3619,
+    "oDList":[
+      {"airline":"TG",
+        "airlineName":"TG",
+        "arrivalAirport":"NRT",
+        "arrivalAirportName":"BKK",
+        "arrivalTimeDivision":"03:45",
+        "arriveTime":"2018-07-16 15:45:00",
+        "departureAirport":"CAN",
+        "departureAirportName":"CANT2",
+        "departureTime":"2018-07-15 21:05:00",
+        "departureTimeDivision":"09:05",
+        "duration":"9:10",
+        "durationHour":9,
+        "durationMinute":10,
+        "firstAirLineImg":"",
+        "flightDetail":[
+          {
+            "airLineCode":"TG",
+            "airLineImg":"",
+            "airLineName":"TG",
+            "arrTerm":"",
+            "arrivalAirportName":"BKK",
+            "arriveAirport":"BKK",
+            "arriveTime":"2018-07-15 23:05:00",
+            "bookDesignCode":"V",
+            "codeshare":false,
+            "depTerm":"T2",
+            "departureAirport":"CAN",
+            "departureAirportName":"CANT2",
+            "departureTime":"2018-07-15 21:05:00",
+            "duration":"3小时",
+            "flightNo":"TG679",
+            "index":1,
+            "meal":"M",
+            "planeModel":"777"
+          },
+          {
+            "airLineCode":"TG",
+            "airLineImg":"",
+            "airLineName":"TG",
+            "arrTerm":"T1",
+            "arrivalAirportName":"NRTT1",
+            "arriveAirport":"NRT",
+            "arriveTime":"2018-07-16 15:45:00",
+            "bookDesignCode":"V",
+            "codeshare":true,
+            "depTerm":"",
+            "departureAirport":"BKK",
+            "departureAirportName":"BKK",
+            "departureTime":"2018-07-16 07:35:00",
+            "duration":"6小时10分钟",
+            "flightNo":"TG676",
+            "index":2,
+            "meal":"M",
+            "planeModel":"380",
+            "transferCityName":"曼谷",
+            "transferTime":"8小时30分钟",
+            "airCarrierAline":"测试",
+            "airCarrierAlineName":"测试",
+            "airCarrierFlight":"No001"
+          }
+        ],
+        "flightNo":"TG679/TG676",
+        "flyDays":1,
+        "flyTime":226,
+        "index":1,
+        "stopCity":"测试",
+        "transfer":"OneTran",
+        "transferCity":"曼谷 ",
+        "transferName":"1程中转",
+        "isDirectFlight":0,
+        "transferTime":"8:30"
+      }
+    ],
+    "tranType":"OneTran"
+  },
+
+  {"allDuration":226,"fareList":[{"adultPrice":{"it":"false","passengerAge":"","passengerCount":2,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"3331.0","settlementPriceWithTax":"4353.0","tax":"1022.0","ticketPrice":"3400.0"},"baseClassInfo":"经济舱","baseTax":256,"baseTicketPrice":3400,"baseTicketTaxPrice":3656,"changeServiceTime":"09:00-19:00","childPrice":{"it":"false","passengerAge":"","passengerCount":1,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"3331.0","settlementPriceWithTax":"4186.0","tax":"855.0","ticketPrice":"3400.0"},"classInfo":[{"arriveAirport":"BKK","cabin":"V","depAirport":"CAN","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"NRT","cabin":"V","depAirport":"BKK","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"BKK","cabin":"V","depAirport":"HND","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"CAN","cabin":"V","depAirport":"BKK","physicalClass":"ECONOMY","physicalClassName":"经济舱"}],"classInfoData":{"BKK - CAN":"经济舱","BKK - NRT":"经济舱","CAN - BKK":"经济舱","HND - BKK":"经济舱"},"fareId":"1","farePriceItem":[{"itemName":"成人","itemNumber":2,"itemPrice":4422.0},{"itemName":"儿童","itemNumber":2,"itemPrice":3400.0},{"itemName":"往返人均票价（含税费）","itemNumber":4,"itemPrice":3656}],"fareSource":"1","freeBaggageAllowance":{"BKKCAN":"30公斤","BKKNRT":"30公斤","CANBKK":"30公斤","HNDBKK":"30公斤"},"freeBaggageData":{},"isNeedSwitchPnr":0,"isNeedVerify":0,"productType":"1","refundServiceTime":"09:00-19:00","reimbursementVoucher":0,"reimbursementVoucherName":"行程单","seats":"3","ticketServiceTime":"09:00-19:00","ticketType":1,"ticketingCarrier":"TG","workingTime":"09:00-19:00"}],"firstDepartureTime":1531640700000,"index":29,"itineraryID":"XINGZOUfCtrQ3rO","lastArriveTime":1531727100000,"minTicketPrice":3656,"oDList":[{"airline":"TG","airlineName":"TG","arrivalAirport":"NRT","arrivalAirportName":"BKK","arrivalTimeDivision":"03:45","arriveTime":"2018-07-16 15:45:00","departureAirport":"CAN","departureAirportName":"CANT2","departureTime":"2018-07-15 15:45:00","departureTimeDivision":"03:45","duration":"9:10","durationHour":9,"durationMinute":10,"firstAirLineImg":"","flightDetail":[{"airLineCode":"TG","airLineImg":"","airLineName":"TG","arrTerm":"","arrivalAirportName":"BKK","arriveAirport":"BKK","arriveTime":"2018-07-15 17:45:00","bookDesignCode":"V","codeshare":false,"depTerm":"T2","departureAirport":"CAN","departureAirportName":"CANT2","departureTime":"2018-07-15 15:45:00","duration":"3小时","flightNo":"TG669","index":1,"meal":"M","planeModel":"359"},{"airLineCode":"TG","airLineImg":"","airLineName":"TG","arrTerm":"T1","arrivalAirportName":"NRTT1","arriveAirport":"NRT","arriveTime":"2018-07-16 15:45:00","bookDesignCode":"V","codeshare":false,"depTerm":"","departureAirport":"BKK","departureAirportName":"BKK","departureTime":"2018-07-16 07:35:00","duration":"6小时10分钟","flightNo":"TG676","index":2,"meal":"M","planeModel":"380","transferCityName":"曼谷","transferTime":"13小时50分钟"}],"flightNo":"TG669/TG676","flyDays":1,"flyTime":226,"index":1,"stopCity":"","transfer":"OneTran","transferCity":"曼谷 ","transferName":"1程中转","isDirectFlight":0,"transferTime":"13:50"}],"tranType":"OneTran"},
+  {"allDuration":387,"fareList":[{"adultPrice":{"it":"false","passengerCount":2,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"8030.0","settlementPriceWithTax":"9010.0","tax":"980.0","ticketPrice":"8030.0"},"baseClassInfo":"经济舱","baseTax":245,"baseTicketPrice":8030,"baseTicketTaxPrice":8275,"changeServiceTime":"09:00-19:00","childPrice":{"it":"false","passengerCount":1,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"6030.0","settlementPriceWithTax":"6738.0","tax":"708.0","ticketPrice":"6030.0"},"classInfo":[{"arriveAirport":"PEK","cabin":"Y","depAirport":"CAN","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"HND","cabin":"H","depAirport":"PEK","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"XIY","cabin":"B","depAirport":"NRT","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"CAN","cabin":"Y","depAirport":"XIY","physicalClass":"ECONOMY","physicalClassName":"经济舱"}],"classInfoData":{"CAN - PEK":"经济舱","NRT - XIY":"经济舱","PEK - HND":"经济舱","XIY - CAN":"经济舱"},"fareId":"1","farePriceItem":[{"itemName":"成人","itemNumber":2,"itemPrice":9010.0},{"itemName":"儿童","itemNumber":2,"itemPrice":8030.0},{"itemName":"往返人均票价（含税费）","itemNumber":4,"itemPrice":8275}],"fareSource":"1","freeBaggageAllowance":{"CANPEK":"1件","NRTXIY":"1件","PEKHND":"1件","XIYCAN":"1件"},"freeBaggageData":{},"isNeedSwitchPnr":0,"isNeedVerify":0,"productType":"1","refundServiceTime":"09:00-19:00","reimbursementVoucher":0,"reimbursementVoucherName":"行程单","seats":"3","ticketServiceTime":"09:00-21:00","ticketType":0,"ticketingCarrier":"HU","workingTime":"09:00-21:00"}],"firstDepartureTime":1531587300000,"index":145,"itineraryID":"XINGZOUhXJwN2hK","lastArriveTime":1532265900000,"minTicketPrice":8275,"oDList":[{"airline":"HU","airlineName":"HU","arrivalAirport":"HND","arrivalAirportName":"PEKT1","arrivalTimeDivision":"01:00","arriveTime":"2018-07-16 01:00:00","departureAirport":"CAN","departureAirportName":"CANT1","departureTime":"2018-07-15 12:55:00","departureTimeDivision":"12:55","duration":"6:20","durationHour":6,"durationMinute":20,"firstAirLineImg":"","flightDetail":[{"airLineCode":"HU","airLineImg":"","airLineName":"HU","arrTerm":"T1","arrivalAirportName":"PEKT1","arriveAirport":"PEK","arriveTime":"2018-07-15 15:55:00","bookDesignCode":"Y","codeshare":false,"depTerm":"T1","departureAirport":"CAN","departureAirportName":"CANT1","departureTime":"2018-07-15 12:55:00","duration":"3小时","flightNo":"HU7806","index":1,"meal":"L","planeModel":"78A"},{"airLineCode":"HU","airLineImg":"","airLineName":"HU","arrTerm":"I","arrivalAirportName":"HNDI","arriveAirport":"HND","arriveTime":"2018-07-16 01:00:00","bookDesignCode":"H","codeshare":false,"depTerm":"T2","departureAirport":"PEK","departureAirportName":"PEKT2","departureTime":"2018-07-15 20:40:00","duration":"3小时20分钟","flightNo":"HU7919","index":2,"meal":"D","planeModel":"738","transferCityName":"北京","transferTime":"4小时45分钟"}],"flightNo":"HU7806/HU7919","flyDays":1,"flyTime":164,"index":1,"stopCity":"","transfer":"OneTran","transferCity":"北京 ","transferName":"1程中转","isDirectFlight":0,"transferTime":"4:45"},{"airline":"HU","airlineName":"HU","arrivalAirport":"CAN","arrivalAirportName":"XIYT3","arrivalTimeDivision":"09:25","arriveTime":"2018-07-22 21:25:00","departureAirport":"NRT","departureAirportName":"NRTT2","departureTime":"2018-07-21 14:55:00","departureTimeDivision":"02:55","duration":"7:55","durationHour":7,"durationMinute":55,"firstAirLineImg":"","flightDetail":[{"airLineCode":"HU","airLineImg":"","airLineName":"HU","arrTerm":"T3","arrivalAirportName":"XIYT3","arriveAirport":"XIY","arriveTime":"2018-07-21 18:55:00","bookDesignCode":"B","codeshare":false,"depTerm":"T2","departureAirport":"NRT","departureAirportName":"NRTT2","departureTime":"2018-07-21 14:55:00","duration":"5小时","flightNo":"HU7928","index":3,"meal":"D","planeModel":"738"},{"airLineCode":"HU","airLineImg":"","airLineName":"HU","arrTerm":"T1","arrivalAirportName":"CANT1","arriveAirport":"CAN","arriveTime":"2018-07-22 21:25:00","bookDesignCode":"Y","codeshare":false,"depTerm":"T2","departureAirport":"XIY","departureAirportName":"XIYT2","departureTime":"2018-07-22 18:30:00","duration":"2小时55分钟","flightNo":"HU7827","index":4,"meal":"D","planeModel":"738","transferCityName":"西安","transferTime":"23小时35分钟"}],"flightNo":"HU7928/HU7827","flyDays":1,"flyTime":223,"index":2,"stopCity":"","transfer":"OneTran","transferCity":"西安 ","transferName":"1程中转","isDirectFlight":0,"transferTime":"23:35"}],"tranType":"OneTran"},
+  {"allDuration":392,"fareList":[{"adultPrice":{"it":"false","passengerCount":2,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"8030.0","settlementPriceWithTax":"9010.0","tax":"980.0","ticketPrice":"8030.0"},"baseClassInfo":"经济舱","baseTax":245,"baseTicketPrice":8030,"baseTicketTaxPrice":8275,"changeServiceTime":"09:00-19:00","childPrice":{"it":"false","passengerCount":1,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"6030.0","settlementPriceWithTax":"6738.0","tax":"708.0","ticketPrice":"6030.0"},"classInfo":[{"arriveAirport":"PEK","cabin":"Y","depAirport":"CAN","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"HND","cabin":"H","depAirport":"PEK","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"XIY","cabin":"B","depAirport":"NRT","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"CAN","cabin":"Y","depAirport":"XIY","physicalClass":"ECONOMY","physicalClassName":"经济舱"}],"classInfoData":{"CAN - PEK":"经济舱","NRT - XIY":"经济舱","PEK - HND":"经济舱","XIY - CAN":"经济舱"},"fareId":"1","farePriceItem":[{"itemName":"成人","itemNumber":2,"itemPrice":9010.0},{"itemName":"儿童","itemNumber":2,"itemPrice":8030.0},{"itemName":"往返人均票价（含税费）","itemNumber":4,"itemPrice":8275}],"fareSource":"1","freeBaggageAllowance":{"CANPEK":"1件","NRTXIY":"1件","PEKHND":"1件","XIYCAN":"1件"},"freeBaggageData":{},"isNeedSwitchPnr":0,"isNeedVerify":0,"productType":"1","refundServiceTime":"09:00-19:00","reimbursementVoucher":0,"reimbursementVoucherName":"行程单","seats":"3","ticketServiceTime":"09:00-21:00","ticketType":0,"ticketingCarrier":"HU","workingTime":"09:00-21:00"}],"firstDepartureTime":1531613400000,"index":148,"itineraryID":"XINGZOUzbtFVubL","lastArriveTime":1532265900000,"minTicketPrice":8275,"oDList":[{"airline":"HU","airlineName":"HU","arrivalAirport":"HND","arrivalAirportName":"PEKT1","arrivalTimeDivision":"01:00","arriveTime":"2018-07-16 01:00:00","departureAirport":"CAN","departureAirportName":"CANT1","departureTime":"2018-07-15 08:10:00","departureTimeDivision":"08:10","duration":"6:25","durationHour":6,"durationMinute":25,"firstAirLineImg":"","flightDetail":[{"airLineCode":"HU","airLineImg":"","airLineName":"HU","arrTerm":"T1","arrivalAirportName":"PEKT1","arriveAirport":"PEK","arriveTime":"2018-07-15 11:15:00","bookDesignCode":"Y","codeshare":false,"depTerm":"T1","departureAirport":"CAN","departureAirportName":"CANT1","departureTime":"2018-07-15 08:10:00","duration":"3小时5分钟","flightNo":"HU7804","index":1,"meal":"B","planeModel":"78A"},{"airLineCode":"HU","airLineImg":"","airLineName":"HU","arrTerm":"I","arrivalAirportName":"HNDI","arriveAirport":"HND","arriveTime":"2018-07-16 01:00:00","bookDesignCode":"H","codeshare":false,"depTerm":"T2","departureAirport":"PEK","departureAirportName":"PEKT2","departureTime":"2018-07-15 20:40:00","duration":"3小时20分钟","flightNo":"HU7919","index":2,"meal":"D","planeModel":"738","transferCityName":"北京","transferTime":"9小时25分钟"}],"flightNo":"HU7804/HU7919","flyDays":1,"flyTime":169,"index":1,"stopCity":"","transfer":"OneTran","transferCity":"北京 ","transferName":"1程中转","isDirectFlight":0,"transferTime":"9:25"},{"airline":"HU","airlineName":"HU","arrivalAirport":"CAN","arrivalAirportName":"XIYT3","arrivalTimeDivision":"09:25","arriveTime":"2018-07-22 21:25:00","departureAirport":"NRT","departureAirportName":"NRTT2","departureTime":"2018-07-21 14:55:00","departureTimeDivision":"02:55","duration":"7:55","durationHour":7,"durationMinute":55,"firstAirLineImg":"","flightDetail":[{"airLineCode":"HU","airLineImg":"","airLineName":"HU","arrTerm":"T3","arrivalAirportName":"XIYT3","arriveAirport":"XIY","arriveTime":"2018-07-21 18:55:00","bookDesignCode":"B","codeshare":false,"depTerm":"T2","departureAirport":"NRT","departureAirportName":"NRTT2","departureTime":"2018-07-21 14:55:00","duration":"5小时","flightNo":"HU7928","index":3,"meal":"D","planeModel":"738"},{"airLineCode":"HU","airLineImg":"","airLineName":"HU","arrTerm":"T1","arrivalAirportName":"CANT1","arriveAirport":"CAN","arriveTime":"2018-07-22 21:25:00","bookDesignCode":"Y","codeshare":false,"depTerm":"T2","departureAirport":"XIY","departureAirportName":"XIYT2","departureTime":"2018-07-22 18:30:00","duration":"2小时55分钟","flightNo":"HU7827","index":4,"meal":"D","planeModel":"738","transferCityName":"西安","transferTime":"23小时35分钟"}],"flightNo":"HU7928/HU7827","flyDays":1,"flyTime":223,"index":2,"stopCity":"","transfer":"OneTran","transferCity":"西安 ","transferName":"1程中转","isDirectFlight":0,"transferTime":"23:35"}],"tranType":"OneTran"},
+
+  {"allDuration":126,"fareList":[{"adultPrice":{"it":"false","passengerAge":"","passengerCount":2,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"5418.0","settlementPriceWithTax":"5856.0","tax":"438.0","ticketPrice":"5500.0"},"baseClassInfo":"经济舱","baseTax":110,"baseTicketPrice":5500,"baseTicketTaxPrice":5610,"changeServiceTime":"09:00-19:00","childPrice":{"it":"false","passengerAge":"","passengerCount":1,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"4069.0","settlementPriceWithTax":"4340.0","tax":"271.0","ticketPrice":"4130.0"},"classInfo":[{"arriveAirport":"HND","cabin":"H","depAirport":"CAN","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"CAN","cabin":"H","depAirport":"HND","physicalClass":"ECONOMY","physicalClassName":"经济舱"}],"classInfoData":{"CAN - HND":"经济舱","HND - CAN":"经济舱"},"fareId":"1","farePriceItem":[{"itemName":"成人","itemNumber":2,"itemPrice":5938.0},{"itemName":"儿童","itemNumber":2,"itemPrice":5500.0},{"itemName":"往返人均票价（含税费）","itemNumber":4,"itemPrice":5610}],"fareSource":"1","freeBaggageAllowance":{"CANHND":"2件","HNDCAN":"2件"},"freeBaggageData":{},"isNeedSwitchPnr":0,"isNeedVerify":0,"productType":"1","refundServiceTime":"09:00-19:00","reimbursementVoucher":0,"reimbursementVoucherName":"行程单","seats":"6","ticketServiceTime":"09:00-19:00","ticketType":1,"ticketingCarrier":"NH","workingTime":"09:00-19:00"}],"firstDepartureTime":1531635300000,"index":102,"itineraryID":"XINGZOUfYUQMNhq","lastArriveTime":1531655100000,"minTicketPrice":5610,"oDList":[{"airline":"NH","airlineName":"NH","arrivalAirport":"HND","arrivalAirportName":"HNDI","arrivalTimeDivision":"07:45","arriveTime":"2018-07-15 19:45:00","departureAirport":"CAN","departureAirportName":"CANT1","departureTime":"2018-07-15 14:15:00","departureTimeDivision":"02:15","departureTimedivision":"02:15","duration":"4:30","durationHour":4,"durationMinute":30,"firstAirLineImg":"","flightDetail":[{"airLineCode":"NH","airLineImg":"","airLineName":"NH","arrTerm":"I","arrivalAirportName":"HNDI","arriveAirport":"HND","arriveTime":"2018-07-15 19:45:00","bookDesignCode":"H","codeshare":false,"depTerm":"T1","departureAirport":"CAN","departureAirportName":"CANT1","departureTime":"2018-07-15 14:15:00","duration":"4小时30分钟","flightNo":"NH924","index":1,"meal":"M","planeModel":"763"}],"flightNo":"NH924","flyDays":0,"flyTime":126,"index":1,"isDirectFlight":1,"stopCity":"","transfer":"DirectFlight","transferCity":"","transferName":"直飞","transferTime":"0:0"}],"tranType":"DirectFlight"},
+  {"allDuration":111,"fareList":[{"adultPrice":{"it":"false","passengerCount":2,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"10960.0","settlementPriceWithTax":"11475.0","tax":"515.0","ticketPrice":"10960.0"},"baseClassInfo":"经济舱","baseTax":129,"baseTicketPrice":10960,"baseTicketTaxPrice":11089,"changeServiceTime":"09:00-19:00","childPrice":{"it":"false","passengerCount":1,"passengerNum":1,"passengerNumMax":9,"priceSource":"Published","qcharge":"0","settlementPrice":"8220.0","settlementPriceWithTax":"8554.0","tax":"334.0","ticketPrice":"8220.0"},"classInfo":[{"arriveAirport":"HND","cabin":"K","depAirport":"CAN","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"ITM","cabin":"Y","depAirport":"HND","physicalClass":"ECONOMY","physicalClassName":"经济舱"},{"arriveAirport":"CAN","cabin":"Y","depAirport":"KIX","physicalClass":"ECONOMY","physicalClassName":"经济舱"}],"classInfoData":{"CAN - HND":"经济舱","HND - ITM":"经济舱","KIX - CAN":"经济舱"},"fareId":"1","farePriceItem":[{"itemName":"成人","itemNumber":2,"itemPrice":11475.0},{"itemName":"儿童","itemNumber":2,"itemPrice":10960.0},{"itemName":"往返人均票价（含税费）","itemNumber":4,"itemPrice":11089}],"fareSource":"1","freeBaggageAllowance":{"CANHND":"2件","HNDITM":"2件","KIXCAN":"2件"},"freeBaggageData":{},"isNeedSwitchPnr":0,"isNeedVerify":0,"productType":"1","refundServiceTime":"09:00-19:00","reimbursementVoucher":0,"reimbursementVoucherName":"行程单","seats":"4","ticketServiceTime":"09:00-21:00","ticketType":0,"ticketingCarrier":"JL","workingTime":"09:00-21:00"}],"firstDepartureTime":1531636200000,"index":189,"itineraryID":"XINGZOUSkN5Satk","lastArriveTime":1531655100000,"minTicketPrice":5617,"oDList":[{"airline":"JL","airlineName":"JL","arrivalAirport":"HND","arrivalAirportName":"HNDI","arrivalTimeDivision":"07:45","arriveTime":"2018-07-15 19:45:00","departureAirport":"CAN","departureAirportName":"CANT2","departureTime":"2018-07-15 14:30:00","departureTimeDivision":"02:30","departureTimedivision":"02:30","duration":"4:15","durationHour":4,"durationMinute":15,"firstAirLineImg":"","flightDetail":[{"airLineCode":"JL","airLineImg":"","airLineName":"JL","arrTerm":"I","arrivalAirportName":"HNDI","arriveAirport":"HND","arriveTime":"2018-07-15 19:45:00","bookDesignCode":"K","codeshare":false,"depTerm":"T2","departureAirport":"CAN","departureAirportName":"CANT2","departureTime":"2018-07-15 14:30:00","duration":"4小时15分钟","flightNo":"JL088","index":1,"meal":"M","planeModel":"788"}],"flightNo":"JL088","flyDays":0,"flyTime":111,"index":1,"isDirectFlight":1,"stopCity":"","transfer":"DirectFlight","transferCity":"","transferName":"直飞","transferTime":"0:0"}],"tranType":"DirectFlight"}
+
+]

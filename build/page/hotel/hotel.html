@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/component/calendar.css">
+    <link rel="stylesheet" href="../../static/css/swiper.min.css">
+    <link rel="stylesheet" href="../../static/css/hotel/hotel.css">
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+  </head>
+  <title>酒店</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx"><a><img src="../../static/images/index/LogoTitle.png"></a>
+        <div class="b2b-address"><span><span class="img"></span><font>广州市
+              <ul class="drop_down">
+                <li> <a>北京市</a></li>
+                <li> <a>乌鲁木齐市</a></li>
+                <li> <a>上海市</a></li>
+                <li> <a>吐鲁番市</a></li>
+                <li> <a>深圳市</a></li>
+              </ul></font></span></div>
+        <div class="b2b-header-search">
+          <div class="search-box">
+            <div class="select-group">
+              <div class="select"><span class="select-val">全部产品</span><i class="select-down-arrow-icon"></i></div>
+              <ul style="display: none;" class="select-dropdown">
+                <li class="active">全部产品</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地玩乐</li>
+                <li>酒店</li>
+                <li>门票</li>
+                <li>签证</li>
+                <li>邮轮</li>
+                <li>WIFI</li>
+              </ul>
+            </div>
+            <div class="search-input">
+              <input placeholder="请输入搜索关键字...">
+            </div><a class="search-btn">搜索</a>
+          </div>
+          <div class="search-hot"></div>
+        </div>
+        <div class="b2b-header-bitMap">
+          <div class="bitMapDiv">
+            <div class="bitMapInnerDiv">
+              <div class="wx-kf popover"><i class="wx-kf-icon"></i><span class="contact">
+                  <p>欢迎使用</p>
+                  <p>在线客服</p></span>
+                <div class="popover-down">
+                  <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                  <div class="code-tip">扫码关注公众号</div>
+                </div>
+              </div>
+              <div class="tel-kf"><i class="tel-icon"></i><span class="contact">
+                  <p>020-86338888</p>
+                  <p>400-863-8888</p></span></div>
+            </div><img src="../../static/images/index/monkey.png" class="r">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="zyx"><a href="#">
+              <div>自由行</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="ddwl"><a href="#">
+              <div>当地玩乐</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="qz"><a href="#">
+              <div>签证</div><span class="white-line"></span></a></li>
+          <li nav-type="wifi"><a href="#">
+              <div>WIFI</div><span class="white-line"></span></a></li>
+          <li nav-type="jp"><a href="#">
+              <div>机票</div><span class="white-line"></span><i class="new-tip-icon"></i></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="b2b-hotel-banner">
+      <div class="b2b-banner-filter">
+        <ul>
+          <li class="filter-li">
+            <div class="filter-p">目的地</div>
+            <input type="text" placeholder="城市/地标/商圈" id="city-picker" class="filter-input">
+          </li>
+          <li class="filter-li">
+            <div class="filter-p">酒店</div>
+            <input type="text" placeholder="请输入酒店" id="hotel-input" class="filter-input">
+          </li>
+          <li class="filter-li">
+            <div class="filter-p">入离时间</div>
+            <input type="text" id="config-demo1" class="filter-input">
+          </li>
+          <li class="filter-li">
+            <div class="filter-p">入住信息(选填)</div>
+            <input type="text" id="checkin-info-input" placeholder="可选择入住信息" class="filter-input">
+            <div class="checkin-info-picker">
+              <div class="head">请填写入住信息</div>
+              <ul>
+                <li><span>房间</span>
+                  <div id="room-counter" class="counter"><em class="minus"><span class="c-minus-icon"></span></em>
+                    <input type="text" value=""><em class="plus"><span class="c-add-icon"></span></em>
+                  </div>
+                </li>
+                <li><span>成人</span>
+                  <div id="adult-counter" class="counter"><em class="minus"><span class="c-minus-icon"></span></em>
+                    <input type="text" value=""><em class="plus"><span class="c-add-icon"></span></em>
+                  </div>
+                </li>
+                <li><span>儿童</span>
+                  <div id="children-counter" class="counter"><em class="minus"><span class="c-minus-icon"></span></em>
+                    <input type="text" value=""><em class="plus"><span class="c-add-icon add-btn"></span></em>
+                  </div>
+                </li>
+              </ul>
+              <div class="children-area">
+                <p class="years-select-tip">请选择儿童年龄</p>
+                <div class="children-select-items"></div>
+                <div class="clear"></div>
+              </div>
+              <div class="canel-cfm"><span class="cancel">取消</span><span class="cfm">确认</span></div>
+            </div>
+          </li>
+        </ul><a class="filter-btn">立即搜索</a>
+      </div>
+      <div class="swiper-container main-focus-swiper">
+        <div class="b2b-main-swiper swiper-wrapper">
+          <div class="swiper-slide"><a href="#"><img src="../../static/images/index/swiper.png"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="../../static/images/index/swiper2.png"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="../../static/images/index/swiper.png"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="../../static/images/index/swiper2.png"></a></div>
+        </div>
+        <div class="swiper-button-prev"><em class="icon-zuoqiehuan"></em></div>
+        <div class="swiper-button-next"><em class="icon-youqiehuan"></em></div>
+        <div class="swiper-pagination-cont">
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <ul class="hotel-home-list">
+      <li>
+        <div class="hotel-home-list-head">
+          <div class="head-title"><span class="chinese">热门酒店</span><span class="english">HOT THE HOTEL</span></div>
+          <div class="index-tab">
+            <div class="com-tab-ctl">
+              <ul class="tab-ctl-ul tab-red">
+                <li class="cur"><span class="tab-ctl-text">曼谷</span><span class="red-line"></span></li>
+                <li><span class="tab-ctl-text">中国香港</span><span class="red-line"></span></li>
+                <li><span class="tab-ctl-text">新加坡</span><span class="red-line"></span></li>
+                <li><span class="tab-ctl-text">东京</span><span class="red-line"></span></li>
+                <li><span class="tab-ctl-text">普吉岛</span><span class="red-line"></span></li>
+                <li><span class="tab-ctl-text">吉隆坡</span><span class="red-line"></span></li>
+                <li><span class="tab-ctl-text">清迈</span><span class="red-line"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-ctx-wrp">
+          <div class="tab-ctx cur">
+            <div class="hotel-items"><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="tab-ctx">
+            <div class="hotel-items"><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="tab-ctx">
+            <div class="hotel-items"><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="tab-ctx">
+            <div class="hotel-items"><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="tab-ctx">
+            <div class="hotel-items"><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="tab-ctx">
+            <div class="hotel-items"><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="tab-ctx">
+            <div class="hotel-items"><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/hotel.png" class="item-pic"/></div>
+                <p>曼谷优本常青坊纳优本常青坊本纳沙通酒店 ( Urbana Sathorn …</p>
+                <div class="star"><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-xingji"></em><em class="icon-kongxingji"></em>
+                </div>
+                <div class="price"><em class="money-type">￥</em><em class="money-count">2388</em></div></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </li>
+      <li class="hotPlace">
+        <div class="hotel-home-list-head">
+          <div class="head-title"><span class="chinese">人气目的地</span><span class="english">OPULAR DESTINATIONS</span></div>
+          <div class="index-tab">
+            <div class="com-tab-ctl">
+              <ul class="tab-ctl-ul tab-blue">
+                <li class="cur"><span class="tab-ctl-text">境外</span><span class="red-line"></span></li>
+                <li><span class="tab-ctl-text">国内</span><span class="red-line"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-ctx-wrp">
+          <div class="tab-ctx cur">
+            <div class="hotel-items"><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="tab-ctx">
+            <div class="hotel-items"><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a><a class="hotel-item">
+                <div class="hotel-item-pic"><img src="../../static/images/hotel/tokyo.png" class="item-pic"/></div>
+                <h1>东京</h1>
+                <h2>Tokyo</h2></a>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/swiper.min.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/hotel/hotel.js"></script>
+  </body>
+</html>

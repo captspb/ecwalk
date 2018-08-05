@@ -1,0 +1,119 @@
+include ../../../model/common/headerData
+include headerbar
+
+.b2b-header-ctx-wrp
+    .b2b-header-ctx
+        a
+            img(src=header.logo.url)
+        .b2b-address
+            span
+                span.img
+                font 广州市
+                    ul.drop_down()
+                        - for (var i = 0; i<header.addrs.length; i++) 
+                            li 
+                                a #{header.addrs[i]}
+        //- search
+        .b2b-header-search
+            .search-box
+                .select-group
+                    .select
+                        span.select-val 全部产品
+                        i.select-down-arrow-icon
+                    ul.select-dropdown(style="display: none;")
+                        li.active 全部产品
+                        li 跟团游
+                        li 自由行
+                        li 当地玩乐
+                        li 酒店
+                        li 门票
+                        li 签证
+                        li 邮轮
+                        li WIFI
+                .search-input
+                    input(placeholder="请输入搜索关键字...")
+                a.search-btn 搜索
+            .search-hot
+        .b2b-header-bitMap
+            div.bitMapDiv
+                div.bitMapInnerDiv
+                    .wx-kf.popover
+                        i.wx-kf-icon
+                        span.contact
+                            p 欢迎使用
+                            p 在线客服
+                        .popover-down
+                            .code-img
+                                img(src='../../static/images/index/xzw-code.png')
+                            .code-tip 扫码关注公众号
+                    .tel-kf
+                        i.tel-icon
+                        span.contact
+                            p 020-86338888
+                            p 400-863-8888
+                img.r(src='../../static/images/index/monkey.png')
+
+        //- .b2b-header-supply
+            span.font 联系供应商
+            span.white
+            .drop_down()
+                ul
+                    li
+                        a(href='#')
+                            img.supply-icon(src='../../static/images/details/logo.png')
+                            span
+                                h3 广之旅
+                                ul
+                                    li 门票：863334675 / 65656566
+                                    li 邮轮：863334675 / 65656566
+                                    li 夜班：863334675 / 65656566
+                    li
+                        a(href='#')
+                            img.supply-icon(src='../../static/images/details/logo.png')
+                            span
+                                h3 海南航空假日
+                                ul
+                                    li 服务热线：0898-68560409
+                    li
+                        a(href='#')
+                            img.supply-icon(src='../../static/images/details/logo.png')
+                            span
+                                h3 海南航空假日
+                                ul
+                                    li 服务热线：0898-68560409
+                    li
+                        a(href='#')
+                            img.supply-icon(src='../../static/images/details/logo.png')
+                            span
+                                h3 海南航空假日
+                                ul
+                                    li 服务热线：0898-68560409
+                    li
+                        a(href='#')
+                            img.supply-icon(src='../../static/images/details/logo.png')
+                            span
+                                h3 海南航空假日
+                                ul
+                                    li 服务热线：0898-68560409
+                    li(style='border-bottom:none')
+                        a(href='#')
+                            img.supply-icon(src='../../static/images/details/logo.png')
+                            span
+                                h3 海南航空假日
+                                ul
+                                    li 服务热线：0898-68560409
+
+        
+
+.b2b-header-nav-wrp
+    .b2b-header-nav
+        ul
+            - for (var i=0; i<nav.length; i++)
+                li(nav-type=nav[i].attr)
+                    a(href=nav[i].url)
+                        div #{nav[i].text}
+                        span.white-line
+                        if nav[i].new
+                            i.new-tip-icon
+            .clear
+

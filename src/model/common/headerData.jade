@@ -1,0 +1,779 @@
+-
+    var header = { bartext: '广之旅旗下旅游同业采购与信息化服务平台', barlogin: [{text: '登录', url: '#'}, {text: '注册', url: '#'}, {text: '隐藏同行价', url: '#'}], barotherlink: [{text: '我的订单', url: '#'}, {text: '会员中心', url: '#'}, {text: '个人资料', url: '#'},{text: '密码设置', url: '#'},{text: '关注公众号', url: '#'}], logo: {url:'../../static/images/index/LogoTitle.png'},bitMapImg: {url:'../../static/images/index/bitMap.png' }, addr: {url:'../../static/images/index/addr_icon.png'}, addrs: ['北京市','乌鲁木齐市','上海市','吐鲁番市','深圳市']
+    };
+    var nav = [{text: '首页', url: "#", attr: 'index'},{text: '跟团游', url: "#", attr: 'gty'},{text: '自由行', url: "#", attr: 'zyx'},{text: '邮轮', url: "#", attr: 'yl'},{text: '当地玩乐', url: "#", attr: 'ddwl'},{text: '酒店', url: "#", attr: 'jd'},{text: '票券', url: "#", attr: 'pq'},{text: '签证', url: "#", attr: 'qz'},{text: 'WIFI', url: "#", attr: 'wifi'},{text: '机票', url: "#", attr: 'jp', new: true}];
+    var nav2 = [{text: '首页', url: "#", attr: 'index'},
+                {text: '跟团游', url: "#", attr: 'gty'},
+                {text: '邮轮', url: "#", attr: 'yl'},
+                {text: '酒店', url: "#", attr: 'jd'},
+                {text: '票券', url: "#", attr: 'pq'},
+                {text: '个人中心', url: "#", attr: 'grzc'}];
+    var swiper = [{url: '#', img: '../../static/images/index/swiper.png', alt: '首图'},{url: '#', img: '../../static/images/index/swiper2.png', alt: '首图'},{url: '#', img: '../../static/images/index/swiper.png', alt: '首图'},{url: '#', img: '../../static/images/index/swiper2.png', alt: '首图'}];
+    var prolist = [
+                {text: '跟团游', icon: 'gty', tag: [{name: '三亚', ishot: false}, {name: '厦门', ishot: true}, {name: '丽江', ishot: false}, {name: '北京', ishot: true}, {name: '哈尔滨', ishot: false}]},
+                {text: '自由行', icon: 'zyx', tag: [{name: '三亚', ishot: false}, {name: '厦门', ishot: true}, {name: '丽江', ishot: false}, {name: '北京', ishot: true}, {name: '哈尔滨', ishot: false}]},
+                {text: '当地玩乐', icon: 'ddwl', tag: [{name: '三亚', ishot: false}, {name: '厦门', ishot: true}, {name: '丽江', ishot: false}, {name: '北京', ishot: true}, {name: '哈尔滨', ishot: false}]},
+                {text: '酒店', icon: 'jd', tag: [{name: '三亚', ishot: false}, {name: '厦门', ishot: true}, {name: '丽江', ishot: false}, {name: '北京', ishot: true}, {name: '哈尔滨', ishot: false}]},
+                {text: '票券', icon: 'pq', tag: [{name: '三亚', ishot: false}, {name: '厦门', ishot: true}, {name: '丽江', ishot: false}, {name: '北京', ishot: true}, {name: '哈尔滨', ishot: false}]},
+                {text: 'WIFI/签证', icon: 'pq', tag: [{name: '三亚', ishot: false}, {name: '厦门', ishot: true}, {name: '丽江', ishot: false}, {name: '北京', ishot: true}, {name: '哈尔滨', ishot: false}]},
+                {text: '邮轮', icon: 'yl', tag: [{name: '三亚', ishot: false}, {name: '厦门', ishot: true}, {name: '丽江', ishot: false}, {name: '北京', ishot: true}, {name: '哈尔滨', ishot: false}]}
+    ];
+    var listshow = [
+            {
+                main: '跟团游',
+                list:[
+                    {
+                        main: '中西欧',
+                        tag: [
+                            {name: '委内瑞拉', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: false, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: false, url: '#'},
+                            {name: '法国', ishot: true, url: '#'}
+                        ],
+                    },
+                    {
+                        main: '中西欧',
+                        tag: [
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: false, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'}
+                        ]
+                    },
+                    {
+                        main: '中西欧',
+                        tag: [
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'},
+                            {name: '法国', ishot: true, url: '#'}
+                        ]
+                    },
+                {
+                main: '中西欧',
+                tag: [
+                {name: '法国', ishot: true, url: '#'},
+                {name: '法国', ishot: true, url: '#'},
+                {name: '法国', ishot: true, url: '#'},
+                {name: '法国', ishot: true, url: '#'},
+                {name: '法国', ishot: true, url: '#'},
+                {name: '法国', ishot: true, url: '#'},
+                {name: '法国', ishot: true, url: '#'},
+                {name: '法国', ishot: true, url: '#'},
+                {name: '香港行政特区', ishot: true, url: '#'},
+                {name: '法国', ishot: true, url: '#'}
+                ]
+                }
+                ],
+                img: ['../../static/images/travel/14.png', '../../static/images/travel/15.png', '../../static/images/travel/16.png']
+            },
+            {
+            main: '自由行',
+            list:[
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ],
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            }
+            ],
+            img: ['../../static/images/travel/14.png', '../../static/images/travel/15.png', '../../static/images/travel/16.png']
+            },
+            {
+            main: '当地玩乐',
+            list:[
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ],
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            }
+            ],
+            img: ['../../static/images/travel/14.png', '../../static/images/travel/15.png', '../../static/images/travel/16.png']
+            },
+            {
+            main: '酒店',
+            list:[
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ],
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            }
+            ],
+            img: ['../../static/images/travel/14.png', '../../static/images/travel/15.png', '../../static/images/travel/16.png']
+            },
+            {
+            main: '票券',
+            list:[
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ],
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            }
+            ],
+            img: ['../../static/images/travel/14.png', '../../static/images/travel/15.png', '../../static/images/travel/16.png']
+            },
+            {
+            main: 'WIFI/签证',
+            list:[
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ],
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            }
+            ],
+            img: ['../../static/images/travel/14.png', '../../static/images/travel/15.png', '../../static/images/travel/16.png']
+            },
+            {
+            main: '邮轮',
+            list:[
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ],
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: false, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            },
+            {
+            main: '中西欧',
+            tag: [
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'},
+            {name: '法国', ishot: true, url: '#'}
+            ]
+            }
+            ],
+            img: ['../../static/images/travel/14.png', '../../static/images/travel/15.png', '../../static/images/travel/16.png']
+            }
+        ]
+    var buyinfo = [
+        {
+            name: '上海客户XXXX购买了',
+            proname: '【臻逸·猎奇】南极、阿根廷18天＊法国日丽号奢华游轮＊穿越南极圈＊海景阳台套房＊新春尊享＊＜学跳探戈，红酒品鉴课程，古农庄探访，四季酒店，精致美食＞',
+            prourl: '#',
+            price: '￥700',
+            start: '广州出发'
+        },
+        {
+            name: '上海客户XXXX购买了',
+            proname: '【臻逸·猎奇】南极、阿根廷18天＊法国日丽号奢华游轮＊穿越南极圈',
+            prourl: '#',
+            price: '￥700',
+            start: '广州出发'
+        },
+        {
+            name: '上海客户XXXX购买了',
+            proname: '【臻逸·猎奇】南极、阿根廷18天＊法国日丽号奢华游轮＊穿越南极圈',
+            prourl: '#',
+            price: '￥700',
+            start: '广州出发'
+        },
+        {
+            name: '上海客户XXXX购买了',
+            proname: '【臻逸·猎奇】南极、阿根廷18天＊法国日丽号奢华游轮＊穿越南极圈',
+            prourl: '#',
+            price: '￥700',
+            start: '广州出发'
+        },
+    ];
+    var buyinfosingle = {
+            name: '上海客户XXXX购买了',
+            proname: '【臻逸·猎奇】南极、阿根廷18天＊法国日丽号奢华游轮＊穿越南极圈',
+            prourl: '#',
+            price: '￥700',
+            startDate: '2017年5月24日',
+            startPal: '广州出发'
+    };
+    var buyinfosingle2 = {
+        name: '上海客户XXXX购买了',
+        proname: '【臻逸·猎奇】南极、阿根廷18天＊法国日丽号奢华游轮＊穿越南极圈',
+        prourl: '#',
+        price: '￥700',
+        start: '广州出发'
+    };
+    var mybuy = [{text: '待付款', num: 7, url: '#'}, {text: '已付款', num: 2, url: '#'}];
+    var tabobj = [{text: '春节提前订', iscur: true},{text: '欧洲', iscur: false},{text: '俄罗斯', iscur: false}, {text: '美加', iscur: false},{text: '中东非', iscur: false},{text: '澳新', iscur: false},{text: '浪漫海岛', iscur: false},{text: '南美', iscur: false}];
+    var tabobj2 = [{text: '境外', iscur: true},{text: '国内', iscur: false}];
+    var tabobj3 = [{text: '泰国', iscur: true},{text: '中国香港', iscur: false}];
+    var listobj = [
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇式风情小镇斯泰伦博斯非洲大陆最南端厄加勒斯角非洲大陆最南端厄加勒斯角非洲大陆最南端厄加勒斯角非洲大陆最南端厄加勒斯角非洲大陆最南端厄加勒斯角，花园大道美丽小镇奈',
+            yxs: '广之旅',
+            pdid: '80011976',
+            datenum: 15,
+            toward: '乌鲁木齐',
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#',
+            tName: '180208AGQS10#广州直航#',
+            deadline: '2018/07/07'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角',
+            yxs: '广之旅',
+            pdid: '80011976',
+            datenum: 15,
+            toward: '乌鲁木齐',
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#',
+            tName: '180208AGQS10#广州直航#',
+            deadline: '2018/07/07'
+            
+        },{
+            icon: '../../static/images/index/Logo.png',
+            name: '南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角',
+            yxs: '广之旅',
+            pdid: '80011976',
+            datenum: 15,
+            toward: '乌鲁木齐',
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#',
+            tName: '180208AGQS10#广州直航#',
+            deadline: '2018/07/07'
+            
+        },{
+            icon: '../../static/images/index/Logo.png',
+            name: '南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇荷式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒',
+            yxs: '广之旅',
+            pdid: '80011976',
+            datenum: 15,
+            toward: '乌鲁木齐',
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#',
+            tName: '180208AGQS10#广州直航#',
+            deadline: '2018/07/07'
+
+        },{
+            icon: '../../static/images/index/Logo.png',
+            name: '南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇荷式风情小镇斯泰伦博斯非洲大陆最南端厄加勒斯风情小镇风情小镇风情小镇风情小镇',
+            yxs: '广之旅',
+            pdid: '80011976',
+            datenum: 15,
+            toward: '乌鲁木齐',
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#',
+            tName: '180208AGQS10#广州直航#',
+            deadline: '2018/07/07'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '南非8天＊醉美酒庄＊广州往返＊南非葡萄酒之乡法国小镇式风情小镇斯泰伦博斯 非洲大陆最南端厄加勒斯角',
+            yxs: '广之旅',
+            pdid: '80011976',
+            datenum: 15,
+            toward: '乌鲁木齐',
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#',
+            tName: '180208AGQS10#广州直航#',
+            deadline: '2018/07/07'
+        }
+    ]
+    var listobj_cruise = [
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '【欧洲河轮】维京河轮 莱茵河之旅8天 品质深度游 【瑞士-法国-德国-荷兰】（阿姆斯特丹-巴塞尔）',
+            productId: 'AD2131131',
+            yxs: '广之旅',
+            pdid: '维京河轮',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '【欧洲河轮】维京河轮 莱茵河之旅8天 品质深度游 【瑞士-法国-德国-荷兰】（阿姆斯特丹-巴塞尔）',
+            productId: 'AD2131131',
+            yxs: '广之旅',
+            pdid: '维京河轮',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '【欧洲河轮】维京河轮 莱茵河之旅8天 品质深度游 【瑞士-法国-德国-荷兰】（阿姆斯特丹-巴塞尔）',
+            productId: 'AD2131131',
+            yxs: '广之旅',
+            pdid: '维京河轮',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '【欧洲河轮】维京河轮 莱茵河之旅8天 品质深度游 【瑞士-法国-德国-荷兰】（阿姆斯特丹-巴塞尔）',
+            productId: 'AD2131131',
+            yxs: '广之旅',
+            pdid: '维京河轮',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        }
+    ]
+    var listobj_hotel = [
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '广州空港假日酒店',
+            htAddress: '广州白云区人和镇巴士街443号',
+            htClass: '豪华',
+            yxs: '广之旅',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '广州空港假日酒店',
+            htAddress: '广州白云区人和镇巴士街443号',
+            htClass: '豪华',
+            yxs: '广之旅',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '广州空港假日酒店',
+            htAddress: '广州白云区人和镇巴士街443号',
+            htClass: '豪华',
+            yxs: '广之旅',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '广州空港假日酒店',
+            htAddress: '广州白云区人和镇巴士街443号',
+            htClass: '豪华',
+            yxs: '广之旅',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        }
+    ]
+    var listobj_ticket = [
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '香港迪士尼',
+            tkAddress: '香港大屿山 香港迪士尼乐园度假区',
+            tkClass: '豪华',
+            yxs: '广之旅',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '香港迪士尼',
+            tkAddress: '香港大屿山 香港迪士尼乐园度假区',
+            tkClass: '豪华',
+            yxs: '广之旅',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '香港迪士尼',
+            tkAddress: '香港大屿山 香港迪士尼乐园度假区',
+            tkClass: '豪华',
+            yxs: '广之旅',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        },
+        {
+            icon: '../../static/images/index/Logo.png',
+            name: '香港迪士尼',
+            tkAddress: '香港大屿山 香港迪士尼乐园度假区',
+            tkClass: '豪华',
+            yxs: '广之旅',
+            datenum: 15,
+            datelist: ['2017/05/22', '2017/05/24', '2017/05/27', '2017/05/29'],
+            sourceprice: '6,266',
+            saleprice: '7,266',
+            salemoney: '1,000',
+            url: '#'
+        }
+    ]
+    var imglist = ['../../static/images/index/test_1.png', '../../static/images/index/test_2.png', '../../static/images/index/test_3.png', '../../static/images/index/test_4.png', '../../static/images/index/test_5.png']
+    var footer = {
+        lyj: [
+            {name: '泰国旅游局', url: '#'},
+            {name: '新西兰旅游局', url: '#'},
+            {name: '澳大利亚旅游局', url: '#'},
+            {name: '香港旅游发展局', url: '#'},
+            {name: '日本旅游局', url: '#'},
+            {name: '威尼斯人度假村', url: '#'},
+            {name: '广之旅海外咨询服务有限公司', url: '#'},
+            {name: '千岛湖风光', url: '#'}
+        ]
+    };

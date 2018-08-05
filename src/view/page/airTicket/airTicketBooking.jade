@@ -1,0 +1,396 @@
+extends ../../component/common/layout
+include ../../../model/common/headerData
+include ../../component/common/mixin
+block append head
+  title 国际机票
+block append style
+  link(rel='stylesheet', href='../../static/css/orderDetails.css')
+  link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+  link(rel='stylesheet', href='../../static/css/airTicket/airTicketBooking.css')
+block content
+  .airTicket-page
+    .airTicket-bk.clearfix
+      .airTicket-bk-main
+        .airTicket-bk-tip
+          p
+            i.icon-warn
+            | 短期签证：持商务、旅游等短期签证的旅客，建议您直接购买往返程票或持有返程票，以免无法办理乘机和出境手续。
+          p
+            i.icon-warn
+            | 持中国大陆护照并获10年有效B1、 B2或B1/B2美国签证的旅客，出行前请确认已登记EVUS（签证更新电子系统），以免无法入境或过境美国。
+          p
+            i.icon-warn
+            | 此行程过境第三国（地区）转机。可能需求持有过境签证，为了您顺利出行，请必须查询该国（地区）官方签证政策。
+        ul.airTicket-visitor-list
+          -for(var i=0;i<2;i++)
+            li.airTicket-visitor-item
+              .airTicket-visitor-top
+                span.airTicket-visitor-tit #{i+1}. 成人乘客
+                span.common-visitor 常用游客
+                span.order-help.icon-doubt.main-blue
+              ul.airTicket-visitor-info
+                li.info-list.clearfix
+                  label.info-tit 基本信息
+                  .info-con
+                    .name-group.clearfix
+                      .surname-item.checkout-item.error
+                        input(placeholder="姓氏/拼音(如zhang)")
+                        .error-tip.main-red 错误提示
+                      .name-item.checkout-item
+                        input(placeholder="名字/拼音(如xiaoming)")
+                        .error-tip.main-red 错误提示
+                    .other-group.clearfix
+                      .gender-item.checkout-item
+                        span.men 男
+                        span.women 女
+                        .error-tip.main-red 错误提示
+                      .nationality-item
+                        +select-group(['中华人民共和国','123','234'])
+                      .birth-date-item.checkout-item
+                        .birth-date-input
+                          input(id="birthDay-#{i}", placeholder="请选择出生日期")
+                          .g-arrow-down-icon
+                        .error-tip.main-red 错误提示
+                li.info-list.clearfix
+                  label.info-tit 联系电话
+                  .info-con
+                    .phone-group.clearfix
+                      .region-item 中国大陆   +86
+                      .phone-num-item.checkout-item
+                        input(placeholder="请选择手机号码")
+                        .error-tip.main-red 错误提示
+                li.info-list.clearfix
+                  label.info-tit 护照信息
+                  .info-con
+                    .passport-group.clearfix
+                      .passport-num-item.checkout-item
+                        input(placeholder="证件号码")
+                        .error-tip.main-red 错误提示
+                      .passport-type-item.checkout-item
+                        .passport-type-input
+                          input(id="passport-#{i}", placeholder="证件有效期")
+                          .g-arrow-down-icon
+                        .error-tip.main-red 错误提示
+              .airTicket-visitor-ft.clearfix
+                .empty-btn.main-blue 清空
+                .airTicket-visitor-check
+                  span.check-item
+                    i.icon-uncheck
+                    em 出票短信
+                  span.check-item
+                    i.icon-uncheck
+                    em 航变短信
+                  span.check-item
+                    i.icon-uncheck
+                    em 保存为常用游客
+          li.airTicket-visitor-item.contact-info
+            .airTicket-visitor-top
+              span.airTicket-visitor-tit 联系人
+            ul.airTicket-visitor-info
+              li.info-list.clearfix
+                label.info-tit 基本信息
+                .info-con
+                  .name-group.clearfix
+                    .name-item.checkout-item
+                      input(placeholder="请填写名字")
+                      .error-tip.main-red 错误提示
+                    .phone-num-item.checkout-item
+                      input(placeholder="请选择手机号码")
+                      .error-tip.main-red 错误提示
+              li.info-list.clearfix
+                label.info-tit 联系邮箱
+                .info-con
+                  .email-item.checkout-item
+                    input(placeholder="请输入联系邮箱")
+                    .error-tip.main-red 错误提示
+          li.airTicket-visitor-item.other-info
+            .airTicket-visitor-top
+              span.airTicket-visitor-tit 其他信息
+            ul.airTicket-visitor-info
+              li.info-list.clearfix
+                label.info-tit 商家订单号
+                .info-con
+                  .other-item.checkout-item
+                    input(placeholder="请填写商家订单号")
+                    .error-tip.main-red 错误提示
+              li.info-list.clearfix
+                label.info-tit 备注信息
+                .info-con
+                  .other-item.checkout-item
+                    textarea(placeholder="请填写备注信息")
+                    .error-tip.main-red 错误提示
+      .airTicket-bk-sidebar
+        ul.order-assist.clearfix
+          li.m-popover.hasData
+            .icon-endorse
+            p 退改签
+            .m-popover-con.s-up 抱歉！数据获取失败，具体详情请直接联系航司。
+          li
+            .icon-luggage
+            p 行李额
+          li
+            .icon-reimbursement
+            p 报销凭证
+          li
+            .icon-warning
+            p 预订须知
+        .airTicket-bk-prc
+          -for (var i=0;i<2;i++)
+            dl.airTicket-bk-prc-list
+              dt.clearfix
+                label.tit-item 成人票
+                span.prc-item ￥4,028.0
+                  em x2
+              dd.clearfix
+                label.tit-item 票价
+                span.prc-item ￥4,028.0
+                  em x2
+              dd.clearfix
+                label.tit-item 税费
+                span.prc-item ￥4,028.0
+                  em x2
+          .airTicket-bk-prc-total
+            .search-btn
+              i.icon-back
+              span 重新搜索
+            .prc-con
+              h2.main-red 20,696.0
+              p.tax-item 已含税费：¥2000
+        .flight-info 航班信息
+          span.show-flight-detail.main-blue 查询详情
+        ul.flight-schedule
+          -for(var i=0;i<2;i++)
+            li.flight-schedule-list
+              .flight-schedule-list-hd
+                .hd-tip
+                  if i===0
+                    span 去程
+                  else
+                    span 返程
+                .hd-con
+                  h2 香港(HKG) → 伦敦(LON)
+                  p <em class="main-red">2018</em>年<em class="main-red">5</em>月<em class="main-red">24</em>日周一出发
+              .flight-schedule-list-time.clearfix
+                .flight-time
+                  p 15H20M
+                  if i===0
+                    i.icon-transit
+                  else
+                    i.icon-plane
+                .start-time
+                  h2 07:50
+                  p 香港国际机场T1
+                .end-time
+                  h2 19:45<span>+1</span>
+                  p 盖亚维克机场N
+              ul.airlines-list
+                -for(var j=0;j<(i===0?3:1);j++)
+                  li.airlines-list-item
+                    .airlines-avatar
+                      img(src="http://file.gzl.cn/group1/M00/1A/CD/wKkBH1s58BaADKMfAAHesE3GGxc295.jpg")
+                    .airlines-info
+                      .con-item.clearfix
+                        .tit-item
+                          p.airlines-name 长荣航空
+                          p.airlines-num CA806
+                        .tip-item
+                          p.tank-con 经济舱
+                          p.name-con 经停上海
+                    if j !== 0
+                      .airlines-tip 中转上海
+    .airTicket-bk-popup
+      .bk-popup-box
+        .bk-popup-tit
+          span 选择常用游客
+          i.icon-close
+        .bk-popup-con
+          .flight-details
+            .airTicket-list-group
+              ul.airTicket-list
+                -for(var i=0;i<3;i++)
+                  li
+                    .airTicket-list-tit 曼谷(BKK) → 北京(BJS)
+                      .airTicket-list-trip 第一程 7月21日 周三
+                    .airTicket-list-item
+                      ul.airTicket-info.clearfix
+                        li
+                          .airTicket-origin-info
+                            .airTicket-time 07:50
+                            .airTicket-airport 香港国际机场T1
+                        li
+                          .airTicket-dest-info
+                            .airTicket-time 19:45
+                              span.main-red.m-popover +1
+                                .m-popover-con.s-up 到达时间：2018.7.22 9:45
+                            .airTicket-airport 盖亚维克机场N
+                      .airTicket-duration
+                        span.underline.m-popover 15h20m
+                          .m-popover-con.s-up 直飞 - 飞行总时长为15小时20分钟
+                        span.plane-icon
+                      .airTicket-airlines
+                        img.airlines-avatar(src='http://www.gzl.com.cn/staticpc/images/comment/summer_default.png')
+                        span.airlines-con 阿联酋航空
+                      .airTicket-line
+                        .airTicket-line-con
+                          ul
+                            li
+                              span.airTicket-line-tip 中转
+                              span.ellipsis 迪拜
+                            li
+                              span.airTicket-line-tip 经停
+                              span.ellipsis 曼谷
+                    if i%2===0
+                      .airTicket-detail
+                        ul.airTicket-detail-item
+                          -for(j=0;j<2;j++)
+                            li.airTicket-list-item
+                              if j>0
+                                .airTicket-transit-tip
+                                  span 中转上海，停留8小时15分钟
+                              .airTicket-phase
+                                .circle
+                                .circle
+                              ul.airTicket-info.clearfix
+                                li
+                                  .airTicket-origin-info
+                                    p 2018.06.01  19:10
+                                    p 2018.06.01  19:10
+                                li
+                                  .airTicket-dest-info
+                                    p 素万那普国际机场(BKK)
+                                    p 浦东国际机场T2(PVG)
+                              .airTicket-airlines
+                                .airTicket-airlines-con
+                                  span.airlines-avatar
+                                    img(src='http://www.gzl.com.cn/staticpc/images/comment/summer_default.png')
+                                  span.airlines-con
+                                    div
+                                      strong 阿联酋航空
+                                    p QR817&nbsp;/&nbsp;机型:321
+                                    .shared-aviation
+                                      em 共享
+                                      span 实际承运泰国微笑航空WE696
+                              .airTicket-line
+                                .airTicket-line-con
+                                  ul
+                                    li
+                                      span.airTicket-line-tip 飞行时长
+                                      span
+                                        span.ellipsis 2小时15分钟
+                                    li
+                                      span.airTicket-line-tip 经济舱
+                                      span.airTicket-line-tip BR810
+                                      span.airTicket-line-tip 波音747
+          .common-tourists
+            ul.common-tourists-list.clearfix
+              -for(var i=0;i<15;i++)
+                li.list-item
+                  .info-item
+                    label 姓：
+                    p Booth
+                  .info-item
+                    label 名：
+                    p James
+                  .info-item
+                    label 类型：
+                    p 儿童
+                  .info-item
+                    label 护照：
+                    p G45678912
+            .pagination-wrp.clearfix
+              .pagination
+            .submit-btn
+              a 提交
+
+          .instructions
+            .instructions-con
+              .endorse-type-tab
+                ul.endorse-type-tab-item
+                  li(data-show='language').active
+                    span 成人退改签
+                  li(data-show='language')
+                    span 儿童退改签
+                ul.language-sel
+                  li.active 中文
+                  li 英文
+              .endorse-type-tab-con
+                .language.ch 中文
+                .language.en Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque consectetur expedita fugit illum molestiae nam pariatur possimus, quaerat quia quibusdam rem sequi sunt vitae. Ad doloribus laborum nam?
+              .endorse-type-tab-con
+                .language.ch 中文
+                .language.en Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis facere ipsa itaque nam nobis quas! Ad animi commodi cumque delectus, dignissimos, dolorem nam odio omnis praesentium ullam veniam voluptas.
+            .instructions-con 2
+            .instructions-con 3
+            .instructions-con
+              div.mb24
+                p 此价格使用了组合运价，按航空公司规定，退改签以各运价要求最严格的为准
+                p CAN至TYO段客规：
+                p 停留规定：
+                p 最短停留时间必须停留1天；最长停留时间3月。
+              div.mb24
+                p 更改规定：
+                p 允许。
+              div.mb24
+                p 退票规定：
+                p 起飞前：允许，收取手续费300人民币。起飞后：不允许。,需扣除已使用航段机票费用
+              div.mb24
+                p 误机的情况下退改额外加收费用：
+                p 退票：起飞前，收取手续费300人民币。更改：不允许。
+              div.mb24
+                p TYO至CAN段客规：
+                p 停留规定：
+                p 最短停留时间必须停留1天。；最长停留时间3月。
+              div.mb24
+                p 更改规定：
+                p 允许。
+              div.mb24
+                p 退票规定：
+                p 起飞前：允许，收取手续费300人民币。起飞后：不允许。,需扣除已使用航段机票费用
+              div.mb24
+                p 误机的情况下退改额外加收费用：
+                p 退票：起飞前，收取手续费300人民币。更改：不允许。
+              div
+                p 退/改手续费：
+                p 50.0元/人/次
+          .fill-in-help
+            .help-tab
+              ul.help-tab-item
+                li.active
+                  span 填写说明
+                li
+                  span 老版护照
+                li
+                  span 新版护照
+            .help-tab-con
+              p 乘客姓名需与登机所持证件上的名字一致。
+              p 中文姓名：
+              p 请在中文姓名模式下输入。
+              p 若持护照登机，必须确认护照上有中文姓名。
+              p 生僻字可用拼音代替，例如：“王鬳”可输入为“王yan”。
+              p 姓名中含特殊符号“··”“_”等，可不用输入，例如：
+              p “汉祖然·买买提”可输入为汉祖然买买提。
+              p 香港、台湾、澳门的护照不支持国内航班，请改用其他证件。
+              p 英文姓名:
+              p 请在英文姓名模式下输入。
+              p 若持护照登机，必须按照护照顺序区分姓与名。Middlename 填写在Given name（名）中，不区分大小写。如joe jerad/potter，在Surname（姓）中填写potter，在Given name（名）中输入joe jerad。
+              p 姓与名总长度（含空格）：成人<=24个字符，儿童<=23个字符，婴儿<=16个字符，若姓名过长，建议您联系携程客服（4008306666）订票。
+              p 退/改手续费：
+              p 50.0元/人/次
+            .help-tab-con
+              img.passport-img(src="../../static/images/airTicket/passport.png")
+            .help-tab-con
+              img.passport-img(src="../../static/images/airTicket/new-passport.png")
+    .order-footer
+      .order-footer-con
+        .footer-agree-item
+          .footer-agree-con
+            i.checkbox-item.icon-uncheck
+              .m-popover-con.s-up.popover-red 请勾选此项
+            p 本人确认并认可<a class="main-blue">《国际机票预订寻址》</a>您签收电子合同
+        a.submit-btn 提交订单
+block footer
+block append script
+  script(src='../../static/js/lib/moment.js')
+  script(src='../../static/js/lib/daterangepicker.js')
+  script(src='../../static/js/lib/jquery.pagination.js')
+  script(src='../../static/js/airTicket/airTicketBooking.js')

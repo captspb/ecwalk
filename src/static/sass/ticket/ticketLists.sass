@@ -1,0 +1,176 @@
+@import "../component/listpannel"
+@import "../component/listctl"
+
+li.toggle-price
+  display: none
+.search-list-result
+    width: 1190px
+    margin: 0 auto
+.search-result-list
+	background-color: #fff
+	border-radius: 4px
+	display: inline-block
+	margin-right: 14px
+	width: 100%
+li.search-result-item
+	padding: 30px 30px 0 30px
+.search-item-cont
+	border-bottom: 1px solid #F0F0F0
+.result-head
+	.logo
+		display: inline-block
+		width: 56px
+		height: 56px
+		margin-right: 10px
+		img
+			display: inline-block
+			width: 56px
+			height: 56px
+	.font
+		display: inline-block
+		.top
+			margin-bottom: 8px
+			font.hotel-name
+				margin-right: 10px
+				font-family: webfontregular
+				font-size: 18px
+				color: #333333
+				letter-spacing: 0
+				line-height: 24px
+				font-weight: bold
+		.bottom
+			display: inline-block
+			margin-right: 30px
+			font-family: webfontregular
+			font-size: 14px
+			letter-spacing: 0
+			line-height: 14px
+			.left
+				margin-right: 30px
+			label
+				color: #B3B3B3
+			font
+				color: #151515
+	button
+		color: #fff
+		border: none
+		background-color: #D82628
+		width: 160px
+		text-align: center
+		height: 44px
+		line-height: 44px
+		border-radius: 4px
+		float: right
+		cursor: pointer
+		&:hover
+            background-color: #E53235
+            border-radius: 4px
+// table
+.table_cont
+	margin: 20px auto 10px auto
+.productList
+	th
+		font-family: webfontregular
+		font-size: 14px
+		color: #B3B3B3
+		// line-height: 14px
+		text-align: center
+		line-height: 26px
+		font-weight: normal
+		min-width: 45px
+		&.name
+			text-align: left
+	tr
+		// margin-bottom: 10px
+	td
+		height: 26px
+		text-align: center
+		padding: 0 5px 15px 0
+		span
+			text-overflow: ellipsis
+			white-space: nowrap
+			display: inline-block
+			vertical-align: middle
+			font-family: webfontregular
+			font-size: 14px
+			color: #333333
+			line-height: 14px
+			position: relative
+			&:hover
+				.drop_up
+					display: inline-block
+		a
+			font-family: webfontregular
+			font-size: 14px
+			color: #466094
+			line-height: 14px
+			border-bottom: 1px dashed #466094
+			text-overflow: ellipsis
+			overflow: hidden
+			white-space: nowrap
+			display: inline-block
+			vertical-align: middle
+		.drop_up
+			background-color: #fff
+			box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.2)
+			position: absolute
+			bottom: 30px
+			left: 50%
+			margin-left: -20px
+			z-index: 3
+			display: none
+			border-radius: 4px
+			padding: 20px
+			&:before,&:after
+				content: ''
+				display: inline-block
+				position: absolute
+				bottom: -7px
+				left: 20px
+				border-left: 7px solid transparent
+				border-right: 7px solid transparent
+				border-top: 7px solid #fff
+				width: 0
+				filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .1))
+
+
+		&.price-sale span,&.price span
+			color: #D82628
+		&.profit span
+			color: #1CAB22
+	.ticket-type
+		width: 110px
+	.name
+		width: 600px
+		text-align: left
+		span
+			max-width: 600px
+			text-align: left
+			a
+				max-width: 580px
+	.type span
+		.drop_up
+			left: 15px
+	.payWay,.type,.price-sale
+		width: 150px
+	.price-sale span
+		width: 50px
+	.price
+		width: 170px
+		span
+			width: 170px
+	.profit span
+		width: 50px
+
+.btn_div
+	background: #F7F7F7
+	border-radius: 4px
+	font-family: webfontregular
+	font-size: 14px
+	color: #333333
+	line-height: 40px
+	display: block
+	height: 40px
+	text-align: center
+	border: none
+	margin-bottom: 30px

@@ -1,0 +1,252 @@
+@charset "UTF-8";
+body{background-color:#f4f4f6}
+.airTicket-top{background-color:#fff}
+.airTicket-top-con{position:relative;width:1186px;margin:auto;padding:20px 0}
+.airTicket-search-trip{position:relative}
+.airTicket-search-trip .edit-airTicket-trip,.airTicket-search-trip .more-airTicket-trip{position:absolute;bottom:0;height:34px;line-height:34px;text-align:center;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;cursor:pointer}
+.airTicket-search-trip .more-airTicket-trip{position:absolute;right:70px;width:34px;background:#EEEEF0}
+.airTicket-search-trip .more-airTicket-trip:hover .point-group{background-color:#9E9EA6;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.airTicket-search-trip .more-airTicket-trip:hover .point-group i{background-color:#fff}
+.airTicket-search-trip .more-airTicket-trip .point-group{position:absolute;width:100%}
+.airTicket-search-trip .more-airTicket-trip .point-group i{display:inline-block;vertical-align:middle;width:4px;height:4px;margin:0 1px;background:#B6B6C4;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%}
+.airTicket-search-trip .more-airTicket-trip .m-popover{height:100%}
+.airTicket-search-trip .more-airTicket-trip .m-popover .m-popover-con{width:434px;right:0;text-align:left;line-height:20px;z-index:1}
+.airTicket-search-trip .more-airTicket-trip .m-popover .m-popover-con:after{left:inherit;right:7px}
+.airTicket-search-trip .edit-airTicket-trip{right:0;width:60px;background:#F30A37;color:#fff}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item{position:relative;height:34px;line-height:34px;border:1px solid #E3E3E7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin-top:10px}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item:first-child{margin:0}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item:last-child{margin-right:114px}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item:last-child .to-choose{display:none}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item>div{float:left}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item.active .airTicket-trip-index{width:57px;background:#F30A37;color:#fff}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item.active .to-choose{display:none}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item .airTicket-trip-index{width:82px;margin-right:-4px;text-align:center;background:#F4F4F6;-webkit-border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px;border-right:1px solid #E3E3E7}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item .airTicket-trip-info{float:left}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item .airTicket-trip-info>div{position:relative;float:left;padding:0 20px}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item .airTicket-trip-info>div:not(:first-child):after{content:'/';position:absolute;left:0;top:0;color:#D0D2D8;line-height:32px;width:8px;margin-left:-4px;text-align:center}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item .airTicket-trip-info .airTicket-trip-date .airTicket-trip-end,.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item .airTicket-trip-info .airTicket-trip-date .airTicket-trip-start{float:left}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item .airTicket-trip-info .airTicket-trip-date .airTicket-trip-end{margin-left:30px}
+.airTicket-search-trip .airTicket-trip-list .airTicket-trip-item .to-choose{position:absolute;right:16px;color:#4779D4;cursor:pointer}
+.tourists-select li{overflow:hidden;height:42px;line-height:42px;border-bottom:1px solid #ECECEC}
+.tourists-select li em{color:#999}
+.tourists-select li .stepper-select{float:right}
+.tourists-select li .stepper-select .stepper-num{display:inline-block;vertical-align:top;width:32px;font-size:14px;color:#333;text-align:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.tourists-select li .stepper-select .add-btn,.tourists-select li .stepper-select .minus-btn{vertical-align:top;margin-top:11px}
+.airTicket-tank-type{overflow:hidden;margin:0 -2px}
+.airTicket-tank-type li{float:left;height:26px;line-height:24px;color:#999;padding:0 8px;margin:14px 2px 0;font-size:14px;border:1px solid #ECECEC;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;cursor:pointer}
+.airTicket-tank-type li.active{color:#fff;background-color:#F30A37}
+.search-airTicket-select{position:relative;width:280px;margin-top:10px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.search-airTicket-select .airTicket-select-item{position:relative;height:34px;line-height:32px;padding:0 10px;border:1px solid #E3E3E7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;cursor:pointer}
+.search-airTicket-select .airTicket-select-item span{position:relative;float:left;padding:0 0 0 12px}
+.search-airTicket-select .airTicket-select-item span:first-child{padding:0}
+.search-airTicket-select .airTicket-select-item span:not(:first-child):before{content:'/';position:absolute;top:0;left:0;width:12px;text-align:center;line-height:30px;font-size:12px}
+.search-airTicket-select .airTicket-select-item span.child-num{display:none}
+.search-airTicket-select .airTicket-select-item .g-arrow-down-icon{position:absolute;top:0;bottom:0;right:10px;margin:auto}
+.search-airTicket-select .airTicket-select-dropdown{display:none;position:absolute;top:100%;left:0;width:320px;margin:8px 0 0;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:2px 2px 16px 0 RGBA(24,28,40,.1);-moz-box-shadow:2px 2px 16px 0 RGBA(24,28,40,.1);box-shadow:2px 2px 16px 0 RGBA(24,28,40,.1);overflow:hidden;z-index:3}
+.search-airTicket-select .airTicket-select-dropdown .select-dropdown-hd{height:42px;line-height:42px;padding:0 20px;color:#333;font-size:14px;background-color:#F4F4F4}
+.search-airTicket-select .airTicket-select-dropdown .select-dropdown-bd{padding:0 20px 14px;background-color:#fff}
+.search-airTicket-select .airTicket-select-dropdown .select-dropdown-bd .airTicket-select-btn{margin-top:24px;overflow:hidden}
+.search-airTicket-select .airTicket-select-dropdown .select-dropdown-bd .airTicket-select-btn a{font-size:14px}
+.search-airTicket-select .airTicket-select-dropdown .select-dropdown-bd .airTicket-select-btn .cancel-btn{float:left;color:#333}
+.search-airTicket-select .airTicket-select-dropdown .select-dropdown-bd .airTicket-select-btn .sure-btn{float:right;color:#F52A51}
+.airTicket-main{width:1186px;margin:14px auto;position:relative}
+.portfolio-choice-tip-box{position:relative;min-height:204px;background-color:#fff}
+.portfolio-choice-tip-box .portfolio-choice-tip{display:block}
+.portfolio-choice-tip{position:absolute;top:0;left:0;width:100%;height:100%;text-align:center;z-index:2}
+.portfolio-choice-tip:after{content:'';width:0;height:100%;display:inline-block;vertical-align:middle}
+.portfolio-choice-tip .tip-con{max-width:98%;display:inline-block;vertical-align:middle}
+.portfolio-choice-tip .tip-con h2{color:#333;font-size:20px;line-height:1;margin-bottom:14px}
+.portfolio-choice-tip .tip-con p{color:#7F8593;line-height:1;margin-bottom:14px}
+.portfolio-choice-tip .tip-con a{display:inline-block;width:96px;height:34px;line-height:34px;color:#fff;background-color:#4779D4;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.portfolio-choice{position:relative;height:204px;background-color:#fff;margin-bottom:14px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px}
+.portfolio-choice .portfolio-tit{position:absolute;top:10px;left:10px;width:76px;color:#7F8593;line-height:34px}
+.portfolio-choice .choice-tab{position:relative;padding:10px 10px 10px 86px}
+.portfolio-choice .choice-tab .choice-tab-item{float:left}
+.portfolio-choice .choice-tab .choice-tab-item li{float:left;width:104px;height:34px;line-height:34px;text-align:center;-webkit-border-radius:0 4px 4px 0;-moz-border-radius:0 4px 4px 0;border-radius:0 4px 4px 0;border:1px solid #E3E3E7;cursor:pointer}
+.portfolio-choice .choice-tab .choice-tab-item li:first-child{-webkit-border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px;margin-right:-1px}
+.portfolio-choice .choice-tab .choice-tab-item li.active{color:#F30A37;border:1px solid #F30A37;position:relative}
+.portfolio-choice .airTicket-trip-select{position:relative;width:1186px;height:140px;padding:10px 20px 20px;margin:0 -10px -10px;text-align:center}
+.portfolio-choice .airTicket-trip-select.partialLoad-text:before{content:'正在为您查询…';position:absolute;left:0;top:0;width:100%;line-height:140px;font-weight:600;font-size:20px;text-align:center}
+.portfolio-choice .airTicket-trip-select.fixed{top:0;background-color:#fff;border-bottom:14px solid #f4f4f6;z-index:3}
+.portfolio-choice .airTicket-trip-select .partialLoad{top:inherit;bottom:0}
+.portfolio-choice .airTicket-trip-select .tip-item{position:absolute;top:10px;left:20px;color:#7F8593}
+.portfolio-choice .airTicket-trip-select .tit-item{font-size:20px;color:#181C28;line-height:1;margin-bottom:14px;font-weight:600}
+.portfolio-choice .airTicket-trip-select .date-item{color:#7F8593;margin-bottom:14px}
+.portfolio-choice .airTicket-trip-select .select-item{display:inline-block}
+.portfolio-choice .airTicket-trip-select .select-item>div{float:left;text-align:left;width:200px;height:34px;line-height:34px;border:1px solid #E3E3E7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin:0 5px;position:relative;cursor:pointer}
+.portfolio-choice .airTicket-trip-select .select-item>div .item-con{position:relative;display:inline-block;vertical-align:top;width:100%;padding:0 20px 0 15px;z-index:1}
+.portfolio-choice .airTicket-trip-select .select-item>div .item-con em{margin-left:5px}
+.portfolio-choice .airTicket-trip-select .select-item>div .item-con .airlines-num{position:relative;margin-left:10px}
+.portfolio-choice .airTicket-trip-select .select-item>div .item-con .airlines-num:before{content:'';position:absolute;left:-4px;top:0;bottom:0;margin:auto;width:2px;height:2px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-color:#F30A37}
+.portfolio-choice .airTicket-trip-select .select-item>div .g-arrow-down-icon{position:absolute;right:10px;top:0;bottom:0;margin:auto}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-item-list{display:none;position:absolute;width:100%;left:0;background-color:#fff;-webkit-box-shadow:0 2px 12px 0 rgba(24,28,40,.1);-moz-box-shadow:0 2px 12px 0 rgba(24,28,40,.1);box-shadow:0 2px 12px 0 rgba(24,28,40,.1);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:8px 12px;margin-top:4px;z-index:3}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-item-list li{height:34px;line-height:34px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:0 8px;margin-top:4px}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-item-list li:first-child{margin:0}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-item-list li:hover{background:#F4F4F4;color:#F30A37}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup{display:none;position:absolute;top:100%;right:0;width:680px;background:#FFF;-webkit-box-shadow:0 2px 12px 0 rgba(24,28,40,.1);-moz-box-shadow:0 2px 12px 0 rgba(24,28,40,.1);box-shadow:0 2px 12px 0 rgba(24,28,40,.1);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:10px 20px;margin-top:4px;z-index:2}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .select-airlines-item{padding:0 0 10px;border-top:1px solid #F4F4F6}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .select-airlines-item:first-child{border-top:none}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .group-list li,.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .group-name{float:left;margin-top:10px;width:200px;height:36px;line-height:16px;padding:10px}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .group-list li i,.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .group-name i{vertical-align:top;margin-right:8px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .group-list li span,.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .group-name span{display:inline-block;vertical-align:top;max-width:152px;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .group-list{overflow:hidden}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .group-list li{margin-left:20px}
+.portfolio-choice .airTicket-trip-select .select-item>div .select-airlines-popup .select-airlines-btn{padding-bottom:20px}
+.airTicket-sort{position:relative;height:50px;line-height:50px;background-color:#fff;-webkit-box-shadow:0 3px 6px 0 rgba(0,0,0,.02);-moz-box-shadow:0 3px 6px 0 rgba(0,0,0,.02);box-shadow:0 3px 6px 0 rgba(0,0,0,.02);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.airTicket-sort .airTicket-sort-item li{float:left;padding:0 20px;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.airTicket-sort .airTicket-sort-item li.cur,.airTicket-sort .airTicket-sort-item li:hover{color:#F30A37}
+.airTicket-sort .airTicket-sort-tip{position:absolute;color:#7F8593;top:0;right:20px}
+.airTicket-info{height:100%}
+.airTicket-info li{position:relative;float:left;width:50%;height:100%;padding:0 0 0 56px}
+.airTicket-info li:first-child{text-align:right;padding:0 56px 0 0}
+.airTicket-info li:after{content:'';width:0;height:100%;display:inline-block;vertical-align:middle}
+.airTicket-list-group{background-color:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin-bottom:14px}
+.airTicket-list-group .m-popover-con{z-index:3}
+.airTicket-list-group .airTicket-list-item{position:relative;height:82px;border-top:1px solid #f4f4f6;border-bottom:1px solid #f4f4f6;margin-top:-1px}
+.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-dest-info,.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-origin-info{display:inline-block;vertical-align:middle;line-height:1}
+.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-dest-info .airTicket-time,.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-origin-info .airTicket-time{font-weight:600;font-size:24px;margin:0 0 6px}
+.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-dest-info .airTicket-time span,.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-origin-info .airTicket-time span{display:inline-block;vertical-align:top;font-size:12px;line-height:24px;margin-left:10px}
+.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-dest-info .airTicket-time .m-popover-con,.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-origin-info .airTicket-time .m-popover-con{font-weight:400;width:200px;margin-left:-87px;white-space:nowrap;padding:12px 0;text-align:center}
+.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-dest-info .airTicket-airport,.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-origin-info .airTicket-airport{font-size:12px;color:#7F8593;max-width:150px;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-dest-info p,.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-origin-info p{max-width:150px;margin:6px 0 0;font-size:12px;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-dest-info p:first-child,.airTicket-list-group .airTicket-list-item .airTicket-info .airTicket-origin-info p:first-child{margin:0}
+.airTicket-list-group .airTicket-list-item .airTicket-duration{position:absolute;width:92px;top:25px;left:0;right:0;margin:auto;color:#B2B4BE;text-align:center;line-height:1}
+.airTicket-list-group .airTicket-list-item .airTicket-duration .m-popover-con{width:218px;left:50%;margin-left:-109px}
+.airTicket-list-group .airTicket-list-item .airTicket-duration .plane-icon,.airTicket-list-group .airTicket-list-item .airTicket-duration .transit-icon{display:block;margin:0 auto}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines{position:absolute;height:100%;top:0;bottom:0;left:20px;margin:auto;white-space:nowrap}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines:after{content:'';width:0;height:100%;display:inline-block;vertical-align:middle}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .airTicket-airlines-con{display:inline-block;vertical-align:middle;max-width:98%}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .airlines-avatar{display:inline-block;vertical-align:middle;width:32px;height:32px;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;overflow:hidden;margin:0 10px 0 0}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .airlines-avatar img{width:100%;margin-top:2px}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .airlines-con{display:inline-block;vertical-align:middle;color:#7F8593}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .airlines-con div,.airTicket-list-group .airTicket-list-item .airTicket-airlines .airlines-con p{line-height:1}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .airlines-con p{font-size:12px;margin:4px 0 0;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .airlines-con .m-popover>span{display:inline-block;max-width:256px}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .airlines-con .m-popover-con{left:50%;width:138px;margin-left:-69px}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .shared-aviation{margin:12px 0 0;font-size:12px;line-height:20px}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .shared-aviation em,.airTicket-list-group .airTicket-list-item .airTicket-airlines .shared-aviation span{display:inline-block;vertical-align:top;line-height:20px}
+.airTicket-list-group .airTicket-list-item .airTicket-airlines .shared-aviation em{width:40px;height:20px;color:#fff;background:#4779D4;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;margin-right:4px;text-align:center}
+.airTicket-list-group .airTicket-list-item .airTicket-line{position:absolute;top:0;left:854px;height:100%}
+.airTicket-list-group .airTicket-list-item .airTicket-line .airTicket-line-con{position:relative;height:100%}
+.airTicket-list-group .airTicket-list-item .airTicket-line .airTicket-line-con:after{content:'';width:0;height:100%;display:inline-block;vertical-align:middle}
+.airTicket-list-group .airTicket-list-item .airTicket-line .airTicket-line-con ul{display:inline-block;vertical-align:middle;max-width:98%}
+.airTicket-list-group .airTicket-list-item .airTicket-line .airTicket-line-con li{line-height:18px;color:#7F8593;font-size:12px;margin:0 0 4px;white-space:nowrap}
+.airTicket-list-group .airTicket-list-item .airTicket-line .airTicket-line-con .airTicket-line-tip{display:inline-block;vertical-align:top;padding:0 5px;height:18px;line-height:16px;text-align:center;border:1px solid #D0D2D8;margin-right:10px}
+.airTicket-list-group .airTicket-list-item .airTicket-line .airTicket-line-con .ellipsis{display:inline-block;vertical-align:top;max-width:76px}
+.airTicket-list-group .airTicket-list-item .airTicket-line .airTicket-line-con .m-popover-con{left:50%;width:118px;margin-left:-59px}
+.airTicket-list-group .airTicket-list-item .show-detail{position:absolute;top:0;bottom:0;right:152px;margin:auto;height:20px;line-height:20px;font-size:12px;color:#4779D4;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.airTicket-detail{display:none;position:relative;padding:0 10px 10px;margin-top:-1px;background-color:#fff}
+.airTicket-detail .airTicket-detail-item{position:relative;background-color:#EAF3FC;border:1px solid #D9E7F4;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.airTicket-detail .airTicket-detail-item .airTicket-transit-tip{position:absolute;top:-11px;left:0;right:0;margin:auto;text-align:center;z-index:2}
+.airTicket-detail .airTicket-detail-item .airTicket-transit-tip span{display:inline-block;padding:0 14px;height:22px;line-height:20px;background:#EAF3FC;border:1px solid #D9E7F4;-webkit-border-radius:22px;-moz-border-radius:22px;border-radius:22px;color:#7F8593;font-size:12px}
+.airTicket-detail .airTicket-detail-item .airTicket-list-item{height:92px;margin:0;border-top:none;border-bottom:1px solid #D9E7F4}
+.airTicket-detail .airTicket-detail-item .airTicket-list-item:last-child{border-bottom:none}
+.airTicket-detail .airTicket-detail-item .airTicket-list-item .airTicket-info li{padding:0 0 0 24px}
+.airTicket-detail .airTicket-detail-item .airTicket-list-item .airTicket-info li:first-child{padding:0 24px 0 0}
+.airTicket-detail .airTicket-detail-item .airTicket-list-item .airlines-con div{color:#181C28}
+.airTicket-detail .airTicket-detail-item .airTicket-line{left:844px}
+.airTicket-detail .airTicket-detail-item .airTicket-phase{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;width:8px;height:26px}
+.airTicket-detail .airTicket-detail-item .airTicket-phase:before{content:'';position:absolute;top:10px;left:0;right:0;margin:auto;width:2px;height:6px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#C7D6F2}
+.airTicket-detail .airTicket-detail-item .airTicket-phase .circle{display:block;width:8px;height:8px;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background-color:#EAF3FC;border:2px solid #4779D4;margin-top:10px}
+.airTicket-detail .airTicket-detail-item .airTicket-phase .circle:first-child{margin-top:0}
+.airTicket-booking .airTicket-booking-item{position:relative;height:70px;border-top:1px solid #f4f4f6}
+.airTicket-booking .airTicket-booking-item .airTicket-tag{display:inline-block;line-height:70px;padding:0 17px 0 20px}
+.airTicket-booking .airTicket-booking-item .airTicket-other{display:inline-block;line-height:70px;color:#7F8593;font-size:12px}
+.airTicket-booking .airTicket-booking-item .airTicket-other span{padding:0 23px;position:relative}
+.airTicket-booking .airTicket-booking-item .airTicket-other span:after{content:'/';position:absolute;left:0;top:0;line-height:1;color:#D0D2D8}
+.airTicket-booking .airTicket-booking-item .airTicket-other span:first-child:after{display:none}
+.airTicket-booking .airTicket-booking-item .airTicket-other span em{margin:0 3px}
+.airTicket-booking .airTicket-booking-item .airTicket-other .cabin-type .m-popover-con,.airTicket-booking .airTicket-booking-item .airTicket-other .endorse-type .m-popover-con{width:202px;left:50%;margin-left:-101px}
+.airTicket-booking .airTicket-booking-item .airTicket-other .trip-type .m-popover-con{width:104px;left:50%;margin-left:-52px}
+.airTicket-booking .airTicket-booking-item .airTicket-other .m-popover-con p em{display:inline-block}
+.airTicket-booking .airTicket-booking-item .airTicket-other .m-popover-con p em:first-child{width:62%;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.airTicket-booking .airTicket-booking-item .airTicket-prc{position:absolute;top:0;right:120px;height:100%}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info{position:relative;height:100%}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info:after{content:'';width:0;height:100%;display:inline-block;vertical-align:middle}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info .m-popover-con{left:50%;width:276px;margin-left:-138px;text-align:left}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info .m-popover-con .airTicket-prc-list{position:relative}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info .m-popover-con .airTicket-prc-list .airTicket-prc-num{position:absolute;left:146px}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info .m-popover-con .airTicket-prc-list .airTicket-people-num{position:absolute;right:0}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info ul{display:inline-block;vertical-align:middle;text-align:right}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info ul .total-prc{font-weight:600;font-size:16px;color:#F30A37}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info ul .total-prc span{font-size:24px;line-height:1}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info ul .total-prc em{font-size:12px}
+.airTicket-booking .airTicket-booking-item .airTicket-prc .airTicket-prc-info ul .tax-prc{color:#7F8593;font-size:12px;line-height:1}
+.airTicket-booking-btn{position:absolute;right:0;top:0;bottom:0;margin:auto;width:100px;height:30px;line-height:30px;-webkit-border-radius:30px 0 0 30px;-moz-border-radius:30px 0 0 30px;border-radius:30px 0 0 30px;background-color:#F30A37;color:#fff;cursor:pointer;text-align:center}
+.airTicket-trip-popup{display:none;position:absolute;width:100%;top:0;left:0;background-color:#fff;-webkit-box-shadow:0 8px 8px 0 rgba(0,0,0,.1);-moz-box-shadow:0 8px 8px 0 rgba(0,0,0,.1);box-shadow:0 8px 8px 0 rgba(0,0,0,.1);-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;padding:24px 32px 32px;z-index:3}
+.airTicket-trip-popup .popup-tit{color:#808693;line-height:1;margin-bottom:10px}
+.choose-way-item{padding-bottom:32px}
+.choose-way-item .choose-way{overflow:hidden}
+.choose-way-item .choose-way li{float:left;width:58px;height:26px;line-height:24px;text-align:center;color:#808693;border:1px solid #ECECEC;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;cursor:pointer;margin-right:8px}
+.choose-way-item .choose-way li.active{color:#fff;background:#F30A37}
+.select-passengers{padding-bottom:32px}
+.select-passengers .tourists-select{overflow:hidden}
+.select-passengers .tourists-select li{float:left;width:184px;height:34px;line-height:32px;border:1px solid #E3E3E7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:0 10px;margin-right:14px}
+.select-passengers .tourists-select li .add-btn,.select-passengers .tourists-select li .minus-btn{margin-top:6px}
+.choose-tank-level{padding-bottom:32px}
+.choose-tank-level .airTicket-tank-type li{margin:0 8px 0 0}
+.choose-trip .screen-tip{position:absolute;top:100%;left:0;margin-top:4px;height:46px;line-height:46px;font-size:14px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#fff;background-color:#F52A51;padding:0 20px;white-space:nowrap;z-index:1}
+.airTicket-trip-list>li{margin-top:10px}
+.airTicket-trip-list .airTicket-date,.airTicket-trip-list .airTicket-place{float:left;height:34px;line-height:32px;border:1px solid #E3E3E7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.airTicket-trip-list .airTicket-date>div em,.airTicket-trip-list .airTicket-place>div em{display:none}
+.airTicket-trip-list .airTicket-place{position:relative;margin-right:10px}
+.airTicket-trip-list .airTicket-place .trip-list-index{display:none;float:left;width:20px;height:100%;background-color:#E3E3E7;color:#B2B4BE;text-align:center;-webkit-border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px}
+.airTicket-trip-list .airTicket-place .airTicket-dest,.airTicket-trip-list .airTicket-place .airTicket-origin{position:relative;float:left;padding:0 10px;cursor:pointer}
+.airTicket-trip-list .airTicket-place .airTicket-dest input,.airTicket-trip-list .airTicket-place .airTicket-origin input{position:relative;border:none;width:100%;background:0 0;z-index:1}
+.airTicket-trip-list .airTicket-place .airTicket-origin{width:272px}
+.airTicket-trip-list .airTicket-place .airTicket-dest{width:278px}
+.airTicket-trip-list .airTicket-place .airTicket-place-tip{position:absolute;top:0;right:10px;color:#ccc}
+.airTicket-trip-list .airTicket-place .airTicket-place-switch{float:left;width:34px;line-height:32px;text-align:center;background-color:#F4F4F6;border-left:1px solid #E3E3E7;border-right:1px solid #E3E3E7;cursor:pointer}
+.airTicket-trip-list .airTicket-place .airTicket-place-switch i{vertical-align:middle}
+.airTicket-trip-list .airTicket-date.back-forth .airTicket-date-start{width:192px}
+.airTicket-trip-list .airTicket-date.back-forth .airTicket-date-end{display:block}
+.airTicket-trip-list .airTicket-date .airTicket-date-end,.airTicket-trip-list .airTicket-date .airTicket-date-start{position:relative;float:left;padding:0 10px}
+.airTicket-trip-list .airTicket-date .airTicket-date-end input,.airTicket-trip-list .airTicket-date .airTicket-date-start input{position:relative;display:inline-block;border:none;width:100%;background:0 0;z-index:1}
+.airTicket-trip-list .airTicket-date .airTicket-date-end em,.airTicket-trip-list .airTicket-date .airTicket-date-start em{position:absolute;top:0;right:10px;color:#ccc}
+.airTicket-trip-list .airTicket-date .airTicket-date-start{width:320px}
+.airTicket-trip-list .airTicket-date .airTicket-date-end{display:none;width:192px;border-left:1px solid #E3E3E7}
+.airTicket-trip-list .airTicket-trip-delete{-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;margin:7px 0 0 10px;opacity:.3}
+.airTicket-trip-list .airTicket-trip-delete:hover{opacity:1}
+.choose-add{display:none;font-size:14px;color:#4779D4;line-height:16px;margin-top:10px}
+.choose-add span{cursor:pointer}
+.choose-add i{vertical-align:top}
+.choose-btn,.select-airlines-btn{padding-top:32px;text-align:right}
+.choose-btn span,.select-airlines-btn span{display:inline-block;vertical-align:top;width:100px;height:40px;line-height:40px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-align:center;margin-left:14px;cursor:pointer}
+.choose-btn .cancel-btn,.select-airlines-btn .cancel-btn{background:#EEEEF0}
+.choose-btn .sure-btn,.select-airlines-btn .sure-btn{color:#fff;background:#F30A37}
+.toTop-icon{display:none;position:fixed;bottom:240px;margin-left:14px;cursor:pointer;z-index:9}
+.no-more{display:none;text-align:center;line-height:80px;color:#A7ACB7}
+.no-more span{position:relative}
+.no-more span:after,.no-more span:before{content:'';position:absolute;top:0;bottom:0;margin:auto;width:120px;height:1px;background-color:#D6D6E9}
+.no-more span:before{left:-132px}
+.no-more span:after{right:-132px}
+.endorse-type-popup{display:none;position:fixed;width:100%;height:100%;top:0;left:0;text-align:center;line-height:1.6;z-index:9}
+.endorse-type-popup:before{content:'';position:fixed;width:100%;height:100%;top:0;left:0;background:rgba(0,0,0,.3)}
+.endorse-type-popup:after{content:'';width:0;height:100%;display:inline-block;vertical-align:middle}
+.endorse-type-popup .endorse-type-popup-box{position:relative;display:inline-block;vertical-align:middle;width:1000px;text-align:left;background-color:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#181C28}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tit{position:relative;font-size:16px;font-weight:600;padding:0 16px;line-height:50px;border-bottom:1px solid #EEEEF0}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tit .c-close-icon{position:absolute;right:8px;top:0;bottom:0;margin:auto;cursor:pointer}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-bd{padding:24px 56px;max-height:550px;overflow:auto}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab{position:relative;margin-bottom:24px}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab ul.endorse-type-tab-item{overflow:hidden;border-bottom:1px solid #EEEEF0}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab ul.endorse-type-tab-item li{float:left;padding:7px 0 11px;line-height:1;cursor:pointer;font-size:14px;color:#7F8593}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab ul.endorse-type-tab-item li:hover{color:#F30A37}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab ul.endorse-type-tab-item li:not(:first-child){margin-left:40px}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab ul.endorse-type-tab-item li.active span{position:relative;color:#F30A37}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab ul.endorse-type-tab-item li.active span:before{content:'';position:absolute;left:0;right:0;bottom:-7px;margin:auto;width:12px;height:3px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#F30A37}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab ul.endorse-type-tab-item li span{display:inline-block;vertical-align:top;padding:0}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab .language-sel{position:absolute;top:0;right:0}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab .language-sel li{float:left;width:52px;line-height:22px;text-align:center;font-size:12px;-webkit-border-radius:0 4px 4px 0;-moz-border-radius:0 4px 4px 0;border-radius:0 4px 4px 0;border:1px solid #E3E3E7;cursor:pointer}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab .language-sel li:first-child{-webkit-border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px;margin-right:-1px}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab .language-sel li.active{color:#F30A37;border:1px solid #F30A37;position:relative}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab-con{display:none;font-size:14px}
+.endorse-type-popup .endorse-type-popup-box .endorse-type-tab-con .en{display:none}
+.show-more-list{width:1186px;height:48px;line-height:46px;text-align:center;font-size:16px;margin:14px auto 0;color:#7F8593;background:#FFF;border:1px solid #EAEAEA;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;cursor:pointer}
+.show-more-list:hover{color:#fff;background:#ADADB7;border:1px solid #ADADB7}
+.show-more-list.loading:hover{color:#7F8593;background:#FFF;border:1px solid #EAEAEA}
+.show-more-list.loading .more-text{display:none}
+.show-more-list.loading .loading-tip{display:inline-block}
+.show-more-list .loading-tip{display:none;font-size:16px;color:#181C28}
+.show-more-list .loading-tip .loading-gif{width:24px;height:24px;vertical-align:top;margin:11px 8px 0 0}
+.flight-change-con h2{font-size:14px;line-height:20px;margin-bottom:14px}
+.flight-change-con p{font-size:12px;color:#181C28;line-height:1;margin-top:8px}

@@ -1,0 +1,80 @@
+//-.com-search-pannel-header
+  .short-search-part
+    .short-search-title 关键字
+    .short-search-input
+      input(placeholder='请输入酒店关键字', class='key-word hotel-search')
+  .short-search-part
+    .short-search-title 城市
+    .short-search-input
+      input(placeholder='请输入城市')
+  .short-search-part
+    .short-search-title 入住时间-离店时间
+    .short-search-input
+      input#start-date(placeholder='入住日期', class='start-date-range' readonly)
+  .short-search-part
+    .short-search-title 入住信息
+    .short-search-input
+      input(placeholder='请输入关键字', value='1间 / 每间2成人，0儿童')
+  .seach-pannel-btn
+.hotel-search-top
+  ul.hotel-search-top-item.clearfix
+    li.hotel-search-keyword
+      .search-top-tit 关键字
+      .search-top-con
+        input(placeholder='请输入酒店关键字')
+    li.hotel-search-city
+      .search-top-tit 城市
+      .search-top-con
+        input(placeholder='请输入城市')
+    li.hotel-search-date
+      .search-top-tit 入住时间-离店时间
+      .search-top-con
+        input(placeholder='入住时间-离店时间')
+    li.hotel-search-info
+      .search-top-tit 入住信息
+      .search-top-con
+        .hotel-search-info-num <em class='room-num'>1</em>间 / 每间<em class='adult-num'>1</em>成人，<em class='child-num'>0</em>儿童
+        .airTicket-select-dropdown
+          .select-dropdown-hd 请选择入住信息
+          .select-dropdown-bd
+            ul.tourists-select
+              li 房间
+                .stepper-select.room-item(data-min='1', data-max='5')
+                  span.c-minus-icon.minus-btn.disable
+                  span.stepper-num 1
+                  span.c-add-icon.add-btn
+              li 成人
+                .stepper-select.adult-item(data-min='1', data-max='4')
+                  span.c-minus-icon.minus-btn.disable
+                  span.stepper-num 1
+                  span.c-add-icon.add-btn
+              li 儿童
+                .stepper-select.child-item(data-min='0', data-max='2')
+                  span.c-minus-icon.minus-btn.disable
+                  span.stepper-num 0
+                  span.c-add-icon.add-btn
+            .child-age-sel
+              .age-sel-tit 请选择儿童年龄
+              .select-item.clearfix
+                .select-list-item
+                  span.item-con 儿童1：<em>< 1岁</em>
+                  i.g-arrow-down-icon
+                  ul.select-item-list
+                    li < 1岁
+                    - for(var i=0;i<17;i++)
+                      li #{i+1}岁
+                .select-list-item
+                  span.item-con 儿童2：<em>< 1岁</em>
+                  i.g-arrow-down-icon
+                  ul.select-item-list
+                    li < 1岁
+                    li 1岁
+                    li 2岁
+                    li 3岁
+                    li 4岁
+            .airTicket-select-btn
+              a.cancel-btn 取消
+              a.sure-btn 确定
+        //input(placeholder='入住信息')
+  .hotel-search-top-btn
+    i.search-icon

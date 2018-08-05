@@ -1,0 +1,27 @@
+extends ../../component/common/layout
+
+include ../../component/common/mixin
+include ../../../model/common/headerData
+
+block append style
+    link(rel='stylesheet', href='../../static/css/cal.css')
+    link(rel='stylesheet', href='../../static/css/cruise/cruiseLists.css')
+
+block content
+    include ../../../model/cruise/cruiseListsData
+    +bread(bread)
+    .search-pannel-wrp
+        .com-search-pannel
+            include ../../component/list/cruisesearchheader
+            include ../../component/list/cruisesearchctx
+        include ../../component/list/listctl
+        .tab-ctx-wrp
+            .search-list-result
+                +list_cruise(listobj_cruise)
+        +pagese('件商品')
+
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/cruise/cruiseList.js')

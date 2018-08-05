@@ -1,0 +1,84 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+//- include ../../component/common/pagese
+block append head
+    title 订单管理
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/menberCenter/orderManage.css')
+    link(rel='stylesheet', href='../../static/css/menberCenter/accountManage.css')
+
+body
+  block header
+    include ../../component/common/header_center
+
+  block content
+    include ../../../model/menberCenter/orderManageData
+    .menber-center
+        .center-cont
+            //- 左导航
+            ul.left-nav
+                - for (var i=0; i<left_centerNavs.length; i++)
+                    if i==0
+                        li.first_nav.cur
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+                    else 
+                        li.first_nav
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+            //- 右边内容
+            .search-content
+                .searchbar-cont
+                    ul.searchbar
+                        li.search-item.no-search-item
+                            label.no-search 账期：
+                            span.no-search-cont 2018-10
+                        li.search-item
+                            label.no-search 账单金额：
+                            span.no-search-money ¥29009304
+                .searchResult-cont
+                    table
+                        tr.headRow
+                            th.orderNo
+                                span 订单号
+                            th.seller-orderNo
+                                span 商家订单号
+                            th.pdName
+                                span 产品名称
+                            th.total-price
+                                span 总价
+                            th.statement-payed
+                                span 已付
+                            th.statement-none-pay
+                                span 未付
+                            //th.statements-operate
+                        - for (var i = 0; i<=9; i++)
+                            tr
+                                td.orderNo 2018001600990000
+                                td.seller-orderNo 2018001600990000
+                                td.pdName
+                                    span 【尚·深度】加拿大西岸9天＊赏樱赏郁金香＊出海观鲸＊ ＜全程入住豪华酒店，飞跃加拿大电影，斯坦利公园骑行，维多利亚住一晚＞
+                                td.total-price ￥5550
+                                td.statement-payed ￥5550
+                                td.statement-none-pay $5550
+                                //td.statements-operate
+                                //    button.statementDel 删除
+                .page-cont
+                    +pagese('个结果')
+
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/menberCenter/orderManage.js')
+
+

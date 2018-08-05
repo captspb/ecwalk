@@ -1,0 +1,239 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append head
+    title 邮轮订单详情
+
+block append style
+    link(rel='stylesheet', href='../../static/css/orderDetails.css')
+    link(rel='stylesheet', href='../../static/css/cruise/cruiseOrder.css')
+
+block header
+    include ../../component/common/header_order
+
+block content
+    include ../../../model/cruise/cruiseOrderData
+    .order-page.cruise-order
+        .order-main
+            .order-left-cont
+                .order-top-cont
+                    h2 春节·迪拜邮轮 MSC邮轮 迪拜阿布扎比阿曼 千年古城马斯喀特 神秘阿拉伯9天 EK香港 去回广州 13.8万吨 豪华邮轮辉煌
+                    p
+                        span 出发日期：2018/06/17  周日
+                        span.cruise-order-date
+                            em 成人：<b>6</b>人
+                            em 儿童：<b>1</b>人
+                            em 房间：<b>4</b>间
+                ul.order-info-list
+                    li
+                        +order-dt-tit('联系人信息','为方便广之旅及时与您联系，请准确填写联系人信息（手机号码，Email）')
+                        .order-info-item.contact-info
+                            .err-tip 中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确
+                            ul.form-group.clearfix
+                                - for (var i=0;i<contactInfo.length;i++)
+                                    li
+                                        label
+                                            if contactInfo[i].isrequired == true
+                                                <b class='main-red'>*</b>
+                                            | #{contactInfo[i].text}
+                                        div.form-group-con
+                                            input(placeholder='#{contactInfo[i].placeholder}')
+                    li
+                        +order-dt-tit('旅客信息','请您正确填写游客信息')
+                        .order-info-item
+                            .supplement-btn 游客资料后补<i class='red-tick-icon'></i>
+                            .tourist-info
+                                .tourist-info-item
+                                    .tourist-info-tit <i class='cruise-icon'></i>浪漫法式露台房
+                                    .tourist-con
+                                        .tourist-con-item
+                                            .tourist-con-num 1
+                                            .err-tip 中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确
+                                            ul.form-group.clearfix
+                                                - for (var j=0;j<touristInfo.length;j++)
+                                                    li
+                                                        label
+                                                            if touristInfo[j].isrequired == true
+                                                                <b class='main-red'>*</b>#{touristInfo[j].text}
+                                                        div.form-group-con
+                                                            input(placeholder='#{touristInfo[j].placeholder}')
+                                                li
+                                                    label 证件类型
+                                                    div.form-group-con
+                                                        +select-group(['身份证','居住证','其他'])
+                                                li
+                                                    label 证件号码
+                                                    div.form-group-con
+                                                        input(placeholder='请输⼊证件号码')
+                                            .tourist-add-item.insurance-item
+                                                .add-item-tit 已选保险(<em>0</em>)
+                                                    a.insurance-sel 选择保险
+                                                .add-item-con
+                                                    ul.insurance-con
+                                                    .add-item-list
+                                                        ul
+                                                            - for (var j=0;j<3;j++)
+                                                                li.insurance-sel-list(data-insurance='#{j}')
+                                                                    span.add-item-info 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                    span.add-item-prc ¥<em>8000</em>
+                                                                    span.add-item-stepper
+                                            .tourist-add-item.service-item
+                                                .add-item-tit 可选服务(<em>0</em>)
+                                                .service-groug
+                                                    .service-groug-tit asd阿萨德
+                                                    .add-item-con
+                                                        ul.service-item-list
+                                                            - for (var j=0;j<3;j++)
+                                                                li
+                                                                    span.add-item-info.option-service 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                    span.add-item-prc ¥ 8000
+                                                                    span.add-item-stepper
+                                                        .service-popover  132132132132131343213213
+                                                .add-item-con
+                                                    ul.service-item-list
+                                                        - for (var j=0;j<3;j++)
+                                                            li
+                                                                span.add-item-info.option-service 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                span.add-item-prc ¥ 8000
+                                                                span.add-item-stepper
+                                                    .service-popover  132132132132131343213213
+                                        .tourist-con-item
+                                            .tourist-con-num 2
+                                            .err-tip 中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确
+                                            ul.form-group.clearfix
+                                                - for (var j=0;j<touristInfo.length;j++)
+                                                    li
+                                                        label
+                                                            if touristInfo[j].isrequired == true
+                                                                <b class='main-red'>*</b>#{touristInfo[j].text}
+                                                        div.form-group-con
+                                                            input(placeholder='#{touristInfo[j].placeholder}')
+                                                li
+                                                    label 证件类型
+                                                    div.form-group-con
+                                                        +select-group(['身份证','居住证','其他'])
+                                                li
+                                                    label 证件号码
+                                                    div.form-group-con
+                                                        input(placeholder='请输⼊证件号码')
+                                            .tourist-add-item.insurance-item
+                                                .add-item-tit 已选保险(<em>0</em>)
+                                                    a.insurance-sel 选择保险
+                                                .add-item-con
+                                                    ul.insurance-con
+                                                    .add-item-list
+                                                        ul
+                                                            - for (var j=0;j<3;j++)
+                                                                li.insurance-sel-list(data-insurance='#{j}')
+                                                                    span.add-item-info 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                    span.add-item-prc ¥<em>8000</em>
+                                                                    span.add-item-stepper
+                                            .tourist-add-item.service-item
+                                                .add-item-tit 可选服务(<em>0</em>)
+                                                .add-item-con
+                                                    ul.service-item-list
+                                                        - for (var j=0;j<3;j++)
+                                                            li
+                                                                span.add-item-info.option-service 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                span.add-item-prc ¥ 8000
+                                                                span.add-item-stepper
+                                                    .service-popover  132132132132131343213213
+                                .tourist-info-item
+                                    .tourist-info-tit <i class='cruise-icon'></i>浪漫法式露台房
+                                    .tourist-con
+                                        .tourist-con-item
+                                            .tourist-con-num 3
+                                            .err-tip 中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确
+                                            ul.form-group.clearfix
+                                                - for (var j=0;j<touristInfo.length;j++)
+                                                    li
+                                                        label
+                                                            if touristInfo[j].isrequired == true
+                                                                <b class='main-red'>*</b>#{touristInfo[j].text}
+                                                        div.form-group-con
+                                                            input(placeholder='#{touristInfo[j].placeholder}')
+                                                li
+                                                    label 证件类型
+                                                    div.form-group-con
+                                                        +select-group(['身份证','居住证','其他'])
+                                                li
+                                                    label 证件号码
+                                                    div.form-group-con
+                                                        input(placeholder='请输⼊证件号码')
+                                            .tourist-add-item.insurance-item
+                                                .add-item-tit 已选保险(<em>0</em>)
+                                                    a.insurance-sel 选择保险
+                                                .add-item-con
+                                                    ul.insurance-con
+                                                    .add-item-list
+                                                        ul
+                                                            - for (var j=0;j<3;j++)
+                                                                li.insurance-sel-list(data-insurance='#{j}')
+                                                                    span.add-item-info 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                    span.add-item-prc ¥<em>8000</em>
+                                                                    span.add-item-stepper
+                                            .tourist-add-item.service-item
+                                                .add-item-tit 可选服务(<em>0</em>)
+                                                .add-item-con
+                                                    ul.service-item-list
+                                                        - for (var j=0;j<3;j++)
+                                                            li
+                                                                span.add-item-info.option-service 太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...
+                                                                span.add-item-prc ¥ 8000
+                                                                span.add-item-stepper
+                                                    .service-popover  132132132132131343213213
+                    li
+                        +order-dt-tit('备注信息')
+                        .order-info-item
+                            textarea.c-textarea(placeholder='请填写备注信息')
+                    li
+                        +order-dt-tit('商家订单号')
+                        .order-info-item
+                            input.c-input(placeholder='请填写商家订单号')
+
+
+            .order-right-cont
+                .order-right-content
+                    ul.order-right-item
+                        li
+                            .order-right-item-tit 内舱客房
+                        li
+                            label 成人×2
+                            span.main-red ¥ 386
+                        li
+                            label 儿童×1
+                            span.main-red ¥ 386
+                        li
+                            label 婴儿×1
+                            span.main-red ¥ 386
+                        li
+                            label 房差
+                            span.main-green ¥ 386
+                    ul.order-right-item
+                        li
+                            label 保险费
+                            span ¥ 386
+                        li
+                            label 单房差
+                            span ¥ 386
+                    ul.order-right-item
+                        li
+                            label 优惠券
+                            span －¥ 100
+                        li
+                            label 积分
+                            span －¥ 100
+                        li
+                            label ⾃自游通卡
+                            span －¥ 100
+                    ul.order-right-item.order-total
+                        li
+                            label 销售总额
+                            span ¥ 2000086
+                        li
+                            label 结算总额
+                            span ¥ 2000086
+        include ../../component/orderDetails/orderFooter
+block footer
+block append script
+    script(src='../../static/js/cruise/cruiseOrder.js')

@@ -1,0 +1,482 @@
+include ../../../model/common/headerData
+include ../../../model/common/hotelData
+
+// index list component
+mixin indexlist(num, type)
+    -
+        var teminfo = ''
+        if (type===1)
+            teminfo = buyinfosingle
+        else
+            teminfo = buyinfosingle2
+
+    ul
+        - for (var i=0; i<num; i++)
+            li.index-list-item
+                .index-list-ctx
+                    .bproinfo
+                        a(href='#') #{teminfo.proname}
+                    .buyinfo-bottom
+                        .bbuyinfo-price
+                            span.buyinfo-price-title 同行价：
+                            span.buyinfo-price-num #{teminfo.price}
+                        .bstart-place #{teminfo.start}
+                        .bstart-place #{teminfo.startPal}
+                        .bstart-place(style='margin-right: 10px') #{teminfo.startDate}
+                        .clear
+
+// tab control
+mixin tabctl(tabobj, color)
+    .com-tab-ctl
+        ul(class='tab-ctl-ul ' + color)
+            - for (var i=0; i<tabobj.length; i++)
+                - if (tabobj[i].iscur)
+                    li(class='cur')
+                        span.tab-ctl-text #{tabobj[i].text}
+                        span.red-line
+                - else
+                    li
+                        span.tab-ctl-text #{tabobj[i].text}
+                        span.red-line
+
+// list travel
+mixin list(listobj, objclass)
+    .com-list-wrp(class=objclass)
+        ul
+            - for (var i=0; i<listobj.length; i++)
+                li.list-wrp
+                    .all-part
+                        .yct-icon 已成团
+                        .prolist-left-part
+                            .prolist-icon-title
+                                .prolist-icon
+                                    img(src=listobj[i].icon)
+                                .prolist-title.web-font-bold
+                                    a(href=listobj[i].url)
+                                        span #{listobj[i].name}
+                            .prolist-main-info
+                                ul
+                                    li
+                                        .prolist-main-info-title 供应商
+                                        .prolist-main-info-ctx #{listobj[i].yxs}
+                                    li
+                                        .prolist-main-info-title 产品编号
+                                        .prolist-main-info-ctx #{listobj[i].pdid}
+                                    li
+                                        .prolist-main-info-title 行程天数
+                                        .prolist-main-info-ctx
+                                            span #{listobj[i].datenum}
+                                            span.days-icon
+                                    li
+                                        .prolist-main-info-title 出发地
+                                        .prolist-main-info-ctx #{listobj[i].toward}
+                                    .clear
+                            .prolist-start-date
+                                ul
+                                    li 海岛
+                                    li 休闲
+                                    li 安心游
+                                | 出行日期：
+                                - for(var j=0; j<listobj[i].datelist.length; j++)
+                                    span.date-item #{listobj[i].datelist[j]}
+                                span.date-item.more-date 更多排期
+                        .prolist-right-part
+                            .source-price
+                                span.title 同行价
+                                span.main-red ￥#{listobj[i].sourceprice}
+                            .sale-price
+                                span.title 销售价
+                                span.main-red ￥#{listobj[i].saleprice}
+                            .sale-money
+                                span.title 利　润
+                                span.price
+                                    span.main-green ￥#{listobj[i].salemoney}
+                            .book-btn
+                                a 立即预定
+                        .clear
+mixin list_time_travel(listobj, objclass)
+    .com-list-wrp(class=objclass)
+        ul.com-list-header
+            li.startTime 出发时间
+            li.router 路线
+            li.tName 团队名称
+            li.deadline 截止时间
+            li.saleprice 销售价
+            li.sourceprice 同行价
+            li.salemoney 利润
+        ul.com-list-body
+            - for (var i=0; i<listobj.length; i++)
+                li.list-item-wrp
+                    .list-item-left-part
+                        .l-top-part 12.25
+                        .l-bottom-part 2016
+                    .prolist-main-part
+                        ul.main-top-part
+                            li.router #{listobj[i].name}
+                            li.tName #{listobj[i].tName}
+                            li.deadline #{listobj[i].deadline}
+                            li.saleprice ￥#{listobj[i].saleprice}
+                            li.sourceprice ￥#{listobj[i].sourceprice}
+                            li.salemoney ￥#{listobj[i].salemoney}
+                        ul.main-bottom-part
+                            li(style='border-left: none;padding:0')
+                                img(src='../../static/images/travel/avatar.png',width='24',height='24')
+                            li(style='padding-left: 10px;border-left:0;')
+                                label 供应商：
+                                span #{listobj[i].yxs}
+                            li
+                                label 产品编号：
+                                span #{listobj[i].pdid}
+                            li
+                                label 行程天数：
+                                span #{listobj[i].datenum}
+                            li
+                                label 出发地：
+                                span #{listobj[i].toward}
+                        .book-btn
+                            a 立即预定
+
+mixin list_time_collect(listobj, objclass)
+    .com-list-wrp(class=objclass)
+        ul.com-list-header
+            li.startTime 出发时间
+            li.router 路线
+            li.deadline 截止时间
+            li.saleprice 销售价
+            li.sourceprice 同行价
+            li.salemoney 利润
+            li.recordop 操作
+        ul.com-list-body
+            - for (var i=0; i<listobj.length; i++)
+                li.list-item-wrp
+                    .list-item-left-part
+                        .l-top-part 12.25
+                        .l-bottom-part 2016
+                    .prolist-main-part
+                        ul.main-top-part
+                            li.router #{listobj[i].name}
+                            li.deadline #{listobj[i].deadline}
+                            li.saleprice ￥#{listobj[i].saleprice}
+                            li.sourceprice ￥#{listobj[i].sourceprice}
+                            li.salemoney ￥#{listobj[i].salemoney}
+                            li.recordop 删除
+
+mixin list_cruise_index(listobj, objclass)
+    .com-list-wrp(class=objclass)
+        ul
+            - for (var i=0; i<listobj.length; i++)
+                li.list-wrp
+                    .all-part
+                        .yct-icon 已成团
+                        .prolist-left-part
+                            .prolist-icon-title
+                                .prolist-icon
+                                    img(src=listobj[i].icon)
+                                .prolist-title.web-font-bold
+                                    a(href=listobj[i].url)
+                                        span #{listobj[i].name}
+                            .prolist-main-info
+                                ul
+                                    li
+                                        .prolist-main-info-title 产品编号
+                                        .prolist-main-info-ctx #{listobj[i].productId}
+                                    li
+                                        .prolist-main-info-title 供应商
+                                        .prolist-main-info-ctx #{listobj[i].yxs}
+                                    li
+                                        .prolist-main-info-title 行程天数
+                                        .prolist-main-info-ctx
+                                            span #{listobj[i].datenum}
+                                            span.days-icon
+                                    li
+                                        .prolist-main-info-title 邮轮品牌
+                                        .prolist-main-info-ctx #{listobj[i].pdid}
+                                    .clear
+                            .prolist-start-date
+                                ul
+                                    li 海岛
+                                    li 休闲
+                                    li 安心游
+                                | 出行日期：
+                                - for(var j=0; j<listobj[i].datelist.length; j++)
+                                    span.date-item #{listobj[i].datelist[j]}
+                                span.date-item.more-date 更多排期
+                        .prolist-right-part
+                            .source-price
+                                span.title 同行价
+                                span.main-red ￥#{listobj[i].sourceprice}
+                            .sale-price
+                                span.title 销售价
+                                span.main-red ￥#{listobj[i].saleprice}
+                            .sale-money
+                                span.title 利　润
+                                span.price
+                                    span.main-green ￥#{listobj[i].salemoney}
+                            .book-btn
+                                a 立即预定
+                        .clear
+mixin list_cruise(listobj, objclass)
+    .com-list-wrp(class=objclass)
+        ul
+            - for (var i=0; i<listobj.length; i++)
+                li.list-wrp
+                    .all-part
+                        .yct-icon 已成团
+                        .prolist-left-part
+                            .prolist-icon-title
+                                .prolist-icon
+                                    img(src=listobj[i].icon)
+                                .prolist-title.web-font-bold
+                                    a(href=listobj[i].url)
+                                        span #{listobj[i].name}
+                            .prolist-main-info
+                                ul
+                                    li
+                                        .prolist-main-info-title 供应商
+                                        .prolist-main-info-ctx #{listobj[i].yxs}
+                                    li
+                                        .prolist-main-info-title 邮轮品牌
+                                        .prolist-main-info-ctx #{listobj[i].pdid}
+                                    li
+                                        .prolist-main-info-title 行程天数
+                                        .prolist-main-info-ctx
+                                            span #{listobj[i].datenum}
+                                            span.days-icon
+                                    // li
+                                    //     .prolist-main-info-title 出发地
+                                    //     .prolist-main-info-ctx #{listobj[i].toward}
+                                    .clear
+                            .prolist-start-date 出行日期：
+                                - for(var j=0; j<listobj[i].datelist.length; j++)
+                                    span.date-item #{listobj[i].datelist[j]}
+                                .more-btn
+                        .prolist-right-part
+                            .source-price
+                                span.title 同行价
+                                span.main-red ￥#{listobj[i].sourceprice}
+                            .sale-price
+                                span.title 销售价
+                                span.main-red ￥#{listobj[i].saleprice}
+                            .sale-money
+                                span.title 利　润
+                                span.price
+                                    span.main-green ￥#{listobj[i].salemoney}
+                            .book-btn
+                                a 立即预定
+                        .clear
+mixin list_hotel(listobj, objclass)
+    .com-list-wrp(class=objclass)
+        ul
+            - for (var i=0; i<listobj.length; i++)
+                li.list-wrp
+                    .all-part
+                        .yct-icon 已成团
+                        .prolist-left-part
+                            .prolist-icon-title
+                                .prolist-icon
+                                    img(src=listobj[i].icon)
+                                .prolist-title.web-font-bold
+                                    a(href=listobj[i].url)
+                                        span #{listobj[i].name}
+                            .prolist-main-info
+                                ul
+                                    li
+                                        .prolist-main-info-title 供应商
+                                        .prolist-main-info-ctx #{listobj[i].yxs}
+                                    li
+                                        .prolist-main-info-title 酒店等级
+                                        .prolist-main-info-ctx #{listobj[i].htClass}
+                                    li
+                                        .prolist-main-info-title 酒店地址
+                                        .prolist-main-info-ctx #{listobj[i].htAddress}
+                                    .clear
+                            .prolist-start-date
+                                ul
+                                    li 海岛
+                                    li 休闲
+                                    li 安心游
+                                | 入住日期：
+                                - for(var j=0; j<listobj[i].datelist.length; j++)
+                                    span.date-item #{listobj[i].datelist[j]}
+                                span.date-item.more-date 更多排期
+                        .prolist-right-part
+                            .source-price
+                                span.title 同行价
+                                span.main-red ￥#{listobj[i].sourceprice}
+                            // .sale-price
+                            //     span.title 销售价
+                            //     span.main-red ￥#{listobj[i].saleprice}
+                            // .sale-money
+                            //     span.title 利　润
+                            //     span.price
+                            //         span.main-green ￥#{listobj[i].salemoney}
+                            .book-btn
+                                a 立即预定
+                        .clear
+mixin list_ticket(listobj, objclass)
+    .com-list-wrp(class=objclass)
+        ul
+            - for (var i=0; i<listobj.length; i++)
+                li.list-wrp
+                    .all-part
+                        .yct-icon 已成团
+                        .prolist-left-part
+                            .prolist-icon-title
+                                .prolist-icon
+                                    img(src=listobj[i].icon)
+                                .prolist-title.web-font-bold
+                                    a(href=listobj[i].url)
+                                        span #{listobj[i].name}
+                            .prolist-main-info
+                                ul
+                                    li
+                                        .prolist-main-info-title 供应商
+                                        .prolist-main-info-ctx #{listobj[i].yxs}
+                                    // li
+                                    //     .prolist-main-info-title 等级
+                                    //     .prolist-main-info-ctx
+                                    //         span #{listobj[i].tkClass}
+                                            // span.days-icon
+                                    li
+                                        .prolist-main-info-title 景点地址
+                                        .prolist-main-info-ctx #{listobj[i].tkAddress}
+                                    .clear
+                            .prolist-start-date
+                                ul
+                                    li 海岛
+                                    li 休闲
+                                    li 安心游
+                                | 出行日期：
+                                - for(var j=0; j<listobj[i].datelist.length; j++)
+                                    span.date-item #{listobj[i].datelist[j]}
+                                span.date-item.more-date 更多排期
+                        .prolist-right-part
+                            .source-price
+                                span.title 同行价
+                                span.main-red ￥#{listobj[i].sourceprice}
+                            // .sale-price
+                            //     span.title 销售价
+                            //     span.main-red ￥#{listobj[i].saleprice}
+                            // .sale-money
+                            //     span.title 利　润
+                            //     span.price
+                            //         span.main-green ￥#{listobj[i].salemoney}
+                            .book-btn
+                                a 立即预定
+                        .clear
+//- 面包屑导航
+mixin bread(items)
+    div.breadcrumb&attributes(attributes)
+        ul
+            li
+                font 您当前的位置：
+            - for(var i=0; i<items.length; i++)
+                if i < items.length - 1
+                    li <a>#{items[i]}</a>
+                        span &gt;
+                else 
+                    li <a class='cur'>#{items[i]}</a>
+
+//- 订单页标签
+mixin order-dt-tit(tit,text,objclass)
+    .order-dt-tit(class=objclass)
+        label #{tit}
+        span #{text}
+
+//- 下拉
+mixin select-group(items)
+    div.select-group
+        div.select
+            span.select-val #{items[0]}
+            i.g-arrow-down-icon
+        ul.select-dropdown
+            -for(var i=0;i<items.length;i++)
+                if i == 0
+                    li.active #{items[i]}
+                else
+                    li #{items[i]}
+
+mixin sg-multi-choice(items)
+    div.sg-multi-choice(data-max="2")
+        div.choice
+            span.choice-val #{items[0].tit}
+            i.g-arrow-down-icon
+        .choice-dropdown
+            p 请选择一项
+            ul
+                -for(var i=0;i<items.length;i++)
+                    li
+                        if i==0
+                            i.icon-check
+                        else 
+                            i.icon-uncheck
+                        .choice-wrap
+                            .choice-tit #{items[i].tit}
+                            .choice-desc #{items[i].desc}
+                        .choice-price
+                            | ￥
+                            em #{items[i].price}
+            .choice-btn-warp
+                span.sure 确认
+                span.cancel 取消
+mixin pagese(unit)
+    div.pagination-wrp
+        div.pageindex
+            span 1
+            |  -
+            span 39
+            |  / 共
+            span 80
+            | #{unit}
+        .pagination
+        .clear
+
+//- checkbox-btns 打钩多选 -by xuewa
+mixin checkbox-btns-con(items, singleRowMax)
+  div.checkbox-btns-con&attributes(attributes)
+    .scrollbar.checkbox-btns-row-wrp
+      <ul class='checkbox-btns-row'>
+      - for(var i=0; i<items.length; i++)
+          li(data-value=items[i].value).checkbox-btn-item
+            sapn.tick-text #{items[i].name}
+            span.tick-logo
+              i.icon.icon-select-t
+      </ul>
+
+//- radio-group 单选组 -by xuewa
+mixin radio-group-con(items)
+  div.radio-group-con&attributes(attributes)
+    <span class='radio-group'>
+    - for(var i=0;i<items.length; i++)
+        span.radio-item #{items[i]}
+          span.tick-logo
+    </span>
+
+
+mixin hotel-items(hotHotels)
+    .hotel-items
+        - for (var i=0; i< hotHotels.length; i++)
+            a.hotel-item
+                .hotel-item-pic
+                     img.item-pic(src=hotHotels[i].item_pic)
+                p #{hotHotels[i].description}
+                .star
+                    - for (var j=0; j< hotHotels[i].stars.length; j++)
+                        if (hotHotels[i].stars[j] == 1)
+                            em.icon-xingji
+                        else
+                            em.icon-kongxingji
+                .price
+                    em.money-type ￥
+                    em.money-count #{hotHotels[i].price}
+    .clear
+
+mixin place-items(hotPlace)
+    .hotel-items
+        - for (var i=0; i< hotPlace.length; i++)
+            a.hotel-item
+                .hotel-item-pic
+                     img.item-pic(src=hotPlace[i].item_pic)
+                h1 #{hotPlace[i].chineseName}
+                h2 #{hotPlace[i].englishName}
+    .clear

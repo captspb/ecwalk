@@ -1,0 +1,298 @@
+.menber-center
+	background-color: #f7f7f7
+.center-cont
+	width: 1200px
+	margin: 0 auto
+	padding-top: 14px
+	font-size: 0
+	position: relative
+// 左导航栏
+.left-nav
+	position: absolute
+	// background-color: #fff
+	display: inline-block
+	width: 226px
+	border-radius: 4px
+	// list-style: outside disc none
+	color: #333
+	font-size: 14px
+	&.fixed
+		position: fixed
+		top: 0
+	a
+		margin-bottom: 20px
+		display: inline-block
+	.first_nav
+		list-style: outside disc none
+		color: #333
+		font-size: 10px
+		&.cur
+			color: #D82628
+			&>a
+				color: #D82628
+		&>a
+			font-family: webfontregular
+			font-size: 14px
+			letter-spacing: 0
+	.second_nav
+		a
+			font-family: webfontregular
+			font-size: 14px
+			color: #666666
+			letter-spacing: 0
+	.top-part
+		background-color: #fff
+		padding: 10px 10px 10px 34px
+	.top-infos
+		list-style: disc
+	.top-info
+		position: relative
+		padding-top: 20px
+		.red-span
+			color: #D82628
+	.top-info:before
+		display: inline-block
+		content: ''
+		top: 0px
+		left: -10px
+		position: absolute
+		width: 186px
+		height: 1px
+		background-color: #F0F0F0
+
+	.top-info:first-child:before
+		display: none
+	.inner-info
+		margin-top: 20px
+		margin-bottom: 20px
+		position: relative
+		span
+			word-break: break-all
+			display: inline-block
+			color: #999
+	.mid-part
+		background-color: #fff
+		margin-top: 14px
+		margin-bottom: 14px
+		border-radius: 4px
+		padding: 30px 30px 10px 34px
+	.mid-info
+		list-style: disc
+		margin-bottom: 20px
+	.bottom-part
+		border-radius: 4px
+		padding: 30px 20px 9px 20px
+		background-color: #fff
+		// margin-bottom: -24px
+		li
+			margin-bottom: 24px
+			cursor: pointer
+			&.comfirm-ticket
+				display: none
+			a
+				margin-bottom: 0
+		i
+			display: inline-block
+			vertical-align: middle
+		.del-icon
+			width: 19px
+			height: 19px
+			background-image: url(../../images/menberCenter/cancel.png)
+			background-size: 24px
+			background-position: -2px
+		.cycle-icon
+			width: 19px
+			height: 19px
+			background-image: url(../../images/menberCenter/change.png)
+			background-size: 24px
+			background-position: -2px
+		.downLoad-icon
+			width: 19px
+			height: 19px
+			background-position: -2px
+			background-image: url(../../images/menberCenter/download.png)
+			background-size: 24px
+		.downLoad-travel-icon
+			display: inline-block
+			width: 19px
+			height: 19px
+			background-image: url(../../images/sprite-img/downLoad-travel.png)
+			background-size: 24px
+			background-position: -2px
+		.comfirm-domestic-icon
+			display: inline-block
+			width: 19px
+			height: 19px
+			background-position: -2px
+			background-size: 24px
+			background-image: url(../../images/sprite-img/comfirm-domestic.png)
+		.comfirm-ticket-icon
+			display: inline-block
+			width: 19px
+			height: 19px
+			background-image: url(../../images/sprite-img/comfirm-ticket.png)
+			background-size: 24px
+			background-position: -2px
+		.continue-pay-icon
+			display: inline-block
+			width: 19px
+			height: 19px
+			background-position: -2px
+			background-size: 24px
+			background-image: url(../../images/sprite-img/continue-pay.png)
+
+		span
+			display: inline-block
+			vertical-align: middle
+			margin-left: 9px
+
+// 右内容区
+.info-pannel
+	display: inline-block
+	margin-left: 240px
+	width: 946px
+	vertical-align: top
+	margin-bottom: 100px
+	.info-tbl
+		background-color: #fff
+		padding: 20px 30px 0 30px
+		margin-bottom: 14px
+		border-radius: 4px
+	.tbl-tit
+		font-size: 16px
+		color: #333333
+		letter-spacing: 0
+		line-height: 16px
+		margin-bottom: 23px
+	.right-content
+		font-size: 14px
+		color: #999999
+		letter-spacing: 0
+		font-weight: normal
+		// line-height: 16px
+		float: right
+		display: inline-block
+		vertical-align: middle
+	.info-content
+		border-top: 1px solid #f0f0f0
+		font-size: 14px
+		color: #666
+		letter-spacing: 0
+		line-height: 22px
+		padding-bottom: 20px
+		padding-top: 20px
+	table
+		font-size: 14px
+		color: #333333
+		letter-spacing: 0
+		font-weight: normal
+		width: 100%
+		tr
+			border-top: 1px solid #f0f0f0
+		th
+			line-height: 60px
+			border-top: 1px solid #f0f0f0
+			border-bottom: 1px solid #f0f0f0
+			width: 200px
+			text-align: center
+			font-weight: normal
+			color: #333
+		td
+			width: 200px
+			text-align: center
+			min-height: 60px
+			padding: 23px 0 
+			color: #666
+			&.dis
+				color: #999
+		img
+			display: inline-block
+			width: 14px
+			height: 14px
+			vertical-align: middle
+		.product-name
+			display: block
+			width: 280px
+			text-align: left
+			margin: 0 auto
+			// padding: 23px 0
+		.ticket-name
+			display: inline-block
+			width: 240px
+		.travel-date
+			display: inline-block
+			width: 130px
+		.ticket-type
+			display: inline-block
+			width: 100px
+		.create-date,.create-date-th
+			width: 148px
+		.create-depart,.create-depart-th
+			width: 246px
+		.creator,.creator-th
+			width: 210px
+		.insuranceP-name-th
+			width: 120px
+		.insuranceP-name
+			display: inline-block
+			width: 120px
+		.insurance-name-th
+			width: 346px
+		.insurance-name
+			display: inline-block
+			width: 346px
+		.insurance-No-th
+			width: 180px
+		.insurance-No
+			display: inline-block
+			width: 180px
+		.insurance-num,.insurance-price,.insurance-oper
+			display: inline-block
+			width: 80px
+		.price-date-th,.price-fee-th,.price-date,.price-fee
+			width: 160px
+		.attention
+			width: 440px
+		.price-num,.price-num-th
+			width: 120px
+
+
+.add-note
+	font-size: 16px
+	color: #D4AD4F
+	letter-spacing: 0
+	line-height: 60px
+	text-align: center
+	background: #FFF9EA
+	border: 1px dashed #F5EBD3
+	cursor: pointer
+	.plus_icon
+		background-image: url(../../images/menberCenter/plus_icon.png)
+		width: 16px
+		height: 16px
+		display: inline-block
+		margin-right: 4px
+		vertical-align: middle
+	font
+		vertical-align: middle
+
+.common-htext
+	font-size: 18px
+	color: #333333
+	letter-spacing: 0
+.textarea-item textarea::-webkit-input-placeholde
+	font-size: 14px
+	color: #999999
+	letter-spacing: 0
+.textarea-item textarea::-moz-placeholder
+	font-size: 14px
+	color: #999999
+	letter-spacing: 0
+.textarea-item textarea::-moz-placeholder
+	font-size: 14px
+	color: #999999
+	letter-spacing: 0
+.textarea-item textarea::-ms-input-placeholder
+	font-size: 14px
+	color: #999999
+	letter-spacing: 0

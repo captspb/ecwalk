@@ -1,0 +1,54 @@
+div.table_cont
+	table.productList
+		tr
+			th.ticket-type
+			th.name 名称
+			th.type 类型
+			th.payWay 支付方式
+			th.price-sale 销售价
+			//- th.price 同行价
+			//- th.profit 利润
+		- for (var i=0; i<8 ; i++)
+			if (i>3)
+				tr(style='display:none;')
+					td
+					td.name
+						span
+							a 2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票
+							.drop_up 2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票
+					td.type
+						span
+							a 电子票
+							.drop_up 电子票
+					td.payWay 
+						span 在线支付
+					td.price-sale 
+						span ￥800
+					//- td.price 
+						span ￥800
+					//- td.profit
+						span ￥800
+			else
+				tr
+					if i == 0
+						td 成人票
+					else if i == 3
+						td 儿童票
+					else
+						td
+					td.name
+						span
+							a 2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票
+							.drop_up 2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票2017广州长隆野生动物世界+飞鸟乐园成人平日套票
+					td.type
+						span
+							a 电子票
+							.drop_up 电子票
+					td.payWay 
+						span 在线支付
+					td.price-sale 
+						span ￥800
+					//- td.price 
+						span ￥800
+					//- td.profit
+						span ￥800

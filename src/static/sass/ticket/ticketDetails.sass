@@ -1,0 +1,198 @@
+@import "../common/params"
+@import "../common/function"
+
+.ticket-details
+  background-color: $color-f7
+  .prod-dt-tit
+    font-size: 32px
+
+.ticket-bk-dt
+  width: 1190px
+  margin: 0 auto
+  padding: 0 40px
+  background-color: #fff
+
+.ticket-screen
+  overflow: hidden
+  line-height: 28px
+  padding: 23px 0
+  label
+    display: inline-block
+    vertical-align: top
+    color: $color-b3
+    margin-right: 20px
+  .ticket-screen-date
+    position: relative
+    display: inline-block
+    vertical-align: top
+    width: 140px
+    padding: 0 20px 0 0
+    cursor: pointer
+    input
+      border: none
+      font-size: $font-18
+      width: 100%
+    .date-icon
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+      margin: auto
+
+.ticket-bk-info
+  background-color: $color-f7
+  height: 40px
+  line-height: 40px
+  overflow: hidden
+  li
+    float: left
+    color: $color-g6
+    font-size: $font-14
+    text-align: center
+  .tk-blank
+    width: 110px
+  .tk-name
+    width: 320px
+  .tk-type
+    width: 130px
+  .tk-period
+    width: 235px
+  .tk-prc
+    width: 210px
+    &.show-peer-price
+      cursor: pointer
+.ticket-bk-item
+  .ticket-species
+    float: left
+    width: 100px
+    padding: 25px 0
+    text-align: center
+  &.adult
+    background-color: #e5f5ff
+  &.child
+    background-color: #e8f9e8
+  &.baby
+    background-color: #f0f0f0
+
+.ticket-bk-list
+  margin-left: 110px
+  background-color: #fff
+  border-bottom: 1px dashed #eee
+  li
+    font-size: $font-16
+    border-top: 1px dashed #eee
+    &:first-child
+      border-top: none
+    &.active .ticket-info
+      background-color: #fffbf2
+
+  .ticket-info
+    padding: 20px 0
+    span
+      display: inline-block
+      vertical-align: middle
+      text-align: center
+    .ticket-prod
+      color: $font-blue
+      text-align: left
+      width: 320px
+      cursor: pointer
+      i
+        margin-left: 10px
+      span
+        display: inline-block
+        vertical-align: top
+      .presell-tip
+        margin-top: 4px
+        span
+          height: 24px
+          line-height: 24px
+          background: #FEEDEB
+          border-radius: 4px
+          color: #F30A37
+          font-size: 12px
+          padding: 0 8px
+          i
+            margin: 0 4px 0 0
+    .ticket-type
+      color: $font-blue
+      width: 130px
+      em
+        border-bottom: 1px dashed $font-blue
+        .popover-up
+          width: 200px
+          margin-bottom: 5px
+          font-size: 14px
+          color: #333
+          &:before,&:after
+            right: inherit
+            left: 15px
+    .ticket-period
+      color: $color-g6
+      width: 235px
+    .ticket-prc
+      position: relative
+      width: 120px
+      color: $main-red
+      .ticket-bk-prc-hide
+        display: none
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #fff
+        width: 100%
+        height: 100%
+      &.profit
+        color: $main-green-2
+    .btn
+      width: 76px
+      height: 34px
+      line-height: 34px
+      margin: -5px 0
+      &.presell
+        background: #FEEDEB
+        color: #F30A37
+        .m-popover-con
+          right: 0
+          white-space: nowrap
+          &:after
+            left: inherit
+            right: 32px
+          .icon-clock
+            margin-right: 4px
+  .ticket-info-dt
+    display: none
+    position: relative
+    padding: 10px 20px
+    background-color: $color-f7
+    border-top: 1px solid #eee
+    h2
+      font-size: $font-18
+      color: $font-blue
+      padding: 10px 0
+      font-weight: normal
+    li
+      border-top: none
+      padding-bottom: 12px
+      min-height: 22px
+      font-size: $font-14
+      label
+        float: left
+        color: $color-g3
+        font-weight: bold
+      div
+        overflow: hidden
+        color: $color-g6
+
+
+
+
+
+
+
+
+
+
+
+
+

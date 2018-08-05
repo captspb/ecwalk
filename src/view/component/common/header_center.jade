@@ -1,0 +1,25 @@
+include ../../../model/common/headerData
+
+include headerbar
+
+.b2b-header-ctx-wrp
+    .b2b-header-ctx
+        .b2c-header-logo
+            img(src=header.logo.url)
+
+.b2b-header-nav-wrp
+    .b2b-header-nav
+        ul
+            - for (var i=0; i<nav2.length; i++)
+              if i==(nav2.length-1)
+                li.cur(nav-type=nav2[i].attr)
+                    a(href=nav2[i].url)
+                        div #{nav2[i].text}
+                        span.white-line
+              else
+                li(nav-type=nav2[i].attr)
+                    a(href=nav2[i].url)
+                        div #{nav2[i].text}
+                        span.white-line
+            .clear
+

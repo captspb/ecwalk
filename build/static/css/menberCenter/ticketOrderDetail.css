@@ -1,0 +1,88 @@
+.menber-center{background-color:#f7f7f7}
+.center-cont{width:1200px;margin:0 auto;padding-top:14px;font-size:0;position:relative}
+.left-nav{position:absolute;display:inline-block;width:226px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#333;font-size:14px}
+.left-nav.fixed{position:fixed;top:0}
+.left-nav a{margin-bottom:20px;display:inline-block}
+.left-nav .first_nav{list-style:outside disc none;color:#333;font-size:10px}
+.left-nav .first_nav.cur{color:#D82628}
+.left-nav .first_nav.cur>a{color:#D82628}
+.left-nav .first_nav>a{font-family:webfontregular;font-size:14px;letter-spacing:0}
+.left-nav .second_nav a{font-family:webfontregular;font-size:14px;color:#666;letter-spacing:0}
+.left-nav .top-part{background-color:#fff;padding:10px 10px 10px 34px}
+.left-nav .top-infos{list-style:disc}
+.left-nav .top-info{position:relative;padding-top:20px}
+.left-nav .top-info .red-span{color:#D82628}
+.left-nav .top-info:before{display:inline-block;content:'';top:0;left:-10px;position:absolute;width:186px;height:1px;background-color:#F0F0F0}
+.left-nav .top-info:first-child:before{display:none}
+.left-nav .inner-info{margin-top:20px;margin-bottom:20px;position:relative}
+.left-nav .inner-info span{word-break:break-all;display:inline-block;color:#999}
+.left-nav .mid-part{background-color:#fff;margin-top:14px;margin-bottom:14px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:30px 30px 10px 34px}
+.left-nav .mid-info{list-style:disc;margin-bottom:20px}
+.left-nav .bottom-part{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:30px 20px 9px 20px;background-color:#fff}
+.left-nav .bottom-part li{margin-bottom:24px;cursor:pointer}
+.left-nav .bottom-part li.comfirm-domestic{display:none}
+.left-nav .bottom-part li a{margin-bottom:0}
+.left-nav .bottom-part i{display:inline-block;vertical-align:middle}
+.left-nav .bottom-part .del-icon{width:19px;height:19px;background-image:url(../../images/menberCenter/cancel.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .cycle-icon{width:19px;height:19px;background-image:url(../../images/menberCenter/change.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .downLoad-icon{width:19px;height:19px;background-position:-2px;background-image:url(../../images/menberCenter/download.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px}
+.left-nav .bottom-part .downLoad-travel-icon{display:inline-block;width:19px;height:19px;background-image:url(../../images/sprite-img/downLoad-travel.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .comfirm-domestic-icon{display:inline-block;width:19px;height:19px;background-position:-2px;-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-image:url(../../images/sprite-img/comfirm-domestic.png)}
+.left-nav .bottom-part .comfirm-ticket-icon{display:inline-block;width:19px;height:19px;background-image:url(../../images/sprite-img/comfirm-ticket.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .continue-pay-icon{display:inline-block;width:19px;height:19px;background-position:-2px;-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-image:url(../../images/sprite-img/continue-pay.png)}
+.left-nav .bottom-part span{display:inline-block;vertical-align:middle;margin-left:9px}
+.remittanceTbl-wrp{position:fixed;top:0;left:0;right:0;bottom:0;z-index:999;background-color:rgba(0,0,0,.6);display:none}
+.remittanceTbl-wrp .remittanceTbl{position:absolute;width:1010px;height:400px;overflow:auto;top:50%;left:50%;margin-left:-503px;margin-top:-200px;background-color:#fff;padding:0 0 0 20px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.remittanceTbl-wrp .remittanceTbl .common-close-btn.close-icon{position:absolute;right:0;top:0;cursor:pointer;width:40px;height:40px;background-image:url(../../images/menberCenter/close_big.png);-webkit-background-size:54px 54px;-moz-background-size:54px;-o-background-size:54px;background-size:54px;background-position:-8px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.remittanceTbl-wrp .remittanceTbl table{width:966px;font-family:webfontregular;font-size:14px;color:#333;letter-spacing:0}
+.remittanceTbl-wrp .remittanceTbl table td{height:100px;width:auto}
+.remittanceTbl-wrp .remittanceTbl table td span{display:inline-block}
+.remittanceTbl-wrp .remittanceTbl tbody{display:inline-block;width:970px}
+.remittanceTbl-wrp .remittanceTbl tr{border-bottom:1px solid #F0F0F0;text-align:center;font-family:webfontregular;font-size:14px;color:#333;letter-spacing:0;cursor:pointer}
+.remittanceTbl-wrp .remittanceTbl tr:last-child{border-bottom:none}
+.remittanceTbl-wrp .remittanceTbl tr.cur{background-color:#FFF9EA}
+.remittanceTbl-wrp .remittanceTbl .headRow{cursor:default;background-color:#fff}
+.remittanceTbl-wrp .remittanceTbl .headRow.fixed{top:0;width:970px}
+.remittanceTbl-wrp .remittanceTbl .headRow td{min-height:30px;height:30px;padding:0;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0}
+.remittanceTbl-wrp .remittanceTbl .No{width:95px;height:50px;line-height:50px;text-align:center}
+.remittanceTbl-wrp .remittanceTbl .No span{width:65px}
+.remittanceTbl-wrp .remittanceTbl .route span{width:300px;text-align:left;color:#333}
+.remittanceTbl-wrp .remittanceTbl .fareType,.remittanceTbl-wrp .remittanceTbl .totalPrice{width:76px}
+.remittanceTbl-wrp .remittanceTbl .fareType span,.remittanceTbl-wrp .remittanceTbl .totalPrice span{width:76px}
+.remittanceTbl-wrp .remittanceTbl .rate{width:97px}
+.remittanceTbl-wrp .remittanceTbl .rate span{width:97px}
+.remittanceTbl-wrp .remittanceTbl .totalPrice{width:107px}
+.remittanceTbl-wrp .remittanceTbl .totalPrice span{width:107px}
+.remittanceTbl-wrp .remittanceTbl .currency{width:45px}
+.remittanceTbl-wrp .remittanceTbl .currency span{width:65px}
+.remittanceTbl-wrp .remittanceTbl .orderTime span{width:125px}
+.remittanceTbl-wrp .remittanceTbl .startTime span{width:106px}
+.info-pannel{display:inline-block;margin-left:240px;width:946px;vertical-align:top;margin-bottom:100px}
+.info-pannel .info-tbl{background-color:#fff;padding:20px 30px 0 30px;margin-bottom:14px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.info-pannel .tbl-tit{font-size:16px;color:#333;letter-spacing:0;line-height:16px;margin-bottom:23px}
+.info-pannel .right-content{font-size:14px;color:#999;letter-spacing:0;font-weight:400;float:right;display:inline-block;vertical-align:middle}
+.info-pannel .remittance-info{color:#4A6BA9}
+.info-pannel table{font-size:14px;color:#666;letter-spacing:0;font-weight:400;width:100%}
+.info-pannel table th{line-height:60px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;width:200px;text-align:center;font-weight:400;color:#333}
+.info-pannel table td{width:200px;text-align:center;min-height:60px;padding:23px 0;color:#666}
+.info-pannel table td.dis{color:#999}
+.info-pannel table img{display:inline-block;width:14px;height:14px;vertical-align:middle}
+.info-pannel table .product-name{display:inline-block;width:200px}
+.info-pannel table .ticket-name{display:inline-block;width:240px;text-align:left}
+.info-pannel table .travel-date{display:inline-block;width:130px}
+.info-pannel table .ticket-type{display:inline-block;width:100px}
+.info-pannel table .price-date,.info-pannel table .price-fee{width:120px}
+.info-pannel table .getTicket-name-th,.info-pannel table .getTikcet-tel-th,.info-pannel table .price-date-th,.info-pannel table .price-fee-th{width:120px}
+.info-pannel table .attention{width:646px}
+.info-pannel table .getTicket-name,.info-pannel table .getTicket-phone,.info-pannel table .getTicket-tel{width:120px}
+.info-pannel table .create-date,.info-pannel table .create-date-th{width:148px}
+.info-pannel table .create-depart,.info-pannel table .create-depart-th{width:246px}
+.info-pannel table .creator,.info-pannel table .creator-th{width:210px}
+.add-note{font-size:16px;color:#D4AD4F;letter-spacing:0;line-height:60px;text-align:center;background:#FFF9EA;border:1px dashed #F5EBD3;cursor:pointer}
+.add-note .plus_icon{background-image:url(../../images/menberCenter/plus_icon.png);width:16px;height:16px;display:inline-block;margin-right:4px;vertical-align:middle}
+.add-note font{vertical-align:middle}
+.common-htext{font-size:18px;color:#333;letter-spacing:0}
+.textarea-item textarea::-webkit-input-placeholde{font-size:14px;color:#999;letter-spacing:0}
+.textarea-item textarea::-moz-placeholder{font-size:14px;color:#999;letter-spacing:0}
+.textarea-item textarea::-moz-placeholder{font-size:14px;color:#999;letter-spacing:0}
+.textarea-item textarea::-ms-input-placeholder{font-size:14px;color:#999;letter-spacing:0}

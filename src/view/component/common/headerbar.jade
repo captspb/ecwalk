@@ -1,0 +1,26 @@
+include ../../../model/common/headerData
+
+.b2b-header-bar-wrp
+    .b2b-header-bar
+        .b2b-header-bar-login
+            ul
+                - for (var i=0; i<header.barlogin.length; i++)
+                    li
+                        a(href=header.barlogin[i].url) #{header.barlogin[i].text}
+                .clear
+        
+        .b2b-header-bar-login.r-part
+            ul
+                - for (var i=0; i<header.barotherlink.length; i++)
+                    if (header.barotherlink[i].text != '关注公众号')
+                        li
+                            a(href=header.barotherlink[i].url) #{header.barotherlink[i].text}
+                    else
+                        li.popover
+                            a #{header.barotherlink[i].text}
+                            .popover-down
+                                .code-img
+                                    img(src='../../static/images/index/xzw-code.png')
+                                .code-tip 扫码关注公众号
+                .clear
+        .clear

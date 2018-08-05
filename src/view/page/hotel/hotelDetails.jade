@@ -1,0 +1,250 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+
+block append head
+    title 酒店详情
+
+block append style
+    link(rel='stylesheet', href='../../static/css/component/calendar.css')
+    link(rel='stylesheet', href='../../static/css/prodDetails.css')
+    link(rel='stylesheet', href='../../static/css/hotel/hotelDetails.css')
+
+block content
+    include ../../../model/hotel/hotelDetailsData
+    .hotel-details
+        //-.prod-dt-main
+            h2.prod-dt-tit 罗托鲁瓦智选假日酒店
+                span Holiday Inn Rotorua
+                - for (var i=0;i<5;i++)
+                    i.y-star-icon
+            .prod-dt-info.clearfix
+                .img-box
+                    img(src='../../static/images/details/logo.png')
+                    .contact-info.popover 联系方式
+                        .popover-down
+                            h2 广之旅
+                            p 11321321adsfasd
+                            p 11321321adsfasd
+                ul
+                    -for (var i=0;i<prodInfo.length;i++)
+                        li
+                            label #{prodInfo[i].text}
+                            p #{prodInfo[i].con}
+                    li
+                        label 酒店设施
+                        div
+                            span.hotel-facilities
+                                - var facilities = ['wifi','parking-lot','restaurant','gym','chess-room','coffee-house','bar','morning-call','karaoke']
+                                    each item in facilities
+                                        i(class=item + '-icon')
+                            span.more-facilities.popover 所有设施
+                                .popover-down 12132132123
+                .prod-dt-prc ￥<span>23380</span>起
+        .hotel-bk-top
+            .hotel-bk-top-con.clearfix
+                .hotel-bk-top-avatar
+                    img(src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg")
+                .hotel-bk-top-info
+                    h2 香港百乐酒店（Park Hotel Hong Kong）
+                    .info-star
+                        -for (var i=0;i<5;i++)
+                            i.y-star-icon
+                    ul.top-info-list
+                        li.clearfix
+                            label.tit-item 酒店编号：
+                            .com-item RJD002019
+                        li.clearfix
+                            label.tit-item 所在区域：
+                            .com-item 中国香港九龙区
+                        li.clearfix
+                            label.tit-item 酒店地址：
+                            .com-item 香港九龙尖沙咀漆咸道南61-65号
+                        li.clearfix
+                            label.tit-item 酒店介绍：
+                            .com-item 香港百乐酒店(Park Hotel Hong Kong)位于尖沙嘴心脏地带
+            .hotel-bk-top-btn
+                a.booking-btn 立即预订
+                a.collection-btn 收藏
+        .hotel-bk-search
+            .hotel-bk-search-item.clearfix
+                .isbreakfast
+                    i.checkbox-icon
+                    span 含早餐
+                .hotel-bk-search-date
+                    input(placeholder='入住时间-离店时间')
+                    em.hotel-bk-search-tip 入住时间-离店时间
+                .hotel-bk-search-num
+                    em.hotel-bk-search-tip 入住信息
+                    .hotel-search-info-num <em class='room-num'>1</em>间 / 每间<em class='adult-num'>1</em>成人，<em class='child-num'>0</em>儿童
+                    .airTicket-select-dropdown
+                        .select-dropdown-hd 请选择入住信息
+                        .select-dropdown-bd
+                            ul.tourists-select
+                                li 房间
+                                    .stepper-select.room-item(data-min='1', data-max='5')
+                                        span.c-minus-icon.minus-btn.disable
+                                        span.stepper-num 1
+                                        span.c-add-icon.add-btn
+                                li 成人/间
+                                    .stepper-select.adult-item(data-min='1', data-max='4')
+                                        span.c-minus-icon.minus-btn.disable
+                                        span.stepper-num 1
+                                        span.c-add-icon.add-btn
+                                li 儿童/间
+                                    .stepper-select.child-item(data-min='0', data-max='2')
+                                        span.c-minus-icon.minus-btn.disable
+                                        span.stepper-num 0
+                                        span.c-add-icon.add-btn
+                            .child-age-sel
+                                .age-sel-tit 请选择儿童年龄
+                                .select-item.clearfix
+                                    .select-list-item
+                                        span.item-con 儿童1：<em>< 1岁</em>
+                                        i.g-arrow-down-icon
+                                        ul.select-item-list
+                                            li < 1岁
+                                            li 1岁
+                                            li 2岁
+                                            li 3岁
+                                            li 4岁
+                                    .select-list-item
+                                        span.item-con 儿童2：<em>< 1岁</em>
+                                        i.g-arrow-down-icon
+                                        ul.select-item-list
+                                            li < 1岁
+                                            li 1岁
+                                            li 2岁
+                                            li 3岁
+                                            li 4岁
+                            .airTicket-select-btn
+                                a.cancel-btn 取消
+                                a.sure-btn 确定
+                .hotel-bk-search-btn 搜索
+            .hotel-bk-search-con
+                .search-loading-tip
+                    .text-tip 正在为您查询…
+                    .portfolio-choice-tip
+                        .tip-con
+                            h2 找不到合适的结果
+                            p 请尝试调整搜索条件。您可以更改出发时间、出发地等条件。
+                ul.hotel-bk-search-list
+                    -for(var i=0;i<3;i++)
+                        li.list-item
+                            .list-info.clearfix
+                                .list-info-img
+                                    img(src="http://file.gzl.cn/group1/M00/1D/60/wKkBHls8yy2AW6JlAAB9MMxGsvo375.jpg")
+                                .list-info-con
+                                    h2 海景高级房
+                                    p 床型描述：双人床1.8米，1张或单人床1.2米
+                                    p 供应商：广之旅岭南
+                                    p(title="房间设施：书桌，熨衣设备，房内保险箱，空调，衣柜/衣橱，暖气，闹钟，电热水壶，咖啡机，茶包，吹风机，浴室，熨衣设备，房内保险箱，空调") 房间设施：书桌，熨衣设备，房内保险箱，空调，衣柜/衣橱，暖气，闹钟，电热水壶，咖啡机，茶包，吹风机，浴室，熨衣设备，房内保险箱，空调
+                            .list-table
+                                .list-table-th
+                                    .list-room-type 房型
+                                    .list-policy 退改政策
+                                    .list-breakfast 含早餐
+                                    .list-bed-type 床型
+                                    .list-can-live 可住成人
+                                    .list-total-prc 总销售价
+                                    .list-unit-prc 每天单价
+                                ul.list-table-tb
+                                    -for(var j=0;j<3;j++)
+                                        li
+                                            .list-room-type
+                                                span 海景高级房（含早）
+                                                //-p.presell-tip
+                                                    span
+                                                        i.icon-clock
+                                                        | 开售时间：2017-08-01
+                                            .list-policy.main-blue
+                                                .m-popover 限时退改
+                                                    .m-popover-con.s-up 如需取消、修改订单，请在2018.7.15 00:00前联系我们客服，否则我们将扣除您全额或部分房费。
+                                            .list-breakfast 含早
+                                            .list-bed-type 大床
+                                            .list-can-live 2
+                                            .list-total-prc ¥
+                                                span 872
+                                            .list-unit-prc.main-red ¥
+                                                span 872
+                                            if j!==2
+                                                .list-table-btn 预定
+                                            else
+                                                .list-table-btn.presell.m-popover 即将开始
+                                                    .m-popover-con.s-up <i class="icon-clock"></i>开售时间：2017-08-01
+        .hotel-bk-map
+            .hotel-bk-tip 酒店位置
+            #baidumap(geo="113.2759952545166,23.117055306224895")
+
+        //-.hotel-bk-dt
+            .hotel-screen
+                span.hotel-date-screen
+                    p 入住时间
+                    div.start-date-input
+                        input(placeholder="入住日期" id='start-date')
+                span.hotel-date-screen
+                    p 退房时间
+                    div.end-date-input
+                        input(placeholder="退房日期" id='end-date')
+                a.btn 搜索
+            table.hotel-table
+
+                //tr
+                //    th 房型
+                //    th 床型
+                //    th 描述
+                //    th 最低价
+                //    th
+                tr
+                    td.hotel-room-type
+                        span.popover 高级豪华总统套房
+                            //.popover-up 021321321321321
+                        span.show-prod-dt.popover 房型详情>
+                            .popover-right 12132131312312
+                        span.other-item 大床
+                    //td.hotel-bed-type
+                    //    span.popover 大床
+                    //        .popover-up 021321321321321
+                    //td.hotel-bed-desc
+                    //    | 双人床1.5米，1张。
+                    //td.hotel-prc
+                    //    | ￥385000
+                    td.show-more(colspan='2')
+                        em 700起
+                        | 收起<i class='down-arrow-icon'></i>
+                -for(var i=0;i<3;i++)
+                    tr.con-bg
+                        td.hotel-room-type
+                            span.popover 高级豪华总统套房
+                                //.popover-up 02132132132132
+                            span.show-prod-dt.popover 产品详情>
+                                .popover-right 12132131312312
+                            span.other-item 立即确认
+                            span.other-item 含早
+                        //td.hotel-bed-type
+                        //    span.popover 含早
+                        //        .popover-up 021321321321321
+                        //td.hotel-confirm
+                        //    span.popover 立即确认
+                        //        .popover-up 021321321321321
+
+                        td.hotel-prc
+                            em.popover 日均价：￥385000
+                                .popover-up
+                                    ul
+                                        - for (var j=0;j<14;j++)
+                                            li
+                                                div 08-04 五
+                                                span ￥385
+                                                p 双早
+                        td.hotel-table-btn
+                            a.btn.btn-sm(href="hotelOrder.html") 散房
+                            a.btn.btn-sm(href="hotelOrder.html") 团房
+        //-include ../../component/prodDetails/prodDetailsCon
+block append script
+    //- script(src='../../static/js/lib/moment.js')
+    //- script(src='../../static/js/lib/daterangepicker.js')
+    script(src='http://api.map.baidu.com/api?v=2.0&ak=tmH4FzWYevQmsqCSbPA3u3A8')
+    script(src='../../static/js/calendar/calendar.js')
+    include ../template/calendar
+    script(src='../../static/js/hotel/hotelDetails.js')

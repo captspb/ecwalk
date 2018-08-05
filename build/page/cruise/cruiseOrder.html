@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/orderDetails.css">
+    <link rel="stylesheet" href="../../static/css/cruise/cruiseOrder.css">
+  </head>
+  <title>邮轮订单详情</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx b2b-order-header">
+        <div class="b2c-header-logo"><img src="../../static/images/index/LogoTitle.png"></div>
+        <div class="com-step-wrp">
+          <ul>
+            <li>
+              <div step-index="1" class="step step-icon">1</div>
+              <div class="step-text">选择产品</div>
+            </li>
+            <li class="line">
+              <div class="line-ctx"></div>
+            </li>
+            <li>
+              <div step-index="2" class="step step-icon">2</div>
+              <div class="step-text">填写订单</div>
+            </li>
+            <li class="line">
+              <div class="line-ctx"></div>
+            </li>
+            <li>
+              <div step-index="3" class="step step-icon">3</div>
+              <div class="step-text">合同确认</div>
+            </li>
+            <li class="line">
+              <div class="line-ctx"></div>
+            </li>
+            <li>
+              <div step-index="4" class="step step-icon">4</div>
+              <div class="step-text">在线支付</div>
+            </li>
+            <li class="line">
+              <div class="line-ctx"></div>
+            </li>
+            <li>
+              <div step-index="5" class="step step-icon">5</div>
+              <div class="step-text">预订成功</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="order-page cruise-order">
+      <div class="order-main">
+        <div class="order-left-cont">
+          <div class="order-top-cont">
+            <h2>春节·迪拜邮轮 MSC邮轮 迪拜阿布扎比阿曼 千年古城马斯喀特 神秘阿拉伯9天 EK香港 去回广州 13.8万吨 豪华邮轮辉煌</h2>
+            <p><span>出发日期：2018/06/17  周日</span><span class="cruise-order-date"><em>成人：<b>6</b>人</em><em>儿童：<b>1</b>人</em><em>房间：<b>4</b>间</em></span></p>
+          </div>
+          <ul class="order-info-list">
+            <li>
+              <div class="order-dt-tit">
+                <label>联系人信息</label><span>为方便广之旅及时与您联系，请准确填写联系人信息（手机号码，Email）</span>
+              </div>
+              <div class="order-info-item contact-info">
+                <div class="err-tip">中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确</div>
+                <ul class="form-group clearfix">
+                  <li>
+                    <label><b class='main-red'>*</b>姓名
+                    </label>
+                    <div class="form-group-con">
+                      <input placeholder="请输⼊游客姓名">
+                    </div>
+                  </li>
+                  <li>
+                    <label>电话
+                    </label>
+                    <div class="form-group-con">
+                      <input placeholder="请输⼊固定电话">
+                    </div>
+                  </li>
+                  <li>
+                    <label><b class='main-red'>*</b>手机
+                    </label>
+                    <div class="form-group-con">
+                      <input placeholder="请输⼊游客手机号码">
+                    </div>
+                  </li>
+                  <li>
+                    <label>邮箱
+                    </label>
+                    <div class="form-group-con">
+                      <input placeholder="请输⼊证件号码">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="order-dt-tit">
+                <label>旅客信息</label><span>请您正确填写游客信息</span>
+              </div>
+              <div class="order-info-item">
+                <div class="supplement-btn">游客资料后补<i class='red-tick-icon'></i></div>
+                <div class="tourist-info">
+                  <div class="tourist-info-item">
+                    <div class="tourist-info-tit"><i class='cruise-icon'></i>浪漫法式露台房</div>
+                    <div class="tourist-con">
+                      <div class="tourist-con-item">
+                        <div class="tourist-con-num">1</div>
+                        <div class="err-tip">中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确</div>
+                        <ul class="form-group clearfix">
+                          <li>
+                            <label><b class='main-red'>*</b>游客姓名
+                            </label>
+                            <div class="form-group-con">
+                              <input placeholder="请输⼊游客姓名">
+                            </div>
+                          </li>
+                          <li>
+                            <label><b class='main-red'>*</b>手机号码
+                            </label>
+                            <div class="form-group-con">
+                              <input placeholder="请输⼊游客手机号码">
+                            </div>
+                          </li>
+                          <li>
+                            <label>证件类型</label>
+                            <div class="form-group-con">
+                              <div class="select-group">
+                                <div class="select"><span class="select-val">身份证</span><i class="g-arrow-down-icon"></i></div>
+                                <ul class="select-dropdown">
+                                  <li class="active">身份证</li>
+                                  <li>居住证</li>
+                                  <li>其他</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <label>证件号码</label>
+                            <div class="form-group-con">
+                              <input placeholder="请输⼊证件号码">
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="tourist-add-item insurance-item">
+                          <div class="add-item-tit">已选保险(<em>0</em>)<a class="insurance-sel">选择保险</a></div>
+                          <div class="add-item-con">
+                            <ul class="insurance-con"></ul>
+                            <div class="add-item-list">
+                              <ul>
+                                <li data-insurance="0" class="insurance-sel-list"><span class="add-item-info">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥<em>8000</em></span><span class="add-item-stepper"></span></li>
+                                <li data-insurance="1" class="insurance-sel-list"><span class="add-item-info">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥<em>8000</em></span><span class="add-item-stepper"></span></li>
+                                <li data-insurance="2" class="insurance-sel-list"><span class="add-item-info">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥<em>8000</em></span><span class="add-item-stepper"></span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tourist-add-item service-item">
+                          <div class="add-item-tit">可选服务(<em>0</em>)</div>
+                          <div class="service-groug">
+                            <div class="service-groug-tit">asd阿萨德</div>
+                            <div class="add-item-con">
+                              <ul class="service-item-list">
+                                <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                                <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                                <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                              </ul>
+                              <div class="service-popover"> 132132132132131343213213</div>
+                            </div>
+                          </div>
+                          <div class="add-item-con">
+                            <ul class="service-item-list">
+                              <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                              <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                              <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                            </ul>
+                            <div class="service-popover"> 132132132132131343213213</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tourist-con-item">
+                        <div class="tourist-con-num">2</div>
+                        <div class="err-tip">中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确</div>
+                        <ul class="form-group clearfix">
+                          <li>
+                            <label><b class='main-red'>*</b>游客姓名
+                            </label>
+                            <div class="form-group-con">
+                              <input placeholder="请输⼊游客姓名">
+                            </div>
+                          </li>
+                          <li>
+                            <label><b class='main-red'>*</b>手机号码
+                            </label>
+                            <div class="form-group-con">
+                              <input placeholder="请输⼊游客手机号码">
+                            </div>
+                          </li>
+                          <li>
+                            <label>证件类型</label>
+                            <div class="form-group-con">
+                              <div class="select-group">
+                                <div class="select"><span class="select-val">身份证</span><i class="g-arrow-down-icon"></i></div>
+                                <ul class="select-dropdown">
+                                  <li class="active">身份证</li>
+                                  <li>居住证</li>
+                                  <li>其他</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <label>证件号码</label>
+                            <div class="form-group-con">
+                              <input placeholder="请输⼊证件号码">
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="tourist-add-item insurance-item">
+                          <div class="add-item-tit">已选保险(<em>0</em>)<a class="insurance-sel">选择保险</a></div>
+                          <div class="add-item-con">
+                            <ul class="insurance-con"></ul>
+                            <div class="add-item-list">
+                              <ul>
+                                <li data-insurance="0" class="insurance-sel-list"><span class="add-item-info">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥<em>8000</em></span><span class="add-item-stepper"></span></li>
+                                <li data-insurance="1" class="insurance-sel-list"><span class="add-item-info">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥<em>8000</em></span><span class="add-item-stepper"></span></li>
+                                <li data-insurance="2" class="insurance-sel-list"><span class="add-item-info">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥<em>8000</em></span><span class="add-item-stepper"></span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tourist-add-item service-item">
+                          <div class="add-item-tit">可选服务(<em>0</em>)</div>
+                          <div class="add-item-con">
+                            <ul class="service-item-list">
+                              <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                              <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                              <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                            </ul>
+                            <div class="service-popover"> 132132132132131343213213</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tourist-info-item">
+                    <div class="tourist-info-tit"><i class='cruise-icon'></i>浪漫法式露台房</div>
+                    <div class="tourist-con">
+                      <div class="tourist-con-item">
+                        <div class="tourist-con-num">3</div>
+                        <div class="err-tip">中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确</div>
+                        <ul class="form-group clearfix">
+                          <li>
+                            <label><b class='main-red'>*</b>游客姓名
+                            </label>
+                            <div class="form-group-con">
+                              <input placeholder="请输⼊游客姓名">
+                            </div>
+                          </li>
+                          <li>
+                            <label><b class='main-red'>*</b>手机号码
+                            </label>
+                            <div class="form-group-con">
+                              <input placeholder="请输⼊游客手机号码">
+                            </div>
+                          </li>
+                          <li>
+                            <label>证件类型</label>
+                            <div class="form-group-con">
+                              <div class="select-group">
+                                <div class="select"><span class="select-val">身份证</span><i class="g-arrow-down-icon"></i></div>
+                                <ul class="select-dropdown">
+                                  <li class="active">身份证</li>
+                                  <li>居住证</li>
+                                  <li>其他</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <label>证件号码</label>
+                            <div class="form-group-con">
+                              <input placeholder="请输⼊证件号码">
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="tourist-add-item insurance-item">
+                          <div class="add-item-tit">已选保险(<em>0</em>)<a class="insurance-sel">选择保险</a></div>
+                          <div class="add-item-con">
+                            <ul class="insurance-con"></ul>
+                            <div class="add-item-list">
+                              <ul>
+                                <li data-insurance="0" class="insurance-sel-list"><span class="add-item-info">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥<em>8000</em></span><span class="add-item-stepper"></span></li>
+                                <li data-insurance="1" class="insurance-sel-list"><span class="add-item-info">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥<em>8000</em></span><span class="add-item-stepper"></span></li>
+                                <li data-insurance="2" class="insurance-sel-list"><span class="add-item-info">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥<em>8000</em></span><span class="add-item-stepper"></span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tourist-add-item service-item">
+                          <div class="add-item-tit">可选服务(<em>0</em>)</div>
+                          <div class="add-item-con">
+                            <ul class="service-item-list">
+                              <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                              <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                              <li><span class="add-item-info option-service">太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋乐游亚洲4-6天太平洋...</span><span class="add-item-prc">¥ 8000</span><span class="add-item-stepper"></span></li>
+                            </ul>
+                            <div class="service-popover"> 132132132132131343213213</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="order-dt-tit">
+                <label>备注信息</label><span></span>
+              </div>
+              <div class="order-info-item">
+                <textarea placeholder="请填写备注信息" class="c-textarea"></textarea>
+              </div>
+            </li>
+            <li>
+              <div class="order-dt-tit">
+                <label>商家订单号</label><span></span>
+              </div>
+              <div class="order-info-item">
+                <input placeholder="请填写商家订单号" class="c-input">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="order-right-cont">
+          <div class="order-right-content">
+            <ul class="order-right-item">
+              <li>
+                <div class="order-right-item-tit">内舱客房</div>
+              </li>
+              <li>
+                <label>成人×2</label><span class="main-red">¥ 386</span>
+              </li>
+              <li>
+                <label>儿童×1</label><span class="main-red">¥ 386</span>
+              </li>
+              <li>
+                <label>婴儿×1</label><span class="main-red">¥ 386</span>
+              </li>
+              <li>
+                <label>房差</label><span class="main-green">¥ 386</span>
+              </li>
+            </ul>
+            <ul class="order-right-item">
+              <li>
+                <label>保险费</label><span>¥ 386</span>
+              </li>
+              <li>
+                <label>单房差</label><span>¥ 386</span>
+              </li>
+            </ul>
+            <ul class="order-right-item">
+              <li>
+                <label>优惠券</label><span>－¥ 100</span>
+              </li>
+              <li>
+                <label>积分</label><span>－¥ 100</span>
+              </li>
+              <li>
+                <label>⾃自游通卡</label><span>－¥ 100</span>
+              </li>
+            </ul>
+            <ul class="order-right-item order-total">
+              <li>
+                <label>销售总额</label><span>¥ 2000086</span>
+              </li>
+              <li>
+                <label>结算总额</label><span>¥ 2000086</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="order-footer">
+        <div class="order-footer-con">
+          <!--span 行程信息、条款及说明-->
+          <div class="footer-agree-item">
+            <div class="footer-agree-con"><i class="checkbox-item icon-uncheck">
+                <div class="m-popover-con s-up popover-red">请勾选此项</div></i>
+              <p>“行走网”作为第三方交易平台，并非此订单产品的实际服务提供商。为了保障您的权益，敬请在下单前仔细了解产品详情。一旦下单成功，已表明您认可并同意本次交易。</p>
+            </div>
+          </div><a class="back-btn"><em class="icon-back-arrow"></em>返回上一步</a><a class="submit-btn">提交订单</a>
+        </div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/cruise/cruiseOrder.js"></script>
+  </body>
+</html>

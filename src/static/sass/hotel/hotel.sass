@@ -1,0 +1,533 @@
+@import "../common/params"
+
+body
+  background-color: #f2f3f5
+
+body::-webkit-scrollbar-track
+  background-color: #fff
+
+body::-webkit-scrollbar-thumb
+  background-color: #ececec
+
+
+//.swiper-container
+//  width: 1920px
+//  maring: 0 auto
+  //.swiper-pagination
+  //  background-color: rgba(0,0,0,.3)
+  //  border-radius: 100px
+  //  padding: 5px 10px
+  //  .swiper-pagination-bullet
+  //    width: 8px !important
+  //    height: 8px !important
+  //    opacity: .3
+  //    margin: 0 4px 0 4px !important
+  //  .swiper-pagination-bullet-active
+  //    width: 8px !important
+  //    height: 8px !important
+
+
+//
+//.swiper-container
+//  .swiper-button-prev
+//    display: none
+//    background-image: url(../../images/swiper/20left.png)
+//    width: 56px
+//    height: 90px
+//    background-size: cover
+//    align-items: center
+//    justify-content: center
+//    left: -31%
+//    .icon-zuoqiehuan
+//      color: #fff
+//      font-size: 40px
+//  .swiper-button-prev:hover
+//    align-items: center
+//    justify-content: center
+//    background-image: url(../../images/swiper/40left.png)
+//    .icon-zuoqiehuan
+//      color: #fff
+//      font-size: 40px
+//
+//
+//.swiper-container
+//  .swiper-button-next
+//    display: none
+//    background-image: url(../../images/swiper/20right.png)
+//    width: 56px
+//    height: 90px
+//    background-size: cover
+//    align-items: center
+//    justify-content: center
+//    right: -31%
+//    .icon-youqiehuan
+//      color: #fff
+//      font-size: 40px
+//  .swiper-button-next:hover
+//    align-items: center
+//    justify-content: center
+//    background-image: url(../../images/swiper/40right.png)
+//    .icon-youqiehuan
+//      color: #fff
+//      font-size: 40px
+//
+
+
+.b2b-hotel-banner
+  height: 500px
+  position: relative
+  .swiper-container
+    height: 500px
+    position: relative
+    .b2b-main-swiper
+      height: 500px
+      // z-index: auto
+      .swiper-slide
+        height: 500px
+        overflow: hidden
+        a
+          display: block
+          text-align: center
+          position: relative
+          img
+            position: absolute
+            left: 50%
+            margin-left: -960px
+    .swiper-pagination-cont
+      display: block
+      text-align: center
+    .swiper-pagination
+      display: inline-block
+      position: relative
+      bottom: 38px
+      z-index: 2
+      text-align: center
+      font-size: 0
+      background-color: rgba(0,0,0,.3)
+      padding: 5px 10px
+      border-radius: 13px
+      .swiper-pagination-bullet
+        width: 8px
+        height: 8px
+        display: inline-block
+        border-radius: 5px
+        background-color: #fff
+        opacity: .6
+        margin: 0 4px 0 4px
+        &:hover
+          opacity: 1
+        &.swiper-pagination-bullet-active
+          opacity: 1
+    .swiper-button-prev
+      display: none
+      background-image: url(../../images/swiper/20left.png)
+      width: 56px
+      height: 90px
+      background-size: cover
+      align-items: center
+      justify-content: center
+      left: 0
+      &:hover
+        background-image: url(../../images/swiper/40left.png)
+      .icon-zuoqiehuan
+        color: #fff
+        font-size: 40px
+    .swiper-button-next
+      display: none
+      background-image: url(../../images/swiper/20right.png)
+      width: 56px
+      height: 90px
+      background-size: cover
+      align-items: center
+      justify-content: center
+      right: 0
+      &:hover
+        background-image: url(../../images/swiper/40right.png)
+      .icon-youqiehuan
+        color: #fff
+        font-size: 40px
+
+.b2b-hotel-banner:hover
+  .swiper-button-next
+    display: flex
+  .swiper-button-prev
+    display: flex
+
+
+
+.b2b-banner-filter
+  width: 325px
+  height: 422px
+  background-color: #fff
+  position: absolute
+  z-index: 10
+  border-radius: $border-radius-1
+  padding: 32px 20px
+  left: 50%
+  top: 32px
+  margin-left: -595px
+  .filter-li
+    box-sizing: border-box
+    border-bottom: 1px solid #F4F4F6
+    margin-bottom: 18px
+    position: relative
+    .filter-input
+      width: 100%
+      border: none
+      font-size: 16px
+      color: #181C28
+      line-height: 16px
+      margin-bottom: 10px
+    .filter-p
+      font-size: 12px
+      color: #7F8593
+      line-height: 1
+      margin-bottom: 8px
+  .filter-btn
+    background: #F30A37
+    border-radius: 4px
+    width: 100%
+    height: 40px
+    color: #fff
+    text-align: center
+    line-height: 40px
+    margin-top: 56px
+    display: block
+
+
+
+
+.hotel-home-list
+  width: 1190px
+  margin: 50px auto 0 auto
+  background-color: #f2f3f5
+  
+.hotel-home-list-head
+  display: flex
+  margin-bottom: 5px
+
+.head-title
+  line-height: 60px
+  width: 276px
+  .chinese
+    font-size: 24px
+    color: #F30A37
+    line-height: 24px
+    margin-right: 10px
+  .english
+    font-size: 12px
+    color: #B2B4BE
+    line-height: 12px
+
+.hotel-items
+  margin-left: -14px
+  .hotel-item
+    display: block
+    width: 286px
+    float: left
+    margin-left: 14px
+    margin-bottom: 40px
+    .hotel-item-pic
+      width: 100%
+      height: 190px
+      overflow: hidden
+      position: relative
+      z-index: 1
+      border-radius: $border-radius-1
+      .item-pic
+        display: block
+        width: 100%
+        height: 100%
+        border-radius: $border-radius-1
+        transition: all 1s
+      .item-pic:hover
+        transform: scale(1.05)
+    p
+      font-size: 18px
+      color: #333333
+      line-height: 26px
+      height: 52px
+      overflow: hidden
+      margin: 10px 0 10px 0
+      padding: 0 8px
+    .star
+      display: flex
+      padding-left: 8px
+      line-height: 1
+      img
+        width: 14px
+        height: 13.3px
+        display: block
+        margin-right: 5px
+    .price
+      font-size: 14px
+      color: #F30A37
+      line-height: 18px
+      margin: 10px 0 0 0
+      padding-left: 8px
+      .money-count
+        font-size: 18px
+
+
+.hotPlace
+  margin-bottom: 20px
+  .chinese
+    color: #2497FC
+  .hotel-item
+    width: 186px
+    .hotel-item-pic
+      height: 294px
+      width: 100%
+      overflow: hidden
+      position: relative
+      z-index: 1
+      .item-pic
+        height: 100%
+        width: 100%
+    h1
+      font-size: 18px
+      line-height: 20px
+      color: #181C28
+      margin: 10px 0 5px 0
+      font-weight: normal
+      padding: 0 8px
+
+    h2
+      font-size: 12px
+      color: #7F8593
+      font-weight: normal
+      padding: 0 8px
+      line-height: 12px
+
+.hotel-picker
+  display: none
+  width: 537px
+  background: #FFFFFF
+  border-radius: 4px
+  position: absolute
+  box-shadow: $box-shadow-1
+  z-index: 99
+
+
+
+.hotel-picker-head
+  height: 46px
+  border-bottom: 1px solid #F4F4F6
+  padding-top: 5px
+
+.hotel-picker-body
+  max-height: 314px
+  overflow: auto
+  padding: 10px 10px
+
+.hotel-picker-head-head
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 50px
+  justify-content: space-between
+  line-height: 30px
+  margin-left: 10px
+  .txt
+    color: #F30A37
+
+.hotel-picker-body::-webkit-scrollbar
+  width: 4px
+
+.hotel-picker-body::-webkit-scrollbar-thumb
+  background-color: #D8D8D8
+  border-radius: 8px
+
+.short-line
+  height: 3px
+  width: 10px
+  background: #F30A37
+  border-radius: 100%
+
+.hotel-picker-item
+  border-radius: $border-radius-1
+  height: 46px
+  padding: 5px 10px
+  display: flex
+  justify-content: space-between
+  border: none !important
+  margin-bottom: 10px !important
+  list-style-type: none
+  .hotel
+    .chinese-name
+      font-size: 12px
+      color: #151515
+      margin-bottom: 2px
+      .search-highlight
+        color: #F30A37
+    .english-name
+      font-size: 12px
+      color: #7F8593
+      line-height: 12px
+  .place
+    font-size: 12px
+    color: #7F8593
+    text-align: right
+    line-height: 14px
+
+.hotel-picker-item:hover
+  background: #F4F4F4
+
+.checkin-info-picker
+  display: none
+  font-size: 14px
+  color: #333333
+  line-height: 14px
+  width: 320px
+  background: #FFFFFF
+  border-radius: $border-radius-1
+  position: absolute
+  box-shadow: $box-shadow-1
+  z-index: 99
+  overflow: hidden
+  .years-select-tip
+    padding: 0 20px
+    font-size: 14px
+    color: #7F8593
+    line-height: 14px
+    margin: 20px 0 10px 0
+  .head
+    background: #F4F4F4
+    line-height: 42px
+    padding: 0 15px
+  .canel-cfm
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 20px
+    margin: 30px 0 20px 0
+    .cfm
+      color: #F52A51
+    .clear-info
+      color: #7F8593
+      margin-right: 120px
+  ul
+    padding: 0 20px 0 20px
+    li
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid #ECECEC
+      height: 42px
+      line-height: 42px
+      .counter
+        display: flex
+        align-items: center
+        .minus
+          border: 1px solid #ECECEC
+          border-radius: 4px
+          color: #ECECEC
+          width: 20px
+          height: 20px
+          display: block
+          font-size: 12px
+          line-height: 20px
+          text-align: center
+        .plus
+            border-radius: 4px
+            color: #fff
+            width: 20px
+            height: 20px
+            display: block
+            font-size: 12px
+            line-height: 20px
+            text-align: center
+        input
+          width: 38px
+          text-align: center
+          border: none
+
+.children-select-items
+  padding-left: 12px
+
+
+.child-select-item
+  float: left
+  width: 136px
+  height: 34px
+  background: #FFFFFF
+  border: 1px solid #E3E3E7
+  border-radius: 4px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0  10px
+  margin: 0 0 10px 8px
+  position: relative
+  img
+    width: 16px
+    height: 16px
+  .child-options-wrap
+    padding-right: 5px
+    display: none
+    position: absolute
+    top: 110%
+    left: 0
+    width: 136px
+    background-color: #fff
+    box-shadow: $box-shadow-1
+    z-index: 100
+    .child-options
+      max-height: 202px
+      width: 100%
+      overflow: auto
+      padding: 0 10px
+      &::-webkit-scrollbar-thumb
+        background-color: #D8D8D8
+        border-radius: 8px
+      .child-option-item
+        height: 34px
+        line-height: 34px
+        color: #181C28
+        padding: 0 10px
+        border-radius: 4px
+
+.child-options::-webkit-scrollbar
+  width: 5px
+
+.child-option-item:hover
+    background-color: #F4F4F4
+    color: #F30A37 !important
+
+.children-area
+  display: none
+
+.icon-xingji
+  color: #E89B00
+  margin-right: 4px
+  font-size: 14px
+
+.icon-kongxingji
+  color: #E89B00
+  margin-right: 5px
+  font-size: 14px
+
+
+
+.hotel-picker-item
+  em
+    color: #F30A37
+
+.place-select-popup
+  margin-top: 0
+
+.icon-minus
+  font-size: 12px
+  color: red
+
+
+.icon-zengjia
+  font-size: 12px
+
+
+.keyup-search
+  padding: 0
+  margin-top: 0
+
+.child-options-wrap
+  padding-right: 5px
+  

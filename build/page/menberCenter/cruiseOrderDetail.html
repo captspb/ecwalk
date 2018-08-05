@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/menberCenter/cruiseOrderDetail.css">
+  </head>
+  <title>邮轮订单详情</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx">
+        <div class="b2c-header-logo"><img src="../../static/images/index/LogoTitle.png"></div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="grzc" class="cur"><a href="#">
+              <div>个人中心</div><span class="white-line"></span></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="menber-center">
+      <div class="center-cont">
+        <ul class="left-nav">
+          <li style="margin-bottom: 14px" class="bottom-part">
+            <ul class="bottom-infos">
+              <li class="bottom-info cancel-travel"> <i class="del-icon"></i><span>取消行程</span></li>
+              <li class="bottom-info update-travel"> <i class="cycle-icon"></i><span>变更行程</span></li>
+              <li class="bottom-info"><i class="downLoad-icon"></i><span> <a>下载出团通知书</a></span></li>
+              <li class="bottom-info"><i class="downLoad-travel-icon"></i><span><a>下载行程</a></span></li>
+              <li class="bottom-info comfirm-domestic"><i class="comfirm-domestic-icon"></i><span><a>确认入住</a></span></li>
+              <li class="bottom-info comfirm-ticket"><i class="comfirm-ticket-icon"></i><span><a>确认出票</a></span></li>
+              <li class="bottom-info continue-pay"><i class="continue-pay-icon"></i><span><a>继续支付</a></span></li>
+            </ul>
+          </li>
+          <li class="top-part">
+            <ul class="top-infos">
+              <li class="top-info"><span>基本信息</span><span class="red-span"></span>
+                <ul class="inner-infos">
+                  <li class="inner-info"><span>订单号：</span><span>201712070002155</span></li>
+                  <li class="inner-info"><span>商家订单号：</span><span>123</span></li>
+                  <li class="inner-info"><span>订单状态：</span><span>已取消</span></li>
+                </ul>
+              </li>
+              <li class="top-info"><span>费用清单：</span><span class="red-span">￥100</span>
+                <ul class="inner-infos">
+                  <li class="inner-info"><span>房间费：</span><span>－¥260</span></li>
+                  <li class="inner-info"><span>房间费：</span><span>¥260</span></li>
+                </ul>
+              </li>
+              <li class="top-info"><span>结算清单：</span><span class="red-span">￥0</span>
+                <ul class="inner-infos">
+                  <li class="inner-info"><span>已付金额：</span><span>－¥100</span></li>
+                  <li class="inner-info"><span>未付金额：</span><span>¥0</span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="mid-part">
+            <ul class="mid-infos">
+              <li class="mid-info popover">联系供应商
+                <div class="popover-up">12313123123211231312312321123131231232112313123123211231312312321123131231232112313123123211231312312321</div>
+              </li>
+              <li class="mid-info popover">联系分销商
+                <div class="popover-up">1231312312321</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="info-pannel">
+          <li class="info-tbl">
+            <h5 class="tbl-tit">邮轮信息</h5>
+            <table style="width: auto">
+              <tr>
+                <th class="cruise-name-th">邮轮名称</th>
+                <th class="cruise-num-th">人数</th>
+                <th class="start-date-th">出发时间</th>
+                <th class="end-date-th">返程时间</th>
+                <th class="days-th">行程天数</th>
+              </tr>
+              <tr>
+                <td><span class="cruise-name">广州南沙起航—菲律宾航次【副楼】闲雅阁/养生阁标准双人房</span></td>
+                <td class="cruise-num">1</td>
+                <td class="start-date">2017-12-20</td>
+                <td class="end-date">2017-12-20</td>
+                <td class="days">2天</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">联系人信息</h5>
+            <table>
+              <tr>
+                <th class="contact-name-th">姓名</th>
+                <th class="contact-tel-th">手机</th>
+                <th>电话</th>
+                <th>邮箱</th>
+              </tr>
+              <tr>
+                <td class="contact-name dis">--</td>
+                <td class="contact-tel dis">--</td>
+                <td class="contact-phone dis">--</td>
+                <td class="contact-email dis">--</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">舱房信息</h5>
+            <table style="width: auto">
+              <tr>
+                <th class="cruiseRoom-name-th">舱房名称</th>
+                <th class="cruiseRoom-num-th">数量</th>
+                <th>可住人数</th>
+                <th class="cruiseRoom-layer-th">楼层</th>
+              </tr>
+              <tr>
+                <td class="cruiseRoom-name dis">--</td>
+                <td class="cruiseRoom-num dis">--</td>
+                <td class="dis">--</td>
+                <td class="cruiseRoom-layer dis">--</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit open-lock"><span>游客信息</span><i class="lock-status-icon"></i><span class="right-content add-tourist">补录信息</span></h5>
+            <table class="touristTbl">
+              <tr>
+                <th>游客姓名</th>
+                <th>证件类型</th>
+                <th>证件号码</th>
+                <th>手机</th>
+              </tr>
+              <tr>
+                <td class="tourist-name"> <span class="outer"> <span class="inner">徐先生</span></span>
+                  <input type="text" value="徐先生">
+                </td>
+                <td class="card-type"><span class="outer"><span class="inner dis">身份证</span></span>
+                  <select>
+                    <option>身份证</option>
+                    <option>学生证</option>
+                    <option>军人证</option>
+                  </select>
+                </td>
+                <td class="card-No"><span class="outer"><span class="inner dis">--</span></span>
+                  <input type="text">
+                </td>
+                <td class="tourist-tel"><span class="outer"><span class="inner">18875834342</span></span>
+                  <input type="text" value="18875834342">
+                </td>
+              </tr>
+              <tr>
+                <td class="tourist-name"> <span class="outer"><span class="inner dis">--</span></span>
+                  <input type="text">
+                </td>
+                <td class="card-type"><span class="outer"><span class="inner dis">身份证</span></span>
+                  <select>
+                    <option>身份证</option>
+                  </select>
+                </td>
+                <td class="card-No"><span class="outer"><span class="inner dis">--</span></span>
+                  <input type="text">
+                </td>
+                <td class="tourist-tel"><span class="outer"><span class="inner">18875834342</span></span>
+                  <input type="text">
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li style="padding-bottom:23px" class="info-tbl">
+            <h5 class="tbl-tit">备注信息<span class="right-content">
+                 
+                共有 <span class="red">5 </span> 条备注信息</span></h5>
+            <table>
+              <tr>
+                <th class="create-date-th">创建时间</th>
+                <th class="create-depart-th">创建部门</th>
+                <th class="creator-th">创建人</th>
+                <th>备注内容</th>
+              </tr>
+              <tr>
+                <td class="create-date">2017-12-15</td>
+                <td class="create-depart">B2B门户-(gzlds)演示账号GZLDS</td>
+                <td class="creator">测试演示(020-86347054)</td>
+                <td>123</td>
+              </tr>
+              <tr>
+                <td class="create-date">2017-12-15</td>
+                <td class="create-depart">B2B门户-(gzlds)演示账号GZLDS</td>
+                <td class="creator">测试演示(020-86347054)</td>
+                <td>123</td>
+              </tr>
+            </table>
+            <div class="add-note"><i class="plus_icon"></i><font>添加新备注</font></div>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">变更信息<span class="right-content">
+                 
+                共查询到 <span class="red">0 </span> 条信息</span></h5>
+            <table>
+              <tr>
+                <th class="upOrder-No-th">变更单号</th>
+                <th class="upOrder-tit-th">变更单标题</th>
+                <th>提交时间</th>
+                <th>变更前</th>
+                <th>变更后</th>
+                <th>备注</th>
+                <th>状态</th>
+              </tr>
+              <tr>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">跟单人信息</h5>
+            <table>
+              <tr>
+                <th>跟单人姓名</th>
+                <th>跟单人电话</th>
+                <th>跟单人办公电话</th>
+                <th>跟单人邮件</th>
+              </tr>
+              <tr>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+              </tr>
+            </table>
+          </li>
+          <li class="info-tbl">
+            <h5 class="tbl-tit">操作员信息<span class="right-content">（gzlds）演示账号GZLDS</span></h5>
+            <table>
+              <tr>
+                <th>操作员姓名</th>
+                <th>操作员电话</th>
+                <th>操作员手机</th>
+                <th>操作员邮件</th>
+              </tr>
+              <tr>
+                <td>测试演示</td>
+                <td>020-123456</td>
+                <td class="dis">--</td>
+                <td class="dis">--</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/jquery.pagination.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/menberCenter/cruiseOrderDetail.js"></script>
+  </body>
+</html>

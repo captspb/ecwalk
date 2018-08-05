@@ -1,0 +1,54 @@
+@import "params"
+
+// 三角形
+@mixin arrow($arrow: down,$size: 10px,$color: $color-g3)
+  content: ''
+  display: inline-block
+  width: 0
+  height: 0
+  @if $arrow == up
+    border-bottom: $size solid $color
+    border-right: $size solid transparent
+    border-left: $size solid transparent
+  @else if $arrow == down
+    border-top: $size solid $color
+    border-right: $size solid transparent
+    border-left: $size solid transparent
+  @else if $arrow == left
+    border-right: $size solid $color
+    border-top: $size solid transparent
+    border-bottom: $size solid transparent
+  @else if $arrow == right
+    border-left: $size solid $color
+    border-top: $size solid transparent
+    border-bottom: $size solid transparent
+
+// 半角
+@mixin triarrow($triarrow: topleft,$size: 10px,$color: $color-g3)
+    content: ''
+    display: inline-block
+    width: 0
+    height: 0
+    @if $triarrow == topleft
+      border-top: $size solid $color
+      border-right: $size solid transparent
+    @else if $triarrow == topright
+      border-top: $size solid $color
+      border-left: $size solid transparent
+    @else if $triarrow == bottomleft
+      border-bottom: $size solid $color
+      border-right: $size solid transparent
+    @else if $triarrow == bottomright
+      border-bottom: $size solid $color
+      border-left: $size solid transparent
+
+// 线性渐变 Linear Gradient
+@mixin gradient ($origin: 90deg, $start: #e33638, $stop: #f16769)
+  background-color: $start
+  background-image: linear-gradient($origin, $start, $stop)
+
+// opacity
+@mixin opacity ($opacity: 1)
+  $filter: $opacity * 100
+  opacity: $opacity
+  filter: alpha(opacity = $filter)

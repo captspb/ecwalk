@@ -1,0 +1,48 @@
+include ../../../model/menberCenter/orderDetailData
+ul.left-nav
+    li.bottom-part(style='margin-bottom: 14px')
+        ul.bottom-infos
+            li.bottom-info.cancel-travel 
+                i.del-icon
+                span 取消行程
+            li.bottom-info.update-travel 
+                i.cycle-icon
+                span 变更行程
+            li.bottom-info
+                i.downLoad-icon
+                span 
+                    a 下载出团通知书
+            li.bottom-info
+                i.downLoad-travel-icon
+                span
+                    a 下载行程
+            li.bottom-info.comfirm-domestic
+                i.comfirm-domestic-icon
+                span
+                    a 确认入住
+            li.bottom-info.comfirm-ticket
+                i.comfirm-ticket-icon
+                span
+                    a 确认出票
+            li.bottom-info.continue-pay
+                i.continue-pay-icon
+                span
+                    a 继续支付
+    li.top-part
+        ul.top-infos
+            - for (var i=0; i<left_orderDetailNavs.length; i++)
+                li.top-info
+                    span #{left_orderDetailNavs[i].text}
+                    span.red-span #{left_orderDetailNavs[i].value}
+                    ul.inner-infos
+                        - for (var j=0; j<left_orderDetailNavs[i].innerInfos.length; j++)
+                            li.inner-info
+                                span #{left_orderDetailNavs[i].innerInfos[j].text}
+                                span #{left_orderDetailNavs[i].innerInfos[j].content}
+    li.mid-part
+        ul.mid-infos
+            li.mid-info.popover 联系供应商
+                .popover-up 12313123123211231312312321123131231232112313123123211231312312321123131231232112313123123211231312312321
+            li.mid-info.popover 联系分销商
+                .popover-up 1231312312321
+   

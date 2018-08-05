@@ -1,0 +1,357 @@
+::-webkit-input-placeholder 
+	color: #B3B3B3
+	font-size: 16px
+::-moz-placeholder
+	color: #B3B3B3
+	font-size: 16px
+::-moz-placeholder
+	font-size: 16px
+	color: #B3B3B3
+::-ms-input-placeholder
+	font-size: 16px
+	color: #B3B3B3
+
+.menber-center
+	background-color: #f7f7f7
+.center-cont
+	width: 1200px
+	margin: 0 auto
+	padding-top: 14px
+	font-size: 0
+	position: relative
+// 左导航栏
+.left-nav
+	position: absolute
+	background-color: #fff
+	padding: 30px 30px 10px 44px
+	display: inline-block
+	width: 166px
+	border-radius: 4px
+	list-style: outside disc none
+	color: #333
+	&.fixed
+		position: fixed
+		top: 0
+	a
+		margin-bottom: 20px
+		display: inline-block
+	.first_nav
+		list-style: outside disc none
+		color: #333
+		font-size: 10px
+		&.cur
+			color: #D82628
+			&>a
+				color: #D82628
+		&>a
+			font-family: webfontregular
+			font-size: 14px
+			letter-spacing: 0
+	.second_nav
+		a
+			font-family: webfontregular
+			font-size: 14px
+			color: #666666
+			letter-spacing: 0
+// 右内容区
+.search-content
+	display: inline-block
+	padding-left: 180px
+	// margin-left: 14px
+	width: 1186px
+	vertical-align: top
+	.searchbar-cont
+		background-color: #fff
+		width: 100%
+		border-radius: 4px
+		margin-bottom: 14px
+	.searchbar
+		padding: 0 0 20px 20px
+		display: inline-block
+		vertical-align: top
+		.search-item
+			display: inline-block
+			width: 302px
+			padding-top: 20px
+			&.deadline-search
+				width: 353px
+				label
+					padding-left: 28px
+				input
+					display: inline-block
+					width: 350px
+			label
+				font-family: webfontregular
+				font-size: 14px
+				color: #333333
+				letter-spacing: 0
+				line-height: 14px
+				display: inline-block
+				margin-right: 12px
+			input
+				margin-top: 10px
+				display: block
+				border: none
+				font-family: webfontregular
+				font-size: 16px
+				letter-spacing: 0
+				width: 100%
+			select
+				background-color: #F0F0F0
+				border-radius: 3px
+				border: none
+				font-family: webfontregular
+				font-size: 14px
+				color: #333
+				letter-spacing: 0
+				line-height: 26px
+				appearance: none
+				-webkit-appearance: none
+				padding-left: 10px
+				padding-right: 26px
+				background-image: url(../../images/menberCenter/down_arrow.png)
+				background-position: 44px 10px
+				background-repeat: no-repeat
+			span
+				display: inline-block
+				font-size: 14px
+				padding: 6px 30px 6px 10px
+				background-color: #F0F0F0
+				line-height: 1
+				border-radius: 3px
+				position: relative
+				i
+					position: absolute
+					right: 10px
+					display: inline-block
+					width: 15px
+					height: 15px
+					background-image: url(../../images/menberCenter/calendar.png)
+					background-repeat: no-repeat
+	button
+		border-radius: 4px
+		background-color: #D82628
+		font-size: 18px
+		// font-weight: bold
+		display: inline-block
+		width: 80px
+		height: auto
+		border: none
+		color: #fff
+		vertical-align: top
+		float: right
+		bottom: 0
+.searchResult-cont
+	width: 1006px
+	padding: 0 20px 14px 20px
+	background-color: #fff
+	display: inline-block
+	border-radius: 4px
+	table
+		width: 966px
+		font-family: webfontregular
+		font-size: 14px
+		color: #333333
+		letter-spacing: 0
+		background: #fff
+	tbody
+		display: inline-block
+		width: 988px
+	tr
+		border-bottom: 1px solid #F0F0F0
+		text-align: center
+		font-family: webfontregular
+		font-size: 14px
+		color: #333333
+		letter-spacing: 0
+		// display: inline-block
+		&:last-child
+			border-bottom: none
+		&.forbidden
+			color: #999
+			button
+				color: #999
+				cursor: default
+	.headRow
+		width: 966px
+		background-color: #fff
+		// display: inline-block
+		&.fixed
+			top: 0
+	th
+		font-family: webfontregular
+		font-size: 14px
+		color: #333333
+		letter-spacing: 0
+		font-weight: normal
+		// display: inline-block
+		&:first-child
+			padding-left: 32px
+		span
+			display: inline-block
+	.No
+		width: 58px
+		height: 60px
+		line-height: 60px
+		text-align: center
+		span
+			width: 58px
+	.orderNo
+		padding-right: 32px
+		text-align: left
+		span
+			height: 60px
+			line-height: 60px
+			text-align: left
+	.seller-orderNo
+		padding-right: 32px
+		text-align: left
+		span
+			text-align: left
+	.pdName
+		padding-right: 32px
+		text-align: left
+		span
+			text-align: left
+			width: 230px
+			height: 40px
+			overflow: hidden
+			-o-text-overflow: ellipsis
+			text-overflow: ellipsis
+			display: -webkit-box
+			-webkit-line-clamp: 2
+			-webkit-box-orient: vertical
+
+	.mainAccount,.active
+		width: 124px
+		span 
+			width: 124px
+		img
+			display: inline-block
+			vertical-align: middle
+			cursor: pointer
+			&.dis
+				cursor: default
+	.operate
+		width: 210px
+		font-size: 0
+		span
+			width: 210px
+			font-size: 14px
+	.tel
+		width: 14%
+		// span
+			// width: 14%
+	.name
+		width: 15%
+	.deadline
+		height: 60px
+		width: 140px
+		text-align: left
+	.status
+		width: 108px
+		text-align: left
+	.order-num
+		width: 122px
+		text-align: left
+	.should-pay
+		width: 108px
+		text-align: left
+	.total-price
+		width: 150px
+		text-align: left
+	.statement-payed
+		width: 150px
+		text-align: left
+	.payed
+		width: 108px
+		text-align: left
+	.none-pay
+		width: 108px
+		text-align: left
+	.statement-none-pay
+		width: 150px
+		text-align: left
+	.statements-operate
+		text-align: left
+		width: 256px
+		button
+			position: static
+			line-height: 32px
+			padding: 0 16px
+			width: auto
+			color: #4779D4
+			&.toPay
+				background-color: #D92628
+				color: #fff
+	.account
+		width: 166px
+		span
+			width: 166px
+	td
+		height: 66px
+		text-align: center
+		&:first-child
+			padding-left: 32px
+		button
+			display: inline-block
+			padding: 5px 10px
+			background-color: #F0F0F0
+			border-radius: 4px
+			float: none
+			font-size: 14px
+			color: #333
+			letter-spacing: 0
+			line-height: 1
+			height: auto
+			cursor: pointer
+		
+.add-account
+	font-size: 16px
+	color: #D4AD4F
+	letter-spacing: 0
+	line-height: 60px
+	text-align: center
+	background: #FFF9EA
+	border: 1px dashed #F5EBD3
+	cursor: pointer
+	.plus_icon
+		background-image: url(../../images/menberCenter/plus_icon.png)
+		width: 16px
+		height: 16px
+		display: inline-block
+		margin-right: 4px
+		vertical-align: middle
+	font
+		vertical-align: middle
+
+
+.page-cont
+	margin-bottom: 30px
+.pagination-wrp
+	width: 1006px
+	.jump-ipt
+		&::-webkit-input-placeholder 
+			color: #B3B3B3
+			font-size: 14px
+		&::-moz-placeholder
+			color: #B3B3B3
+			font-size: 14px
+		&::-moz-placeholder
+			font-size: 14px
+			color: #B3B3B3
+		&::-ms-input-placeholder
+			font-size: 14px
+			color: #B3B3B3
+.com-input
+	select
+		background-position: 200px 15px
+		background-repeat: no-repeat
+		background-image: url(../../images/menberCenter/down_arrow.png)
+		color: #999
+		appearance: none
+		-moz-appearance: none
+		-webkit-appearance: none
+		option
+			color: #999
+			border: none

@@ -1,0 +1,166 @@
+extends ../../component/common/layout
+include ../../../model/common/headerData
+include ../../component/common/mixin
+
+append head
+  title 首页登录
+append style
+  link(rel='stylesheet', href='../../static/css/login/login.css')
+//- header
+block header
+  .b2b-header-ctx-wrp
+    .b2b-header-ctx
+        .b2c-header-logo
+            img(src='../../static/images/index/LogoTitle.png')
+block content
+  //- content
+  div.login-cont
+    div.login-bg
+      div.login-form
+        div.form-tit 登录您的账户
+        div.tab-content
+            div.err-tip 
+              i.minus_btn
+              font 账号或密码错误
+            ul.inputs
+              li.input-item
+                input.tel(placeholder='手机号码／会员账号',is-null='false',data-name='登录账号',data-name-en='account')
+              li.input-item
+                input.passw(type='password',placeholder='请输入密码',maxlength='12',is-null='false',data-name='登录密码',data-name-en='password')
+              li.input-item
+                input.valid(placeholder='图形验证码',is-null='false',data-name='验证码',data-name-en='validCode')
+                span.valid-img
+            button.btn.login-btn 登录
+            .sign-up-btn
+              .sign-up-l
+                a.main-red 访客登录
+              .sign-up-r
+                a 供应商入口
+                a.registered-btn 注册
+
+  div.cont
+    div.inner-cont
+      ul.features
+        li.feature(style='margin-bottom:80px;') 
+          img.logo(src='../../static/images/login/icons/Security.png')
+          div.right
+            h4 安全保障
+            p 全国上市旅游集团提供资金安全及交易保障
+        li.feature 
+          img.logo(src='../../static/images/login/icons/Resources.png')
+          div.right
+            h4 海量资源
+            p 海量一手资源，采购价格极具优势
+        li.feature(style='margin-right:0;') 
+          img.logo(src='../../static/images/login/icons/Client.png')
+          div.right
+            h4 强大的收客能力
+            p 庞大线下同业收客渠道，瞬间提升收客能力
+        li.feature 
+          img.logo(src='../../static/images/login/icons/Service.png')
+          div.right
+            h4 优质服务
+            p 精选品质供应商，保证产品服务
+        li.feature 
+          img.logo(src='../../static/images/login/icons/Fee.png')
+          div.right
+            h4 超低费率
+            p 超低平台费率，销售成本降至冰点
+        li.feature(style='margin-right:0;')
+          img.logo(src='../../static/images/login/icons/Convenient.png')
+          div.right
+            h4 便捷实用
+            p 平台功能便捷实用，极速提高工作效率
+
+      div.platform
+        div.tit
+          h5 平台产品
+          font PLATFORM PRODUCT
+        div.pics
+          div.left
+            img(src='../../static/images/login/pics/pic1.png')
+          div.mid
+            img(src='../../static/images/login/pics/pic2.png')
+          div.right
+            div.top
+              div.top-left
+                img(src='../../static/images/login/pics/pic3.png')
+              div.top-right
+                img(src='../../static/images/login/pics/pic4.png')
+            div.bottom
+              img(src='../../static/images/login/pics/pic5.png')
+
+      div.platformSuper
+        div.tit
+          h5 平台优势
+          font PLATFORM SUPERIORITY
+        ul.supers
+          li.super
+            div
+              img(src='../../static/images/login/icons/Quality.png')
+            h5 高品质保证
+            p 高准入标准确保高品质产品，打造良好的业内口碑
+          li.super
+            div
+              img(src='../../static/images/login/icons/Source.png')
+            h5 丰富资源
+            p 拥有业内丰富的旅游供应商资源及销售渠道客源
+          li.super
+            div
+              img(src='../../static/images/login/icons/Team.png')
+            h5 优秀的专业团队
+            p 拥有超30年旅游从业经验的专业采购人员、线上线下营销精英
+          li.super(style='margin-right: 0;')
+            div
+              img(src='../../static/images/login/icons/Technology.png')
+            h5 强大的技术支持
+            p 依托强大的平台技术，为超千家企业会员提供高效的交易服务
+
+      div.settledPlatform
+        div.tit
+          h5 入驻平台
+          font SETTLED PLATFORM
+        ul.settles
+          li.settle
+            h5 入驻流程
+            ul.labels
+              li.label
+                label 注册申请
+                i.next_step
+              li.label
+                label 提交认证资料
+                i.next_step
+              li.label
+                label 平台审核
+                i.next_step
+              li.label
+                label 签订合同
+                i.next_step
+              li.label
+                label 成功入驻
+
+          li.settle
+            h5 入驻需提交的资料
+            ul.infos
+              li 1. 企业法人和入驻平台后的指定业务负责人身份证原件扫描件及复印件。
+              li 2. 有效的《企业法人营业执照》副本的原件扫描件及复印件，且在平台开展的经营活动不超过其核准的经营范围。
+              li 3. 税务登记证的原件扫描件。
+              li 4. 有效《旅行社业务经营许可证》的原件扫描件，且拟在供销平台开展的经营活动不超过其许可经营业务范围。以上资料请快递至广州市白云区机场西乐嘉路1号。
+          li.settle
+            h5 什么类型的产品可以合作？
+            div 跟团游、自由行、门票、酒店、邮轮
+          li.settle
+            h5 审核回复大概需要多长时间？
+            div 需线下审核，提交认证资料后2-3个工作日内回复审核结果。
+          li.settle
+            h5 合同条款
+            div 将与您签定法律适用和管辖或限制责任的合同条款。审核期间如您有任何疑何，可向入驻联系人咨询。
+
+append script  
+  script(src='../../static/js/login/login.js')
+    
+    
+
+
+
+

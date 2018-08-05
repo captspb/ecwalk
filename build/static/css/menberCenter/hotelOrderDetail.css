@@ -1,0 +1,69 @@
+.menber-center{background-color:#f7f7f7}
+.center-cont{width:1200px;margin:0 auto;padding-top:14px;font-size:0;position:relative}
+.left-nav{position:absolute;display:inline-block;width:226px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#333;font-size:14px}
+.left-nav.fixed{position:fixed;top:0}
+.left-nav a{margin-bottom:20px;display:inline-block}
+.left-nav .first_nav{list-style:outside disc none;color:#333;font-size:10px}
+.left-nav .first_nav.cur{color:#D82628}
+.left-nav .first_nav.cur>a{color:#D82628}
+.left-nav .first_nav>a{font-family:webfontregular;font-size:14px;letter-spacing:0}
+.left-nav .second_nav a{font-family:webfontregular;font-size:14px;color:#666;letter-spacing:0}
+.left-nav .top-part{background-color:#fff;padding:10px 10px 10px 34px}
+.left-nav .top-infos{list-style:disc}
+.left-nav .top-info{position:relative;padding-top:20px}
+.left-nav .top-info .red-span{color:#D82628}
+.left-nav .top-info:before{display:inline-block;content:'';top:0;left:-10px;position:absolute;width:186px;height:1px;background-color:#F0F0F0}
+.left-nav .top-info:first-child:before{display:none}
+.left-nav .inner-info{margin-top:20px;margin-bottom:20px;position:relative}
+.left-nav .inner-info span{word-break:break-all;display:inline-block;color:#999}
+.left-nav .mid-part{background-color:#fff;margin-top:14px;margin-bottom:14px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:30px 30px 10px 34px}
+.left-nav .mid-info{list-style:disc;margin-bottom:20px}
+.left-nav .bottom-part{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:30px 20px 9px 20px;background-color:#fff}
+.left-nav .bottom-part li{margin-bottom:24px;cursor:pointer}
+.left-nav .bottom-part li.comfirm-ticket{display:none}
+.left-nav .bottom-part li a{margin-bottom:0}
+.left-nav .bottom-part i{display:inline-block;vertical-align:middle}
+.left-nav .bottom-part .del-icon{width:19px;height:19px;background-image:url(../../images/menberCenter/cancel.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .cycle-icon{width:19px;height:19px;background-image:url(../../images/menberCenter/change.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .downLoad-icon{width:19px;height:19px;background-position:-2px;background-image:url(../../images/menberCenter/download.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px}
+.left-nav .bottom-part .downLoad-travel-icon{display:inline-block;width:19px;height:19px;background-image:url(../../images/sprite-img/downLoad-travel.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .comfirm-domestic-icon{display:inline-block;width:19px;height:19px;background-position:-2px;-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-image:url(../../images/sprite-img/comfirm-domestic.png)}
+.left-nav .bottom-part .comfirm-ticket-icon{display:inline-block;width:19px;height:19px;background-image:url(../../images/sprite-img/comfirm-ticket.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .continue-pay-icon{display:inline-block;width:19px;height:19px;background-position:-2px;-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-image:url(../../images/sprite-img/continue-pay.png)}
+.left-nav .bottom-part span{display:inline-block;vertical-align:middle;margin-left:9px}
+.info-pannel{display:inline-block;margin-left:240px;width:946px;vertical-align:top;margin-bottom:100px}
+.info-pannel .info-tbl{background-color:#fff;padding:20px 30px 0 30px;margin-bottom:14px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.info-pannel .tbl-tit{font-size:16px;color:#333;letter-spacing:0;line-height:16px;margin-bottom:23px}
+.info-pannel .right-content{font-size:14px;color:#999;letter-spacing:0;font-weight:400;float:right;display:inline-block;vertical-align:middle}
+.info-pannel .info-content{border-top:1px solid #f0f0f0;font-size:14px;color:#666;letter-spacing:0;line-height:22px;padding-bottom:20px;padding-top:20px}
+.info-pannel table{font-size:14px;color:#333;letter-spacing:0;font-weight:400;width:100%}
+.info-pannel table tr{border-top:1px solid #f0f0f0}
+.info-pannel table th{line-height:60px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;width:200px;text-align:center;font-weight:400;color:#333}
+.info-pannel table td{width:200px;text-align:center;min-height:60px;padding:23px 0;color:#666}
+.info-pannel table td.dis{color:#999}
+.info-pannel table img{display:inline-block;width:14px;height:14px;vertical-align:middle}
+.info-pannel table .product-name{display:block;width:280px;text-align:left;margin:0 auto}
+.info-pannel table .ticket-name{display:inline-block;width:240px}
+.info-pannel table .travel-date{display:inline-block;width:130px}
+.info-pannel table .ticket-type{display:inline-block;width:100px}
+.info-pannel table .create-date,.info-pannel table .create-date-th{width:148px}
+.info-pannel table .create-depart,.info-pannel table .create-depart-th{width:246px}
+.info-pannel table .creator,.info-pannel table .creator-th{width:210px}
+.info-pannel table .insuranceP-name-th{width:120px}
+.info-pannel table .insuranceP-name{display:inline-block;width:120px}
+.info-pannel table .insurance-name-th{width:346px}
+.info-pannel table .insurance-name{display:inline-block;width:346px}
+.info-pannel table .insurance-No-th{width:180px}
+.info-pannel table .insurance-No{display:inline-block;width:180px}
+.info-pannel table .insurance-num,.info-pannel table .insurance-oper,.info-pannel table .insurance-price{display:inline-block;width:80px}
+.info-pannel table .price-date,.info-pannel table .price-date-th,.info-pannel table .price-fee,.info-pannel table .price-fee-th{width:160px}
+.info-pannel table .attention{width:440px}
+.info-pannel table .price-num,.info-pannel table .price-num-th{width:120px}
+.add-note{font-size:16px;color:#D4AD4F;letter-spacing:0;line-height:60px;text-align:center;background:#FFF9EA;border:1px dashed #F5EBD3;cursor:pointer}
+.add-note .plus_icon{background-image:url(../../images/menberCenter/plus_icon.png);width:16px;height:16px;display:inline-block;margin-right:4px;vertical-align:middle}
+.add-note font{vertical-align:middle}
+.common-htext{font-size:18px;color:#333;letter-spacing:0}
+.textarea-item textarea::-webkit-input-placeholde{font-size:14px;color:#999;letter-spacing:0}
+.textarea-item textarea::-moz-placeholder{font-size:14px;color:#999;letter-spacing:0}
+.textarea-item textarea::-moz-placeholder{font-size:14px;color:#999;letter-spacing:0}
+.textarea-item textarea::-ms-input-placeholder{font-size:14px;color:#999;letter-spacing:0}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/menberCenter/accountManage.css">
+  </head>
+  <title>账户管理</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx">
+        <div class="b2c-header-logo"><img src="../../static/images/index/LogoTitle.png"></div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="grzc" class="cur"><a href="#">
+              <div>个人中心</div><span class="white-line"></span></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="menber-center">
+      <div class="center-cont">
+        <ul class="left-nav">
+          <li class="first_nav cur"><a>订单管理</a>
+            <ul>
+              <li class="second_nav"> <a href="left_centerNavs[i].children[j].url">未付款</a></li>
+              <li class="second_nav"> <a href="left_centerNavs[i].children[j].url">已付款</a></li>
+            </ul>
+          </li>
+          <li class="first_nav"><a>账号管理</a>
+            <ul>
+            </ul>
+          </li>
+        </ul>
+        <div class="search-content">
+          <div class="searchbar-cont">
+            <ul class="searchbar">
+              <li class="search-item">
+                <label>账号</label>
+                <input placeholder="请输入账号">
+              </li>
+              <li class="search-item">
+                <label>手机号</label>
+                <input placeholder="请输入手机号">
+              </li>
+            </ul>
+            <button>搜索</button>
+          </div>
+          <div class="searchResult-cont">
+            <table>
+              <tr class="headRow">
+                <th class="No"><span>序号</span></th>
+                <th class="account"> <span>账号</span></th>
+                <th class="name"> <span>姓名</span></th>
+                <th class="tel"> <span>手机</span></th>
+                <th class="mainAccount"> <span>是否主账号</span></th>
+                <th class="active"> <span> 是否启用</span></th>
+                <th class="operate"> <span>更多操作</span></th>
+              </tr>
+              <tr>
+                <td class="No">1</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> 是
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/checked.png" class="dis">
+                </td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+              <tr class="forbidden">
+                <td class="No">2</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> -
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/forbidden.png" class="forbidden"></td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="No">3</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> 是
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/checked.png" class="checked">
+                </td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+              <tr class="forbidden">
+                <td class="No">4</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> -
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/forbidden.png" class="forbidden"></td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="No">5</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> 是
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/checked.png" class="checked">
+                </td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+              <tr class="forbidden">
+                <td class="No">6</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> -
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/forbidden.png" class="forbidden"></td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="No">7</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> 是
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/checked.png" class="checked">
+                </td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+              <tr class="forbidden">
+                <td class="No">8</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> -
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/forbidden.png" class="forbidden"></td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="No">9</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> 是
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/checked.png" class="checked">
+                </td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+              <tr class="forbidden">
+                <td class="No">10</td>
+                <td class="account">testtest1</td>
+                <td class="name">测试1</td>
+                <td class="tel">13712341234</td>
+                <td class="mainAccount"> -
+                </td>
+                <td class="active"> <img src="../../static/images/menberCenter/forbidden.png" class="forbidden"></td>
+                <td class="operate"> 
+                  <button style="margin-right:20px" class="modifyInfo">编辑资料</button>
+                  <button class="updatePassw">修改密码</button>
+                </td>
+              </tr>
+            </table>
+            <div class="add-account"><i class="plus_icon"></i><font>添加新账号          </font></div>
+          </div>
+          <div class="page-cont">
+            <div class="pagination-wrp">
+              <div class="pageindex"><span>1</span> -<span>39</span> / 共<span>80</span>个结果</div>
+              <div class="pagination"></div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrp">
+      <div class="footer-ctx">
+        <div class="friendly-link"><a href="#">泰国旅游局</a><span>　/　</span><a href="#">新西兰旅游局</a><span>　/　</span><a href="#">澳大利亚旅游局</a><span>　/　</span><a href="#">香港旅游发展局</a><span>　/　</span><a href="#">日本旅游局</a><span>　/　</span><a href="#">威尼斯人度假村</a><span>　/　</span><a href="#">广之旅海外咨询服务有限公司</a><span>　/　</span><a href="#">千岛湖风光</a><span>　/　</span>
+        </div>
+        <div class="server-info"><span>旅行社业务经营许可证号：L-GD-CJ00004</span><span>　|　</span><span>ICP经营许可号：粤ICP备13071273号-2</span></div>
+        <div class="server-info">Copyright © 1999-2011 广州广之旅国际旅行社股份有限公司. All rights reserved.</div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/jquery.pagination.js"></script>
+    <script src="../../static/js/lib/bootstrap.min.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/menberCenter/accountManage.js"></script>
+  </body>
+</html>

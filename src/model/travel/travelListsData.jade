@@ -1,0 +1,242 @@
+-
+    var bread = ['跟团游','搜索'];
+    var search = [
+        {
+            main: '出发城市',
+            morepick: false,
+            pricerange: false,
+            downpick: true,
+            taglist: [
+                {
+                    name: '北京',
+                    result: 10
+                },
+                {
+                    name: '广州',
+                    result: 20
+                },
+                {
+                    name: '香港',
+                    result: 60
+                },
+                {
+                    name: '日本',
+                    result: 0
+                },
+                {
+                    name: '台湾',
+                    result: 5
+                },
+                {
+                    name: '阿拉斯加',
+                    result: 120
+                },
+                {
+                    name: '印度尼西亚',
+                    result: 10
+                },
+                {
+                    name: '上海',
+                    result: 10
+                },
+                {
+                    name: '西藏',
+                    result: 10
+                },
+                {
+                    name: '拉斯维加斯',
+                    result: 10
+                }
+            ]
+        },
+        {
+            main: '目的城市',
+            morepick: true,
+            downpick: true,
+            pricerange: false,
+            taglist: [
+                {
+                   name: '北京',
+                   result: 10
+                },
+                {
+                  name: '广州',
+                  result: 20
+                },
+                {
+                  name: '香港',
+                  result: 60
+                },
+                {
+                  name: '日本',
+                  result: 0
+                },
+                {
+                    name: '台湾',
+                    result: 5
+                },
+                {
+                   name: '阿拉斯加',
+                   result: 120
+                },
+                {
+                    name: '印度尼西亚',
+                    result: 10
+                },
+                {
+                    name: '上海',
+                    result: 10
+                },
+                {
+                    name: '西藏',
+                    result: 10
+                },
+                {
+                    name: '拉斯维加斯',
+                    result: 10
+                }
+            ]
+        },
+        {
+            main: '价格',
+            morepick: false,
+            downpick: false,
+            pricerange: true,
+            taglist: [
+                {
+                    name: '500元以下',
+                    result: 0
+                },
+                {
+                    name: '501-1000元',
+                    result: 0
+                },
+                {
+                    name: '1001-3000元',
+                    result: 0
+                },
+                {
+                    name: '3001-5000元',
+                    result: 0
+                },
+                {
+                    name: '5001-10000元',
+                    result: 0
+                },
+                {
+                    name: '10000元以上',
+                    result: 0
+                }
+            ]
+        },
+        {
+            main: '行程天数',
+            morepick: false,
+            downpick: true,
+            pricerange: false,
+            taglist: [
+                {
+                    name: '1天',
+                    result: 0
+                },
+                {
+                    name: '2天',
+                    result: 0
+                },
+                {
+                    name: '3天',
+                    result: 0
+                },
+                {
+                    name: '4天',
+                    result: 0
+                },
+                {
+                    name: '5天',
+                    result: 0
+                },
+                {
+                    name: '6天',
+                    result: 0
+                },
+                {
+                    name: '7天',
+                    result: 0
+                },
+                {
+                    name: '8天',
+                    result: 0
+                },
+                {
+                    name: '9天及9天以上',
+                    result: 0
+                }
+            ]
+        },
+        {
+            main: '主题',
+            morepick: true,
+            downpick: true,
+            pricerange: false,
+            taglist: [
+                {
+                    name: '海滩海岛',
+                    result: 44
+                },
+                {
+                    name: '甜蜜侣程',
+                    result: 17
+                },
+                {
+                    name: '轻旅行',
+                    result: 25
+                },
+                {
+                    name: '亲子',
+                    result: 16
+                },
+                {
+                    name: '安心游',
+                    result: 14
+                },
+                {
+                    name: '慢享',
+                    result: 7
+                },
+                {
+                    name: '美食',
+                    result: 7
+                },
+                {
+                    name: '老友记',
+                    result: 5
+                },
+                {
+                    name: '休闲',
+                    result: 53
+                }
+            ]
+        },
+        {
+            main: '供应商',
+            morepick: false,
+            downpick: true,
+            pricerange: false,
+            taglist: [
+                {
+                    name: '广州广之旅国际旅行社股份有限公司',
+                    result: 28
+                },
+                {
+                    name: '湛江广之旅旅行社有限公司',
+                    result: 5
+                },
+                {
+                    name: '佛山广之旅国际旅行社有限公司',
+                    result: 4
+                }
+            ]
+        }
+    ]
+    var hadpick = [{type: '主题', name: '休闲'},{type: '主题', name: '海岛'}];
+    var tabobj3 = [{text: '产品显示', iscur: true},{text: '排期显示', iscur: false}];

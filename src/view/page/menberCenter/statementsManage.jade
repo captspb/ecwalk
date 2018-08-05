@@ -1,0 +1,90 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+//- include ../../component/common/pagese
+block append head
+    title 订单管理
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/menberCenter/orderManage.css')
+    link(rel='stylesheet', href='../../static/css/menberCenter/accountManage.css')
+
+body
+  block header
+    include ../../component/common/header_center
+
+  block content
+    include ../../../model/menberCenter/orderManageData
+    .menber-center
+        .center-cont
+            //- 左导航
+            ul.left-nav
+                - for (var i=0; i<left_centerNavs.length; i++)
+                    if i==0
+                        li.first_nav.cur
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+                    else 
+                        li.first_nav
+                            a #{left_centerNavs[i].text}
+                            if left_centerNavs[i].children && left_centerNavs.length>0
+                                ul
+                                    - for (var j=0; j<left_centerNavs[i].children.length; j++)
+                                        li.second_nav 
+                                            a(href='left_centerNavs[i].children[j].url') #{left_centerNavs[i].children[j].text}
+            //- 右边内容
+            .search-content
+                .searchbar-cont
+                    ul.searchbar
+                        li.search-item.deadline-search
+                            label 账期
+                            input#statement-date-range(readonly,placeholder='开始时间-结束时间')
+                        li.search-item
+                            label 状态
+                            select
+                                option 全部
+                    button 搜索
+                .searchResult-cont
+                    table
+                        tr.headRow
+                            th.deadline
+                                span 账期
+                            th.status
+                                span 状态
+                            th.order-num
+                                span 订单数
+                            th.should-pay
+                                span 应付
+                            th.payed
+                                span 已付
+                            th.none-pay
+                                span  未付
+                            th.statements-operate
+                                span 操作
+                        - for (var i = 0;i<=9; i++)
+                            tr
+                                td.deadline 2018-20
+                                td.status 估清
+                                td.order-num 23
+                                td.should-pay ￥555
+                                td.payed ￥555
+                                td.none-pay $555
+                                td.statements-operate
+                                    button.toPay(style='margin-right: 12px') 支付
+                                    button.appeal(style='margin-right: 12px') 申诉
+                                    button.toDetail 查看明细
+                .page-cont
+                    +pagese('个结果')
+                    
+
+
+block append script
+    script(src='../../static/js/lib/jquery.pagination.js')
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/menberCenter/orderManage.js')
+
+

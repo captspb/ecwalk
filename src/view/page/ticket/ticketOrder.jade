@@ -1,0 +1,146 @@
+extends ../../component/common/layout
+include ../../component/common/mixin
+
+block append head
+    title 门票订单详情
+
+block append style
+    link(rel='stylesheet', href='../../static/css/daterangepicker.css')
+    link(rel='stylesheet', href='../../static/css/orderDetails.css')
+    link(rel='stylesheet', href='../../static/css/ticket/ticketOrder.css')
+
+block header
+    include ../../component/common/header_order
+
+block content
+    include ../../../model/ticket/ticketOrderData
+    .order-page
+        .order-main
+            .order-left-cont
+                .order-top-cont
+                    h2 香港迪士尼乐园
+                    h3 香港迪士尼乐园1日门票 电子换票证
+                    p 出发日期：2017-08-18
+                        span.bk-notice 预定须知<i class='arrow-down right-arrow'></i>
+                    .ticket-info-dt
+                        h2  香港迪士尼乐园2日门票连环岛旅运广东至香港迪士尼乐园三合一餐劵
+                        ul
+                            li
+                                label 预订时间：
+                                div 提前一天23:00点前
+                            li
+                                label 使⽤期限：
+                                div 2017-04-01 至 2017-12-31
+                            li
+                                label 兑换方式：
+                                div 凭取票凭证码及购票⼿机号在适⽤公园的指定售卖或换票专窗⼝验证取票
+                            li
+                                label 产品介绍：
+                                div
+                                    p 1、指定⽇期，指定场次，电⼦票，此票为新濠影汇魔幻间标准座⻔票，表演场次：20:30 。
+                                    p 2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。
+                                    p 3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。
+                            li
+                                label 预定说明：
+                                div
+                                    p 1、2岁以下⼩童免费（不包括2岁），免费⼩童不能占座，⼀位购票成⼈仅可以带⼀位免费⼩童⼊场。⼀经预订，不退不改。
+                                    p 2、预订时请提供取票客⼈证件的英⽂名字及电⼦邮箱，以便接收电⼦确认信。
+                                    p 3、该⻔票销售，为试做模式，不保证⼀定有票，如果查询之后发现场次满座，将通知客⼈全额退款或者更改观看场次、观看⽇期，不做额外赔付。
+                                    p 4、12岁或以下的⼉童⼊场需要成⼈陪同。
+                                    p 5、平⽇每天三场表演，分别是16:00/18:00/20:30；周六⽇每天是四场表演，分别是14:00/16:00/18:00/20:30
+                            li
+                                label 退改规则：
+                                div  该产品⼀经预订成功，不⽀持退改，敬请谅解。
+                    .order-top-stepper-item(style='margin-bottom: 10px;')
+                        span.order-top-select
+                            label 场次
+                            select
+                        span.order-top-stepper
+                            label 成人票
+                    .order-top-stepper-item
+                        span.order-top-stepper
+                            label 儿童票
+                        span.order-top-stepper
+                            label 老人票
+                    .ticket-screen
+                        label 参观日期
+                        span.ticket-screen-date
+                            input(value="2017/11/27" id="screen-date")
+                            i.date-icon
+                ul.order-info-list
+                    li
+                        +order-dt-tit('联系人信息','为方便广之旅及时与您联系，请准确填写联系人信息（手机号码，Email）')
+                        .order-info-item.contact-info
+                            .err-tip 中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确
+                            ul.form-group.clearfix
+                                - for (var i=0;i<contactInfo.length;i++)
+                                    li
+                                        label
+                                            if contactInfo[i].isrequired == true
+                                                <b class='main-red'>*</b>
+                                            | #{contactInfo[i].text}
+                                        div.form-group-con
+                                            input(placeholder='#{contactInfo[i].placeholder}')
+                                li
+                                    label 证件类型
+                                    div.form-group-con
+                                        +select-group(['身份证', '居住证', '其他'])
+                                li
+                                    label 证件号码
+                                    div.form-group-con
+                                        input(placeholder='请输⼊证件号码')
+                        .order-info-item.contact-info
+                            .err-tip 中文姓名, 英文/拼音, 证件号码不能为空；出生日期, 证件有效期, 手机号码格式不正确
+                            ul.form-group.clearfix
+                                - for (var i=0;i<contactInfo.length;i++)
+                                    li
+                                        label
+                                            if contactInfo[i].isrequired == true
+                                                <b class='main-red'>*</b>
+                                            | #{contactInfo[i].text}
+                                        div.form-group-con
+                                            input(placeholder='#{contactInfo[i].placeholder}')
+                                li
+                                    label 证件类型
+                                    div.form-group-con
+                                        +select-group(['身份证', '居住证', '其他'])
+                                li
+                                    label 证件号码
+                                    div.form-group-con
+                                        input(placeholder='请输⼊证件号码')
+                    li
+                        +order-dt-tit('备注信息')
+                        .order-info-item
+                            textarea.c-textarea(placeholder='请填写备注信息')
+                    li
+                        +order-dt-tit('商家订单号')
+                        .order-info-item
+                            input.c-input(placeholder='请填写商家订单号')
+
+
+            .order-right-cont
+                .order-right-content
+                    ul.order-right-item
+                        li
+                            label 成人票×
+                                span.adult-num 2
+                            span ¥ 386
+                        li
+                            label 儿童票×
+                                span.child-num 1
+                            span ¥ 386
+                        li
+                            label 老人票×
+                                span.old-num 1
+                            span ¥ 386
+                    ul.order-right-item.order-total
+                        li
+                            label 总额
+                            span ¥ 2000086
+        include ../../component/orderDetails/orderFooter
+block footer
+block append script
+    //- include ../../../model/common/orderData
+    script(src='../../static/js/lib/moment.js')
+    script(src='../../static/js/lib/daterangepicker.js')
+    script(src='../../static/js/ticket/ticketOrder.js')

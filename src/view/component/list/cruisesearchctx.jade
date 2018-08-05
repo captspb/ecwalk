@@ -1,0 +1,51 @@
+include ../../../model/cruise/cruiseListsData
+
+.com-search-ctx.travel-search-ctx
+    ul
+        - for (var i=0; i<search.length; i++)
+            li
+                .search-item-wrp
+                    .search-item-lpart
+                        span.web-font-bold #{search[i].main}
+                    .search-item-rpart
+                        - for (var j=0; j<search[i].taglist.length; j++)
+                            - if (search[i].taglist[j].result == 0)
+                                span.tag-wrp
+                                    - if (search[i].morepick)
+                                        span(data-val=search[i].taglist[j].name).check-box.tag-check-box
+                                        .search-tag #{search[i].taglist[j].name}
+                                    - else
+                                        .search-tag #{search[i].taglist[j].name}
+                            - else
+                                span.tag-wrp
+                                    - if (search[i].morepick)
+                                        span(data-val=search[i].taglist[j].name).check-box.tag-check-box
+                                        .search-tag #{search[i].taglist[j].name}(#{search[i].taglist[j].result})
+                                    - else
+                                        .search-tag #{search[i].taglist[j].name}(#{search[i].taglist[j].result})
+                        .confirm-btn-list-wrp
+                            .confirm-btn-list
+                                span.cancel-btn 取消
+                                span.sr-btn.ok-btn 确定
+                    .btn-list
+                        - if (search[i].downpick)
+                            span.down-ctl
+                        - if (search[i].morepick)
+                            span.more-ctl 多选
+                        - if (search[i].pricerange)
+                            span.start-price
+                                input
+                            span.end-price
+                                input
+                            spna.price-confirm.sr-btn.ban 确定
+                    .clear
+.picked-tag
+    span.had-pick-title.web-font-bold 已选
+    ul
+        - for (var i=0; i<hadpick.length; i++)
+            li
+                span #{hadpick[i].type}：#{hadpick[i].name}
+                span.sclose
+            if i == hadpick.length-1
+                li.clear-all 清空已选
+

@@ -1,0 +1,50 @@
+.ticket-details{background-color:#f7f7f7}
+.ticket-details .prod-dt-tit{font-size:32px}
+.ticket-bk-dt{width:1190px;margin:0 auto;padding:0 40px;background-color:#fff}
+.ticket-screen{overflow:hidden;line-height:28px;padding:23px 0}
+.ticket-screen label{display:inline-block;vertical-align:top;color:#b3b3b3;margin-right:20px}
+.ticket-screen .ticket-screen-date{position:relative;display:inline-block;vertical-align:top;width:140px;padding:0 20px 0 0;cursor:pointer}
+.ticket-screen .ticket-screen-date input{border:none;font-size:18px;width:100%}
+.ticket-screen .ticket-screen-date .date-icon{position:absolute;right:0;top:0;bottom:0;margin:auto}
+.ticket-bk-info{background-color:#f7f7f7;height:40px;line-height:40px;overflow:hidden}
+.ticket-bk-info li{float:left;color:#666;font-size:14px;text-align:center}
+.ticket-bk-info .tk-blank{width:110px}
+.ticket-bk-info .tk-name{width:320px}
+.ticket-bk-info .tk-type{width:130px}
+.ticket-bk-info .tk-period{width:235px}
+.ticket-bk-info .tk-prc{width:210px}
+.ticket-bk-info .tk-prc.show-peer-price{cursor:pointer}
+.ticket-bk-item .ticket-species{float:left;width:100px;padding:25px 0;text-align:center}
+.ticket-bk-item.adult{background-color:#e5f5ff}
+.ticket-bk-item.child{background-color:#e8f9e8}
+.ticket-bk-item.baby{background-color:#f0f0f0}
+.ticket-bk-list{margin-left:110px;background-color:#fff;border-bottom:1px dashed #eee}
+.ticket-bk-list li{font-size:16px;border-top:1px dashed #eee}
+.ticket-bk-list li:first-child{border-top:none}
+.ticket-bk-list li.active .ticket-info{background-color:#fffbf2}
+.ticket-bk-list .ticket-info{padding:20px 0}
+.ticket-bk-list .ticket-info span{display:inline-block;vertical-align:middle;text-align:center}
+.ticket-bk-list .ticket-info .ticket-prod{color:#4779D4;text-align:left;width:320px;cursor:pointer}
+.ticket-bk-list .ticket-info .ticket-prod i{margin-left:10px}
+.ticket-bk-list .ticket-info .ticket-prod span{display:inline-block;vertical-align:top}
+.ticket-bk-list .ticket-info .ticket-prod .presell-tip{margin-top:4px}
+.ticket-bk-list .ticket-info .ticket-prod .presell-tip span{height:24px;line-height:24px;background:#FEEDEB;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#F30A37;font-size:12px;padding:0 8px}
+.ticket-bk-list .ticket-info .ticket-prod .presell-tip span i{margin:0 4px 0 0}
+.ticket-bk-list .ticket-info .ticket-type{color:#4779D4;width:130px}
+.ticket-bk-list .ticket-info .ticket-type em{border-bottom:1px dashed #4779D4}
+.ticket-bk-list .ticket-info .ticket-type em .popover-up{width:200px;margin-bottom:5px;font-size:14px;color:#333}
+.ticket-bk-list .ticket-info .ticket-type em .popover-up:after,.ticket-bk-list .ticket-info .ticket-type em .popover-up:before{right:inherit;left:15px}
+.ticket-bk-list .ticket-info .ticket-period{color:#666;width:235px}
+.ticket-bk-list .ticket-info .ticket-prc{position:relative;width:120px;color:#F30A37}
+.ticket-bk-list .ticket-info .ticket-prc .ticket-bk-prc-hide{display:none;position:absolute;top:0;left:0;background-color:#fff;width:100%;height:100%}
+.ticket-bk-list .ticket-info .ticket-prc.profit{color:#1CAB22}
+.ticket-bk-list .ticket-info .btn{width:76px;height:34px;line-height:34px;margin:-5px 0}
+.ticket-bk-list .ticket-info .btn.presell{background:#FEEDEB;color:#F30A37}
+.ticket-bk-list .ticket-info .btn.presell .m-popover-con{right:0;white-space:nowrap}
+.ticket-bk-list .ticket-info .btn.presell .m-popover-con:after{left:inherit;right:32px}
+.ticket-bk-list .ticket-info .btn.presell .m-popover-con .icon-clock{margin-right:4px}
+.ticket-bk-list .ticket-info-dt{display:none;position:relative;padding:10px 20px;background-color:#f7f7f7;border-top:1px solid #eee}
+.ticket-bk-list .ticket-info-dt h2{font-size:18px;color:#4779D4;padding:10px 0;font-weight:400}
+.ticket-bk-list .ticket-info-dt li{border-top:none;padding-bottom:12px;min-height:22px;font-size:14px}
+.ticket-bk-list .ticket-info-dt li label{float:left;color:#333;font-weight:700}
+.ticket-bk-list .ticket-info-dt li div{overflow:hidden;color:#666}

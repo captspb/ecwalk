@@ -1,0 +1,87 @@
+.info-tbl .locked .lock-status-icon{display:inline-block;width:20px;height:20px;background-image:url(../../images/sprite-img/locked.png);-webkit-background-size:20px 20px;-moz-background-size:20px;-o-background-size:20px;background-size:20px;margin-left:10px;position:relative;top:3px}
+.info-tbl .locked .add-tourist{display:none}
+.info-tbl .open-lock .lock-status-icon{display:inline-block;margin-left:10px;width:20px;height:20px;-webkit-background-size:20px 20px;-moz-background-size:20px;-o-background-size:20px;background-size:20px;background-image:url(../../images/sprite-img/open-lock.png);position:relative;top:3px}
+.info-tbl .open-lock .add-tourist{display:inline-block}
+.menber-center{background-color:#f7f7f7}
+.center-cont{width:1200px;margin:0 auto;padding-top:14px;font-size:0;position:relative}
+.left-nav{position:absolute;display:inline-block;width:226px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#333;font-size:14px}
+.left-nav.fixed{position:fixed;top:0}
+.left-nav a{margin-bottom:20px;display:inline-block}
+.left-nav .first_nav{list-style:outside disc none;color:#333;font-size:10px}
+.left-nav .first_nav.cur{color:#D82628}
+.left-nav .first_nav.cur>a{color:#D82628}
+.left-nav .first_nav>a{font-family:webfontregular;font-size:14px;letter-spacing:0}
+.left-nav .second_nav a{font-family:webfontregular;font-size:14px;color:#666;letter-spacing:0}
+.left-nav .top-part{background-color:#fff;padding:10px 10px 10px 34px}
+.left-nav .top-infos{list-style:disc}
+.left-nav .top-info{position:relative;padding-top:20px}
+.left-nav .top-info .red-span{color:#D82628}
+.left-nav .top-info:before{display:inline-block;content:'';top:0;left:-10px;position:absolute;width:186px;height:1px;background-color:#F0F0F0}
+.left-nav .top-info:first-child:before{display:none}
+.left-nav .inner-info{margin-top:20px;margin-bottom:20px;position:relative}
+.left-nav .inner-info span{word-break:break-all;display:inline-block;color:#999}
+.left-nav .mid-part{background-color:#fff;margin-top:14px;margin-bottom:14px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:30px 30px 10px 34px}
+.left-nav .mid-info{list-style:disc;margin-bottom:20px}
+.left-nav .bottom-part{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding:30px 20px 9px 20px;background-color:#fff}
+.left-nav .bottom-part li{margin-bottom:24px;cursor:pointer}
+.left-nav .bottom-part li.comfirm-domestic{display:none}
+.left-nav .bottom-part li.comfirm-ticket{display:none}
+.left-nav .bottom-part li a{margin-bottom:0}
+.left-nav .bottom-part i{display:inline-block;vertical-align:middle}
+.left-nav .bottom-part .del-icon{width:19px;height:19px;background-image:url(../../images/menberCenter/cancel.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .cycle-icon{width:19px;height:19px;background-image:url(../../images/menberCenter/change.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .downLoad-icon{width:19px;height:19px;background-position:-2px;background-image:url(../../images/menberCenter/download.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px}
+.left-nav .bottom-part .downLoad-travel-icon{display:inline-block;width:19px;height:19px;background-image:url(../../images/sprite-img/downLoad-travel.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .comfirm-domestic-icon{display:inline-block;width:19px;height:19px;background-position:-2px;-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-image:url(../../images/sprite-img/comfirm-domestic.png)}
+.left-nav .bottom-part .comfirm-ticket-icon{display:inline-block;width:19px;height:19px;background-image:url(../../images/sprite-img/comfirm-ticket.png);-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-position:-2px}
+.left-nav .bottom-part .continue-pay-icon{display:inline-block;width:19px;height:19px;background-position:-2px;-webkit-background-size:24px 24px;-moz-background-size:24px;-o-background-size:24px;background-size:24px;background-image:url(../../images/sprite-img/continue-pay.png)}
+.left-nav .bottom-part span{display:inline-block;vertical-align:middle;margin-left:9px}
+.info-pannel{display:inline-block;margin-left:240px;width:946px;vertical-align:top;margin-bottom:100px}
+.info-pannel .info-tbl{background-color:#fff;padding:20px 30px 0 30px;margin-bottom:14px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.info-pannel .tbl-tit{font-size:16px;color:#333;letter-spacing:0;line-height:16px;margin-bottom:23px}
+.info-pannel .right-content{font-size:14px;color:#999;letter-spacing:0;font-weight:400;float:right;display:inline-block;vertical-align:middle}
+.info-pannel .add-tourist{color:#4A6BA9;cursor:pointer}
+.info-pannel .add-tourist.finish-btn{background:#D82628;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;color:#fff;line-height:30px;width:68px;text-align:center;position:relative;top:-5px}
+.info-pannel table{font-size:14px;color:#333;letter-spacing:0;font-weight:400;width:100%}
+.info-pannel table th{line-height:60px;border-top:1px solid #f0f0f0;border-bottom:1px solid #f0f0f0;width:200px;text-align:center;color:#333;font-weight:400}
+.info-pannel table td{width:200px;text-align:center;min-height:60px;padding:23px 0;color:#666;border-top:1px solid #f0f0f0}
+.info-pannel table td span{word-wrap:break-word}
+.info-pannel table .dis{color:#999}
+.info-pannel table img{display:inline-block;width:14px;height:14px;vertical-align:middle}
+.info-pannel table .product-name{display:inline-block;width:200px}
+.info-pannel table .ticket-name{display:inline-block;width:240px}
+.info-pannel table .travel-date{display:inline-block;width:130px}
+.info-pannel table .ticket-type{display:inline-block;width:100px}
+.info-pannel table .create-date,.info-pannel table .create-date-th{width:148px}
+.info-pannel table .create-depart,.info-pannel table .create-depart-th{width:246px}
+.info-pannel table .creator,.info-pannel table .creator-th{width:210px}
+.info-pannel table .cruise-name-th{width:430px}
+.info-pannel table .cruise-name{display:inline-block;width:400px;text-align:left}
+.info-pannel table .cruise-num,.info-pannel table .cruise-num-th,.info-pannel table .days,.info-pannel table .days-th{width:80px}
+.info-pannel table .end-date,.info-pannel table .end-date-th,.info-pannel table .start-date,.info-pannel table .start-date-th{width:150px}
+.info-pannel table .cruiseRoom-name,.info-pannel table .cruiseRoom-name-th{width:280px}
+.info-pannel table .cruiseRoom-num,.info-pannel table .cruiseRoom-num-th{width:120px}
+.info-pannel table .cruiseRoom-layer,.info-pannel table .cruiseRoom-layer-th{width:280px}
+.info-pannel table .card-type,.info-pannel table .tourist-name{width:200px}
+.info-pannel table .card-No,.info-pannel table .tourist-tel{width:240px}
+.add-note{font-size:16px;color:#D4AD4F;letter-spacing:0;line-height:60px;text-align:center;background:#FFF9EA;border:1px dashed #F5EBD3;cursor:pointer}
+.add-note .plus_icon{background-image:url(../../images/menberCenter/plus_icon.png);width:16px;height:16px;display:inline-block;margin-right:4px;vertical-align:middle}
+.add-note font{vertical-align:middle}
+.touristTbl td:first-child{position:relative}
+.touristTbl td:first-child:before{position:absolute;display:inline-block;content:'';background-image:url(../../images/menberCenter/noselect.png);width:16px;height:16px;display:inline-block;background-repeat:no-repeat;-webkit-background-size:16px 16px;-moz-background-size:16px;-o-background-size:16px;background-size:16px;left:-16px;top:30px;display:none}
+.touristTbl input{display:none}
+.touristTbl select{display:none}
+.touristTbl span{display:inline-block;text-align:center}
+.touristTbl span .inner{text-align:left;word-break:break-all}
+.touristTbl .showInp td:first-child:before{background-image:url(../../images/menberCenter/selected.png)}
+.touristTbl .showInp .card-No input[type=text]{width:212px}
+.touristTbl .showInp .tourist-tel input[type=text]{width:218px}
+.touristTbl .showInp input[type=text],.touristTbl .showInp select{display:inline-block;border:none;background:#F7F7F7;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;font-size:14px;color:#666;letter-spacing:0;line-height:32px;height:32px;text-align:center;width:172px}
+.touristTbl .showInp option{text-align:center}
+.touristTbl .showInp span{display:none}
+.editableTbl td:first-child:before{display:inline-block}
+.common-htext{font-size:18px;color:#333;letter-spacing:0}
+.textarea-item textarea::-webkit-input-placeholde{font-size:14px;color:#999;letter-spacing:0}
+.textarea-item textarea::-moz-placeholder{font-size:14px;color:#999;letter-spacing:0}
+.textarea-item textarea::-moz-placeholder{font-size:14px;color:#999;letter-spacing:0}
+.textarea-item textarea::-ms-input-placeholder{font-size:14px;color:#999;letter-spacing:0}

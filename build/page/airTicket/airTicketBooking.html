@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <!--link(rel='stylesheet', href='http://at.alicdn.com/t/font_733585_fdi6id5hhad.css')-->
+    <link rel="stylesheet" href="../../static/css/orderDetails.css">
+    <link rel="stylesheet" href="../../static/css/daterangepicker.css">
+    <link rel="stylesheet" href="../../static/css/airTicket/airTicketBooking.css">
+  </head>
+  <title>国际机票</title>
+  <body>
+    <div class="b2b-header-bar-wrp">
+      <div class="b2b-header-bar">
+        <div class="b2b-header-bar-login">
+          <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">隐藏同行价</a></li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="b2b-header-bar-login r-part">
+          <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">个人资料</a></li>
+            <li><a href="#">密码设置</a></li>
+            <li class="popover"><a>关注公众号</a>
+              <div class="popover-down">
+                <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                <div class="code-tip">扫码关注公众号</div>
+              </div>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="b2b-header-ctx-wrp">
+      <div class="b2b-header-ctx"><a><img src="../../static/images/index/LogoTitle.png"></a>
+        <div class="b2b-address"><span><span class="img"></span><font>广州市
+              <ul class="drop_down">
+                <li> <a>北京市</a></li>
+                <li> <a>乌鲁木齐市</a></li>
+                <li> <a>上海市</a></li>
+                <li> <a>吐鲁番市</a></li>
+                <li> <a>深圳市</a></li>
+              </ul></font></span></div>
+        <div class="b2b-header-search">
+          <div class="search-box">
+            <div class="select-group">
+              <div class="select"><span class="select-val">全部产品</span><i class="select-down-arrow-icon"></i></div>
+              <ul style="display: none;" class="select-dropdown">
+                <li class="active">全部产品</li>
+                <li>跟团游</li>
+                <li>自由行</li>
+                <li>当地玩乐</li>
+                <li>酒店</li>
+                <li>门票</li>
+                <li>签证</li>
+                <li>邮轮</li>
+                <li>WIFI</li>
+              </ul>
+            </div>
+            <div class="search-input">
+              <input placeholder="请输入搜索关键字...">
+            </div><a class="search-btn">搜索</a>
+          </div>
+          <div class="search-hot"></div>
+        </div>
+        <div class="b2b-header-bitMap">
+          <div class="bitMapDiv">
+            <div class="bitMapInnerDiv">
+              <div class="wx-kf popover"><i class="wx-kf-icon"></i><span class="contact">
+                  <p>欢迎使用</p>
+                  <p>在线客服</p></span>
+                <div class="popover-down">
+                  <div class="code-img"><img src="../../static/images/index/xzw-code.png"></div>
+                  <div class="code-tip">扫码关注公众号</div>
+                </div>
+              </div>
+              <div class="tel-kf"><i class="tel-icon"></i><span class="contact">
+                  <p>020-86338888</p>
+                  <p>400-863-8888</p></span></div>
+            </div><img src="../../static/images/index/monkey.png" class="r">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="b2b-header-nav-wrp">
+      <div class="b2b-header-nav">
+        <ul>
+          <li nav-type="index"><a href="#">
+              <div>首页</div><span class="white-line"></span></a></li>
+          <li nav-type="gty"><a href="#">
+              <div>跟团游</div><span class="white-line"></span></a></li>
+          <li nav-type="zyx"><a href="#">
+              <div>自由行</div><span class="white-line"></span></a></li>
+          <li nav-type="yl"><a href="#">
+              <div>邮轮</div><span class="white-line"></span></a></li>
+          <li nav-type="ddwl"><a href="#">
+              <div>当地玩乐</div><span class="white-line"></span></a></li>
+          <li nav-type="jd"><a href="#">
+              <div>酒店</div><span class="white-line"></span></a></li>
+          <li nav-type="pq"><a href="#">
+              <div>票券</div><span class="white-line"></span></a></li>
+          <li nav-type="qz"><a href="#">
+              <div>签证</div><span class="white-line"></span></a></li>
+          <li nav-type="wifi"><a href="#">
+              <div>WIFI</div><span class="white-line"></span></a></li>
+          <li nav-type="jp"><a href="#">
+              <div>机票</div><span class="white-line"></span><i class="new-tip-icon"></i></a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div class="airTicket-page">
+      <div class="airTicket-bk clearfix">
+        <div class="airTicket-bk-main">
+          <div class="airTicket-bk-tip">
+            <p><i class="icon-warn"></i>短期签证：持商务、旅游等短期签证的旅客，建议您直接购买往返程票或持有返程票，以免无法办理乘机和出境手续。</p>
+            <p><i class="icon-warn"></i>持中国大陆护照并获10年有效B1、 B2或B1/B2美国签证的旅客，出行前请确认已登记EVUS（签证更新电子系统），以免无法入境或过境美国。</p>
+            <p><i class="icon-warn"></i>此行程过境第三国（地区）转机。可能需求持有过境签证，为了您顺利出行，请必须查询该国（地区）官方签证政策。</p>
+          </div>
+          <ul class="airTicket-visitor-list">
+            <li class="airTicket-visitor-item">
+              <div class="airTicket-visitor-top"><span class="airTicket-visitor-tit">1. 成人乘客</span><span class="common-visitor">常用游客</span><span class="order-help icon-doubt main-blue"></span></div>
+              <ul class="airTicket-visitor-info">
+                <li class="info-list clearfix">
+                  <label class="info-tit">基本信息</label>
+                  <div class="info-con">
+                    <div class="name-group clearfix">
+                      <div class="surname-item checkout-item error">
+                        <input placeholder="姓氏/拼音(如zhang)">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                      <div class="name-item checkout-item">
+                        <input placeholder="名字/拼音(如xiaoming)">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                    </div>
+                    <div class="other-group clearfix">
+                      <div class="gender-item checkout-item"><span class="men">男</span><span class="women">女</span>
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                      <div class="nationality-item">
+                        <div class="select-group">
+                          <div class="select"><span class="select-val">中华人民共和国</span><i class="g-arrow-down-icon"></i></div>
+                          <ul class="select-dropdown">
+                            <li class="active">中华人民共和国</li>
+                            <li>123</li>
+                            <li>234</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="birth-date-item checkout-item">
+                        <div class="birth-date-input">
+                          <input id="birthDay-0" placeholder="请选择出生日期">
+                          <div class="g-arrow-down-icon"></div>
+                        </div>
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="info-list clearfix">
+                  <label class="info-tit">联系电话</label>
+                  <div class="info-con">
+                    <div class="phone-group clearfix">
+                      <div class="region-item">中国大陆   +86</div>
+                      <div class="phone-num-item checkout-item">
+                        <input placeholder="请选择手机号码">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="info-list clearfix">
+                  <label class="info-tit">护照信息</label>
+                  <div class="info-con">
+                    <div class="passport-group clearfix">
+                      <div class="passport-num-item checkout-item">
+                        <input placeholder="证件号码">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                      <div class="passport-type-item checkout-item">
+                        <div class="passport-type-input">
+                          <input id="passport-0" placeholder="证件有效期">
+                          <div class="g-arrow-down-icon"></div>
+                        </div>
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="airTicket-visitor-ft clearfix">
+                <div class="empty-btn main-blue">清空</div>
+                <div class="airTicket-visitor-check"><span class="check-item"><i class="icon-uncheck"></i><em>出票短信</em></span><span class="check-item"><i class="icon-uncheck"></i><em>航变短信</em></span><span class="check-item"><i class="icon-uncheck"></i><em>保存为常用游客</em></span></div>
+              </div>
+            </li>
+            <li class="airTicket-visitor-item">
+              <div class="airTicket-visitor-top"><span class="airTicket-visitor-tit">2. 成人乘客</span><span class="common-visitor">常用游客</span><span class="order-help icon-doubt main-blue"></span></div>
+              <ul class="airTicket-visitor-info">
+                <li class="info-list clearfix">
+                  <label class="info-tit">基本信息</label>
+                  <div class="info-con">
+                    <div class="name-group clearfix">
+                      <div class="surname-item checkout-item error">
+                        <input placeholder="姓氏/拼音(如zhang)">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                      <div class="name-item checkout-item">
+                        <input placeholder="名字/拼音(如xiaoming)">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                    </div>
+                    <div class="other-group clearfix">
+                      <div class="gender-item checkout-item"><span class="men">男</span><span class="women">女</span>
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                      <div class="nationality-item">
+                        <div class="select-group">
+                          <div class="select"><span class="select-val">中华人民共和国</span><i class="g-arrow-down-icon"></i></div>
+                          <ul class="select-dropdown">
+                            <li class="active">中华人民共和国</li>
+                            <li>123</li>
+                            <li>234</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="birth-date-item checkout-item">
+                        <div class="birth-date-input">
+                          <input id="birthDay-1" placeholder="请选择出生日期">
+                          <div class="g-arrow-down-icon"></div>
+                        </div>
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="info-list clearfix">
+                  <label class="info-tit">联系电话</label>
+                  <div class="info-con">
+                    <div class="phone-group clearfix">
+                      <div class="region-item">中国大陆   +86</div>
+                      <div class="phone-num-item checkout-item">
+                        <input placeholder="请选择手机号码">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="info-list clearfix">
+                  <label class="info-tit">护照信息</label>
+                  <div class="info-con">
+                    <div class="passport-group clearfix">
+                      <div class="passport-num-item checkout-item">
+                        <input placeholder="证件号码">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                      <div class="passport-type-item checkout-item">
+                        <div class="passport-type-input">
+                          <input id="passport-1" placeholder="证件有效期">
+                          <div class="g-arrow-down-icon"></div>
+                        </div>
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="airTicket-visitor-ft clearfix">
+                <div class="empty-btn main-blue">清空</div>
+                <div class="airTicket-visitor-check"><span class="check-item"><i class="icon-uncheck"></i><em>出票短信</em></span><span class="check-item"><i class="icon-uncheck"></i><em>航变短信</em></span><span class="check-item"><i class="icon-uncheck"></i><em>保存为常用游客</em></span></div>
+              </div>
+            </li>
+            <li class="airTicket-visitor-item contact-info">
+              <div class="airTicket-visitor-top"><span class="airTicket-visitor-tit">联系人</span></div>
+              <ul class="airTicket-visitor-info">
+                <li class="info-list clearfix">
+                  <label class="info-tit">基本信息</label>
+                  <div class="info-con">
+                    <div class="name-group clearfix">
+                      <div class="name-item checkout-item">
+                        <input placeholder="请填写名字">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                      <div class="phone-num-item checkout-item">
+                        <input placeholder="请选择手机号码">
+                        <div class="error-tip main-red">错误提示</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="info-list clearfix">
+                  <label class="info-tit">联系邮箱</label>
+                  <div class="info-con">
+                    <div class="email-item checkout-item">
+                      <input placeholder="请输入联系邮箱">
+                      <div class="error-tip main-red">错误提示</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="airTicket-visitor-item other-info">
+              <div class="airTicket-visitor-top"><span class="airTicket-visitor-tit">其他信息</span></div>
+              <ul class="airTicket-visitor-info">
+                <li class="info-list clearfix">
+                  <label class="info-tit">商家订单号</label>
+                  <div class="info-con">
+                    <div class="other-item checkout-item">
+                      <input placeholder="请填写商家订单号">
+                      <div class="error-tip main-red">错误提示</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="info-list clearfix">
+                  <label class="info-tit">备注信息</label>
+                  <div class="info-con">
+                    <div class="other-item checkout-item">
+                      <textarea placeholder="请填写备注信息"></textarea>
+                      <div class="error-tip main-red">错误提示</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="airTicket-bk-sidebar">
+          <ul class="order-assist clearfix">
+            <li class="m-popover hasData">
+              <div class="icon-endorse"></div>
+              <p>退改签</p>
+              <div class="m-popover-con s-up">抱歉！数据获取失败，具体详情请直接联系航司。</div>
+            </li>
+            <li>
+              <div class="icon-luggage"></div>
+              <p>行李额</p>
+            </li>
+            <li>
+              <div class="icon-reimbursement"></div>
+              <p>报销凭证</p>
+            </li>
+            <li>
+              <div class="icon-warning"></div>
+              <p>预订须知</p>
+            </li>
+          </ul>
+          <div class="airTicket-bk-prc">
+            <dl class="airTicket-bk-prc-list">
+              <dt class="clearfix">
+                <label class="tit-item">成人票</label><span class="prc-item">￥4,028.0<em>x2</em></span>
+              </dt>
+              <dd class="clearfix">
+                <label class="tit-item">票价</label><span class="prc-item">￥4,028.0<em>x2</em></span>
+              </dd>
+              <dd class="clearfix">
+                <label class="tit-item">税费</label><span class="prc-item">￥4,028.0<em>x2</em></span>
+              </dd>
+            </dl>
+            <dl class="airTicket-bk-prc-list">
+              <dt class="clearfix">
+                <label class="tit-item">成人票</label><span class="prc-item">￥4,028.0<em>x2</em></span>
+              </dt>
+              <dd class="clearfix">
+                <label class="tit-item">票价</label><span class="prc-item">￥4,028.0<em>x2</em></span>
+              </dd>
+              <dd class="clearfix">
+                <label class="tit-item">税费</label><span class="prc-item">￥4,028.0<em>x2</em></span>
+              </dd>
+            </dl>
+            <div class="airTicket-bk-prc-total">
+              <div class="search-btn"><i class="icon-back"></i><span>重新搜索</span></div>
+              <div class="prc-con">
+                <h2 class="main-red">20,696.0</h2>
+                <p class="tax-item">已含税费：¥2000</p>
+              </div>
+            </div>
+          </div>
+          <div class="flight-info">航班信息<span class="show-flight-detail main-blue">查询详情</span></div>
+          <ul class="flight-schedule">
+            <li class="flight-schedule-list">
+              <div class="flight-schedule-list-hd">
+                <div class="hd-tip"><span>去程</span>
+                </div>
+                <div class="hd-con">
+                  <h2>香港(HKG) → 伦敦(LON)</h2>
+                  <p><em class="main-red">2018</em>年<em class="main-red">5</em>月<em class="main-red">24</em>日周一出发</p>
+                </div>
+              </div>
+              <div class="flight-schedule-list-time clearfix">
+                <div class="flight-time">
+                  <p>15H20M</p><i class="icon-transit"></i>
+                </div>
+                <div class="start-time">
+                  <h2>07:50</h2>
+                  <p>香港国际机场T1</p>
+                </div>
+                <div class="end-time">
+                  <h2>19:45<span>+1</span></h2>
+                  <p>盖亚维克机场N</p>
+                </div>
+              </div>
+              <ul class="airlines-list">
+                <li class="airlines-list-item">
+                  <div class="airlines-avatar"><img src="http://file.gzl.cn/group1/M00/1A/CD/wKkBH1s58BaADKMfAAHesE3GGxc295.jpg"></div>
+                  <div class="airlines-info">
+                    <div class="con-item clearfix">
+                      <div class="tit-item">
+                        <p class="airlines-name">长荣航空</p>
+                        <p class="airlines-num">CA806</p>
+                      </div>
+                      <div class="tip-item">
+                        <p class="tank-con">经济舱</p>
+                        <p class="name-con">经停上海</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="airlines-list-item">
+                  <div class="airlines-avatar"><img src="http://file.gzl.cn/group1/M00/1A/CD/wKkBH1s58BaADKMfAAHesE3GGxc295.jpg"></div>
+                  <div class="airlines-info">
+                    <div class="con-item clearfix">
+                      <div class="tit-item">
+                        <p class="airlines-name">长荣航空</p>
+                        <p class="airlines-num">CA806</p>
+                      </div>
+                      <div class="tip-item">
+                        <p class="tank-con">经济舱</p>
+                        <p class="name-con">经停上海</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="airlines-tip">中转上海</div>
+                </li>
+                <li class="airlines-list-item">
+                  <div class="airlines-avatar"><img src="http://file.gzl.cn/group1/M00/1A/CD/wKkBH1s58BaADKMfAAHesE3GGxc295.jpg"></div>
+                  <div class="airlines-info">
+                    <div class="con-item clearfix">
+                      <div class="tit-item">
+                        <p class="airlines-name">长荣航空</p>
+                        <p class="airlines-num">CA806</p>
+                      </div>
+                      <div class="tip-item">
+                        <p class="tank-con">经济舱</p>
+                        <p class="name-con">经停上海</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="airlines-tip">中转上海</div>
+                </li>
+              </ul>
+            </li>
+            <li class="flight-schedule-list">
+              <div class="flight-schedule-list-hd">
+                <div class="hd-tip"><span>返程</span>
+                </div>
+                <div class="hd-con">
+                  <h2>香港(HKG) → 伦敦(LON)</h2>
+                  <p><em class="main-red">2018</em>年<em class="main-red">5</em>月<em class="main-red">24</em>日周一出发</p>
+                </div>
+              </div>
+              <div class="flight-schedule-list-time clearfix">
+                <div class="flight-time">
+                  <p>15H20M</p><i class="icon-plane"></i>
+                </div>
+                <div class="start-time">
+                  <h2>07:50</h2>
+                  <p>香港国际机场T1</p>
+                </div>
+                <div class="end-time">
+                  <h2>19:45<span>+1</span></h2>
+                  <p>盖亚维克机场N</p>
+                </div>
+              </div>
+              <ul class="airlines-list">
+                <li class="airlines-list-item">
+                  <div class="airlines-avatar"><img src="http://file.gzl.cn/group1/M00/1A/CD/wKkBH1s58BaADKMfAAHesE3GGxc295.jpg"></div>
+                  <div class="airlines-info">
+                    <div class="con-item clearfix">
+                      <div class="tit-item">
+                        <p class="airlines-name">长荣航空</p>
+                        <p class="airlines-num">CA806</p>
+                      </div>
+                      <div class="tip-item">
+                        <p class="tank-con">经济舱</p>
+                        <p class="name-con">经停上海</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="airTicket-bk-popup">
+        <div class="bk-popup-box">
+          <div class="bk-popup-tit"><span>选择常用游客</span><i class="icon-close"></i></div>
+          <div class="bk-popup-con">
+            <div class="flight-details">
+              <div class="airTicket-list-group">
+                <ul class="airTicket-list">
+                  <li>
+                    <div class="airTicket-list-tit">曼谷(BKK) → 北京(BJS)
+                      <div class="airTicket-list-trip">第一程 7月21日 周三</div>
+                    </div>
+                    <div class="airTicket-list-item">
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <div class="airTicket-time">07:50</div>
+                            <div class="airTicket-airport">香港国际机场T1</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                                <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                            <div class="airTicket-airport">盖亚维克机场N</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                          <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="plane-icon"></span></div>
+                      <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">阿联酋航空</span></div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                            <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="airTicket-detail">
+                      <ul class="airTicket-detail-item">
+                        <li class="airTicket-list-item">
+                          <div class="airTicket-phase">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                          </div>
+                          <ul class="airTicket-info clearfix">
+                            <li>
+                              <div class="airTicket-origin-info">
+                                <p>2018.06.01  19:10</p>
+                                <p>2018.06.01  19:10</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="airTicket-dest-info">
+                                <p>素万那普国际机场(BKK)</p>
+                                <p>浦东国际机场T2(PVG)</p>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="airTicket-airlines">
+                            <div class="airTicket-airlines-con"><span class="airlines-avatar"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png"></span><span class="airlines-con">
+                                <div><strong>阿联酋航空</strong></div>
+                                <p>QR817&nbsp;/&nbsp;机型:321</p>
+                                <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                          </div>
+                          <div class="airTicket-line">
+                            <div class="airTicket-line-con">
+                              <ul>
+                                <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                                <li><span class="airTicket-line-tip">经济舱</span><span class="airTicket-line-tip">BR810</span><span class="airTicket-line-tip">波音747</span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="airTicket-list-item">
+                          <div class="airTicket-transit-tip"><span>中转上海，停留8小时15分钟</span></div>
+                          <div class="airTicket-phase">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                          </div>
+                          <ul class="airTicket-info clearfix">
+                            <li>
+                              <div class="airTicket-origin-info">
+                                <p>2018.06.01  19:10</p>
+                                <p>2018.06.01  19:10</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="airTicket-dest-info">
+                                <p>素万那普国际机场(BKK)</p>
+                                <p>浦东国际机场T2(PVG)</p>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="airTicket-airlines">
+                            <div class="airTicket-airlines-con"><span class="airlines-avatar"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png"></span><span class="airlines-con">
+                                <div><strong>阿联酋航空</strong></div>
+                                <p>QR817&nbsp;/&nbsp;机型:321</p>
+                                <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                          </div>
+                          <div class="airTicket-line">
+                            <div class="airTicket-line-con">
+                              <ul>
+                                <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                                <li><span class="airTicket-line-tip">经济舱</span><span class="airTicket-line-tip">BR810</span><span class="airTicket-line-tip">波音747</span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="airTicket-list-tit">曼谷(BKK) → 北京(BJS)
+                      <div class="airTicket-list-trip">第一程 7月21日 周三</div>
+                    </div>
+                    <div class="airTicket-list-item">
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <div class="airTicket-time">07:50</div>
+                            <div class="airTicket-airport">香港国际机场T1</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                                <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                            <div class="airTicket-airport">盖亚维克机场N</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                          <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="plane-icon"></span></div>
+                      <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">阿联酋航空</span></div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                            <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="airTicket-list-tit">曼谷(BKK) → 北京(BJS)
+                      <div class="airTicket-list-trip">第一程 7月21日 周三</div>
+                    </div>
+                    <div class="airTicket-list-item">
+                      <ul class="airTicket-info clearfix">
+                        <li>
+                          <div class="airTicket-origin-info">
+                            <div class="airTicket-time">07:50</div>
+                            <div class="airTicket-airport">香港国际机场T1</div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="airTicket-dest-info">
+                            <div class="airTicket-time">19:45<span class="main-red m-popover">+1
+                                <div class="m-popover-con s-up">到达时间：2018.7.22 9:45</div></span></div>
+                            <div class="airTicket-airport">盖亚维克机场N</div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="airTicket-duration"><span class="underline m-popover">15h20m
+                          <div class="m-popover-con s-up">直飞 - 飞行总时长为15小时20分钟</div></span><span class="plane-icon"></span></div>
+                      <div class="airTicket-airlines"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png" class="airlines-avatar"><span class="airlines-con">阿联酋航空</span></div>
+                      <div class="airTicket-line">
+                        <div class="airTicket-line-con">
+                          <ul>
+                            <li><span class="airTicket-line-tip">中转</span><span class="ellipsis">迪拜</span></li>
+                            <li><span class="airTicket-line-tip">经停</span><span class="ellipsis">曼谷</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="airTicket-detail">
+                      <ul class="airTicket-detail-item">
+                        <li class="airTicket-list-item">
+                          <div class="airTicket-phase">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                          </div>
+                          <ul class="airTicket-info clearfix">
+                            <li>
+                              <div class="airTicket-origin-info">
+                                <p>2018.06.01  19:10</p>
+                                <p>2018.06.01  19:10</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="airTicket-dest-info">
+                                <p>素万那普国际机场(BKK)</p>
+                                <p>浦东国际机场T2(PVG)</p>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="airTicket-airlines">
+                            <div class="airTicket-airlines-con"><span class="airlines-avatar"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png"></span><span class="airlines-con">
+                                <div><strong>阿联酋航空</strong></div>
+                                <p>QR817&nbsp;/&nbsp;机型:321</p>
+                                <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                          </div>
+                          <div class="airTicket-line">
+                            <div class="airTicket-line-con">
+                              <ul>
+                                <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                                <li><span class="airTicket-line-tip">经济舱</span><span class="airTicket-line-tip">BR810</span><span class="airTicket-line-tip">波音747</span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="airTicket-list-item">
+                          <div class="airTicket-transit-tip"><span>中转上海，停留8小时15分钟</span></div>
+                          <div class="airTicket-phase">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                          </div>
+                          <ul class="airTicket-info clearfix">
+                            <li>
+                              <div class="airTicket-origin-info">
+                                <p>2018.06.01  19:10</p>
+                                <p>2018.06.01  19:10</p>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="airTicket-dest-info">
+                                <p>素万那普国际机场(BKK)</p>
+                                <p>浦东国际机场T2(PVG)</p>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="airTicket-airlines">
+                            <div class="airTicket-airlines-con"><span class="airlines-avatar"><img src="http://www.gzl.com.cn/staticpc/images/comment/summer_default.png"></span><span class="airlines-con">
+                                <div><strong>阿联酋航空</strong></div>
+                                <p>QR817&nbsp;/&nbsp;机型:321</p>
+                                <div class="shared-aviation"><em>共享</em><span>实际承运泰国微笑航空WE696</span></div></span></div>
+                          </div>
+                          <div class="airTicket-line">
+                            <div class="airTicket-line-con">
+                              <ul>
+                                <li><span class="airTicket-line-tip">飞行时长</span><span><span class="ellipsis">2小时15分钟</span></span></li>
+                                <li><span class="airTicket-line-tip">经济舱</span><span class="airTicket-line-tip">BR810</span><span class="airTicket-line-tip">波音747</span></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="common-tourists">
+              <ul class="common-tourists-list clearfix">
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <div class="info-item">
+                    <label>姓：</label>
+                    <p>Booth</p>
+                  </div>
+                  <div class="info-item">
+                    <label>名：</label>
+                    <p>James</p>
+                  </div>
+                  <div class="info-item">
+                    <label>类型：</label>
+                    <p>儿童</p>
+                  </div>
+                  <div class="info-item">
+                    <label>护照：</label>
+                    <p>G45678912</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="pagination-wrp clearfix">
+                <div class="pagination"></div>
+              </div>
+              <div class="submit-btn"><a>提交</a></div>
+            </div>
+            <div class="instructions">
+              <div class="instructions-con">
+                <div class="endorse-type-tab">
+                  <ul class="endorse-type-tab-item">
+                    <li data-show="language" class="active"><span>成人退改签</span></li>
+                    <li data-show="language"><span>儿童退改签</span></li>
+                  </ul>
+                  <ul class="language-sel">
+                    <li class="active">中文</li>
+                    <li>英文</li>
+                  </ul>
+                </div>
+                <div class="endorse-type-tab-con">
+                  <div class="language ch">中文</div>
+                  <div class="language en">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto atque consectetur expedita fugit illum molestiae nam pariatur possimus, quaerat quia quibusdam rem sequi sunt vitae. Ad doloribus laborum nam?</div>
+                </div>
+                <div class="endorse-type-tab-con">
+                  <div class="language ch">中文</div>
+                  <div class="language en">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis facere ipsa itaque nam nobis quas! Ad animi commodi cumque delectus, dignissimos, dolorem nam odio omnis praesentium ullam veniam voluptas.</div>
+                </div>
+              </div>
+              <div class="instructions-con">2</div>
+              <div class="instructions-con">3</div>
+              <div class="instructions-con">
+                <div class="mb24">
+                  <p>此价格使用了组合运价，按航空公司规定，退改签以各运价要求最严格的为准</p>
+                  <p>CAN至TYO段客规：</p>
+                  <p>停留规定：</p>
+                  <p>最短停留时间必须停留1天；最长停留时间3月。</p>
+                </div>
+                <div class="mb24">
+                  <p>更改规定：</p>
+                  <p>允许。</p>
+                </div>
+                <div class="mb24">
+                  <p>退票规定：</p>
+                  <p>起飞前：允许，收取手续费300人民币。起飞后：不允许。,需扣除已使用航段机票费用</p>
+                </div>
+                <div class="mb24">
+                  <p>误机的情况下退改额外加收费用：</p>
+                  <p>退票：起飞前，收取手续费300人民币。更改：不允许。</p>
+                </div>
+                <div class="mb24">
+                  <p>TYO至CAN段客规：</p>
+                  <p>停留规定：</p>
+                  <p>最短停留时间必须停留1天。；最长停留时间3月。</p>
+                </div>
+                <div class="mb24">
+                  <p>更改规定：</p>
+                  <p>允许。</p>
+                </div>
+                <div class="mb24">
+                  <p>退票规定：</p>
+                  <p>起飞前：允许，收取手续费300人民币。起飞后：不允许。,需扣除已使用航段机票费用</p>
+                </div>
+                <div class="mb24">
+                  <p>误机的情况下退改额外加收费用：</p>
+                  <p>退票：起飞前，收取手续费300人民币。更改：不允许。</p>
+                </div>
+                <div>
+                  <p>退/改手续费：</p>
+                  <p>50.0元/人/次</p>
+                </div>
+              </div>
+            </div>
+            <div class="fill-in-help">
+              <div class="help-tab">
+                <ul class="help-tab-item">
+                  <li class="active"><span>填写说明</span></li>
+                  <li><span>老版护照</span></li>
+                  <li><span>新版护照</span></li>
+                </ul>
+              </div>
+              <div class="help-tab-con">
+                <p>乘客姓名需与登机所持证件上的名字一致。</p>
+                <p>中文姓名：</p>
+                <p>请在中文姓名模式下输入。</p>
+                <p>若持护照登机，必须确认护照上有中文姓名。</p>
+                <p>生僻字可用拼音代替，例如：“王鬳”可输入为“王yan”。</p>
+                <p>姓名中含特殊符号“··”“_”等，可不用输入，例如：</p>
+                <p>“汉祖然·买买提”可输入为汉祖然买买提。</p>
+                <p>香港、台湾、澳门的护照不支持国内航班，请改用其他证件。</p>
+                <p>英文姓名:</p>
+                <p>请在英文姓名模式下输入。</p>
+                <p>若持护照登机，必须按照护照顺序区分姓与名。Middlename 填写在Given name（名）中，不区分大小写。如joe jerad/potter，在Surname（姓）中填写potter，在Given name（名）中输入joe jerad。</p>
+                <p>姓与名总长度（含空格）：成人<=24个字符，儿童<=23个字符，婴儿<=16个字符，若姓名过长，建议您联系携程客服（4008306666）订票。</p>
+                <p>退/改手续费：</p>
+                <p>50.0元/人/次</p>
+              </div>
+              <div class="help-tab-con"><img src="../../static/images/airTicket/passport.png" class="passport-img"></div>
+              <div class="help-tab-con"><img src="../../static/images/airTicket/new-passport.png" class="passport-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-footer">
+        <div class="order-footer-con">
+          <div class="footer-agree-item">
+            <div class="footer-agree-con"><i class="checkbox-item icon-uncheck">
+                <div class="m-popover-con s-up popover-red">请勾选此项</div></i>
+              <p>本人确认并认可<a class="main-blue">《国际机票预订寻址》</a>您签收电子合同</p>
+            </div>
+          </div><a class="submit-btn">提交订单</a>
+        </div>
+      </div>
+    </div>
+    <script src="../../static/js/lib/jquery.min.js"></script>
+    <script src="../../static/js/common.js"></script>
+    <script src="../../static/js/lib/moment.js"></script>
+    <script src="../../static/js/lib/daterangepicker.js"></script>
+    <script src="../../static/js/lib/jquery.pagination.js"></script>
+    <script src="../../static/js/airTicket/airTicketBooking.js"></script>
+  </body>
+</html>
